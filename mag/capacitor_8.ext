@@ -1,0 +1,53 @@
+timestamp 1698753667
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use capacito7 capacitor_7_0 1 0 739 0 1 0
+node "m1_742_528#" 0 68.453 742 528 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5176 356 0 0 0 0 0 0 0 0 0 0
+node "m1_738_1478#" 0 206.013 738 1478 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41664 920 0 0 0 0 0 0 0 0 0 0
+node "w_7118_n356#" 5000 1206.59 7118 -356 nw 0 0 0 0 234544 2620 0 0 12100 440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12084 440 112320 2368 0 0 0 0 0 0 0 0 0 0
+node "w_1380_n364#" 8279 1602.14 1380 -364 nw 0 0 0 0 493920 4596 0 0 11236 424 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11236 424 11236 424 0 0 0 0 0 0 0 0 0 0
+node "w_228_1012#" 5990 1194.83 228 1012 nw 0 0 0 0 398276 3672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_742_528#" "m1_738_1478#" 5.20816
+cap "w_228_1012#" "m1_738_1478#" 1.5414
+cap "m1_742_528#" "w_228_1012#" 1.1775
+cap "capacitor_7_0/a_34_616#" "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" 0.186907
+cap "capacitor_7_0/a_34_616#" "capacitor_7_0/w_n114_990#" -3.30813
+cap "capacitor_7_0/buffer_and_gate_0/clk" "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" 0.206637
+cap "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/a_n989_n42#" 1.82864
+cap "capacitor_7_0/buffer_and_gate_0/clk" "capacitor_7_0/w_n114_990#" 0.170807
+cap "capacitor_7_0/w_n114_990#" "capacitor_7_0/buffer_and_gate_0/in1" -2.22045e-16
+cap "capacitor_7_0/w_n114_990#" "capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" -1.11022e-16
+cap "capacitor_7_0/w_n114_990#" "capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n1233_n42#" 0.000886214
+cap "capacitor_7_0/buffer_and_gate_0/clk" "capacitor_7_0/m1_602_n334#" 0.39778
+cap "capacitor_7_0/m1_602_n334#" "capacitor_7_0/a_34_616#" 160.107
+cap "capacitor_7_0/buffer_and_gate_0/gnd" "capacitor_7_0/m1_602_n334#" 92.5461
+cap "capacitor_7_0/m1_602_n334#" "capacitor_7_0/a_2858_n174#" 24.4819
+cap "capacitor_7_0/a_2858_n174#" "capacitor_7_0/sky130_fd_pr__pfet_01v8_4ZKXAA_0/w_n545_n142#" 0.000668058
+cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/a_5270_n124#" -1.33227e-15
+cap "capacitor_7_0/buffer_and_gate_0/out" "capacitor_7_0/m1_6370_n278#" 1.91773
+cap "capacitor_7_0/m2_n739_1036#" "capacitor_7_0/m1_6370_n278#" 0.0075123
+cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/buffer_and_gate_0/buffer_0/a_1596_1398#" 0.270463
+cap "capacitor_7_0/sky130_fd_pr__nfet_01v8_9LGCGE_0/a_927_n42#" "capacitor_7_0/m1_6370_n278#" 140.06
+cap "capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" "capacitor_7_0/m1_6370_n278#" 0.0669017
+cap "capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396#" "capacitor_7_0/m1_6370_n278#" -3.88578e-16
+cap "capacitor_7_0/a_5270_n124#" "capacitor_7_0/m1_6370_n278#" 38.914
+cap "capacitor_7_0/w_n114_990#" "capacitor_7_0/buffer_and_gate_0/clk" 3.79534
+cap "capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "capacitor_7_0/w_n114_990#" 8.35898
+cap "capacitor_7_0/w_n114_990#" "capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__pfet_01v8_VR4B8J_1/a_n1233_n126#" 0.0342794
+cap "capacitor_7_0/buffer_digital_0/a_n274_130#" "capacitor_7_0/w_n114_990#" 5.26841
+cap "capacitor_7_0/w_n114_990#" "capacitor_7_0/buffer_and_gate_0/in1" 1.6017
+cap "capacitor_7_0/a_34_616#" "capacitor_7_0/w_n114_990#" -2.60408
+cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/m2_n739_1036#" 0.167167
+merge "capacitor_7_0/a_34_616#" "VSUBS" -229.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5176 -356 0 0 0 0 0 0 0 0 0 0
+merge "VSUBS" "m1_742_528#"
+merge "capacitor_7_0/m1_602_n334#" "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" -904.979 0 0 0 0 -176752 -4276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9858 -398 0 0 0 0 0 0 0 0 0 0
+merge "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" "w_1380_n364#"
+merge "capacitor_7_0/buffer_and_gate_0/buffer_0/w_1358_2156#" "capacitor_7_0/w_n114_990#" -1305.03 0 0 0 0 -354344 -3672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41664 -920 0 0 0 0 0 0 0 0 0 0
+merge "capacitor_7_0/w_n114_990#" "m1_738_1478#"
+merge "m1_738_1478#" "w_228_1012#"
+merge "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/sky130_fd_pr__pfet_01v8_4ZKXAA_0/w_n545_n142#" -853.183 0 0 0 0 -92272 -2356 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -82080 -2312 0 0 0 0 0 0 0 0 0 0
+merge "capacitor_7_0/sky130_fd_pr__pfet_01v8_4ZKXAA_0/w_n545_n142#" "w_7118_n356#"

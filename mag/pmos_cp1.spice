@@ -1,0 +1,7 @@
+* SPICE3 file created from pmos_cp1.ext - technology: sky130A
+
+X0 sky130_fd_pr__pfet_01v8_E9H44Q_0/a_15_n42# a_168_22# w_n14_n142# w_n14_n142# sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X1 w_n14_n142# a_780_24# sky130_fd_pr__pfet_01v8_E9H44Q_1/a_n73_n42# w_n14_n142# sky130_fd_pr__pfet_01v8 ad=1.98 pd=16 as=0.122 ps=1.42 w=0.42 l=0.15
+X2 sky130_fd_pr__pfet_01v8_9AYYDL_0/a_100_n300# a_168_22# w_n14_n142# w_n14_n142# sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+X3 w_n14_n142# a_780_24# sky130_fd_pr__pfet_01v8_9AYYDL_1/a_n158_n300# w_n14_n142# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.87 ps=6.58 w=3 l=1
+C0 w_n14_n142# VSUBS 3.4f **FLOATING

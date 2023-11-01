@@ -1,0 +1,16 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698696899
+<< error_p >>
+rect 46967 66414 48210 66421
+rect 48171 -74435 49414 -74428
+use reconfigurable_CP  reconfigurable_CP_0
+timestamp 1698696899
+transform 1 0 16348 0 1 36088
+box -16348 -36088 129862 67390
+use reconfigurable_CP  reconfigurable_CP_1
+timestamp 1698696899
+transform 1 0 17552 0 -1 -44102
+box -16348 -36088 129862 67390
+<< end >>

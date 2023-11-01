@@ -1,0 +1,149 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698496638
+<< metal2 >>
+rect 10380 1038 10648 1090
+rect 10446 -1048 10612 -996
+rect 10451 -3134 10700 -3082
+rect 10410 -5220 10698 -5168
+rect 10457 -7306 10708 -7254
+rect 10396 -9390 10670 -9338
+rect 10442 -11474 10704 -11422
+rect 10412 -13562 10740 -13510
+<< metal3 >>
+rect 47 801 793 891
+rect 47 -1193 137 801
+rect 10139 728 10655 974
+rect 47 -1283 917 -1193
+rect 47 -3283 137 -1283
+rect 10249 -1358 10629 -1112
+rect 47 -3373 865 -3283
+rect 47 -5360 137 -3373
+rect 10272 -3444 10701 -3198
+rect 47 -5368 722 -5360
+rect 47 -5433 731 -5368
+rect 47 -5450 722 -5433
+rect 47 -7435 137 -5450
+rect 10265 -5530 10691 -5284
+rect 47 -7525 739 -7435
+rect 47 -9535 137 -7525
+rect 10265 -7616 10715 -7370
+rect 47 -9625 755 -9535
+rect 47 -11615 137 -9625
+rect 10272 -9700 10679 -9454
+rect 47 -11705 733 -11615
+rect 47 -13709 137 -11705
+rect 10278 -11784 10719 -11538
+rect 47 -13799 743 -13709
+rect 47 -14846 137 -13799
+rect 10253 -13872 10729 -13626
+<< metal4 >>
+rect -634 1484 1202 2052
+rect -634 -48 -66 1484
+rect -634 -616 1518 -48
+rect -634 -2132 -66 -616
+rect -634 -2700 1224 -2132
+rect -634 -4218 -66 -2700
+rect -634 -4786 1174 -4218
+rect -634 -6294 -66 -4786
+rect -634 -6862 1306 -6294
+rect -634 -8378 -66 -6862
+rect -634 -8946 1436 -8378
+rect -634 -10462 -66 -8946
+rect -634 -11030 1344 -10462
+rect -634 -12544 -66 -11030
+rect -634 -13112 1412 -12544
+rect -624 -14846 -56 -13112
+<< metal5 >>
+rect -1291 -8 900 582
+rect -1291 -1508 -701 -8
+rect -1291 -2086 1082 -1508
+rect -1291 -3594 -701 -2086
+rect -1291 -4172 1086 -3594
+rect -1291 -5680 -701 -4172
+rect -1291 -6258 1048 -5680
+rect -1291 -7758 -701 -6258
+rect -1291 -8336 1056 -7758
+rect -1291 -9844 -701 -8336
+rect -1291 -10422 1002 -9844
+rect -1291 -11932 -701 -10422
+rect -1291 -12510 974 -11932
+rect -1291 -13991 -701 -12510
+rect -1291 -14581 1391 -13991
+rect -1291 -14846 -701 -14581
+use capacitor_8  capacitor_8_0
+timestamp 1698496638
+transform 1 0 -22 0 1 8
+box 0 0 10546 2050
+use capacitor_8  capacitor_8_1
+timestamp 1698496638
+transform 1 0 -22 0 1 -2078
+box 0 0 10546 2050
+use capacitor_8  capacitor_8_2
+timestamp 1698496638
+transform 1 0 -28 0 1 -4164
+box 0 0 10546 2050
+use capacitor_8  capacitor_8_3
+timestamp 1698496638
+transform 1 0 -28 0 1 -6250
+box 0 0 10546 2050
+use capacitor_8  capacitor_8_4
+timestamp 1698496638
+transform 1 0 -22 0 1 -8336
+box 0 0 10546 2050
+use capacitor_8  capacitor_8_5
+timestamp 1698496638
+transform 1 0 -28 0 1 -10420
+box 0 0 10546 2050
+use capacitor_8  capacitor_8_6
+timestamp 1698496638
+transform 1 0 -22 0 1 -12504
+box 0 0 10546 2050
+use capacitor_8  capacitor_8_7
+timestamp 1698496638
+transform 1 0 -28 0 1 -14592
+box 0 0 10546 2050
+<< labels >>
+rlabel metal5 -1108 -4974 -1108 -4974 1 gnd
+port 1 n
+rlabel metal4 -418 -3036 -418 -3036 1 vdd
+port 2 n
+rlabel metal3 94 -7080 94 -7080 1 clk
+port 3 n
+rlabel metal3 10644 -13752 10644 -13752 1 clk8
+port 4 n
+rlabel metal2 10662 -13546 10662 -13546 1 in8
+port 5 n
+rlabel metal3 10662 -11620 10662 -11620 1 clk7
+port 6 n
+rlabel metal3 10598 -9530 10598 -9530 1 clk6
+port 7 n
+rlabel metal3 10508 -5460 10508 -5460 1 clk4
+port 9 n
+rlabel metal3 10596 -3378 10596 -3378 1 clk3
+port 10 n
+rlabel metal3 10542 -1308 10542 -1308 1 clk2
+rlabel metal3 10558 -1248 10558 -1248 1 clk2
+port 11 n
+rlabel metal3 10596 870 10596 870 1 clk1
+port 12 n
+rlabel metal2 10608 1070 10608 1070 1 in1
+port 13 n
+rlabel metal2 10558 -1020 10558 -1020 1 in2
+port 14 n
+rlabel metal2 10642 -3114 10642 -3114 1 in3
+port 15 n
+rlabel metal2 10592 -5196 10592 -5196 1 in4
+port 16 n
+rlabel metal2 10642 -7296 10642 -7296 1 in5
+port 17 n
+rlabel metal2 10622 -9374 10622 -9374 1 in6
+port 18 n
+rlabel metal2 10632 -11450 10632 -11450 1 in7
+port 19 n
+rlabel metal3 10584 -7528 10584 -7528 1 clk5
+port 20 n
+rlabel metal3 10584 -5456 10584 -5456 1 clk4
+port 21 n
+<< end >>

@@ -1,0 +1,155 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698765072
+<< locali >>
+rect -117 993 890 1009
+rect -117 956 -102 993
+rect 873 956 890 993
+rect -117 937 890 956
+rect -114 1 893 17
+rect -114 -36 -89 1
+rect 886 -36 893 1
+rect -114 -55 893 -36
+<< viali >>
+rect -102 956 873 993
+rect -89 -36 886 1
+<< metal1 >>
+rect -117 1007 890 1009
+rect -117 993 -34 1007
+rect 28 993 890 1007
+rect -117 956 -102 993
+rect 873 956 890 993
+rect -117 955 -34 956
+rect 28 955 890 956
+rect -117 937 890 955
+rect 178 868 211 873
+rect -202 834 227 868
+rect 67 688 77 752
+rect 132 688 142 752
+rect 71 166 81 232
+rect 136 166 146 232
+rect 178 84 211 834
+rect 269 540 304 777
+rect 464 540 499 779
+rect 268 493 499 540
+rect 268 439 291 493
+rect 350 486 499 493
+rect 350 439 385 486
+rect 268 432 385 439
+rect 444 432 499 486
+rect 268 397 499 432
+rect 269 167 304 397
+rect 464 169 499 397
+rect 560 116 593 872
+rect 629 698 639 758
+rect 692 698 702 758
+rect 625 167 635 233
+rect 690 167 700 233
+rect 530 62 540 116
+rect 624 62 634 116
+rect -114 7 893 17
+rect -114 3 898 7
+rect -114 1 745 3
+rect 807 1 898 3
+rect -114 -36 -89 1
+rect 886 -36 898 1
+rect -114 -49 745 -36
+rect 807 -42 898 -36
+rect 807 -49 893 -42
+rect -114 -55 893 -49
+<< via1 >>
+rect -34 993 28 1007
+rect -34 956 28 993
+rect -34 955 28 956
+rect 77 688 132 752
+rect 81 166 136 232
+rect 291 439 350 493
+rect 385 432 444 486
+rect 639 698 692 758
+rect 635 167 690 233
+rect 540 62 624 116
+rect 745 1 807 3
+rect 745 -36 807 1
+rect 745 -49 807 -36
+<< metal2 >>
+rect -34 1007 28 1017
+rect -34 945 28 955
+rect -13 205 15 945
+rect 96 768 674 777
+rect 96 762 692 768
+rect 77 758 692 762
+rect 77 752 639 758
+rect 132 699 639 752
+rect 692 701 789 729
+rect 639 688 692 698
+rect 77 678 132 688
+rect 291 495 352 505
+rect 389 496 450 498
+rect 291 423 352 433
+rect 385 488 450 496
+rect 385 486 389 488
+rect 385 426 389 432
+rect 385 422 450 426
+rect 389 416 450 422
+rect 96 243 674 245
+rect 96 242 690 243
+rect 81 233 690 242
+rect 81 232 635 233
+rect -13 177 81 205
+rect 136 167 635 232
+rect 81 156 136 166
+rect 635 157 690 167
+rect 540 116 624 126
+rect -217 84 540 112
+rect 540 52 624 62
+rect 761 13 789 701
+rect 745 3 807 13
+rect 745 -59 807 -49
+<< via2 >>
+rect 291 493 352 495
+rect 291 439 350 493
+rect 350 439 352 493
+rect 291 433 352 439
+rect 389 486 450 488
+rect 389 432 444 486
+rect 444 432 450 486
+rect 389 426 450 432
+<< metal3 >>
+rect 271 499 463 508
+rect 271 495 950 499
+rect 271 433 291 495
+rect 352 488 950 495
+rect 352 433 389 488
+rect 271 426 389 433
+rect 450 438 950 488
+rect 450 426 463 438
+rect 271 410 463 426
+use sky130_fd_pr__nfet_01v8_MKW48F  sky130_fd_pr__nfet_01v8_MKW48F_0 ~/layout_files/differential_amplifier
+timestamp 1698155087
+transform 1 0 579 0 1 207
+box -246 -260 246 260
+use sky130_fd_pr__nfet_01v8_SMGLWN#0  sky130_fd_pr__nfet_01v8_SMGLWN_0
+timestamp 1697349580
+transform 1 0 193 0 1 207
+box -246 -260 246 260
+use sky130_fd_pr__pfet_01v8_lvt_TM5SY6  sky130_fd_pr__pfet_01v8_lvt_TM5SY6_0 ~/layout_files/differential_amplifier
+timestamp 1698622305
+transform 1 0 579 0 1 738
+box -246 -269 246 269
+use sky130_fd_pr__pfet_01v8_lvt_TZF6Y6  sky130_fd_pr__pfet_01v8_lvt_TZF6Y6_0 ~/layout_files/differential_amplifier
+timestamp 1698622305
+transform 1 0 193 0 1 738
+box -246 -269 246 269
+<< labels >>
+rlabel metal1 -182 845 -182 845 1 vin1
+port 1 n
+rlabel metal2 -181 91 -181 91 1 vin2
+port 2 n
+rlabel metal1 -107 -42 -107 -42 1 gnd
+port 3 n
+rlabel metal1 -106 945 -106 945 1 Vdd
+port 4 n
+rlabel metal3 912 462 912 462 1 Vout
+port 5 n
+<< end >>

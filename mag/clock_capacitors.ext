@@ -1,0 +1,550 @@
+timestamp 1698482903
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__cap_mim_m3_1_MH6KF8 sky130_fd_pr__cap_mim_m3_1_MH6KF8_3 -1 0 21206 0 1 -3076
+use sky130_fd_pr__cap_mim_m3_1_MH6KF8 sky130_fd_pr__cap_mim_m3_1_MH6KF8_2 1 0 5052 0 1 -2796
+use sky130_fd_pr__cap_mim_m3_1_MH6KF8 sky130_fd_pr__cap_mim_m3_1_MH6KF8_1 1 0 8830 0 1 -2176
+use clock clock_0 0 -1 12414 1 0 -6496
+use sky130_fd_pr__cap_mim_m3_1_MH6KF8 sky130_fd_pr__cap_mim_m3_1_MH6KF8_0 -1 0 16844 0 1 -2266
+use pmos_cp1 pmos_cp1_0 1 0 12252 0 1 -82
+use capacitors_8 capacitors_8_1 -1 0 23792 0 1 14836
+use capacitors_8 capacitors_8_0 1 0 1291 0 1 14846
+port "gnd" 39 18556 -5038 18556 -5038 m5
+port "vdd" 38 862 -3106 862 -3106 m4
+port "clk_in" 33 12474 -6950 12474 -6950 m3
+port "input1" 34 12088 15446 12088 15446 m3
+port "input2" 35 12964 15418 12964 15418 m3
+port "clk" 31 11752 -322 11752 -322 m1
+port "clkb" 32 13296 -304 13296 -302 m1
+port "out" 30 12552 772 12552 772 m1
+node "gnd" 1 8255.51 18556 -5038 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9844740 34552 0 0
+node "vdd" 1 8227.29 862 -3106 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9395288 34218 0 0 0 0
+node "clk_in" 0 191.143 12474 -6950 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26928 892 0 0 0 0 0 0
+node "input1" 0 10724.7 12088 15446 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9525738 53272 0 0 0 0 0 0
+node "input2" 0 11092.4 12964 15418 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10030603 54554 0 0 0 0 0 0
+node "m2_9818_n1138#" 7 1811.75 9818 -1138 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 307954 8074 130696 2356 0 0 0 0 0 0
+node "m2_11956_1284#" 3 510.733 11956 1284 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71552 2856 0 0 0 0 0 0 0 0
+node "m2_11886_3372#" 3 563.31 11886 3372 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70616 2820 0 0 0 0 0 0 0 0
+node "m2_11909_5456#" 3 573.319 11909 5456 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71916 2870 0 0 0 0 0 0 0 0
+node "m2_11938_7540#" 3 570.517 11938 7540 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71552 2856 0 0 0 0 0 0 0 0
+node "m2_11886_9626#" 4 616.957 11886 9626 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77584 3088 0 0 0 0 0 0 0 0
+node "m2_11892_11712#" 4 615.356 11892 11712 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77376 3080 0 0 0 0 0 0 0 0
+node "m2_11726_13798#" 4 685.017 11726 13798 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86424 3428 0 0 0 0 0 0 0 0
+node "m2_11778_15884#" 4 685.017 11778 15884 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86424 3428 0 0 0 0 0 0 0 0
+node "clk" 8 13611.7 11752 -322 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4411360 28972 1823136 9872 1864896 10800 2583120 9992 0 0 0 0
+node "clkb" 8 13561.2 13296 -304 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4294350 28252 1975068 10444 2070882 11430 2423172 9372 0 0 0 0
+node "m1_12416_n262#" 12 2133.54 12416 -262 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27776 1020 227152 8800 112476 2700 0 0 0 0 0 0
+node "out" 1 87.1699 12552 772 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5984 420 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "input1" "m2_11886_9626#" 290.305
+cap "m2_9818_n1138#" "m2_11956_1284#" 13.9356
+cap "clk" "m2_11956_1284#" 0.0200668
+cap "out" "m1_12416_n262#" 1.77508
+cap "input2" "m2_11956_1284#" 287.726
+cap "input1" "m2_11956_1284#" 242.27
+cap "m2_11778_15884#" "input2" 129.528
+cap "m2_11778_15884#" "input1" 110.782
+cap "input2" "m2_11892_11712#" 326.401
+cap "m2_11892_11712#" "input1" 287.464
+cap "clk" "m2_9818_n1138#" 582.743
+cap "clkb" "m2_11956_1284#" 0.0494298
+cap "input2" "m1_12416_n262#" 302.138
+cap "input2" "m2_11938_7540#" 312.769
+cap "m2_11938_7540#" "input1" 265.39
+cap "out" "input2" 4.1259
+cap "out" "input1" 4.21016
+cap "input2" "m2_9818_n1138#" 0.730874
+cap "m2_9818_n1138#" "input1" 397.263
+cap "input2" "m2_11909_5456#" 307.723
+cap "m2_11909_5456#" "input1" 279.377
+cap "clk" "input1" 782.121
+cap "clkb" "m1_12416_n262#" 1023.98
+cap "clk" "vdd" 156.465
+cap "input2" "input1" 2903.36
+cap "clkb" "clk" 14.5547
+cap "clkb" "gnd" 32.7976
+cap "m2_11886_3372#" "input2" 295.978
+cap "m2_11886_3372#" "input1" 290.305
+cap "m2_11726_13798#" "input2" 327.927
+cap "m2_11726_13798#" "input1" 330.536
+cap "m2_11956_1284#" "m1_12416_n262#" 29.5583
+cap "clkb" "input2" 1054.3
+cap "out" "m2_11956_1284#" 0.403817
+cap "input2" "m2_11886_9626#" 326.016
+cap "clock_0/sky130_fd_pr__pfet_01v8_29EZRJ_3/a_n15_n152#" "clock_0/vdd" 0.306421
+cap "clock_0/clk_in" "clock_0/vdd" 41.3791
+cap "clock_0/sky130_fd_pr__nfet_01v8_5ACVEW_0/a_n173_n42#" "clock_0/vdd" -0.13236
+cap "clock_0/clk_in" "clock_0/sky130_fd_pr__nfet_01v8_5ACVEW_0/a_n173_n42#" 20.5902
+cap "clock_0/clk_in" "clock_0/sky130_fd_pr__pfet_01v8_29EZRJ_1/a_n15_n152#" 0.61673
+cap "clock_0/sky130_fd_pr__nfet_01v8_5ACVEW_0/a_n173_n42#" "clock_0/vdd" -1.4292
+cap "clock_0/clk_in" "clock_0/sky130_fd_pr__nfet_01v8_5ACVEW_0/a_n173_n42#" 12.4927
+cap "clock_0/clk_in" "clock_0/vdd" 0.0257564
+cap "vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" 0.453663
+cap "vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" 4.81494
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" "vdd" 43.4898
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" "vdd" 1.58766
+cap "vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" 4.29441
+cap "vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" 5.18771
+cap "clock_0/sky130_fd_pr__pfet_01v8_FXZ64Q_0/a_n15_n152#" "clock_0/vdd" 1.74933
+cap "clock_0/sky130_fd_pr__pfet_01v8_FXZ64Q_2/a_n15_n152#" "clock_0/vdd" 0.474559
+cap "clock_0/sky130_fd_pr__pfet_01v8_29EZRJ_3/a_n15_n152#" "clock_0/vdd" 0.623515
+cap "clock_0/sky130_fd_pr__pfet_01v8_FXZ64Q_1/a_n15_n152#" "clock_0/vdd" 1.76437
+cap "clock_0/sky130_fd_pr__nfet_01v8_5ACVEW_0/a_n173_n42#" "clock_0/sky130_fd_pr__pfet_01v8_29EZRJ_1/a_n15_n152#" 0.921526
+cap "clock_0/a_1394_n918#" "clock_0/sky130_fd_pr__nfet_01v8_5ACVEW_0/a_n173_n42#" 1.11166
+cap "clock_0/a_1192_n918#" "clock_0/sky130_fd_pr__nfet_01v8_5ACVEW_0/a_n173_n42#" 1.06427
+cap "clock_0/vdd" "clock_0/sky130_fd_pr__nfet_01v8_5ACVEW_0/a_n173_n42#" 0.460296
+cap "clock_0/gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 3.00019
+cap "clock_0/gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" 0.327397
+cap "gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 3.10132
+cap "gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" 0.512808
+cap "gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/m3_n1086_n940#" 23.5673
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/c1_n1046_n900#" "gnd" 13.3525
+cap "gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/c1_n1046_n900#" 31.8203
+cap "gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/m3_n1086_n940#" 15.4256
+cap "vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" 4.81494
+cap "vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" 0.497693
+cap "vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" 2.97765
+cap "vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" 43.4898
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" "vdd" 4.2646
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" "vdd" 5.18771
+cap "clock_0/vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 42.3952
+cap "m1_12416_n262#" "clock_0/gnd" 22.3593
+cap "clock_0/gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 23.171
+cap "clock_0/gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" 0.185717
+cap "gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" 0.290892
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" "gnd" 2.1429
+cap "gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/m3_n1086_n940#" 21.7879
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/c1_n1046_n900#" "gnd" 6.28566
+cap "gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/m3_n1086_n940#" 29.9873
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/c1_n1046_n900#" "gnd" 14.9794
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" 1.18619
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" 1045.54
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/c1_n1046_n900#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" -11.4629
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/c1_n1046_n900#" 210.931
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/c1_n1046_n900#" "m2_9818_n1138#" -0.508588
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/c1_n1046_n900#" 185.637
+cap "pmos_cp1_0/a_328_n278#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 83.4848
+cap "pmos_cp1_0/a_328_n278#" "clock_0/clk" -1.34138
+cap "clock_0/vdd" "pmos_cp1_0/a_328_n278#" 7.39024
+cap "clock_0/vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 186.996
+cap "pmos_cp1_0/a_164_n184#" "clock_0/gnd" 77.071
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" "clock_0/gnd" 72.9081
+cap "input2" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" 1.15683
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" -19.9786
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" -45.7824
+cap "input2" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" 1.55197
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/c1_n1046_n900#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/m3_n1086_n940#" -4.44563
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/c1_n1046_n900#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/m3_n1086_n940#" 1051.08
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n73_n42#" 0.236349
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "vdd" -0.965784
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/a_n274_130#" 2.02696
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#" 0.297671
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 0.297143
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/a_n274_130#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 9.05471
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n73_n42#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 158.686
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/in1" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 1.58851
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n73_n42#" 51.073
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 0.671187
+cap "clk" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" 1.70378
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 175.166
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_n530_76#" 3.5891
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 50.1075
+cap "clk" "input1" 0.929336
+cap "clk" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 344.242
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 84.7748
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n162_206#" 0.00791776
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" 0.234652
+cap "input1" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 16.9985
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "clk" 0.00216003
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/w_1358_2156#" 0.000172892
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1596_1398#" 2.05275
+cap "clk" "input1" 0.390772
+cap "m2_9818_n1138#" "clk" -0.420717
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" "clk" 310.291
+cap "input1" "clk" 1.53356
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1504_1398#" 61.3201
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "clk" 0.0082934
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_7758_838#" "clk" 0.611111
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m3_7758_166#" "clk" 0.604433
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" "clk" 8.57621
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" "input1" 64.0276
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396#" "clk" 0.169886
+cap "clock_0/vdd" "capacitors_8_0/clk8" 9.2246
+cap "clock_0/vdd" "pmos_cp1_0/a_328_n278#" 83.8754
+cap "pmos_cp1_0/a_328_n278#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_7758_838#" 0.053215
+cap "capacitors_8_0/clk8" "clock_0/clk" 23.7385
+cap "pmos_cp1_0/a_328_n278#" "clock_0/clk" -1.10801
+cap "clock_0/vdd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 19.8139
+cap "clock_0/clk" "capacitors_8_0/in8" 0.0992905
+cap "clock_0/clk" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 4.16064
+cap "clock_0/vdd" "clock_0/clk" 25.4101
+cap "pmos_cp1_0/a_328_n278#" "capacitors_8_0/clk8" 27.685
+cap "clock_0/clk" "clock_0/vdd" 0.0340692
+cap "clock_0/clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_7758_838#" 2.13889
+cap "capacitors_8_0/clk8" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 1.20417
+cap "pmos_cp1_0/a_328_n278#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 129.725
+cap "pmos_cp1_0/a_328_n278#" "capacitors_8_0/in8" 24.1947
+cap "clock_0/clk" "clock_0/inverter_27x_0/a_n1140_2042#" 4.07554
+cap "clock_0/clk" "clock_0/vdd" 6.91688
+cap "clock_0/inverter_27x_0/a_n1140_2042#" "pmos_cp1_0/a_328_n278#" 19.0885
+cap "clock_0/vdd" "clock_0/clk" 146.652
+cap "pmos_cp1_0/a_328_n278#" "clock_0/vdd" 8.19257
+cap "clock_0/vdd" "pmos_cp1_0/a_328_n278#" 77.873
+cap "capacitors_8_0/clk8" "pmos_cp1_0/a_164_n184#" 1.20935
+cap "clock_0/inverter_27x_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n1041_n42#" "pmos_cp1_0/a_328_n278#" 33.4589
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_0/clk8" 3.11714
+cap "clock_0/vdd" "clock_0/clkb" 0.140791
+cap "pmos_cp1_0/w_n14_n142#" "pmos_cp1_0/a_164_n184#" 20.748
+cap "clock_0/clk" "clock_0/vdd" -0.166139
+cap "capacitors_8_1/in8" "pmos_cp1_0/a_164_n184#" 0.0112833
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_1/in8" 0.0423582
+cap "capacitors_8_0/clk8" "clock_0/clk" 17.1729
+cap "clock_0/clk" "pmos_cp1_0/a_164_n184#" 18.2378
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/clk" 2.63967
+cap "capacitors_8_0/clk8" "pmos_cp1_0/a_328_n278#" 9.42248
+cap "pmos_cp1_0/a_328_n278#" "pmos_cp1_0/a_164_n184#" 87.0289
+cap "capacitors_8_1/clk8" "capacitors_8_0/clk8" -2.01676
+cap "pmos_cp1_0/w_n14_n142#" "pmos_cp1_0/a_328_n278#" -5.90132
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_1/clk8" 3.17575
+cap "clock_0/clk" "capacitors_8_1/in8" 0.05457
+cap "capacitors_8_0/clk8" "clock_0/inverter_27x_0/a_n1140_2042#" 14.3955
+cap "clock_0/inverter_27x_0/a_n1140_2042#" "pmos_cp1_0/a_164_n184#" 8.93591
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/inverter_27x_0/a_n1140_2042#" 5.2167
+cap "pmos_cp1_0/a_328_n278#" "capacitors_8_1/in8" 12.8297
+cap "capacitors_8_0/clk8" "clock_0/vdd" 7.01796
+cap "clock_0/vdd" "capacitors_8_0/clk8" 79.6344
+cap "clock_0/clk" "pmos_cp1_0/a_328_n278#" 62.2083
+cap "capacitors_8_0/clk8" "clock_0/inverter_27x_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n1041_n42#" 1.28349
+cap "clock_0/inverter_27x_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n1041_n42#" "pmos_cp1_0/a_164_n184#" 1.19382
+cap "capacitors_8_1/clk8" "pmos_cp1_0/a_328_n278#" 0.00187385
+cap "clock_0/clk" "clock_0/clkb" -3.5081
+cap "pmos_cp1_0/a_328_n278#" "clock_0/clkb" 0.127391
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/inverter_27x_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n1041_n42#" 1.88029
+cap "pmos_cp1_0/a_164_n184#" "clock_0/a_2432_n962#" 22.2833
+cap "pmos_cp1_0/a_328_n278#" "clock_0/clkb" 31.7087
+cap "clock_0/clkb" "clock_0/vdd" 18.3837
+cap "pmos_cp1_0/a_164_n184#" "pmos_cp1_0/w_n14_n142#" 41.058
+cap "pmos_cp1_0/a_164_n184#" "clock_0/gnd" 70.5111
+cap "clock_0/gnd" "pmos_cp1_0/w_n14_n142#" 4.86493
+cap "capacitors_8_0/clk8" "capacitors_8_1/clk8" -2.06827
+cap "clock_0/clk" "clock_0/clkb" -3.5081
+cap "capacitors_8_1/clk8" "clock_0/vdd" 10.0339
+cap "clock_0/gnd" "pmos_cp1_0/a_164_n184#" 21.1743
+cap "pmos_cp1_0/a_328_n278#" "capacitors_8_1/clk8" 3.39068
+cap "capacitors_8_1/in8" "pmos_cp1_0/w_n14_n142#" 0.0164955
+cap "capacitors_8_1/clk8" "clock_0/vdd" 3.33731
+cap "clock_0/clkb" "capacitors_8_1/clk8" 21.1795
+cap "clock_0/vdd" "clock_0/a_2432_n962#" 2.27374e-13
+cap "capacitors_8_1/in8" "pmos_cp1_0/a_164_n184#" 9.41369
+cap "pmos_cp1_0/a_328_n278#" "clock_0/a_2432_n962#" 2.46334
+cap "pmos_cp1_0/a_328_n278#" "pmos_cp1_0/w_n14_n142#" -3.92144
+cap "clock_0/clkb" "clock_0/a_2432_n962#" 6.17216
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/clkb" 25.282
+cap "pmos_cp1_0/a_164_n184#" "clock_0/vdd" 12.5448
+cap "clock_0/clkb" "clock_0/gnd" 83.4312
+cap "clock_0/gnd" "clock_0/vdd" -0.105556
+cap "pmos_cp1_0/a_328_n278#" "pmos_cp1_0/a_164_n184#" 67.4165
+cap "pmos_cp1_0/a_164_n184#" "clock_0/vdd" 2.09847
+cap "pmos_cp1_0/a_164_n184#" "clock_0/clkb" 53.1062
+cap "clock_0/gnd" "clock_0/clkb" 1.02883
+cap "capacitors_8_1/clk8" "clock_0/a_2432_n962#" 17.0659
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_1/clk8" 16.0075
+cap "capacitors_8_1/in8" "pmos_cp1_0/a_328_n278#" 0.0112428
+cap "capacitors_8_1/clk8" "clock_0/gnd" 91.4486
+cap "capacitors_8_1/in8" "clock_0/clkb" 0.12207
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/clk8" 15.8635
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/a_2432_n962#" 19.5683
+cap "clock_0/gnd" "capacitors_8_1/clk8" 5.84226
+cap "clock_0/clkb" "clock_0/vdd" 10.8845
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/clk8" 19.488
+cap "capacitors_8_1/clk8" "clock_0/clkb" 23.2897
+cap "clock_0/gnd" "capacitors_8_1/clk8" 61.5836
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/capacitor_8_7/capacitor_7_0/m1_7758_838#" 0.0984904
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 0.14882
+cap "clock_0/clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/m1_7758_838#" 2.79267
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/in8" 22.4936
+cap "clock_0/clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 0.125216
+cap "clock_0/clkb" "capacitors_8_1/in8" 0.223536
+cap "clock_0/gnd" "pmos_cp1_0/a_164_n184#" 84.1571
+cap "clock_0/clkb" "clock_0/vdd" 0.371792
+cap "clock_0/gnd" "clock_0/clkb" 56.0153
+cap "input2" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 39.7869
+cap "clock_0/gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 32.9392
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 7.46753
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 7.3487
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 8.58814
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 57.1304
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 0.755141
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/sky130_fd_pr__nfet_01v8_XJUN3E_0/a_207_64#" 0.175858
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/m2_n739_1036#" 0.00458066
+cap "clkb" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 247.973
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" "input2" 37.3669
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 85.2849
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_514_134#" 2.08757
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/w_n260_286#" "clkb" 0.000177555
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n162_206#" 0.0081515
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "clkb" 0.00620588
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" "clkb" 0.24902
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" "clkb" 418.597
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 51.3944
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/m1_n530_76#" "clkb" 7.74914
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "clkb" 43.8806
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1504_1398#" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 196.948
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/w_228_1012#" 0.303122
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n15_n68#" 10.978
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_1/a_n15_n68#" 0.30342
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/in1" 1.60625
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_591_n42#" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 171.912
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n753_n42#" -0.142525
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" -25.9152
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n73_n42#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 5.61347
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/a_n274_130#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 2.87606
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n73_n42#" 61.8943
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 0.192513
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/a_n274_130#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 9.36766
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/in1" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 1.52644
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n73_n42#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 116.472
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n73_n42#" 124.807
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "clk" 195.455
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n849_n42#" 2.51418
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_n530_76#" "clk" 3.21334
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_n1157_1326#" "clk" 3.33256
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_n530_76#" -3.55271e-15
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_495_n42#" "input1" 9.01827
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_495_n42#" 4.23989
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "input1" 333.787
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 84.6973
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1596_1398#" "input1" 2.11208
+cap "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 1.14804
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/w_5326_1416#" "input1" 1.41831
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "input1" 0.140239
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n162_206#" 1.81029
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" "clk" 0.223786
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" 1.59392
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 120.721
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1596_1398#" 2.30101
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n162_206#" "input1" 2.38625
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" "input1" 0.415958
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" "input1" 4.00754
+cap "input1" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 348.207
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "clk" 0.0254656
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396#" "clk" 1.4354
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1596_1398#" 0.115991
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1504_1398#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/m3_n1086_n940#" 3.07717
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_7758_838#" "clk" 0.611111
+cap "clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 11.1406
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396#" "input1" 3.9926
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "input1" 0.523647
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1504_1398#" "clk" 89.6168
+cap "input1" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1596_1398#" 0.150078
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m3_7758_166#" "input1" 7.62887
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/vdd" "input1" 0.40057
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_7758_838#" "input1" 0.103066
+cap "input1" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 35.2916
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1504_1398#" "input1" 249.027
+cap "capacitors_8_0/clk8" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 1.29079
+cap "capacitors_8_0/clk8" "capacitors_8_0/in8" 1.8316
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" "pmos_cp1_0/a_328_n278#" 1.67152
+cap "capacitors_8_0/in8" "pmos_cp1_0/a_328_n278#" 24.1947
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_7758_838#" "pmos_cp1_0/a_328_n278#" 0.18239
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_7758_838#" "capacitors_8_0/clk8" 0.360731
+cap "clock_0/clk" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 1.85025
+cap "clock_0/clk" "capacitors_8_0/in8" 0.00203632
+cap "capacitors_8_0/capacitor_8_7/capacitor_7_0/m1_7758_838#" "clock_0/clk" 2.13889
+cap "capacitors_8_1/clk8" "capacitors_8_0/clk8" -41.2778
+cap "capacitors_8_0/clk8" "capacitors_8_1/in8" 33.4659
+cap "capacitors_8_0/clk8" "pmos_cp1_0/a_164_n184#" 8.54483
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_0/clk8" 11.8728
+cap "capacitors_8_0/clk8" "clock_0/inverter_27x_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_303_n42#" 0.0651602
+cap "pmos_cp1_0/a_328_n278#" "capacitors_8_0/clk8" 0.295513
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/in8" 6.36746
+cap "capacitors_8_1/clk8" "pmos_cp1_0/w_n14_n142#" 1.17487
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_1/in8" 3.76703
+cap "pmos_cp1_0/w_n14_n142#" "pmos_cp1_0/a_164_n184#" -0.832962
+cap "pmos_cp1_0/a_328_n278#" "capacitors_8_1/in8" 13.1129
+cap "pmos_cp1_0/w_n14_n142#" "pmos_cp1_0/a_164_n184#" 0.301268
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_0/clk8" 0.0117045
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_1/in8" 12.3718
+cap "clock_0/a_2432_n962#" "capacitors_8_1/clk8" 0.10726
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/clkb" 4.07356
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/in8" 9.53325
+cap "capacitors_8_1/in8" "capacitors_8_0/clk8" 0.11021
+cap "capacitors_8_1/in8" "pmos_cp1_0/a_328_n278#" 6.22817
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/gnd" 0.650962
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/a_2432_n962#" 1.28435
+cap "pmos_cp1_0/w_n14_n142#" "clock_0/vdd" 0.0539899
+cap "pmos_cp1_0/w_n14_n142#" "capacitors_8_1/clk8" 101.994
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/clk8" 0.228545
+cap "capacitors_8_1/clk8" "capacitors_8_0/clk8" -41.2654
+cap "capacitors_8_1/in8" "capacitors_8_1/clk8" -8.62931
+cap "capacitors_8_1/clk8" "pmos_cp1_0/a_328_n278#" 10.4024
+cap "clock_0/clkb" "capacitors_8_1/clk8" 0.0307079
+cap "pmos_cp1_0/a_164_n184#" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 0.768061
+cap "clock_0/clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/m1_7758_838#" 2.79267
+cap "capacitors_8_1/clk8" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 2.5827
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/m1_7758_838#" "pmos_cp1_0/a_164_n184#" 0.0469264
+cap "clock_0/clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 3.94492
+cap "capacitors_8_1/clk8" "capacitors_8_1/capacitor_8_7/capacitor_7_0/m1_7758_838#" 0.687257
+cap "capacitors_8_1/in8" "pmos_cp1_0/a_164_n184#" 22.4936
+cap "capacitors_8_1/in8" "capacitors_8_1/clk8" 2.80164
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n162_206#" 0.337451
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_514_134#" 0.176548
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 0.755141
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/m2_n739_1036#" 0.387223
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 36.1192
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 7.57564
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 14.3913
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 320.436
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/m2_n739_1036#" 0.0198597
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_798_652#" 5.07532
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" 9.8654
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/out" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" -1.13687e-13
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" 0.139115
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_514_134#" 0.333354
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 95.2417
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n162_206#" 0.415962
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/vdd" 0.39509
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_798_652#" 1.4416
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" 0.0685619
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" "input2" 6.39707
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" "input2" 0.477133
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "clkb" 137.456
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" 0.651564
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/w_n260_286#" "input2" 1.39022
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" "clkb" 2.0507
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" "clkb" 0.197455
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n162_206#" "input2" 3.04547
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_514_134#" "input2" 2.37639
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/m2_n739_1036#" "input2" 0.139317
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n162_206#" "clkb" 1.97411
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_514_134#" "clkb" 2.30087
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "input2" 395.425
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" "clkb" 4.45993
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" 416.284
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" 11.622
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "clkb" 94.4295
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "input2" 246.679
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" 1.91495
+cap "clkb" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_1215_n130#" 2.35511
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552#" 5.58415
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/m1_n530_76#" "clkb" 7.74914
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/gnd" "clkb" 87.7495
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_1215_n130#" 0.967056
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1504_1398#" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" 225.827
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/in1" 1.5435
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_591_n42#" 117.426
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_1/a_n15_n68#" 0.21574
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n15_n68#" 12.1328
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n15_n68#" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_591_n42#" 1.42109e-14
+cap "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n753_n42#" -1.00658
+cap "input1" "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396#" 0.000530556
+cap "input2" "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_798_652#" 0.000478965
+cap "capacitors_8_0/in7" "capacitors_8_0/clk7" 1.13687e-13
+cap "capacitors_8_0/capacitor_8_6/capacitor_7_0/m1_7758_838#" "capacitors_8_0/clk7" -2.88658e-15
+cap "capacitors_8_0/capacitor_8_6/capacitor_7_0/buffer_and_gate_0/out" "capacitors_8_0/clk7" 2.02061e-14
+cap "capacitors_8_1/in7" "capacitors_8_0/clk7" 0.520752
+cap "capacitors_8_0/clk7" "capacitors_8_1/in7" 0.101518
+cap "capacitors_8_1/clk7" "capacitors_8_1/in7" -5.8943
+cap "capacitors_8_1/clk7" "capacitors_8_1/capacitor_8_6/capacitor_7_0/buffer_and_gate_0/out" -1.84297e-14
+cap "capacitors_8_1/clk7" "capacitors_8_1/capacitor_8_6/capacitor_7_0/m1_7758_838#" 6.66134e-16
+cap "capacitors_8_0/in6" "capacitors_8_0/clk7" 9.76996e-15
+cap "capacitors_8_0/capacitor_8_5/capacitor_7_0/m1_7108_838#" "capacitors_8_0/clk7" 3.44169e-15
+cap "capacitors_8_1/in6" "capacitors_8_0/clk7" 17.1802
+cap "capacitors_8_1/clk7" "capacitors_8_1/in6" -11.1606
+cap "capacitors_8_0/clk7" "capacitors_8_1/in6" 0.0942337
+cap "capacitors_8_0/clk4" "capacitors_8_0/in5" -4.70735e-14
+cap "capacitors_8_0/capacitor_8_4/capacitor_7_0/m1_7108_838#" "capacitors_8_0/clk4" -2.84217e-14
+cap "capacitors_8_0/clk4" "capacitors_8_1/in5" 24.7691
+cap "capacitors_8_1/in5" "capacitors_8_0/clk4" 0.102431
+cap "capacitors_8_1/in5" "capacitors_8_1/clk4" -21.2211
+cap "capacitors_8_1/clk4" "capacitors_8_1/in5" 1.13687e-13
+cap "capacitors_8_1/capacitor_8_4/capacitor_7_0/m1_7108_838#" "capacitors_8_1/clk4" 4.00791e-14
+cap "capacitors_8_0/clk4" "capacitors_8_0/capacitor_8_3/capacitor_7_0/m1_7108_838#" 6.10623e-16
+cap "capacitors_8_0/clk4" "capacitors_8_1/in4" 2.71368
+cap "capacitors_8_1/in4" "capacitors_8_1/clk4" -30.2721
+cap "capacitors_8_1/in4" "capacitors_8_0/clk4" 0.100172
+cap "capacitors_8_1/in4" "capacitors_8_1/clk4" 1.13687e-13
+cap "capacitors_8_0/clk3" "capacitors_8_0/in3" -1.13687e-13
+cap "capacitors_8_0/capacitor_8_2/capacitor_7_0/m1_7108_838#" "capacitors_8_0/clk3" -1.4988e-15
+cap "capacitors_8_0/clk3" "capacitors_8_1/in3" 4.08207
+cap "capacitors_8_1/clk3" "capacitors_8_1/in3" -32.0448
+cap "capacitors_8_0/clk3" "capacitors_8_1/in3" 0.100617
+cap "capacitors_8_1/capacitor_8_2/capacitor_7_0/m1_7108_838#" "capacitors_8_1/clk3" -7.77156e-15
+cap "capacitors_8_1/in3" "capacitors_8_1/clk3" -1.51879e-13
+cap "capacitors_8_0/in2" "capacitors_8_0/clk3" -1.13687e-13
+cap "capacitors_8_0/capacitor_8_1/capacitor_7_0/m1_7108_838#" "capacitors_8_0/clk3" 1.59317e-14
+cap "capacitors_8_0/clk3" "capacitors_8_1/in2" -24.289
+cap "capacitors_8_0/clk3" "capacitors_8_1/in2" 0.0835213
+cap "capacitors_8_1/clk3" "capacitors_8_1/in2" -20.5048
+cap "capacitors_8_1/capacitor_8_1/capacitor_7_0/m1_7108_838#" "capacitors_8_1/clk3" -9.99201e-16
+cap "capacitors_8_1/in2" "capacitors_8_1/clk3" -3.81917e-14
+cap "capacitors_8_1/in1" "capacitors_8_0/clk1" -20.6469
+cap "capacitors_8_1/clk1" "capacitors_8_0/clk1" 0.374872
+cap "capacitors_8_0/clk1" "capacitors_8_1/clk1" 0.374872
+cap "capacitors_8_1/in1" "capacitors_8_1/clk1" -34.6426
+merge "capacitors_8_1/gnd" "capacitors_8_1/VSUBS" -8254.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8847050 -31760 0 0
+merge "capacitors_8_1/VSUBS" "pmos_cp1_0/VSUBS"
+merge "pmos_cp1_0/VSUBS" "capacitors_8_0/VSUBS"
+merge "capacitors_8_0/VSUBS" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/VSUBS"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/VSUBS" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/VSUBS"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/VSUBS" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/VSUBS"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/VSUBS" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/VSUBS"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/VSUBS" "clock_0/gnd"
+merge "clock_0/gnd" "gnd"
+merge "gnd" "VSUBS"
+merge "capacitors_8_1/in3" "capacitors_8_0/in3" -189.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17244 -962 0 0 0 0 0 0 0 0
+merge "capacitors_8_0/in3" "m2_11892_11712#"
+merge "capacitors_8_1/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "capacitors_8_1/clk" -6915.29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1728784 -12764 -446076 -2692 -516138 -3294 -922646 -6172 0 0 0 0
+merge "capacitors_8_1/clk" "clock_0/clkb"
+merge "clock_0/clkb" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/c1_n1046_n900#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/c1_n1046_n900#"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/c1_n1046_n900#" "clkb"
+merge "clock_0/clk_in" "clk_in" -110.387 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5184 -288 0 0 0 0 0 0
+merge "capacitors_8_0/clk1" "capacitors_8_0/clk2" -8545.14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1590628 -22654 0 0 0 0 0 0
+merge "capacitors_8_0/clk2" "capacitors_8_0/clk3"
+merge "capacitors_8_0/clk3" "capacitors_8_0/clk4"
+merge "capacitors_8_0/clk4" "capacitors_8_0/clk5"
+merge "capacitors_8_0/clk5" "capacitors_8_0/clk6"
+merge "capacitors_8_0/clk6" "capacitors_8_0/clk7"
+merge "capacitors_8_0/clk7" "capacitors_8_0/clk8"
+merge "capacitors_8_0/clk8" "pmos_cp1_0/m1_14_56#"
+merge "pmos_cp1_0/m1_14_56#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/m3_n1086_n940#" "input1"
+merge "capacitors_8_0/capacitor_8_7/capacitor_7_0/buffer_and_gate_0/clk" "clock_0/clk" -8752.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2478236 -13572 -1326892 -5692 -1341922 -6206 -2147074 -9716 0 0 0 0
+merge "clock_0/clk" "capacitors_8_0/clk"
+merge "capacitors_8_0/clk" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/c1_n1046_n900#"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_1/c1_n1046_n900#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_2/c1_n1046_n900#" "clk"
+merge "capacitors_8_0/vdd" "clock_0/vdd" -7311.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6572371 -28559 0 0 0 0
+merge "clock_0/vdd" "vdd"
+merge "capacitors_8_1/in1" "capacitors_8_0/in1" -217.159 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20804 -1102 0 0 0 0 0 0 0 0
+merge "capacitors_8_0/in1" "m2_11778_15884#"
+merge "pmos_cp1_0/a_328_n278#" "m2_9818_n1138#" -507.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3717 -244 0 0 0 0 0 0 0 0
+merge "pmos_cp1_0/a_164_n184#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" -1430.12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27714 -1018 0 0 -10952 -444 0 0 0 0 0 0
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_0/m3_n1086_n940#" "m1_12416_n262#"
+merge "capacitors_8_1/in2" "capacitors_8_0/in2" -188.719 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -958 0 0 0 0 0 0 0 0
+merge "capacitors_8_0/in2" "m2_11726_13798#"
+merge "capacitors_8_1/in4" "capacitors_8_0/in4" -189.187 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17284 -962 0 0 0 0 0 0 0 0
+merge "capacitors_8_0/in4" "m2_11886_9626#"
+merge "capacitors_8_1/in5" "capacitors_8_0/in5" -150.99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12832 -770 0 0 0 0 0 0 0 0
+merge "capacitors_8_0/in5" "m2_11938_7540#"
+merge "capacitors_8_1/in6" "capacitors_8_0/in6" -123.628 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9844 -632 0 0 0 0 0 0 0 0
+merge "capacitors_8_0/in6" "m2_11909_5456#"
+merge "pmos_cp1_0/w_n14_n142#" "out" -35.8788 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -768 -112 0 0 0 0 0 0 0 0 0 0
+merge "capacitors_8_1/clk1" "capacitors_8_1/clk2" -8324.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1510535 -19880 0 0 0 0 0 0
+merge "capacitors_8_1/clk2" "capacitors_8_1/clk3"
+merge "capacitors_8_1/clk3" "capacitors_8_1/clk4"
+merge "capacitors_8_1/clk4" "capacitors_8_1/clk5"
+merge "capacitors_8_1/clk5" "capacitors_8_1/clk6"
+merge "capacitors_8_1/clk6" "capacitors_8_1/clk7"
+merge "capacitors_8_1/clk7" "capacitors_8_1/clk8"
+merge "capacitors_8_1/clk8" "pmos_cp1_0/m1_532_58#"
+merge "pmos_cp1_0/m1_532_58#" "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/m3_n1086_n940#"
+merge "sky130_fd_pr__cap_mim_m3_1_MH6KF8_3/m3_n1086_n940#" "input2"
+merge "capacitors_8_1/in7" "capacitors_8_0/in7" -140.905 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12220 -718 0 0 0 0 0 0 0 0
+merge "capacitors_8_0/in7" "m2_11886_3372#"
+merge "capacitors_8_1/in8" "capacitors_8_0/in8" -410.314 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15660 -898 0 0 0 0 0 0 0 0
+merge "capacitors_8_0/in8" "m2_11956_1284#"
