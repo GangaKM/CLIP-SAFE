@@ -1,0 +1,60 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+E {}
+L 4 -130 -50 130 -50 {}
+L 4 -130 130 130 130 {}
+L 4 -130 -50 -130 30 {}
+L 4 130 -50 130 30 {}
+L 4 -150 -40 -130 -40 {}
+L 4 -150 -20 -130 -20 {}
+L 4 -150 0 -130 0 {}
+L 4 -130 30 -130 130 {}
+L 4 130 30 130 100 {}
+L 4 130 100 130 130 {}
+L 7 0 -70 0 -50 {}
+L 7 0 130 0 150 {}
+L 7 130 -40 150 -40 {}
+L 7 130 -20 150 -20 {}
+L 7 130 0 150 0 {}
+L 7 130 20 150 20 {}
+L 7 130 50 150 50 {}
+L 7 130 70 150 70 {}
+L 7 130 90 150 90 {}
+L 7 130 110 150 110 {}
+B 5 -152.5 -42.5 -147.5 -37.5 {name=clk_in dir=in}
+B 5 -2.5 -72.5 2.5 -67.5 {name=vdd dir=inout}
+B 5 -2.5 147.5 2.5 152.5 {name=gnd dir=inout}
+B 5 147.5 -42.5 152.5 -37.5 {name=clkb dir=inout}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=in1 dir=in}
+B 5 147.5 -22.5 152.5 -17.5 {name=clk dir=inout}
+B 5 147.5 -2.5 152.5 2.5 {name=clkb_out dir=inout}
+B 5 147.5 17.5 152.5 22.5 {name=clk_out dir=inout}
+B 5 -152.5 -2.5 -147.5 2.5 {name=in2 dir=in}
+B 5 147.5 47.5 152.5 52.5 {name=clkb2 dir=inout}
+B 5 147.5 67.5 152.5 72.5 {name=clk2 dir=inout}
+B 5 147.5 87.5 152.5 92.5 {name=cap1 dir=inout}
+B 5 147.5 107.5 152.5 112.5 {name=cap2 dir=inout}
+T {@name} 135 -62 0 0 0.2 0.2 {}
+T {clk_in} -125 -44 0 0 0.2 0.2 {}
+T {vdd} -4 -45 3 1 0.2 0.2 {}
+T {gnd} 4 125 1 1 0.2 0.2 {}
+T {clkb} 125 -44 0 1 0.2 0.2 {}
+T {in1} -125 -24 0 0 0.2 0.2 {}
+T {clk} 125 -24 0 1 0.2 0.2 {}
+T {clkb_out} 125 -4 0 1 0.2 0.2 {}
+T {clk_out} 125 16 0 1 0.2 0.2 {}
+T {in2} -125 -4 0 0 0.2 0.2 {}
+T {clkb2} 125 46 0 1 0.2 0.2 {}
+T {clk2} 125 66 0 1 0.2 0.2 {}
+T {cap1} 125 86 0 1 0.2 0.2 {}
+T {cap2} 125 106 0 1 0.2 0.2 {}
