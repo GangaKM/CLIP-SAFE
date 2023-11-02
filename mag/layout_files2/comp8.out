@@ -1,0 +1,65 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Class integrator_full_new_compact.spice (0):  Merged 12 parallel devices.
+Class integrator_full_new1_xschem.spice (1):  Merged 7 parallel devices.
+Subcircuit summary:
+Circuit 1: integrator_full_new_compact.spi |Circuit 2: integrator_full_new1_xschem.spi 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (8->6)             |sky130_fd_pr__pfet_01v8 (8->6)             
+sky130_fd_pr__nfet_01v8 (19->10)           |sky130_fd_pr__nfet_01v8 (15->11) **Mismatc 
+sky130_fd_pr__pfet_01v8_lvt (4->3)         |sky130_fd_pr__pfet_01v8_lvt (4->3)         
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 20 **Mismatch**         |Number of devices: 21 **Mismatch**         
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: integrator_full_new_compact.spi |Circuit 2: integrator_full_new1_xschem.spi 
+
+---------------------------------------------------------------------------------------
+Net: VSUBS                                 |Net: Vbias                                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/2 = 3            
+  sky130_fd_pr__nfet_01v8/4 = 10           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: m1_2697_n1099#                        |Net: gnd                                   
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/4 = 11           
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: integrator_full_new_compact.spi |Circuit 2: integrator_full_new1_xschem.spi 
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8:6        |Instance: sky130_fd_pr__nfet_01v8:M4       
+  (1,3) = (18,18)                          |  (1,3) = (20,20)                          
+  2 = 18                                   |  2 = 20                                   
+  4 = 18                                   |  4 = 20                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:M26      
+                                           |  (1,3) = (20,4)                           
+                                           |  2 = 4                                    
+                                           |  4 = 20                                   
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Cells have no pins;  pin matching not needed.
+Device classes integrator_full_new_compact.spice and integrator_full_new1_xschem.spice are equivalent.
+
+Final result: Netlists do not match.

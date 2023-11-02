@@ -1,0 +1,130 @@
+magic
+tech sky130A
+timestamp 1698771642
+<< nwell >>
+rect 2663 717 2843 722
+rect 2663 708 2876 717
+rect 2694 686 2876 708
+<< poly >>
+rect -44 423 113 430
+rect -44 395 -32 423
+rect 99 395 113 423
+rect -44 386 113 395
+<< polycont >>
+rect -32 395 99 423
+<< locali >>
+rect -44 423 113 430
+rect -44 395 -32 423
+rect 99 395 113 423
+rect -44 386 113 395
+<< viali >>
+rect -32 395 99 423
+<< metal1 >>
+rect 1978 1007 2482 1010
+rect 2 984 2482 1007
+rect 2 738 60 984
+rect 2418 738 2482 984
+rect 2 722 2482 738
+rect 3543 440 3581 457
+rect 2722 435 2736 437
+rect 3083 435 3147 437
+rect -44 423 113 430
+rect -44 395 -32 423
+rect 99 395 113 423
+rect 2722 419 3147 435
+rect 2723 410 3147 419
+rect -44 386 113 395
+rect 55 263 2693 267
+rect 55 226 68 263
+rect 2680 226 2693 263
+rect 55 222 2693 226
+<< via1 >>
+rect 60 738 2418 984
+rect -32 395 99 423
+rect 68 226 2680 263
+<< metal2 >>
+rect 1978 1007 2482 1010
+rect 2 984 2482 1007
+rect 2 738 60 984
+rect 2418 738 2482 984
+rect 2 722 2482 738
+rect -42 459 2820 479
+rect -44 423 113 430
+rect -44 395 -32 423
+rect 99 395 113 423
+rect -44 386 113 395
+rect 55 263 2693 267
+rect 55 226 68 263
+rect 2680 226 2693 263
+rect 55 222 2693 226
+<< via2 >>
+rect 60 752 2418 970
+rect -32 395 99 423
+rect 68 226 2680 263
+<< metal3 >>
+rect 1978 1007 2482 1010
+rect 2 984 2482 1007
+rect 2 738 60 984
+rect 2418 738 2482 984
+rect 2 722 2482 738
+rect -58 423 113 430
+rect -58 395 -32 423
+rect 99 395 113 423
+rect -58 386 113 395
+rect -58 385 -27 386
+rect 55 264 2693 267
+rect 55 226 68 264
+rect 237 263 2693 264
+rect 2680 226 2693 263
+rect 55 222 2693 226
+<< via3 >>
+rect 60 970 2418 984
+rect 60 752 2418 970
+rect 60 738 2418 752
+rect 68 263 237 264
+rect 68 226 2680 263
+<< metal4 >>
+rect 1978 1008 2850 1010
+rect 1978 1007 3059 1008
+rect 2 984 3735 1007
+rect 2 738 60 984
+rect 2418 738 3735 984
+rect 2 722 3735 738
+rect 2555 720 3735 722
+rect 2810 717 3735 720
+rect 4 264 2752 270
+rect 4 226 68 264
+rect 237 263 2752 264
+rect 2680 226 2752 263
+rect 4 217 2752 226
+rect 4 45 68 217
+rect 2402 45 2752 217
+rect 4 -1 2752 45
+<< via4 >>
+rect 68 45 2402 217
+<< metal5 >>
+rect -4 270 2752 272
+rect -4 217 3724 270
+rect -4 45 68 217
+rect 2402 45 3724 217
+rect -4 -15 3724 45
+use and_gate  and_gate_0 ~/Desktop/charge_pumps2/layout_files
+timestamp 1698771642
+transform 1 0 2881 0 1 345
+box -342 -344 844 658
+use buffer  buffer_0 ~/Desktop/charge_pumps2/layout_files
+timestamp 1698771642
+transform 1 0 665 0 1 -388
+box -665 388 2095 1171
+<< labels >>
+rlabel metal2 41 469 41 469 1 in1
+port 1 n
+rlabel metal3 -53 409 -53 409 1 clk
+port 2 n
+rlabel via4 2308 121 2308 121 1 gnd
+port 3 n
+rlabel metal4 2673 899 2673 899 1 vdd
+port 4 n
+rlabel metal1 3551 444 3551 444 1 out
+port 5 n
+<< end >>

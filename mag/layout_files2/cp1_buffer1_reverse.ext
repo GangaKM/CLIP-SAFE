@@ -1,0 +1,550 @@
+timestamp 1698913416
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use pmos_decap_10 pmos_decap_10_6 1 0 3128 0 -1 772
+use pmos_decap_10 pmos_decap_10_5 1 0 2056 0 -1 770
+use nmos_decap_10 nmos_decap_10_2 0 1 1262 -1 0 4000
+use nmos_decap_10 nmos_decap_10_1 0 1 1262 -1 0 3040
+use nmos_decap_10 nmos_decap_10_0 0 1 1262 -1 0 2080
+use pmos_decap_10 pmos_decap_10_8 1 0 5272 0 -1 778
+use pmos_decap_10 pmos_decap_10_7 1 0 4200 0 -1 772
+use buffer_digital buffer_digital_1 1 0 7462 0 1 52
+use pmos_decap_10 pmos_decap_10_10 1 0 10968 0 -1 774
+use pmos_decap_10 pmos_decap_10_9 1 0 9896 0 -1 768
+use buffer_digital buffer_digital_0 1 0 8708 0 1 68
+use pmos_decap_10 pmos_decap_10_11 1 0 12042 0 -1 774
+use nmos_decap_10 nmos_decap_10_6 1 0 14820 0 1 352
+use nmos_decap_10 nmos_decap_10_5 1 0 13860 0 1 352
+use nmos_decap_10 nmos_decap_10_9 1 0 17700 0 1 352
+use nmos_decap_10 nmos_decap_10_8 1 0 16740 0 1 352
+use nmos_decap_10 nmos_decap_10_7 1 0 15780 0 1 352
+use pmos_decap_10 pmos_decap_10_12 1 0 21932 0 -1 652
+use nmos_decap_10 nmos_decap_10_12 1 0 20580 0 1 352
+use nmos_decap_10 nmos_decap_10_11 1 0 19620 0 1 352
+use nmos_decap_10 nmos_decap_10_10 1 0 18660 0 1 352
+use pmos_decap_10 pmos_decap_10_14 1 0 24076 0 -1 666
+use pmos_decap_10 pmos_decap_10_13 1 0 23004 0 -1 662
+use pmos_decap_10 pmos_decap_10_1 0 1 25006 -1 0 3572
+use pmos_decap_10 pmos_decap_10_0 0 1 25002 -1 0 2222
+use nmos_decap_10 nmos_decap_10_4 0 1 1262 -1 0 5920
+use nmos_decap_10 nmos_decap_10_3 0 1 1262 -1 0 4960
+use pmos_decap_10 pmos_decap_10_4 0 1 25044 -1 0 7660
+use pmos_decap_10 pmos_decap_10_3 0 1 25022 -1 0 6270
+use pmos_decap_10 pmos_decap_10_2 0 1 25006 -1 0 4920
+use charge_pump1_reverse charge_pump1_reverse_0 1 0 821 0 -1 27108
+node "m2_6586_52#" 1 2026.39 6586 52 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 278726 2358 2060526 11666 0 0 0 0 0 0
+node "m1_7815_199#" 3 87.3773 7815 199 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23265 1476 0 0 0 0 0 0 0 0 0 0
+node "m1_9016_219#" 3 5882.86 9016 219 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136314 1728 131760 1452 6314770 36236 0 0 0 0 0 0
+node "m1_832_540#" 2 47643.3 832 540 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25896104 89876 735320 6084 735320 6084 735320 6084 28078182 94688 0 0
+node "w_22878_192#" 3800 3926.21 22878 192 nw 0 0 0 0 1308736 5720 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_10938_306#" 3598 3875.42 10938 306 nw 0 0 0 0 1291808 5592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_7840_300#" 2538 35459.5 7840 300 nw 0 0 0 0 267320 2292 0 0 34888 748 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34888 748 14851440 73456 933080 6804 933080 6804 23517116 83960 0 0 0 0
+node "w_3128_308#" 5304 5634.12 3128 308 nw 0 0 0 0 1878040 7636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_12753_8728#" 5822 0 12753 8728 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_9016_219#" "w_22878_192#" 167.946
+cap "w_3128_308#" "m1_832_540#" 495.618
+cap "w_7840_300#" "m1_832_540#" 14300
+cap "m1_9016_219#" "m1_832_540#" 11040.3
+cap "m1_7815_199#" "m1_832_540#" 144.696
+cap "w_10938_306#" "m1_832_540#" 349.743
+cap "w_3128_308#" "w_7840_300#" 818.413
+cap "m1_9016_219#" "w_7840_300#" 5187.94
+cap "m1_7815_199#" "w_7840_300#" 153.692
+cap "w_10938_306#" "w_7840_300#" 552.119
+cap "m1_9016_219#" "m1_7815_199#" 4.04406
+cap "m1_9016_219#" "w_10938_306#" 95.5407
+cap "m2_6586_52#" "m1_832_540#" 3842.04
+cap "w_3128_308#" "m2_6586_52#" 110.161
+cap "m2_6586_52#" "w_7840_300#" 1564.27
+cap "w_22878_192#" "m1_832_540#" 457.434
+cap "m1_7815_199#" "m2_6586_52#" 2.87549
+cap "w_22878_192#" "w_7840_300#" 446.843
+cap "nmos_decap_10_0/a_n2_210#" "m2_6586_52#" -7.10543e-15
+cap "m1_832_540#" "nmos_decap_10_0/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 7.26697
+cap "nmos_decap_10_0/a_n2_210#" "m1_832_540#" 1.89507
+cap "nmos_decap_10_0/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "w_7840_300#" -1.35652
+cap "nmos_decap_10_0/a_n2_210#" "nmos_decap_10_0/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 3.89721
+cap "nmos_decap_10_0/a_n2_210#" "w_7840_300#" 3.55271e-15
+cap "pmos_decap_10_7/a_12_230#" "pmos_decap_10_7/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#" -37.8632
+cap "pmos_decap_10_7/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#" "m2_6586_52#" 28.2065
+cap "pmos_decap_10_7/a_12_230#" "m1_832_540#" 19.9898
+cap "w_7840_300#" "pmos_decap_10_7/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#" 26.8579
+cap "pmos_decap_10_7/a_12_230#" "m2_6586_52#" 73.4314
+cap "w_7840_300#" "pmos_decap_10_7/a_12_230#" 29.8379
+cap "pmos_decap_10_7/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#" "m1_832_540#" 0.0137014
+cap "pmos_decap_10_7/w_6_4#" "m1_832_540#" -12.6084
+cap "m2_6586_52#" "pmos_decap_10_7/a_12_230#" 83.4945
+cap "w_7840_300#" "pmos_decap_10_7/a_12_230#" 34.85
+cap "m1_832_540#" "pmos_decap_10_7/a_12_230#" 21.6855
+cap "pmos_decap_10_7/w_6_4#" "pmos_decap_10_7/a_12_230#" 340.57
+cap "pmos_decap_10_7/w_6_4#" "m2_6586_52#" -10.8545
+cap "pmos_decap_10_7/w_6_4#" "w_7840_300#" -9.63617
+cap "buffer_digital_1/m1_216_0#" "buffer_digital_1/m1_n2_474#" 373.32
+cap "buffer_digital_1/m1_n2_474#" "buffer_digital_1/a_n274_130#" -12.8072
+cap "buffer_digital_1/m1_216_0#" "buffer_digital_1/a_n274_130#" 85.9463
+cap "buffer_digital_1/a_n274_130#" "buffer_digital_0/m1_216_0#" 104.166
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_1/a_n274_130#" 60.0862
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_1/a_n274_130#" 0.598159
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_0/m1_216_0#" -0.483252
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_1/a_n274_130#" 14.1229
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/m1_216_0#" 55.8638
+cap "buffer_digital_0/m1_304_98#" "buffer_digital_1/a_n274_130#" 0.00122342
+cap "buffer_digital_1/a_n274_130#" "buffer_digital_0/a_n274_130#" 6.3428
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_216_0#" 1.10699
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_0/m1_304_98#" 2.59688
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_216_0#" 53.9159
+cap "buffer_digital_0/m1_304_98#" "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 0.0446921
+cap "buffer_digital_0/m1_304_98#" "buffer_digital_0/m1_n2_474#" -1.96577
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_1/a_n274_130#" 1.43953
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 7.8164
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_0/m1_n2_474#" 255.775
+cap "buffer_digital_1/a_n274_130#" "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 3.56814
+cap "buffer_digital_1/a_n274_130#" "buffer_digital_0/m1_n2_474#" 7.25058
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/a_n274_130#" 2.46965
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 34.9339
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_1/a_n274_130#" 0.00321842
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_0/m1_216_0#" 157.811
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 0.0133979
+cap "buffer_digital_1/a_n274_130#" "buffer_digital_0/m1_216_0#" 14.8635
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_216_0#" 85.7883
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_n2_474#" 23.1892
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/m1_216_0#" -16.5488
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_304_98#" 1.45842
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/a_n274_130#" 0.00301249
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_0/m1_304_98#" 8.45639
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/m1_304_98#" 35.5355
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 13.2543
+cap "buffer_digital_0/m1_216_0#" "buffer_digital_0/a_n274_130#" 0.000800988
+cap "buffer_digital_0/m1_304_98#" "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 26.4756
+cap "buffer_digital_0/m1_216_0#" "buffer_digital_0/m1_n2_474#" -20.0551
+cap "buffer_digital_0/m1_216_0#" "buffer_digital_0/m1_304_98#" 52.2656
+cap "buffer_digital_0/m1_216_0#" "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 17.9031
+cap "pmos_decap_10_11/a_12_230#" "pmos_decap_10_11/w_6_4#" 163.291
+cap "pmos_decap_10_11/a_12_230#" "buffer_digital_0/m1_304_98#" 72.3606
+cap "buffer_digital_0/m1_304_98#" "pmos_decap_10_11/w_6_4#" 12.9395
+cap "charge_pump1_reverse_0/clock_1/clk_in" "nmos_decap_10_5/li_n2_210#" -8.75385
+cap "m1_832_540#" "nmos_decap_10_5/li_n2_210#" -11.4697
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "nmos_decap_10_5/li_n2_210#" 0.263241
+cap "charge_pump1_reverse_0/clock_1/gnd" "pmos_decap_10_11/a_12_230#" 12.3906
+cap "charge_pump1_reverse_0/clock_1/clk_in" "w_7840_300#" 2.84217e-14
+cap "nmos_decap_10_5/li_n2_210#" "charge_pump1_reverse_0/clock_1/vdd" 3.79182
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/gnd" 27.7282
+cap "nmos_decap_10_5/li_n2_210#" "charge_pump1_reverse_0/clock_1/a_586_n912#" 0.25253
+cap "w_7840_300#" "nmos_decap_10_5/li_n2_210#" -7.26655
+cap "charge_pump1_reverse_0/clock_1/gnd" "m1_832_540#" 40.02
+cap "pmos_decap_10_11/a_12_230#" "charge_pump1_reverse_0/clock_1/a_344_n986#" 0.00531896
+cap "charge_pump1_reverse_0/clock_1/clk_in" "pmos_decap_10_11/a_12_230#" 75.3323
+cap "charge_pump1_reverse_0/clock_1/gnd" "nmos_decap_10_5/li_n2_210#" 4.34488
+cap "pmos_decap_10_11/a_12_230#" "m1_832_540#" 19.9495
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "pmos_decap_10_11/a_12_230#" 0.13729
+cap "pmos_decap_10_11/a_12_230#" "charge_pump1_reverse_0/clock_1/vdd" 7.63703
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_344_n986#" 0.55397
+cap "pmos_decap_10_11/a_12_230#" "nmos_decap_10_5/li_n2_210#" 305.706
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_286_n960#" 0.387303
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/vdd" 8.01376
+cap "pmos_decap_10_11/a_12_230#" "charge_pump1_reverse_0/clock_1/a_586_n912#" 0.430907
+cap "w_7840_300#" "pmos_decap_10_11/a_12_230#" 32.4548
+cap "charge_pump1_reverse_0/clock_1/a_344_n986#" "nmos_decap_10_5/li_n2_210#" 0.000307704
+cap "m1_832_540#" "charge_pump1_reverse_0/clock_1/vdd" 2.86708
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_344_n986#" 0.0414222
+cap "m1_832_540#" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 9.31717
+cap "charge_pump1_reverse_0/clock_1/a_416_120#" "charge_pump1_reverse_0/clock_1/clk_in" 0.506927
+cap "charge_pump1_reverse_0/clock_1/clk_in" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 185.726
+cap "charge_pump1_reverse_0/clock_1/a_416_120#" "nmos_decap_10_7/a_n2_210#" 1.01971
+cap "nmos_decap_10_7/a_n2_210#" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" -16.6866
+cap "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_n15_n68#" "nmos_decap_10_7/a_n2_210#" 0.666566
+cap "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_n15_n68#" "charge_pump1_reverse_0/clock_1/clk_in" 1.22698
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "charge_pump1_reverse_0/clock_1/clk_in" 0.118797
+cap "m1_832_540#" "charge_pump1_reverse_0/clock_1/gnd" 2.28167
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/gnd" 0.974172
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/gnd" 0.167995
+cap "w_7840_300#" "nmos_decap_10_7/a_n2_210#" 24.1105
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_832_540#" 8.98975
+cap "charge_pump1_reverse_0/clock_1/vdd" "charge_pump1_reverse_0/clock_1/clk_in" 15.674
+cap "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_15_n42#" "nmos_decap_10_7/a_n2_210#" 0.00126038
+cap "charge_pump1_reverse_0/clock_1/vdd" "nmos_decap_10_7/a_n2_210#" 18.3297
+cap "charge_pump1_reverse_0/clock_1/a_586_n2#" "nmos_decap_10_7/a_n2_210#" 0.521674
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 0.279701
+cap "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "charge_pump1_reverse_0/clock_1/gnd" 0.100396
+cap "m1_832_540#" "nmos_decap_10_7/a_n2_210#" 1.7936
+cap "m1_832_540#" "charge_pump1_reverse_0/clock_1/clk_in" 2.796
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/clk_in" 7.58804
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_338_n132#" 0.597233
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/a_338_n132#" 0.0247483
+cap "w_7840_300#" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 13.9999
+cap "charge_pump1_reverse_0/clock_1/vdd" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 0.325309
+cap "nmos_decap_10_7/a_n2_210#" "w_7840_300#" 41.3373
+cap "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "charge_pump1_reverse_0/clock_1/clk_in" 129.699
+cap "charge_pump1_reverse_0/clock_1/vdd" "nmos_decap_10_7/a_n2_210#" 10.901
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_832_540#" 3.2401
+cap "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "w_7840_300#" 26.1216
+cap "nmos_decap_10_7/a_n2_210#" "m1_832_540#" 4.84896
+cap "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_7/a_n2_210#" -219.907
+cap "charge_pump1_reverse_0/clock_1/vdd" "charge_pump1_reverse_0/clock_1/clk_in" 20.3612
+cap "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "m1_832_540#" 16.5499
+cap "charge_pump1_reverse_0/clock_1/clk_in" "nmos_decap_10_7/a_n2_210#" 28.6924
+cap "m1_9016_219#" "nmos_decap_10_10/a_n2_210#" 33.7501
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "w_7840_300#" 25.5136
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "m1_832_540#" 15.9146
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_10/a_n2_210#" -175.803
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "m1_9016_219#" 102.34
+cap "w_7840_300#" "nmos_decap_10_10/a_n2_210#" 41.4072
+cap "m1_832_540#" "nmos_decap_10_10/a_n2_210#" 5.01145
+cap "m1_832_540#" "nmos_decap_10_10/a_n2_210#" 4.92961
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_10/a_n2_210#" -211.982
+cap "m1_9016_219#" "nmos_decap_10_10/a_n2_210#" 33.4869
+cap "w_7840_300#" "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 25.5703
+cap "w_7840_300#" "nmos_decap_10_10/a_n2_210#" 41.2792
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "m1_832_540#" 15.9709
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "m1_9016_219#" 102.483
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "w_7840_300#" 25.488
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_10/a_n2_210#" -192.153
+cap "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "m1_9016_219#" 102.266
+cap "m1_832_540#" "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 15.8826
+cap "nmos_decap_10_10/a_n2_210#" "w_7840_300#" 41.3956
+cap "nmos_decap_10_10/a_n2_210#" "m1_9016_219#" 33.7365
+cap "m1_832_540#" "nmos_decap_10_10/a_n2_210#" 5.02426
+cap "pmos_decap_10_13/w_6_4#" "pmos_decap_10_13/li_12_230#" -172.968
+cap "pmos_decap_10_13/w_6_4#" "m1_9016_219#" 34.669
+cap "pmos_decap_10_13/w_6_4#" "w_7840_300#" 41.2675
+cap "w_7840_300#" "pmos_decap_10_13/li_12_230#" 25.5743
+cap "pmos_decap_10_13/li_12_230#" "m1_9016_219#" 102.494
+cap "pmos_decap_10_13/w_6_4#" "m1_832_540#" 4.92484
+cap "m1_832_540#" "pmos_decap_10_13/li_12_230#" 15.9731
+cap "pmos_decap_10_13/w_6_4#" "m1_9016_219#" 82.1735
+cap "pmos_decap_10_13/w_6_4#" "m1_832_540#" 12.4048
+cap "pmos_decap_10_13/w_6_4#" "w_7840_300#" 52.9799
+cap "pmos_decap_10_13/a_12_230#" "pmos_decap_10_13/w_6_4#" -23.2289
+cap "pmos_decap_10_13/a_12_230#" "m1_9016_219#" 89.7301
+cap "pmos_decap_10_13/a_12_230#" "m1_832_540#" 5.60204
+cap "pmos_decap_10_13/a_12_230#" "w_7840_300#" 2.4653
+cap "w_7840_300#" "pmos_decap_10_0/li_12_230#" 0.792436
+cap "pmos_decap_10_0/w_6_4#" "w_7840_300#" 19.6415
+cap "pmos_decap_10_0/w_6_4#" "pmos_decap_10_0/li_12_230#" 426.837
+cap "m1_832_540#" "pmos_decap_10_0/li_12_230#" 7.16719
+cap "pmos_decap_10_0/w_6_4#" "m1_832_540#" 1.77576
+cap "m1_9016_219#" "pmos_decap_10_0/li_12_230#" 122.827
+cap "pmos_decap_10_0/w_6_4#" "m1_9016_219#" 2.55898
+cap "pmos_decap_10_0/li_12_230#" "pmos_decap_10_0/w_6_4#" 242.946
+cap "m1_832_540#" "pmos_decap_10_0/w_6_4#" 3.00351
+cap "pmos_decap_10_0/li_12_230#" "m1_832_540#" 10.72
+cap "pmos_decap_10_0/w_6_4#" "w_7840_300#" 17.7072
+cap "pmos_decap_10_0/li_12_230#" "w_7840_300#" -5.72346
+cap "m1_9016_219#" "pmos_decap_10_0/w_6_4#" 9.3442
+cap "pmos_decap_10_0/li_12_230#" "m1_9016_219#" 80.9063
+cap "w_7840_300#" "nmos_decap_10_0/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 34.2936
+cap "nmos_decap_10_0/a_n2_210#" "nmos_decap_10_0/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" -137.804
+cap "m1_832_540#" "nmos_decap_10_0/a_n2_210#" 1.56737
+cap "w_7840_300#" "nmos_decap_10_0/a_n2_210#" 46.928
+cap "m1_832_540#" "nmos_decap_10_0/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 38.4945
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/gnd" 577.17
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_992_n918#" 0.00873124
+cap "charge_pump1_reverse_0/clock_1/vdd" "charge_pump1_reverse_0/clock_1/gnd" -2.60533
+cap "charge_pump1_reverse_0/clock_1/vdd" "pmos_decap_10_11/a_12_230#" 2.13598
+cap "charge_pump1_reverse_0/clock_1/a_586_n912#" "pmos_decap_10_11/a_12_230#" 0.412706
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_786_n912#" 0.0308775
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "pmos_decap_10_11/a_12_230#" 0.0726496
+cap "charge_pump1_reverse_0/clock_1/a_344_n986#" "w_7840_300#" 0.664674
+cap "charge_pump1_reverse_0/clock_1/vdd" "nmos_decap_10_5/li_n2_210#" 68.8099
+cap "charge_pump1_reverse_0/clock_1/a_586_n912#" "nmos_decap_10_5/li_n2_210#" 0.766023
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/vdd" 36.7229
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_586_n912#" 0.964108
+cap "m1_832_540#" "charge_pump1_reverse_0/clock_1/gnd" 45.7566
+cap "charge_pump1_reverse_0/clock_1/gnd" "charge_pump1_reverse_0/clock_1/clk_in" 63.5409
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "nmos_decap_10_5/li_n2_210#" 0.588201
+cap "pmos_decap_10_11/a_12_230#" "charge_pump1_reverse_0/clock_1/clk_in" 0.374124
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_286_n960#" 1.42371
+cap "nmos_decap_10_5/li_n2_210#" "charge_pump1_reverse_0/clock_1/clk_in" 0.528422
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/clk_in" 0.798858
+cap "charge_pump1_reverse_0/clock_1/gnd" "pmos_decap_10_11/a_12_230#" 33.3758
+cap "charge_pump1_reverse_0/clock_1/vdd" "charge_pump1_reverse_0/clock_1/clk_in" 0.255775
+cap "charge_pump1_reverse_0/clock_1/gnd" "nmos_decap_10_5/li_n2_210#" 277.997
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/a_286_n960#" 0.763076
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/a_586_n2#" 0.728253
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_286_n960#" 0.0598887
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_786_n912#" 0.840207
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_n15_n68#" 4.65846
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_n15_n68#" 0.835991
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_786_n912#" 0.0181126
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_n15_n68#" 0.00195671
+cap "charge_pump1_reverse_0/clock_1/vdd" "charge_pump1_reverse_0/clock_1/a_286_n960#" 5.68434e-14
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 0.289087
+cap "charge_pump1_reverse_0/clock_1/gnd" "w_7840_300#" 47.1432
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/gnd" 36.8322
+cap "charge_pump1_reverse_0/clock_1/gnd" "charge_pump1_reverse_0/clock_1/clk_in" 150.909
+cap "charge_pump1_reverse_0/clock_1/a_286_n478#" "w_7840_300#" 0.040157
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_586_n912#" 0.703735
+cap "charge_pump1_reverse_0/clock_1/a_286_n478#" "charge_pump1_reverse_0/clock_1/clk_in" 0.0296137
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/clk_in" 44.3751
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/clk_in" 41.9793
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_586_n912#" 0.0353751
+cap "charge_pump1_reverse_0/clock_1/gnd" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 1.7473
+cap "charge_pump1_reverse_0/clock_1/vdd" "w_7840_300#" 77.966
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/vdd" 197.588
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_344_n986#" 3.77563
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_338_n132#" 2.58236
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/a_344_n986#" 0.753174
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/a_338_n132#" 0.593683
+cap "charge_pump1_reverse_0/clock_1/vdd" "charge_pump1_reverse_0/clock_1/clk_in" 43.4879
+cap "charge_pump1_reverse_0/clock_1/clk_in" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 1.15864
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_338_n132#" 0.0744292
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/a_344_n986#" 0.216847
+cap "charge_pump1_reverse_0/clock_1/gnd" "m1_832_540#" 2.88205
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_DQBD8A_1/a_n15_n68#" 0.498584
+cap "charge_pump1_reverse_0/clock_1/a_1192_n918#" "charge_pump1_reverse_0/clock_1/clk_in" 0.00521198
+cap "charge_pump1_reverse_0/clock_1/vdd" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 0.459751
+cap "m1_832_540#" "charge_pump1_reverse_0/clock_1/clk_in" 0.297976
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_992_n918#" 0.467198
+cap "charge_pump1_reverse_0/clock_1/a_1394_n918#" "charge_pump1_reverse_0/clock_1/clk_in" 0.0190849
+cap "charge_pump1_reverse_0/clock_1/a_416_120#" "w_7840_300#" 3.30735
+cap "nmos_decap_10_7/a_n2_210#" "charge_pump1_reverse_0/clock_1/a_416_120#" 1.1894
+cap "charge_pump1_reverse_0/clock_1/gnd" "charge_pump1_reverse_0/clock_1/a_286_n960#" -2.84217e-14
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n15_n68#" 0.971273
+cap "charge_pump1_reverse_0/clock_1/a_992_n918#" "charge_pump1_reverse_0/clock_1/clk_in" 0.00770328
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_15_n42#" 0.0348037
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_832_540#" 0.135772
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_286_n960#" 2.06744
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_586_n2#" 1.61556
+cap "m1_832_540#" "charge_pump1_reverse_0/clock_1/vdd" 2.53285
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/vdd" 213.274
+cap "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "charge_pump1_reverse_0/clock_1/vdd" 7.49979
+cap "charge_pump1_reverse_0/clock_1/vdd" "nmos_decap_10_7/a_n2_210#" 133.356
+cap "charge_pump1_reverse_0/clock_1/clk_in" "charge_pump1_reverse_0/clock_1/vdd" 23.1537
+cap "pmos_decap_10_0/w_6_4#" "m1_832_540#" 4.07761
+cap "pmos_decap_10_0/w_6_4#" "w_7840_300#" 49.6285
+cap "m1_9016_219#" "pmos_decap_10_0/w_6_4#" 0.309292
+cap "pmos_decap_10_0/w_6_4#" "pmos_decap_10_0/li_12_230#" -53.6042
+cap "pmos_decap_10_0/li_12_230#" "m1_832_540#" 28.5505
+cap "pmos_decap_10_0/li_12_230#" "w_7840_300#" 22.1455
+cap "m1_9016_219#" "pmos_decap_10_0/li_12_230#" 3.27185
+cap "m1_832_540#" "nmos_decap_10_3/a_n2_210#" -0.00863945
+cap "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "w_7840_300#" 39.7215
+cap "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "m1_832_540#" 41.343
+cap "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_3/a_n2_210#" -155.92
+cap "w_7840_300#" "nmos_decap_10_3/a_n2_210#" 46.9452
+cap "nmos_decap_10_3/a_n2_210#" "w_7840_300#" -7.10543e-15
+cap "charge_pump1_reverse_0/clock_1/vdd" "w_7840_300#" 0.0606117
+cap "nmos_decap_10_5/li_n2_210#" "charge_pump1_reverse_0/clock_1/vdd" 0.13936
+cap "charge_pump1_reverse_0/clock_1/a_586_n912#" "w_7840_300#" 0.0141034
+cap "charge_pump1_reverse_0/clock_1/a_586_n912#" "nmos_decap_10_5/li_n2_210#" 0.0499948
+cap "charge_pump1_reverse_0/clock_1/a_786_n912#" "charge_pump1_reverse_0/clock_1/clk_in" 0.00740291
+cap "charge_pump1_reverse_0/clock_1/a_586_n2#" "w_7840_300#" 0.0141034
+cap "charge_pump1_reverse_0/clock_1/a_786_n912#" "nmos_decap_10_7/li_n2_210#" 0.00064467
+cap "charge_pump1_reverse_0/clock_1/gnd" "w_7840_300#" 0.00887762
+cap "nmos_decap_10_7/li_n2_210#" "charge_pump1_reverse_0/clock_1/vdd" 0.109948
+cap "charge_pump1_reverse_0/clock_1/vdd" "w_7840_300#" 0.135851
+cap "charge_pump1_reverse_0/clock_1/a_992_n918#" "charge_pump1_reverse_0/clock_1/clk_in" 0.00423377
+cap "charge_pump1_reverse_0/clock_1/a_586_n2#" "nmos_decap_10_7/li_n2_210#" 0.0329031
+cap "charge_pump1_reverse_0/clock_1/gnd" "nmos_decap_10_7/li_n2_210#" 0.00303629
+cap "pmos_decap_10_2/w_6_4#" "w_7840_300#" 49.596
+cap "pmos_decap_10_2/li_12_230#" "m1_832_540#" 26.6871
+cap "pmos_decap_10_2/w_6_4#" "m1_832_540#" 4.61496
+cap "pmos_decap_10_2/w_6_4#" "pmos_decap_10_2/li_12_230#" -56.6032
+cap "pmos_decap_10_2/li_12_230#" "w_7840_300#" 21.1605
+cap "pmos_decap_10_2/li_12_230#" "m1_832_540#" -7.10543e-15
+cap "nmos_decap_10_3/a_n2_210#" "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" -171.14
+cap "pmos_decap_10_2/li_12_230#" "pmos_decap_10_2/w_6_4#" -54.7351
+cap "w_7840_300#" "pmos_decap_10_2/w_6_4#" 49.6271
+cap "m1_832_540#" "pmos_decap_10_2/w_6_4#" 4.61496
+cap "w_7840_300#" "pmos_decap_10_2/li_12_230#" 21.7161
+cap "pmos_decap_10_2/li_12_230#" "m1_832_540#" 26.6801
+cap "m1_832_540#" "pmos_decap_10_2/li_12_230#" -7.10543e-15
+cap "nmos_decap_10_3/a_n2_210#" "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 691.613
+cap "nmos_decap_10_3/a_n2_210#" "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 416.387
+cap "pmos_decap_10_2/w_6_4#" "m1_832_540#" -1.45653
+cap "pmos_decap_10_2/li_12_230#" "w_7840_300#" 58.8564
+cap "w_7840_300#" "m1_832_540#" 249.738
+cap "pmos_decap_10_2/w_6_4#" "w_7840_300#" 116.518
+cap "pmos_decap_10_2/li_12_230#" "m1_832_540#" 21.8724
+cap "pmos_decap_10_2/w_6_4#" "pmos_decap_10_2/li_12_230#" -54.1133
+cap "charge_pump1_reverse_0/m1_936_n2064#" "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" 7.98708
+cap "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_3/li_n2_210#" 59.1825
+cap "charge_pump1_reverse_0/m1_936_n2064#" "nmos_decap_10_3/li_n2_210#" 167.564
+cap "nmos_decap_10_3/li_n2_210#" "charge_pump1_reverse_0/m1_936_n2064#" 174.323
+cap "charge_pump1_reverse_0/m1_12826_19325#" "w_7840_300#" 17.2185
+cap "pmos_decap_10_2/w_6_4#" "charge_pump1_reverse_0/m1_12826_19325#" 17.7958
+cap "w_7840_300#" "charge_pump1_reverse_0/gnd" 344.446
+cap "pmos_decap_10_2/w_6_4#" "charge_pump1_reverse_0/gnd" -0.247529
+cap "pmos_decap_10_2/li_12_230#" "charge_pump1_reverse_0/gnd" 4.9555
+cap "charge_pump1_reverse_0/m1_12826_19325#" "charge_pump1_reverse_0/gnd" 13.2753
+cap "pmos_decap_10_2/li_12_230#" "w_7840_300#" 65.7058
+cap "pmos_decap_10_2/li_12_230#" "pmos_decap_10_2/w_6_4#" -33.6191
+cap "pmos_decap_10_2/w_6_4#" "charge_pump1_reverse_0/gnd" 12.0657
+cap "pmos_decap_10_2/li_12_230#" "charge_pump1_reverse_0/m1_12826_19325#" 13.6308
+cap "pmos_decap_10_2/w_6_4#" "w_7840_300#" 119.181
+cap "pmos_decap_10_2/li_12_230#" "charge_pump1_reverse_0/gnd" 23.0567
+cap "pmos_decap_10_2/li_12_230#" "charge_pump1_reverse_0/gnd" -7.10543e-15
+cap "m1_832_540#" "charge_pump1_reverse_0/vdd" 776.394
+cap "m1_832_540#" "charge_pump1_reverse_0/m1_936_n2064#" -93.0348
+cap "m1_832_540#" "charge_pump1_reverse_0/a_12396_17274#" -3.42549
+cap "charge_pump1_reverse_0/m1_936_n2064#" "charge_pump1_reverse_0/vdd" 657.651
+cap "charge_pump1_reverse_0/vdd" "m1_832_540#" 438.092
+cap "m1_832_540#" "charge_pump1_reverse_0/m1_936_n2064#" -97.4431
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/m1_936_n2064#" 804.16
+cap "pmos_decap_10_3/li_12_230#" "charge_pump1_reverse_0/m1_12826_19325#" 14.2231
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/m1_12826_19325#" 38.2874
+cap "charge_pump1_reverse_0/sky130_fd_pr__nfet_01v8_NJGC8F_0/a_n3869_n42#" "charge_pump1_reverse_0/m4_13752_21330#" -6.13633
+cap "pmos_decap_10_3/w_6_4#" "charge_pump1_reverse_0/gnd" 0.363184
+cap "pmos_decap_10_3/li_12_230#" "charge_pump1_reverse_0/gnd" -5.0955
+cap "pmos_decap_10_3/li_12_230#" "charge_pump1_reverse_0/m4_13752_21330#" 11.5407
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/m4_13752_21330#" 171.565
+cap "pmos_decap_10_3/w_6_4#" "charge_pump1_reverse_0/sky130_fd_pr__nfet_01v8_NJGC8F_0/a_n3869_n42#" 13.3793
+cap "charge_pump1_reverse_0/sky130_fd_pr__nfet_01v8_NJGC8F_0/a_n3869_n42#" "pmos_decap_10_3/li_12_230#" 36.583
+cap "charge_pump1_reverse_0/sky130_fd_pr__nfet_01v8_NJGC8F_0/a_n3869_n42#" "charge_pump1_reverse_0/gnd" 4.90291
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_3340_18086#" -106.419
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_12396_17274#" -7.00236
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_12396_17274#" 66.4829
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_3340_18086#" -33.727
+cap "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" "charge_pump1_reverse_0/a_3340_18086#" -47.5075
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/vdd" 38.5546
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_12396_17274#" 4.18932
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" 395.817
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" 1.79167
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_12396_17274#" 20.5073
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/vdd" -7.10543e-15
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_3340_18086#" -0.814369
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" 535.937
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/sky130_fd_pr__nfet_01v8_NJGC8F_0/a_n3869_n42#" 0.781917
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" 0.960768
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/capacitors_1_1/capacitor_8_0/w_228_1012#" 1.43159
+cap "charge_pump1_reverse_0/a_12396_17274#" "charge_pump1_reverse_0/gnd" 1.50275
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_3340_18086#" 0.233412
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_12396_17274#" -0.51063
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/vdd" -50.5533
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_3340_18086#" 0.182566
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" -0.42918
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/vdd" 0.312739
+cap "charge_pump1_reverse_0/capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" "charge_pump1_reverse_0/a_3340_18086#" -0.646747
+merge "buffer_digital_0/a_n274_130#" "buffer_digital_1/m1_304_98#" -404.656 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4884 -428 0 0 0 0 0 0 0 0 0 0
+merge "buffer_digital_1/m1_304_98#" "m1_7815_199#"
+merge "pmos_decap_10_4/VSUBS" "pmos_decap_10_3/VSUBS" -35952.6 0 0 0 0 0 0 0 0 -53592 -3124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1024 -1228 0 0 -43376 -6184 -4673128 -77161 0 0 0 0 0 0 -23538714 -80882 0 0
+merge "pmos_decap_10_3/VSUBS" "nmos_decap_10_3/VSUBS"
+merge "nmos_decap_10_3/VSUBS" "nmos_decap_10_4/VSUBS"
+merge "nmos_decap_10_4/VSUBS" "pmos_decap_10_2/VSUBS"
+merge "pmos_decap_10_2/VSUBS" "pmos_decap_10_1/VSUBS"
+merge "pmos_decap_10_1/VSUBS" "nmos_decap_10_2/VSUBS"
+merge "nmos_decap_10_2/VSUBS" "pmos_decap_10_0/VSUBS"
+merge "pmos_decap_10_0/VSUBS" "pmos_decap_10_14/VSUBS"
+merge "pmos_decap_10_14/VSUBS" "pmos_decap_10_13/VSUBS"
+merge "pmos_decap_10_13/VSUBS" "pmos_decap_10_12/VSUBS"
+merge "pmos_decap_10_12/VSUBS" "nmos_decap_10_12/VSUBS"
+merge "nmos_decap_10_12/VSUBS" "nmos_decap_10_11/VSUBS"
+merge "nmos_decap_10_11/VSUBS" "nmos_decap_10_10/VSUBS"
+merge "nmos_decap_10_10/VSUBS" "nmos_decap_10_9/VSUBS"
+merge "nmos_decap_10_9/VSUBS" "nmos_decap_10_8/VSUBS"
+merge "nmos_decap_10_8/VSUBS" "nmos_decap_10_7/VSUBS"
+merge "nmos_decap_10_7/VSUBS" "nmos_decap_10_6/VSUBS"
+merge "nmos_decap_10_6/VSUBS" "nmos_decap_10_5/VSUBS"
+merge "nmos_decap_10_5/VSUBS" "pmos_decap_10_11/VSUBS"
+merge "pmos_decap_10_11/VSUBS" "pmos_decap_10_10/VSUBS"
+merge "pmos_decap_10_10/VSUBS" "pmos_decap_10_9/VSUBS"
+merge "pmos_decap_10_9/VSUBS" "buffer_digital_0/VSUBS"
+merge "buffer_digital_0/VSUBS" "buffer_digital_1/VSUBS"
+merge "buffer_digital_1/VSUBS" "pmos_decap_10_8/VSUBS"
+merge "pmos_decap_10_8/VSUBS" "pmos_decap_10_7/VSUBS"
+merge "pmos_decap_10_7/VSUBS" "charge_pump1_reverse_0/gnd"
+merge "charge_pump1_reverse_0/gnd" "nmos_decap_10_0/VSUBS"
+merge "nmos_decap_10_0/VSUBS" "nmos_decap_10_1/VSUBS"
+merge "nmos_decap_10_1/VSUBS" "pmos_decap_10_5/VSUBS"
+merge "pmos_decap_10_5/VSUBS" "pmos_decap_10_6/VSUBS"
+merge "pmos_decap_10_6/VSUBS" "VSUBS"
+merge "VSUBS" "pmos_decap_10_4/li_12_230#"
+merge "pmos_decap_10_4/li_12_230#" "charge_pump1_reverse_0/a_3340_18086#"
+merge "charge_pump1_reverse_0/a_3340_18086#" "pmos_decap_10_3/li_12_230#"
+merge "pmos_decap_10_3/li_12_230#" "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#"
+merge "nmos_decap_10_3/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_4/m1_n10_n42#"
+merge "nmos_decap_10_4/m1_n10_n42#" "pmos_decap_10_2/li_12_230#"
+merge "pmos_decap_10_2/li_12_230#" "pmos_decap_10_1/li_12_230#"
+merge "pmos_decap_10_1/li_12_230#" "nmos_decap_10_1/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#"
+merge "nmos_decap_10_1/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_2/m1_n10_n42#"
+merge "nmos_decap_10_2/m1_n10_n42#" "pmos_decap_10_0/li_12_230#"
+merge "pmos_decap_10_0/li_12_230#" "pmos_decap_10_14/li_12_230#"
+merge "pmos_decap_10_14/li_12_230#" "pmos_decap_10_13/li_12_230#"
+merge "pmos_decap_10_13/li_12_230#" "pmos_decap_10_13/a_12_230#"
+merge "pmos_decap_10_13/a_12_230#" "pmos_decap_10_12/li_12_230#"
+merge "pmos_decap_10_12/li_12_230#" "nmos_decap_10_11/sky130_fd_pr__nfet_01v8_NJGC45_0/a_447_n42#"
+merge "nmos_decap_10_11/sky130_fd_pr__nfet_01v8_NJGC45_0/a_447_n42#" "nmos_decap_10_12/m1_n10_n42#"
+merge "nmos_decap_10_12/m1_n10_n42#" "nmos_decap_10_11/m1_n10_n42#"
+merge "nmos_decap_10_11/m1_n10_n42#" "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#"
+merge "nmos_decap_10_10/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_8/sky130_fd_pr__nfet_01v8_NJGC45_0/a_447_n42#"
+merge "nmos_decap_10_8/sky130_fd_pr__nfet_01v8_NJGC45_0/a_447_n42#" "nmos_decap_10_9/m1_n10_n42#"
+merge "nmos_decap_10_9/m1_n10_n42#" "nmos_decap_10_8/m1_n10_n42#"
+merge "nmos_decap_10_8/m1_n10_n42#" "pmos_decap_10_11/li_12_230#"
+merge "pmos_decap_10_11/li_12_230#" "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#"
+merge "nmos_decap_10_7/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_5/sky130_fd_pr__nfet_01v8_NJGC45_0/a_447_n42#"
+merge "nmos_decap_10_5/sky130_fd_pr__nfet_01v8_NJGC45_0/a_447_n42#" "nmos_decap_10_6/m1_n10_n42#"
+merge "nmos_decap_10_6/m1_n10_n42#" "pmos_decap_10_11/a_12_230#"
+merge "pmos_decap_10_11/a_12_230#" "pmos_decap_10_10/a_12_230#"
+merge "pmos_decap_10_10/a_12_230#" "pmos_decap_10_9/a_12_230#"
+merge "pmos_decap_10_9/a_12_230#" "pmos_decap_10_10/li_12_230#"
+merge "pmos_decap_10_10/li_12_230#" "pmos_decap_10_9/li_12_230#"
+merge "pmos_decap_10_9/li_12_230#" "buffer_digital_0/m1_216_0#"
+merge "buffer_digital_0/m1_216_0#" "buffer_digital_0/m1_n2_0#"
+merge "buffer_digital_0/m1_n2_0#" "buffer_digital_1/m1_216_0#"
+merge "buffer_digital_1/m1_216_0#" "buffer_digital_1/m1_n2_0#"
+merge "buffer_digital_1/m1_n2_0#" "pmos_decap_10_5/li_12_230#"
+merge "pmos_decap_10_5/li_12_230#" "pmos_decap_10_8/li_12_230#"
+merge "pmos_decap_10_8/li_12_230#" "pmos_decap_10_7/a_12_230#"
+merge "pmos_decap_10_7/a_12_230#" "nmos_decap_10_0/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#"
+merge "nmos_decap_10_0/sky130_fd_pr__nfet_01v8_NJGC45_0/a_n509_n42#" "nmos_decap_10_1/m1_n10_n42#"
+merge "nmos_decap_10_1/m1_n10_n42#" "pmos_decap_10_5/a_12_230#"
+merge "pmos_decap_10_5/a_12_230#" "pmos_decap_10_6/li_12_230#"
+merge "pmos_decap_10_6/li_12_230#" "m1_832_540#"
+merge "charge_pump1_reverse_0/vdd" "nmos_decap_10_3/li_n2_210#" -36530.9 0 0 0 0 -2436824 -24844 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -85272 -3916 0 0 -219912 -6644 -3108924 -69600 0 0 0 0 -18272772 -66630 0 0 0 0
+merge "nmos_decap_10_3/li_n2_210#" "pmos_decap_10_4/w_6_4#"
+merge "pmos_decap_10_4/w_6_4#" "nmos_decap_10_0/li_n2_210#"
+merge "nmos_decap_10_0/li_n2_210#" "charge_pump1_reverse_0/m4_13752_21330#"
+merge "charge_pump1_reverse_0/m4_13752_21330#" "pmos_decap_10_3/w_6_4#"
+merge "pmos_decap_10_3/w_6_4#" "nmos_decap_10_10/li_n2_210#"
+merge "nmos_decap_10_10/li_n2_210#" "nmos_decap_10_7/li_n2_210#"
+merge "nmos_decap_10_7/li_n2_210#" "nmos_decap_10_3/a_n2_210#"
+merge "nmos_decap_10_3/a_n2_210#" "nmos_decap_10_4/li_n2_210#"
+merge "nmos_decap_10_4/li_n2_210#" "pmos_decap_10_2/w_6_4#"
+merge "pmos_decap_10_2/w_6_4#" "pmos_decap_10_1/w_6_4#"
+merge "pmos_decap_10_1/w_6_4#" "nmos_decap_10_1/a_n2_210#"
+merge "nmos_decap_10_1/a_n2_210#" "nmos_decap_10_2/li_n2_210#"
+merge "nmos_decap_10_2/li_n2_210#" "pmos_decap_10_0/w_6_4#"
+merge "pmos_decap_10_0/w_6_4#" "pmos_decap_10_14/w_6_4#"
+merge "pmos_decap_10_14/w_6_4#" "pmos_decap_10_13/w_6_4#"
+merge "pmos_decap_10_13/w_6_4#" "pmos_decap_10_12/w_6_4#"
+merge "pmos_decap_10_12/w_6_4#" "w_22878_192#"
+merge "w_22878_192#" "nmos_decap_10_11/a_n2_210#"
+merge "nmos_decap_10_11/a_n2_210#" "nmos_decap_10_12/li_n2_210#"
+merge "nmos_decap_10_12/li_n2_210#" "nmos_decap_10_11/li_n2_210#"
+merge "nmos_decap_10_11/li_n2_210#" "nmos_decap_10_10/a_n2_210#"
+merge "nmos_decap_10_10/a_n2_210#" "nmos_decap_10_8/a_n2_210#"
+merge "nmos_decap_10_8/a_n2_210#" "nmos_decap_10_9/li_n2_210#"
+merge "nmos_decap_10_9/li_n2_210#" "nmos_decap_10_8/li_n2_210#"
+merge "nmos_decap_10_8/li_n2_210#" "nmos_decap_10_7/a_n2_210#"
+merge "nmos_decap_10_7/a_n2_210#" "nmos_decap_10_5/a_n2_210#"
+merge "nmos_decap_10_5/a_n2_210#" "nmos_decap_10_6/li_n2_210#"
+merge "nmos_decap_10_6/li_n2_210#" "nmos_decap_10_5/li_n2_210#"
+merge "nmos_decap_10_5/li_n2_210#" "pmos_decap_10_11/w_6_4#"
+merge "pmos_decap_10_11/w_6_4#" "pmos_decap_10_9/w_6_4#"
+merge "pmos_decap_10_9/w_6_4#" "pmos_decap_10_10/w_6_4#"
+merge "pmos_decap_10_10/w_6_4#" "w_10938_306#"
+merge "w_10938_306#" "pmos_decap_10_10/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#"
+merge "pmos_decap_10_10/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#" "pmos_decap_10_9/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#"
+merge "pmos_decap_10_9/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#" "buffer_digital_0/m1_n2_474#"
+merge "buffer_digital_0/m1_n2_474#" "buffer_digital_0/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#"
+merge "buffer_digital_0/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#" "buffer_digital_1/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#"
+merge "buffer_digital_1/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#" "buffer_digital_1/m1_n2_474#"
+merge "buffer_digital_1/m1_n2_474#" "pmos_decap_10_8/w_6_4#"
+merge "pmos_decap_10_8/w_6_4#" "pmos_decap_10_7/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#"
+merge "pmos_decap_10_7/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#" "pmos_decap_10_7/w_6_4#"
+merge "pmos_decap_10_7/w_6_4#" "nmos_decap_10_0/a_n2_210#"
+merge "nmos_decap_10_0/a_n2_210#" "nmos_decap_10_1/li_n2_210#"
+merge "nmos_decap_10_1/li_n2_210#" "pmos_decap_10_5/w_6_4#"
+merge "pmos_decap_10_5/w_6_4#" "pmos_decap_10_6/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#"
+merge "pmos_decap_10_6/sky130_fd_pr__pfet_01v8_4ZKXAA_0/a_n509_n42#" "w_7840_300#"
+merge "w_7840_300#" "pmos_decap_10_6/w_6_4#"
+merge "pmos_decap_10_6/w_6_4#" "w_3128_308#"
+merge "buffer_digital_1/a_n274_130#" "m2_6586_52#" -217.121 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14616 -550 0 0 0 0 0 0 0 0
+merge "charge_pump1_reverse_0/nmos_dnw3_0/vin" "charge_pump1_reverse_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "charge_pump1_reverse_0/nmos_dnw3_0/vs" "w_12753_8728#"
+merge "charge_pump1_reverse_0/clock_1/clk_in" "buffer_digital_0/m1_304_98#" -3750.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3223 -280 0 0 -3631074 -20182 0 0 0 0 0 0
+merge "buffer_digital_0/m1_304_98#" "m1_9016_219#"

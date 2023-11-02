@@ -1,0 +1,167 @@
+* NGSPICE file created from full_stage_new1.ext - technology: sky130A
+
+X0 cmfb_0/m1_604_1671# integrator_full_new1_0/vin1 VSUBS cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X1 cmfb_0/Vdd integrator_full_new1_0/Vcmref cmfb_0/Vcm VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X2 cmfb_0/Vdd integrator_full_new1_0/Vcmref cmfb_0/Vcm VSUBS sky130_fd_pr__nfet_01v8 ad=26.6 pd=305 as=0.29 ps=3.16 w=0.5 l=0.5
+X3 VSUBS integrator_full_new1_0/Vcmref cmfb_0/Vcm cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=30 pd=345 as=0.29 ps=3.16 w=0.5 l=0.5
+X4 VSUBS integrator_full_new1_0/Vcmref cmfb_0/Vcm cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X5 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=3.48 pd=37.9 as=0 ps=0 w=0.5 l=0.5
+X6 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=4.06 pd=39.6 as=0 ps=0 w=0.5 l=0.5
+X7 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X8 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X9 cmfb_0/m1_604_1671# integrator_full_new1_0/vin2 VSUBS cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X10 cmfb_0/m1_1719_1576# cmfb_0/m1_1719_1576# cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X11 cmfb_0/Vdd cmfb_0/m1_1719_1576# m1_n2432_2259# cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X12 cmfb_0/m1_1719_1576# cmfb_0/m1_604_1671# cmfb_0/m1_1600_1134# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.58 ps=5.74 w=0.5 l=0.5
+X13 VSUBS integrator_full_new1_0/Vbias cmfb_0/m1_1600_1134# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X14 cmfb_0/m1_1600_1134# cmfb_0/Vcm m1_n2432_2259# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X15 cmfb_0/m1_604_1671# integrator_full_new1_0/vin2 cmfb_0/Vdd VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X16 cmfb_0/m1_604_1671# integrator_full_new1_0/vin1 cmfb_0/Vdd VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X17 integrator_full_new1_0/vin1 m1_n2432_2259# cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X18 integrator_full_new1_0/vin2 m1_n2432_2259# cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X19 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X20 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X21 m1_n2432_2259# cmfb_0/Vdd sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X22 m1_n1251_3061# integrator_full_new1_0/Vbias VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X23 integrator_full_new1_0/Vbias integrator_full_new1_0/Vbias VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+C0 integrator_full_new1_0/vo2 integrator_full_new1_0/cmfb_0/Vcm 2.46e-19
+C1 cmfb_0/Vdd integrator_full_new1_0/vo2 2.2f
+C2 integrator_full_new1_0/vin2 integrator_full_new1_0/vin1 1.12f
+C3 integrator_full_new1_0/vo2 integrator_full_new1_0/m1_1878_902# 0.218f
+C4 integrator_full_new1_0/vo1 integrator_full_new1_0/cmfb_0/m1_604_1671# 0.179f
+C5 integrator_full_new1_0/Vcmref cmfb_0/m1_604_1671# 2.21e-19
+C6 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/vin2 0.00111f
+C7 integrator_full_new1_0/m1_1788_970# integrator_full_new1_0/vo2 0.00312f
+C8 integrator_full_new1_0/vo2 integrator_full_new1_0/vin1 0.0226f
+C9 integrator_full_new1_0/Vcmref cmfb_0/Vcm 0.433f
+C10 cmfb_0/Vdd integrator_full_new1_0/cmfb_0/Vcm 0.734f
+C11 integrator_full_new1_0/cmfb_0/Vcm integrator_full_new1_0/m1_1878_902# 0.331f
+C12 cmfb_0/Vdd integrator_full_new1_0/m1_1878_902# 1.3f
+C13 integrator_full_new1_0/vo1 integrator_full_new1_0/Vcmref 0.0186f
+C14 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/vo2 0.0647f
+C15 cmfb_0/Vdd m1_n2432_2259# 12.7f
+C16 integrator_full_new1_0/Vcmref cmfb_0/m1_1600_1134# 5.08e-19
+C17 integrator_full_new1_0/Vcmref cmfb_0/m1_1719_1576# 3.83e-19
+C18 m1_n1251_3061# cmfb_0/Vcm 4.44e-20
+C19 integrator_full_new1_0/m1_1788_970# integrator_full_new1_0/cmfb_0/Vcm 0.0189f
+C20 cmfb_0/Vdd integrator_full_new1_0/m1_1788_970# 1.1f
+C21 integrator_full_new1_0/m1_1788_970# integrator_full_new1_0/m1_1878_902# 0.242f
+C22 integrator_full_new1_0/Vbias cmfb_0/m1_604_1671# 0.00196f
+C23 cmfb_0/Vdd integrator_full_new1_0/vin1 1.13f
+C24 integrator_full_new1_0/vin1 integrator_full_new1_0/m1_1878_902# 0.0269f
+C25 integrator_full_new1_0/cmfb_0/m1_604_1671# integrator_full_new1_0/vin2 0.00314f
+C26 integrator_full_new1_0/vo1 integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 0.215f
+C27 integrator_full_new1_0/vo1 m1_n1251_3061# 4.65e-20
+C28 m1_n2432_2259# integrator_full_new1_0/vin1 0.153f
+C29 m1_n1251_3061# cmfb_0/m1_1600_1134# 0.00152f
+C30 m1_n1251_3061# cmfb_0/m1_1719_1576# 3.67e-21
+C31 integrator_full_new1_0/Vbias cmfb_0/Vcm 9.96e-19
+C32 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/cmfb_0/Vcm 0.121f
+C33 integrator_full_new1_0/cmfb_0/m1_1600_1134# cmfb_0/Vdd 0.0398f
+C34 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/m1_1878_902# 0.214f
+C35 integrator_full_new1_0/cmfb_0/m1_604_1671# integrator_full_new1_0/vo2 0.253f
+C36 integrator_full_new1_0/vo1 integrator_full_new1_0/Vbias 0.0909f
+C37 integrator_full_new1_0/Vbias cmfb_0/m1_1600_1134# 0.0945f
+C38 integrator_full_new1_0/Vbias cmfb_0/m1_1719_1576# 5.64e-19
+C39 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/m1_1788_970# 0.058f
+C40 integrator_full_new1_0/Vcmref integrator_full_new1_0/vin2 0.00889f
+C41 integrator_full_new1_0/vin2 integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 0.204f
+C42 integrator_full_new1_0/vin2 m1_n1251_3061# 0.0085f
+C43 integrator_full_new1_0/Vcmref integrator_full_new1_0/vo2 0.0191f
+C44 integrator_full_new1_0/cmfb_0/m1_604_1671# integrator_full_new1_0/cmfb_0/Vcm 0.0197f
+C45 cmfb_0/Vdd integrator_full_new1_0/cmfb_0/m1_604_1671# 0.74f
+C46 cmfb_0/m1_604_1671# cmfb_0/Vcm 0.0197f
+C47 integrator_full_new1_0/cmfb_0/m1_604_1671# integrator_full_new1_0/m1_1878_902# 0.00177f
+C48 integrator_full_new1_0/cmfb_0/m1_604_1671# integrator_full_new1_0/m1_1788_970# 0.191f
+C49 integrator_full_new1_0/vin2 integrator_full_new1_0/Vbias 0.0325f
+C50 integrator_full_new1_0/vo2 integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 0.434f
+C51 cmfb_0/m1_604_1671# cmfb_0/m1_1600_1134# 0.133f
+C52 cmfb_0/m1_1719_1576# cmfb_0/m1_604_1671# 0.191f
+C53 integrator_full_new1_0/vo1 cmfb_0/Vcm 3.56e-20
+C54 integrator_full_new1_0/Vcmref integrator_full_new1_0/cmfb_0/Vcm 0.443f
+C55 integrator_full_new1_0/Vcmref cmfb_0/Vdd 3.8f
+C56 integrator_full_new1_0/Vcmref integrator_full_new1_0/m1_1878_902# 0.0938f
+C57 cmfb_0/Vcm cmfb_0/m1_1600_1134# 0.123f
+C58 cmfb_0/m1_1719_1576# cmfb_0/Vcm 0.0189f
+C59 integrator_full_new1_0/Vcmref m1_n2432_2259# 0.0157f
+C60 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/cmfb_0/m1_604_1671# 0.133f
+C61 integrator_full_new1_0/vo2 integrator_full_new1_0/Vbias 0.167f
+C62 integrator_full_new1_0/Vcmref integrator_full_new1_0/m1_1788_970# 0.0135f
+C63 integrator_full_new1_0/vo1 cmfb_0/m1_1600_1134# 9.51e-19
+C64 integrator_full_new1_0/cmfb_0/Vcm integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 4.82e-20
+C65 integrator_full_new1_0/Vcmref integrator_full_new1_0/vin1 1.2e-19
+C66 cmfb_0/Vdd integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 0.102f
+C67 cmfb_0/Vdd m1_n1251_3061# 0.00186f
+C68 integrator_full_new1_0/integrator_new1_0/m1_2972_2832# integrator_full_new1_0/m1_1878_902# 0.249f
+C69 cmfb_0/m1_1719_1576# cmfb_0/m1_1600_1134# 0.0608f
+C70 m1_n2432_2259# m1_n1251_3061# 0.00172f
+C71 integrator_full_new1_0/vin2 cmfb_0/m1_604_1671# 0.172f
+C72 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/Vcmref 0.0182f
+C73 integrator_full_new1_0/Vbias integrator_full_new1_0/cmfb_0/Vcm 0.00106f
+C74 integrator_full_new1_0/vin1 integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 0.099f
+C75 m1_n1251_3061# integrator_full_new1_0/vin1 0.209f
+C76 cmfb_0/Vdd integrator_full_new1_0/Vbias 0.529f
+C77 integrator_full_new1_0/Vbias integrator_full_new1_0/m1_1878_902# 0.0581f
+C78 integrator_full_new1_0/vin2 cmfb_0/Vcm 0.00211f
+C79 m1_n2432_2259# integrator_full_new1_0/Vbias 0.00768f
+C80 integrator_full_new1_0/m1_1788_970# integrator_full_new1_0/Vbias 2.52e-20
+C81 integrator_full_new1_0/vo1 integrator_full_new1_0/vin2 0.277f
+C82 integrator_full_new1_0/Vbias integrator_full_new1_0/vin1 0.198f
+C83 integrator_full_new1_0/vin2 cmfb_0/m1_1600_1134# 0.052f
+C84 integrator_full_new1_0/vin2 cmfb_0/m1_1719_1576# 4.99e-21
+C85 integrator_full_new1_0/vo2 cmfb_0/Vcm 3.26e-20
+C86 integrator_full_new1_0/Vcmref integrator_full_new1_0/cmfb_0/m1_604_1671# 0.0034f
+C87 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/Vbias 0.19f
+C88 integrator_full_new1_0/vo1 integrator_full_new1_0/vo2 19.4f
+C89 cmfb_0/Vdd cmfb_0/m1_604_1671# 0.739f
+C90 m1_n2432_2259# cmfb_0/m1_604_1671# 0.00381f
+C91 integrator_full_new1_0/cmfb_0/m1_604_1671# integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 2.15e-20
+C92 cmfb_0/Vdd cmfb_0/Vcm 0.738f
+C93 integrator_full_new1_0/vin1 cmfb_0/m1_604_1671# 0.257f
+C94 m1_n2432_2259# cmfb_0/Vcm 0.136f
+C95 integrator_full_new1_0/vo1 integrator_full_new1_0/cmfb_0/Vcm 1.49e-20
+C96 integrator_full_new1_0/vo1 cmfb_0/Vdd 1.59f
+C97 integrator_full_new1_0/vo1 integrator_full_new1_0/m1_1878_902# 0.095f
+C98 cmfb_0/Vdd cmfb_0/m1_1600_1134# 0.0491f
+C99 cmfb_0/Vdd cmfb_0/m1_1719_1576# 1.1f
+C100 integrator_full_new1_0/cmfb_0/m1_604_1671# integrator_full_new1_0/Vbias 2.63e-19
+C101 integrator_full_new1_0/vin1 cmfb_0/Vcm 3.7e-19
+C102 integrator_full_new1_0/Vcmref integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 0.00249f
+C103 m1_n2432_2259# cmfb_0/m1_1600_1134# 0.0839f
+C104 m1_n2432_2259# cmfb_0/m1_1719_1576# 0.296f
+C105 integrator_full_new1_0/vo1 integrator_full_new1_0/m1_1788_970# 1.61e-20
+C106 integrator_full_new1_0/vin2 integrator_full_new1_0/vo2 0.274f
+C107 integrator_full_new1_0/vo1 integrator_full_new1_0/vin1 0.238f
+C108 integrator_full_new1_0/vin1 cmfb_0/m1_1600_1134# 0.0376f
+C109 cmfb_0/m1_1719_1576# integrator_full_new1_0/vin1 0.00246f
+C110 integrator_full_new1_0/Vcmref integrator_full_new1_0/Vbias 0.00346f
+C111 integrator_full_new1_0/cmfb_0/m1_1600_1134# integrator_full_new1_0/vo1 1.36e-20
+C112 cmfb_0/Vdd integrator_full_new1_0/vin2 2.09f
+C113 integrator_full_new1_0/vin2 integrator_full_new1_0/m1_1878_902# 0.146f
+C114 integrator_full_new1_0/Vbias integrator_full_new1_0/integrator_new1_0/m1_2972_2832# 0.408f
+C115 m1_n1251_3061# integrator_full_new1_0/Vbias 0.0739f
+C116 integrator_full_new1_0/vin2 m1_n2432_2259# 0.37f
+C117 integrator_full_new1_0/cmfb_0/m1_604_1671# cmfb_0/Vcm 3e-21
+C118 integrator_full_new1_0/m1_1788_970# integrator_full_new1_0/vin2 6.82e-19
+Xintegrator_full_new1_0 cmfb_0/Vdd VSUBS integrator_full_new1_0/vin1 integrator_full_new1_0/vin2
++ integrator_full_new1_0/Vbias integrator_full_new1_0/Vcmref integrator_full_new1_0/vo2
++ integrator_full_new1_0/vo1 integrator_full_new1
+C119 m1_n1251_3061# VSUBS 0.26f $ **FLOATING
+C120 m1_n2432_2259# VSUBS 3.56f $ **FLOATING
+C121 integrator_full_new1_0/Vbias VSUBS 7.14f
+C122 integrator_full_new1_0/m1_1878_902# VSUBS 1.07f
+C123 integrator_full_new1_0/vo2 VSUBS 10.1f
+C124 integrator_full_new1_0/vo1 VSUBS 5.29f
+C125 integrator_full_new1_0/integrator_new1_0/m1_2972_2832# VSUBS 2.04f
+C126 integrator_full_new1_0/vin1 VSUBS 3.02f
+C127 integrator_full_new1_0/Vcmref VSUBS 3.66f
+C128 integrator_full_new1_0/cmfb_0/m1_604_1671# VSUBS 1.19f
+C129 cmfb_0/Vdd VSUBS 42.7f
+C130 integrator_full_new1_0/cmfb_0/Vcm VSUBS 1.19f
+C131 integrator_full_new1_0/m1_1788_970# VSUBS 0.302f
+C132 integrator_full_new1_0/cmfb_0/m1_1600_1134# VSUBS 1.1f
+C133 integrator_full_new1_0/vin2 VSUBS 3.4f
+C134 cmfb_0/m1_604_1671# VSUBS 1.19f $ **FLOATING
+C135 cmfb_0/Vcm VSUBS 1.19f $ **FLOATING
+C136 cmfb_0/m1_1719_1576# VSUBS 0.304f $ **FLOATING
+C137 cmfb_0/m1_1600_1134# VSUBS 1.22f $ **FLOATING

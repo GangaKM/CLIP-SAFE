@@ -1,0 +1,27 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Class cmfb.spice (0):  Merged 4 parallel devices.
+Class cmfb_xschem.spice (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: cmfb.spice                      |Circuit 2: cmfb_xschem.spice               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (8->6)             |sky130_fd_pr__pfet_01v8 (8->6)             
+sky130_fd_pr__nfet_01v8 (9->7)             |sky130_fd_pr__nfet_01v8 (9->7)             
+Number of devices: 13                      |Number of devices: 13                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 3 symmetries.
+Cells have no pins;  pin matching not needed.
+Device classes cmfb.spice and cmfb_xschem.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

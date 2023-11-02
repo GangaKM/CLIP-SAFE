@@ -1,0 +1,22 @@
+* SPICE3 file created from cmfb_pmos.ext - technology: sky130A
+
+X0 m1_514_1671# vin2 gnd Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X1 Vdd Vref Vcm gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X2 Vdd Vref Vcm gnd sky130_fd_pr__nfet_01v8 ad=13.6 pd=158 as=0.29 ps=3.16 w=0.5 l=0.5
+X3 gnd Vref Vcm Vdd sky130_fd_pr__pfet_01v8 ad=11.4 pd=132 as=0.29 ps=3.16 w=0.5 l=0.5
+X4 gnd Vref Vcm Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X5 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+X6 m1_1556_1667# m1_4045_1475# Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X7 Vdd m1_4045_1475# m1_4045_1475# Vdd sky130_fd_pr__pfet_01v8 ad=2.9 pd=23.5 as=0.29 ps=2.58 w=1 l=0.5
+X8 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=1.45 pd=14.1 as=0 ps=0 w=0.5 l=0.5
+X9 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X10 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=2 l=0.5
+X11 m1_4045_1475# Vbias gnd gnd sky130_fd_pr__nfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+X12 m1_514_1671# vin gnd Vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X13 m1_1726_1062# m1_514_1671# m1_1556_1667# Vdd sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=1.45 ps=11.7 w=2 l=0.5
+X14 m1_1556_1667# Vcm Vb Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.58 ps=4.58 w=2 l=0.5
+X15 m1_1726_1062# m1_1726_1062# gnd gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X16 gnd m1_1726_1062# Vb gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X17 m1_514_1671# vin Vdd gnd sky130_fd_pr__nfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X18 m1_514_1671# vin2 Vdd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+

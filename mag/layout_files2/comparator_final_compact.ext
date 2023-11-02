@@ -1,0 +1,1449 @@
+timestamp 1698850151
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use xnor xnor_0 1 0 6348 0 1 -1100
+use comparator_full_compact comparator_full_compact_1 1 0 592 0 1 -1922
+use sky130_fd_pr__nfet_01v8_GWFSUW sky130_fd_pr__nfet_01v8_GWFSUW_0 1 0 389 0 1 -442
+use sky130_fd_pr__nfet_01v8_GWFSUW sky130_fd_pr__nfet_01v8_GWFSUW_1 1 0 1283 0 1 -446
+use sky130_fd_pr__nfet_01v8_GWFSUW sky130_fd_pr__nfet_01v8_GWFSUW_2 1 0 2241 0 1 -444
+use sky130_fd_pr__nfet_01v8_GWFSUW sky130_fd_pr__nfet_01v8_GWFSUW_3 1 0 3199 0 1 -444
+use sky130_fd_pr__nfet_01v8_GWFSUW sky130_fd_pr__nfet_01v8_GWFSUW_4 1 0 4181 0 1 -446
+use sky130_fd_pr__nfet_01v8_GWFSUW sky130_fd_pr__nfet_01v8_GWFSUW_5 1 0 5123 0 1 -446
+use comparator_full_compact comparator_full_compact_0 1 0 622 0 1 -292
+use reference reference_0 1 0 -2500 0 1 -1085
+port "q" 7 6088 -1304 6088 -1304 m1
+port "enable" 8 8530 -782 8530 -782 m1
+port "gnd" 2 -1094 -2108 -1094 -2108 m5
+port "q2" 6 6088 -566 6088 -566 m1
+port "V+" 5 -692 -1088 -692 -1088 m2
+port "clk" 9 -418 -746 -418 -746 m4
+port "V-" 10 -1440 436 -1440 436 m1
+port "Vdd" 1 -2394 532 -2394 532 m4
+node "q" 6 872.43 6088 -1304 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62072 2704 43960 1368 126992 3680 0 0 0 0 0 0
+equiv "q" "Q"
+node "enable" 0 103.053 8530 -782 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9450 478 0 0 0 0 0 0 0 0 0 0
+node "gnd" 11 14849.7 -1094 -2108 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2682040 20116 1220868 12728 1379338 12818 2256960 16076 2966760 16256 0 0
+node "vref-" 1 55.205 -754 -1590 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4568 348 0 0 0 0 0 0 0 0 0 0
+node "m1_4854_n374#" 2 143.634 4854 -374 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26292 1336 0 0 0 0 0 0 0 0 0 0
+node "m1_4720_n472#" 2 143.98 4720 -472 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46668 2000 0 0 0 0 0 0 0 0 0 0
+node "m1_3920_n376#" 2 136.557 3920 -376 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26292 1336 0 0 0 0 0 0 0 0 0 0
+node "m1_3778_n476#" 2 131.44 3778 -476 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47076 2024 0 0 0 0 0 0 0 0 0 0
+node "m1_2934_n372#" 2 137.873 2934 -372 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26292 1336 0 0 0 0 0 0 0 0 0 0
+node "m1_2794_n476#" 2 126.637 2794 -476 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47280 2036 0 0 0 0 0 0 0 0 0 0
+node "m1_1968_n372#" 2 135.794 1968 -372 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31600 1364 0 0 0 0 0 0 0 0 0 0
+node "m1_1840_n454#" 2 129.212 1840 -454 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47160 2028 0 0 0 0 0 0 0 0 0 0
+node "m1_1014_n376#" 2 135.449 1014 -376 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31600 1364 0 0 0 0 0 0 0 0 0 0
+node "m1_124_n360#" 2 63.5353 124 -360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20944 1300 0 0 0 0 0 0 0 0 0 0
+node "m1_302_n290#" 5 230.179 302 -290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63960 3324 0 0 0 0 0 0 0 0 0 0
+node "m1_n14_n460#" 5 116.044 -14 -460 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28952 2124 0 0 0 0 0 0 0 0 0 0
+node "q2" 6 1097.14 6088 -566 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61484 2628 41168 1360 124798 3610 0 0 0 0 0 0
+equiv "q2" "Q2"
+node "Vc-" 9 1662.92 -618 -1548 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60132 1648 97716 3820 454355 11384 0 0 0 0 0 0
+node "V+" 28 1708.8 -692 -1088 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12956 668 225392 14142 0 0 0 0 0 0 0 0
+node "clk" 6 1774.64 -418 -746 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6304 320 15852 716 477232 13898 176360 3700 0 0 0 0
+node "m1_n1240_n878#" 0 23.9983 -1240 -878 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 164 0 0 0 0 0 0 0 0 0 0
+node "Vc+" 13 2357.06 -1476 -1000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22560 1076 101952 4268 503684 15960 0 0 0 0 0 0
+node "V-" 14 2598.19 -1440 436 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 260580 8032 64776 2236 456266 13570 0 0 0 0 0 0
+node "Vdd" 19 15758.6 -2394 532 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3176674 37172 1394624 12900 1763064 13068 3479518 21644 0 0 0 0
+node "li_n16_n614#" 863 2791.57 -16 -614 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 501196 11800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_302_n290#" 274 235.376 302 -290 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21952 1436 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4772_n388#" 259 117.329 4772 -388 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4830 382 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3830_n386#" 259 116.13 3830 -386 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4830 382 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2848_n384#" 259 116.298 2848 -384 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4830 382 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1890_n394#" 249 112.441 1890 -394 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4650 370 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_932_n402#" 276 123.223 932 -402 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5160 404 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_38_n375#" 218 116.848 38 -375 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5236 376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_5661_n475#" 0 0 5661 -475 ppd 0 0 0 0 0 0 0 0 0 0 8004 358 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8004 358 12182 602 0 0 0 0 0 0 0 0 0 0
+cap "m1_3920_n376#" "a_3830_n386#" 5.611
+cap "m1_4720_n472#" "q2" 17.5655
+cap "m1_302_n290#" "gnd" 3.08895
+cap "m1_2934_n372#" "m1_3778_n476#" 6.84444
+cap "m1_3920_n376#" "a_4772_n388#" 1.15116
+cap "V-" "a_1890_n394#" 0.296218
+cap "m1_3778_n476#" "gnd" 2.72292
+cap "clk" "m1_124_n360#" 4.75238
+cap "a_3830_n386#" "Vdd" 0.211409
+cap "a_4772_n388#" "m1_4854_n374#" 5.75178
+cap "m1_1968_n372#" "a_2848_n384#" 1.26621
+cap "Vc+" "Vdd" 134.127
+cap "Vdd" "a_2848_n384#" 0.197813
+cap "clk" "m1_1014_n376#" 5.35033
+cap "m1_4720_n472#" "a_3830_n386#" 0.0815998
+cap "clk" "V+" 66.6538
+cap "a_4772_n388#" "Vdd" 0.204818
+cap "vref-" "Vc+" 3.72425
+cap "m1_1968_n372#" "Vc-" 23.0622
+cap "clk" "a_38_n375#" 1.27179
+cap "Vc-" "Vdd" 189.92
+cap "m1_1968_n372#" "m1_2794_n476#" 9.01639
+cap "m1_2794_n476#" "Vdd" 353.538
+cap "gnd" "a_1890_n394#" 0.303966
+cap "m1_4720_n472#" "a_4772_n388#" 6.25382
+cap "clk" "m1_1840_n454#" 7.91101
+cap "V+" "m1_124_n360#" 0.818165
+cap "clk" "li_n16_n614#" 16.5592
+cap "a_38_n375#" "m1_124_n360#" 5.67008
+cap "vref-" "Vc-" 21.3043
+cap "V-" "m1_1968_n372#" 9.07036
+cap "V+" "m1_1014_n376#" 9.16061
+cap "V-" "Vdd" 238.994
+cap "clk" "a_932_n402#" 0.979859
+cap "m1_1014_n376#" "a_38_n375#" 0.0173746
+cap "Vdd" "m1_n14_n460#" 388.945
+cap "li_n16_n614#" "m1_124_n360#" 4.9478
+cap "clk" "li_302_n290#" 1.89236
+cap "V+" "a_38_n375#" 0.66432
+cap "m1_3920_n376#" "gnd" 1.34161
+cap "m1_1840_n454#" "m1_1014_n376#" 9.01639
+cap "V-" "vref-" 13.089
+cap "gnd" "m1_4854_n374#" 1.33908
+cap "clk" "m1_302_n290#" 12.7969
+cap "m1_1014_n376#" "li_n16_n614#" 8.07743
+cap "a_932_n402#" "m1_124_n360#" 0.949386
+cap "li_302_n290#" "m1_124_n360#" 13.7546
+cap "V+" "li_n16_n614#" 2.46545
+cap "m1_2934_n372#" "Vdd" 18.0074
+cap "a_38_n375#" "li_n16_n614#" 3.94002
+cap "m1_1968_n372#" "gnd" 1.55116
+cap "gnd" "Vdd" 269.614
+cap "m1_1014_n376#" "a_932_n402#" 6.535
+cap "m1_302_n290#" "m1_124_n360#" 231.885
+cap "q" "li_n16_n614#" 1.16901
+cap "a_4772_n388#" "q2" 2.48588
+cap "V+" "a_932_n402#" 0.461933
+cap "m1_1840_n454#" "li_n16_n614#" 29.1894
+cap "V+" "li_302_n290#" 1.22097
+cap "a_932_n402#" "a_38_n375#" 0.922658
+cap "m1_4720_n472#" "gnd" 3.39257
+cap "m1_1014_n376#" "m1_302_n290#" 310.695
+cap "vref-" "gnd" 3.01543
+cap "V+" "m1_302_n290#" 2.35332
+cap "a_3830_n386#" "a_2848_n384#" 1.06302
+cap "m1_1840_n454#" "a_932_n402#" 0.0686389
+cap "m1_1840_n454#" "li_302_n290#" 0.0474388
+cap "a_932_n402#" "li_n16_n614#" 4.14986
+cap "Vc+" "a_2848_n384#" 0.0829824
+cap "clk" "a_1890_n394#" 0.724062
+cap "m1_302_n290#" "a_38_n375#" 0.0849121
+cap "li_n16_n614#" "li_302_n290#" 66.2614
+cap "a_3830_n386#" "a_4772_n388#" 1.11672
+cap "m1_1840_n454#" "m1_302_n290#" 14.8846
+cap "a_3830_n386#" "m1_2794_n476#" 0.000741039
+cap "m1_302_n290#" "li_n16_n614#" 30.2913
+cap "a_932_n402#" "li_302_n290#" 4.30349
+cap "Vc+" "Vc-" 438.155
+cap "Vc-" "a_2848_n384#" 1.58192
+cap "Vc+" "m1_2794_n476#" 0.0115744
+cap "m1_2794_n476#" "a_2848_n384#" 6.32252
+cap "m1_3778_n476#" "li_n16_n614#" 31.7895
+cap "a_932_n402#" "m1_302_n290#" 8.45688
+cap "m1_1014_n376#" "a_1890_n394#" 1.1292
+cap "m1_302_n290#" "li_302_n290#" 65.2364
+cap "q2" "gnd" 217.051
+cap "m1_2794_n476#" "Vc-" 14.0258
+cap "V-" "Vc+" 689.263
+cap "Vc+" "m1_n14_n460#" 1.45245
+cap "m1_1840_n454#" "a_1890_n394#" 5.9905
+cap "clk" "m1_1968_n372#" 5.03822
+cap "clk" "Vdd" 700.114
+cap "li_n16_n614#" "a_1890_n394#" 3.83262
+cap "V-" "Vc-" 722.743
+cap "a_3830_n386#" "m1_2934_n372#" 0.982713
+cap "Vc-" "m1_n14_n460#" 13.6457
+cap "a_3830_n386#" "gnd" 0.33792
+cap "a_932_n402#" "a_1890_n394#" 1.12456
+cap "Vdd" "m1_124_n360#" 6.52078
+cap "m1_2934_n372#" "a_2848_n384#" 5.53952
+cap "Vc+" "gnd" 1874.23
+cap "gnd" "a_2848_n384#" 0.297371
+cap "m1_1014_n376#" "Vdd" 15.5734
+cap "q" "m1_4854_n374#" 0.687996
+cap "a_4772_n388#" "gnd" 0.325254
+cap "m1_3920_n376#" "li_n16_n614#" 6.94942
+cap "V-" "m1_n14_n460#" 0.340513
+cap "V+" "Vdd" 205.537
+cap "Vc-" "gnd" 188.301
+cap "m1_2934_n372#" "m1_2794_n476#" 281.885
+cap "li_n16_n614#" "m1_4854_n374#" 6.82158
+cap "a_38_n375#" "Vdd" 1.11568
+cap "m1_2794_n476#" "gnd" 2.5477
+cap "q" "Vdd" 4.83383
+cap "m1_n1240_n878#" "Vc+" 11.2541
+cap "m1_1840_n454#" "m1_1968_n372#" 311.108
+cap "vref-" "V+" 1.32715
+cap "m1_1840_n454#" "Vdd" 329.301
+cap "m1_1968_n372#" "li_n16_n614#" 7.78725
+cap "li_n16_n614#" "Vdd" 1446.76
+cap "q" "m1_4720_n472#" 1.49015
+cap "V-" "gnd" 77.5916
+cap "m1_1968_n372#" "a_932_n402#" 0.0154993
+cap "gnd" "m1_n14_n460#" 1.36432
+cap "m1_4720_n472#" "li_n16_n614#" 30.3697
+cap "a_932_n402#" "Vdd" 0.187081
+cap "li_302_n290#" "Vdd" 1.80845
+cap "m1_3920_n376#" "m1_3778_n476#" 292.907
+cap "m1_302_n290#" "Vdd" 373.737
+cap "V-" "m1_n1240_n878#" 5.35598
+cap "m1_2934_n372#" "gnd" 1.33655
+cap "m1_3778_n476#" "Vdd" 353.986
+cap "clk" "Vc+" 160.157
+cap "clk" "a_2848_n384#" 0.717578
+cap "m1_4720_n472#" "m1_3778_n476#" 16.0765
+cap "q" "q2" 177.25
+cap "Vc+" "m1_124_n360#" 1.41714
+cap "clk" "Vc-" 541.144
+cap "m1_n1240_n878#" "gnd" 0.538022
+cap "clk" "m1_2794_n476#" 4.11151
+cap "q2" "li_n16_n614#" 4.75412
+cap "m1_1968_n372#" "a_1890_n394#" 5.88938
+cap "a_1890_n394#" "Vdd" 0.166816
+cap "m1_1014_n376#" "a_2848_n384#" 0.0143394
+cap "Vc-" "m1_124_n360#" 12.7517
+cap "V+" "Vc+" 913.212
+cap "V-" "clk" 1745.75
+cap "Vc+" "a_38_n375#" 0.709272
+cap "m1_1014_n376#" "Vc-" 22.8021
+cap "clk" "m1_n14_n460#" 7.97609
+cap "a_3830_n386#" "li_n16_n614#" 3.83507
+cap "m1_1840_n454#" "a_2848_n384#" 0.00390733
+cap "V+" "Vc-" 755.256
+cap "Vc+" "li_n16_n614#" 3.57519
+cap "m1_3920_n376#" "Vdd" 17.9613
+cap "q" "a_4772_n388#" 0.310009
+cap "li_n16_n614#" "a_2848_n384#" 3.67844
+cap "V-" "m1_124_n360#" 0.488343
+cap "Vc-" "a_38_n375#" 1.76611
+cap "m1_4854_n374#" "Vdd" 17.8503
+cap "m1_n14_n460#" "m1_124_n360#" 231.632
+cap "a_4772_n388#" "li_n16_n614#" 3.79857
+cap "m1_1840_n454#" "Vc-" 17.3735
+cap "Vc+" "a_932_n402#" 0.459744
+cap "m1_3920_n376#" "m1_4720_n472#" 8.17699
+cap "V-" "m1_1014_n376#" 1.45405
+cap "Vc+" "li_302_n290#" 2.30702
+cap "m1_1840_n454#" "m1_2794_n476#" 16.3638
+cap "Vc-" "li_n16_n614#" 12.365
+cap "clk" "gnd" 38.6864
+cap "m1_4720_n472#" "m1_4854_n374#" 299.403
+cap "m1_1968_n372#" "Vdd" 15.6693
+cap "V-" "V+" 1003.78
+cap "m1_2794_n476#" "li_n16_n614#" 31.8152
+cap "V-" "a_38_n375#" 0.378691
+cap "V+" "m1_n14_n460#" 1.31548
+cap "Vc+" "m1_302_n290#" 11.8893
+cap "a_932_n402#" "Vc-" 1.34073
+cap "a_3830_n386#" "m1_3778_n476#" 6.4549
+cap "a_38_n375#" "m1_n14_n460#" 5.47822
+cap "m1_4720_n472#" "Vdd" 340.397
+cap "Vc-" "li_302_n290#" 6.38088
+cap "gnd" "m1_124_n360#" 0.923667
+cap "V-" "m1_1840_n454#" 0.584649
+cap "m1_3778_n476#" "a_2848_n384#" 0.0874821
+cap "V-" "li_n16_n614#" 9.7692
+cap "clk" "m1_n1240_n878#" 0.14372
+cap "m1_302_n290#" "Vc-" 37.7903
+cap "m1_1014_n376#" "gnd" 1.50381
+cap "li_n16_n614#" "m1_n14_n460#" 17.2515
+cap "m1_3778_n476#" "a_4772_n388#" 0.000806044
+cap "m1_2794_n476#" "m1_302_n290#" 0.151203
+cap "V+" "gnd" 66.2965
+cap "V-" "a_932_n402#" 0.311365
+cap "V-" "li_302_n290#" 1.65508
+cap "a_38_n375#" "gnd" 0.25784
+cap "m1_2794_n476#" "m1_3778_n476#" 14.9559
+cap "a_932_n402#" "m1_n14_n460#" 0.00980046
+cap "li_302_n290#" "m1_n14_n460#" 4.47096
+cap "q" "gnd" 1122.98
+cap "Vc+" "a_1890_n394#" 0.0577576
+cap "m1_1840_n454#" "gnd" 2.53209
+cap "V-" "m1_302_n290#" 1.98619
+cap "m1_2934_n372#" "li_n16_n614#" 6.69694
+cap "a_1890_n394#" "a_2848_n384#" 0.954161
+cap "q2" "m1_4854_n374#" 19.6133
+cap "gnd" "li_n16_n614#" 15.4867
+cap "m1_302_n290#" "m1_n14_n460#" 29.4634
+cap "V+" "m1_n1240_n878#" 0.126509
+cap "Vc-" "a_1890_n394#" 1.06939
+cap "q2" "Vdd" 140.129
+cap "a_932_n402#" "gnd" 0.260444
+cap "gnd" "li_302_n290#" 0.168896
+cap "m1_2794_n476#" "a_1890_n394#" 0.0589901
+cap "reference_0/vo1" "reference_0/vo2" 90.9267
+cap "reference_0/vo1" "comparator_full_compact_1/vo1+" 1.23439
+cap "reference_0/Vdd" "reference_0/gnd" 2.33766
+cap "reference_0/vo2" "comparator_full_compact_1/vo1+" 0.219381
+cap "reference_0/vo2" "comparator_full_compact_1/vo1-" 0.0339841
+cap "V+" "reference_0/vo1" 0.00857824
+cap "V-" "reference_0/vo2" -1.89842
+cap "reference_0/vo1" "reference_0/gnd" 15.9207
+cap "V+" "reference_0/vo2" 0.122828
+cap "reference_0/vo2" "reference_0/gnd" 58.6085
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "reference_0/vo2" 0.762022
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n81_64#" "reference_0/vo2" 1.88324
+cap "clk" "reference_0/vo2" 0.0341331
+cap "reference_0/Vdd" "reference_0/vo2" 6.7445
+cap "reference_0/Vdd" "comparator_full_compact_1/V+" 0.498916
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/Vc+" 0.365404
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_0/Vc+" 17.6528
+cap "V-" "comparator_full_compact_1/Vc+" 17.5943
+cap "V-" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 29.0508
+cap "reference_0/gnd" "comparator_full_compact_1/vo1-" -2.95413
+cap "comparator_full_compact_1/V+" "reference_0/gnd" 9.22123
+cap "V-" "comparator_full_compact_1/comparator_layout_0/XM29/a_n50_n197#" 1.0777
+cap "comparator_full_compact_1/vo1+" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 0.504635
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/vo1-" 6.30036
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/Vc+" 3.46082
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "comparator_full_compact_1/vo1-" -5.70092
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 36.916
+cap "comparator_full_compact_0/Vc+" "clk" 5.22493
+cap "V-" "comparator_full_compact_1/vo1+" 53.4647
+cap "reference_0/Vdd" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 0.00834011
+cap "clk" "comparator_full_compact_1/vo-" 1.27757
+cap "reference_0/gnd" "comparator_full_compact_1/Vc+" 55.0592
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "reference_0/gnd" 17.6305
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/vo-" 0.00276428
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/V+" 31.2969
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/vo1-" -2.74107
+cap "clk" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 27.6993
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "comparator_full_compact_1/Vc+" 55.9725
+cap "V-" "clk" -1.37359
+cap "comparator_full_compact_0/Vc+" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 4.00204
+cap "comparator_full_compact_1/vo1+" "reference_0/gnd" 7.08291
+cap "V-" "comparator_full_compact_0/Vc+" 83.3409
+cap "V-" "comparator_full_compact_1/vo-" 0.197609
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/Vc+" 62.8982
+cap "comparator_full_compact_1/vo1-" "clk" 61.917
+cap "comparator_full_compact_1/V+" "clk" -4.56362
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" -0.00047065
+cap "reference_0/Vdd" "clk" 0.314984
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/vo1-" 0.00268451
+cap "V-" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 40.4099
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/vo-" 0.0875738
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/Vc+" 7.25244
+cap "reference_0/Vdd" "comparator_full_compact_0/Vc+" -0.47084
+cap "reference_0/gnd" "clk" 0.0814712
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "reference_0/gnd" 0.113255
+cap "comparator_full_compact_1/Vc+" "clk" -7.31084
+cap "reference_0/gnd" "comparator_full_compact_0/Vc+" 39.9626
+cap "comparator_full_compact_1/V+" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 12.3394
+cap "comparator_full_compact_1/vo1-" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 0.445209
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "clk" 49.7832
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/Vc+" 1.85572
+cap "comparator_full_compact_1/comparator_layout_0/XM29/a_n50_n197#" "clk" 0.133927
+cap "V-" "comparator_full_compact_1/vo1-" 50.7929
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/vo-" 3.59732
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "comparator_full_compact_0/Vc+" 24.7976
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/Vc+" 66.2772
+cap "reference_0/Vdd" "V-" 0.0930183
+cap "reference_0/gnd" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 0.840159
+cap "comparator_full_compact_1/vo1+" "clk" 67.6661
+cap "comparator_full_compact_1/Vc+" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 11.3876
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/vo1-" 121.773
+cap "V-" "reference_0/gnd" 5.54027
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" 0.00988244
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_1/Vc-" 8.54924
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/Vc-" 16.674
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/V-" 7.86724
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_0/li_n693_n1#" 2.21902
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/li_n693_n1#" 8.45905
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/Vc-" 2.57929
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/clk" -62.0182
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_1/clk" 63.7133
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/vo-" 51.4121
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_1/vo-" -0.000421242
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/Vc-" 3.56075
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_1/V-" 38.1328
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/V-" 7.89958
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/vo+" 0.198307
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/clk" -10.9399
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/vo-" 21.1679
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/V-" 18.4747
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/clk" 75.2704
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/vo-" 0.00988244
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/vo+" 7.70809
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/V-" 64.2249
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/V+" 60.3381
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_1/V+" 73.6201
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/V+" -8.73708
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 0.0494823
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/V+" -6.16892
+cap "comparator_full_compact_1/Vc+" "reference_0/vo2" 0.029675
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" -0.0399822
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/V+" 45.5595
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" 52.2681
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_0/li_n693_n1#" 0.810978
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/Vc-" 40.0326
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/vo-" -0.00047065
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" 440.069
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_1/Vc+" 33.7677
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/vo-" -2.43063
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/clk" 0.696983
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/clk" -0.311718
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/vo-" 26.4795
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" -8.19905
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/V-" 40.9726
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/vo+" -0.0956859
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_0/li_n693_n1#" 3.2165
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_0/li_n693_n1#" 16.8377
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/vo-" 61.8421
+cap "comparator_full_compact_1/vo1-" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 1.15761
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/Vc+" -2.40351
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/V-" 79.4061
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/clk" 266.81
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/V-" 37.7572
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/Vc+" -12.0661
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/V-" 13.4457
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/li_n693_n1#" 3.84087
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/V+" 0.71316
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/V+" 163.932
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/V+" 17.2717
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/V+" 23.3313
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_0/Vc+" 0.251703
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/vo-" 79.9144
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" 169.529
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" -1.42916
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/V-" 1.73654
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/V+" 0.075799
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" -0.0710189
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/Vc+" 25.5228
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/Vc+" 0.0446457
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/vo-" -11.8724
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" -7.52173
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/Vc+" -0.0686653
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/latch_layout_0/XM22/a_50_n100#" 1.5493
+cap "comparator_full_compact_1/latch_layout_0/XM14/a_50_n100#" "comparator_full_compact_1/clk" 0.950294
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/clk" 112.435
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/Vc-" 39.7365
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" -0.00306972
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/gnd" 26.9817
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 1.41318
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/Vdd" 35.8275
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" -0.00553489
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/V-" 92.4648
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" -0.00047065
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" -0.350143
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" 715.677
+cap "comparator_full_compact_0/V-" "comparator_full_compact_1/V-" -0.721726
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/latch_layout_0/XM15/a_n50_n197#" 1.25363
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" 26.7516
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" 131.974
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_0/Vc-" -0.115625
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" 305.086
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/Vc-" -42.5702
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/Vc-" 5.66168
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/gnd" 4.92879
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" -12.141
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 2.21902
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 5.13568
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/clk" 221.14
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/Vc-" 1.06749
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/vo-" -0.000516979
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/Vdd" 0.00991563
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/V+" 1.58747
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/vo1-" -0.000421242
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/comparator_layout_0/XM30/a_n50_n197#" 0.00637959
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/latch_layout_0/XM15/a_n50_n197#" 0.669255
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" 5.79139
+cap "comparator_full_compact_1/clk" "comparator_full_compact_0/Vc-" -49.9277
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" -3.75331
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/clk" 19.79
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" 20.4638
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/clk" -4.81992
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/Vdd" 1.06773
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" -0.954617
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" -4.54412
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/Vc-" 0.00017852
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/clk" 52.4366
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/gnd" 22.2659
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/Vdd" 10.621
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/Vc-" 46.3692
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/V-" 53.5814
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/Vdd" -0.139355
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/clk" 1.49196
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/clk" 0.600429
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" 28.8389
+cap "comparator_full_compact_1/V-" "comparator_full_compact_0/Vc-" -0.092227
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" 29.678
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/V-" 5.98054
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/vo1-" -0.000421242
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/V-" 17.7673
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/V-" 117.177
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/V-" 0.358874
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/clk" 194.369
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/Vdd" 69.759
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/V-" 0.268779
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/Vdd" 0.000713107
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/vo1-" -0.000421242
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/vo1-" 2.08259
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/V-" -3.08642
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/gnd" 2.08259
+cap "comparator_full_compact_1/latch_layout_0/XM22/a_50_n100#" "comparator_full_compact_1/gnd" 14.037
+cap "comparator_full_compact_0/clk" "comparator_full_compact_1/clk" 0.14673
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/gnd" 43.9139
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/gnd" 41.3868
+cap "comparator_full_compact_1/latch_layout_0/XM14/a_50_n100#" "comparator_full_compact_1/gnd" 4.11611
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/vo-" 0.619121
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/vo-" -0.000842484
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/Vdd" 1.87525
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/clk" -0.0243259
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/V-" 0.123899
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/clk" 0.00261265
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_1/Vc-" 0.0185618
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/vo-" -0.392562
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/vo-" -0.0514498
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/Vdd" 0.654124
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/Vdd" 0.939028
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/clk" -0.0421242
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/Vdd" 0.0198117
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_1/gnd" 39.3194
+cap "comparator_full_compact_0/latch_layout_0/XM22/a_n50_n188#" "comparator_full_compact_1/gnd" 0.940973
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/comparator_layout_0/XM33/a_50_n100#" 0.149393
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/Vdd" 0.707525
+cap "comparator_full_compact_1/comparator_layout_0/XM33/a_50_n100#" "comparator_full_compact_1/gnd" 68.3224
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/Q1" 0.137562
+cap "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_1/gnd" 0.660054
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/Q1" -0.000842484
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/vo-" 0.00226254
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" 0.0127592
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/Q1" 0.0189867
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/gnd" 14.4997
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/gnd" 32.636
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/Vc-" 0.503937
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/gnd" 373.821
+cap "comparator_full_compact_1/clk" "comparator_full_compact_0/comparator_layout_0/XM33/a_50_n100#" 0.00437506
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_1/Vdd" 0.911128
+cap "xnor_0/A" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 0.266037
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/B" 3.05188
+cap "xnor_0/A" "xnor_0/B" -20.739
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_1/latch_layout_0/XM13/a_n50_n197#" -0.392562
+cap "xnor_0/A" "comparator_full_compact_1/comparator_layout_0/XM34/a_50_n100#" 0.0283428
+cap "xnor_0/A" "comparator_full_compact_1/latch_layout_0/XM13/a_n50_n197#" 1.09892
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/B" 0.000243346
+cap "comparator_full_compact_1/Vdd" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_47#" 1.42568
+cap "comparator_full_compact_1/Vdd" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" 3.1741
+cap "xnor_0/A" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 0.088972
+cap "xnor_0/gnd" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 0.723275
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 0.0198117
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 0.175879
+cap "comparator_full_compact_1/Vdd" "xnor_0/A" 31.8403
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 8.9072
+cap "comparator_full_compact_1/Vdd" "xnor_0/gnd" 34.3684
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_47#" 1.90103
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPB" 0.836302
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 0.825935
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 0.0454142
+cap "xnor_0/A" "comparator_full_compact_1/clk" 0.137707
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/Q1" 8.89944
+cap "xnor_0/A" "comparator_full_compact_1/latch_layout_0/XM16/a_50_n100#" 2.92931
+cap "xnor_0/gnd" "comparator_full_compact_1/latch_layout_0/XM16/a_50_n100#" 3.0824
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" 0.0127592
+cap "xnor_0/A" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 185.234
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_1/latch_layout_0/XM16/a_50_n100#" -2.84217e-14
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_902_47#" 0.150498
+cap "comparator_full_compact_1/Vdd" "xnor_0/B" 0.102267
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/gnd" 394.477
+cap "xnor_0/A" "comparator_full_compact_1/latch_layout_0/XM24/a_50_n100#" 41.6804
+cap "xnor_0/A" "xnor_0/gnd" 15.8538
+cap "xnor_0/gnd" "comparator_full_compact_1/latch_layout_0/XM24/a_50_n100#" 12.8088
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/A" 33.8786
+cap "xnor_0/A" "comparator_full_compact_1/Q1" 27.7539
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/gnd" 23.566
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_1/latch_layout_0/XM24/a_50_n100#" -7.10543e-15
+cap "comparator_full_compact_1/Q1" "xnor_0/gnd" 104.176
+cap "xnor_0/B" "xnor_0/A" -18.153
+cap "xnor_0/gnd" "comparator_full_compact_1/latch_layout_0/XM24/a_50_n100#" 0.00557799
+cap "xnor_0/gnd" "xnor_0/Vdd" -1.67391
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPB" "xnor_0/A" 1.99333
+cap "xnor_0/A" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_902_47#" 0.168188
+cap "xnor_0/B" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPB" 1.47168
+cap "xnor_0/gnd" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 10.0198
+cap "xnor_0/B" "comparator_full_compact_1/latch_layout_0/XM16/a_50_n100#" 0.0710722
+cap "xnor_0/gnd" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_47#" 0.255126
+cap "xnor_0/gnd" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" 1.05367
+cap "xnor_0/gnd" "comparator_full_compact_1/Q1" 15.2265
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/A" 5.41306
+cap "xnor_0/gnd" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" 46.6391
+cap "xnor_0/B" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 0.536856
+cap "xnor_0/gnd" "xnor_0/A" 22.4029
+cap "xnor_0/gnd" "xnor_0/B" 1.6309
+cap "xnor_0/Vdd" "xnor_0/A" 1.13442
+cap "xnor_0/gnd" "comparator_full_compact_1/latch_layout_0/XM16/a_50_n100#" 0.00555284
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_47#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" 1.40976
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/A" 0.202415
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" 3.47989
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_47#" "xnor_0/A" 3.67897
+cap "xnor_0/A" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" 3.56575
+cap "comparator_full_compact_1/Q1" "xnor_0/A" 0.00486861
+cap "xnor_0/B" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" 1.54594
+cap "xnor_0/gnd" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 18.6583
+cap "xnor_0/B" "comparator_full_compact_1/Q1" 0.0499937
+cap "xnor_0/B" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" 1.59181
+cap "reference_0/Vdd" "reference_0/vo2" 11.8833
+cap "comparator_full_compact_1/vo1+" "reference_0/vo2" 0.000415875
+cap "reference_0/vo1" "V+" 0.0387736
+cap "reference_0/Vdd" "reference_0/gnd" 1.16809
+cap "comparator_full_compact_1/vo1-" "reference_0/vo2" 0.0100311
+cap "reference_0/vo1" "reference_0/vo2" 0.050762
+cap "reference_0/Vdd" "reference_0/vo1" 0.308338
+cap "V-" "reference_0/vo2" 4.08159
+cap "reference_0/Vdd" "V-" 18.2854
+cap "clk" "reference_0/vo2" 0.0446756
+cap "V+" "reference_0/vo2" 0.347836
+cap "reference_0/Vdd" "clk" 5.09221
+cap "reference_0/Vdd" "V+" 16.6476
+cap "comparator_full_compact_1/vo1+" "V-" 0.0629
+cap "reference_0/Vdd" "clk" 22.6285
+cap "V-" "comparator_full_compact_0/vo1+" 21.0376
+cap "comparator_full_compact_0/vo1+" "comparator_full_compact_1/vo1-" 1.09152
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/vo-" 0.63807
+cap "V-" "comparator_full_compact_1/vo1-" 0.127296
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 0.0278899
+cap "V-" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 27.5882
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/vo-" 1.1928
+cap "reference_0/Vdd" "comparator_full_compact_0/vo-" 0.0603083
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/vo1+" -2.49509
+cap "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "comparator_full_compact_1/vo1-" 3.89084
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/V+" 6.2341
+cap "comparator_full_compact_0/vo1-" "V-" 43.8246
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/vo1+" 27.9889
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_0/Vc+" 0.27287
+cap "reference_0/Vdd" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 0.0327809
+cap "comparator_full_compact_1/vo1+" "reference_0/gnd" 22.2518
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" -5.38211
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/vo1-" 36.4839
+cap "comparator_full_compact_0/vo1+" "comparator_full_compact_0/Vc+" 36.035
+cap "V-" "reference_0/gnd" 5.42858
+cap "comparator_full_compact_1/vo1+" "reference_0/Vdd" 72.8432
+cap "reference_0/Vdd" "comparator_full_compact_0/vo1+" 109.887
+cap "V-" "comparator_full_compact_0/Vc+" 3.306
+cap "reference_0/gnd" "comparator_full_compact_1/vo1-" 77.5858
+cap "V-" "reference_0/Vdd" 34.1988
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 34.6449
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/vo1-" 32.2485
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 44.2523
+cap "reference_0/Vdd" "comparator_full_compact_1/vo1-" 102.044
+cap "reference_0/gnd" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 0.185869
+cap "comparator_full_compact_1/Vc+" "clk" -7.31084
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_1/V+" 82.7338
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "clk" 41.3594
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 53.578
+cap "reference_0/Vdd" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 20.8536
+cap "comparator_full_compact_0/vo1-" "reference_0/gnd" -6.50451
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/Vc+" 0.12821
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/Vc+" 0.589954
+cap "comparator_full_compact_0/vo1-" "reference_0/Vdd" 24.6377
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/Vc+" 0.0198582
+cap "reference_0/gnd" "comparator_full_compact_1/V+" 14.2081
+cap "comparator_full_compact_1/vo-" "clk" 1.7367
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/Vc+" -4.58617
+cap "reference_0/Vdd" "comparator_full_compact_1/V+" 2.62658
+cap "reference_0/gnd" "comparator_full_compact_0/Vc+" 21.3269
+cap "reference_0/gnd" "reference_0/Vdd" 227.367
+cap "reference_0/Vdd" "comparator_full_compact_0/Vc+" 19.972
+cap "comparator_full_compact_0/vo-" "clk" 3.06948
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 0.0997501
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/Vc+" 4.46602
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_0/vo1+" 9.17017
+cap "comparator_full_compact_1/vo1+" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" -0.237841
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "clk" 1.62455
+cap "comparator_full_compact_1/vo1+" "clk" 4.98725
+cap "comparator_full_compact_0/vo1+" "clk" 3.22491
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/vo1-" 16.9724
+cap "V-" "clk" -5.68434e-14
+cap "V-" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 3.83536
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "comparator_full_compact_1/vo1-" -1.32671
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 26.7138
+cap "comparator_full_compact_1/vo1-" "clk" 12.5753
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 0.0480756
+cap "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "clk" 5.97491
+cap "comparator_full_compact_0/vo1-" "clk" 16.294
+cap "comparator_full_compact_1/vo-" "V-" 0.0557148
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "clk" 0.791913
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/V+" 0.106226
+cap "V-" "comparator_full_compact_0/vo-" 0.0953778
+cap "comparator_full_compact_1/Vc+" "reference_0/gnd" 37.8944
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 0.105414
+cap "comparator_full_compact_1/comparator_layout_0/XM29/a_n50_n197#" "clk" 0.00913306
+cap "comparator_full_compact_1/V+" "clk" -3.52195
+cap "reference_0/gnd" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 4.69702
+cap "comparator_full_compact_1/Vc+" "reference_0/Vdd" 2.93963
+cap "comparator_full_compact_0/Vc+" "clk" 1.98043
+cap "reference_0/gnd" "clk" 16.3843
+cap "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "comparator_full_compact_0/Vc+" 0.0669777
+cap "reference_0/Vdd" "comparator_full_compact_1/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 16.5965
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 5.55112e-17
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" -2.94409
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_1/V+" 71.3883
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/V-" 32.0237
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 44.5023
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/V+" -18.1054
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/vo1-" 18.932
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/vo+" 42.4172
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/vo1+" -0.112415
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/vo1-" -0.173098
+cap "comparator_full_compact_1/clk" "comparator_full_compact_0/vo1+" -6.93889e-18
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/vo1-" 34.8056
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/vo1+" 0.0487057
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/V+" 30.424
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/Vc+" 26.1335
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 0.108825
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" 0.360458
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" -1.33531
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/V-" 8.08004
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/vo+" 41.0637
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/clk" 1.15258
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" 135.486
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/V-" 2.33675
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/vo1-" 58.8486
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/vo1+" 0.103129
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/vo1-" 0.0541828
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/vo-" 0.0441264
+cap "comparator_full_compact_1/Vc+" "comparator_full_compact_1/vo1+" 8.39759
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" -0.0624624
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_1/V-" 42.0638
+cap "comparator_full_compact_0/vo-" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 7.21599
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/V-" 7.71214
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" 22.4992
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/vo1+" 0.734005
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/vo-" 0.00737022
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/vo1-" 329.087
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/Vc+" 192.292
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/Vc+" 21.5989
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/clk" -6.77645
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/clk" 19.294
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/vo+" -1.86673
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/vo+" -5.43624
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/vo1+" 259.634
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/li_n693_n1#" 0.287717
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/V-" 3.98536
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_1/Vc+" 9.17017
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/vo1-" -6.54124
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_1/clk" 5.76274
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/Vc+" 19.5872
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/V-" 38.3639
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 27.5867
+cap "comparator_full_compact_1/V+" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 4.11169
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/clk" 0.0429346
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/vo+" 0.0690118
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/vo1+" 141.432
+cap "comparator_full_compact_0/vo1-" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 1.06641
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/Vc+" -2.24787
+cap "comparator_full_compact_0/Vc+" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 0.71246
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/clk" 24.3588
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 8.79562
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/V+" 35.3618
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/Vc+" 41.0283
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/clk" 0.211296
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/V-" 80.639
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/vo+" 0.125188
+cap "comparator_full_compact_1/Vc-" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" -1.82518
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/vo1-" 3.88208
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/vo1+" -0.00047065
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/li_n693_n1#" -6.26558
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/vo+" 4.74566
+cap "comparator_full_compact_1/vo-" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 31.4709
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/vo+" -4.05717
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/li_n693_n1#" 38.1837
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/V-" 62.2657
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" 2.3379
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_1/vo1+" -0.105114
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/Vc+" -61.4188
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/vo+" -0.086553
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_1/V-" 11.3349
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/vo1-" 167.418
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/li_n693_n1#" -4.14469
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/vo1+" 0.695759
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" -2.39991
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/vo1+" 0.0449436
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/V-" 17.9773
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/Vc+" -5.64901
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_1/clk" -0.873735
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_1/vo1-" 1.09152
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" -11.8724
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/V+" 74.121
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/vo+" -11.2819
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/vo1-" 42.2355
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/vo1+" 0.0358987
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/vo1-" -0.000421242
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/Vc+" 104.027
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" -12.044
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" -1.14544
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/vo-" 53.1933
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_1/clk" -0.750918
+cap "comparator_full_compact_1/V+" "comparator_full_compact_1/vo1+" 0.770207
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/vo1-" -0.200326
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/vo+" 0.210758
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/Vc-" 0.000997534
+cap "comparator_full_compact_1/V+" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 53.8147
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/Vc+" 194.866
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/vo1+" -0.0351651
+cap "comparator_full_compact_0/li_n693_n1#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 894.654
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/vo+" 150.563
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/vo-" 0.329981
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_1/vo1+" 0.0718559
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/vo-" 3.64124
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/clk" -2.11701
+cap "comparator_full_compact_1/Vdd" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_351_n42#" 0.000459122
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/vo-" 179.327
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_1/clk" -67.2941
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_50_n100#" 0.0933923
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_0/vo+" 0.081165
+cap "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_1/clk" -0.872449
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/Vc-" 11.689
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/Vc-" -19.9229
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/Q" 0.282467
+cap "comparator_full_compact_1/latch_layout_0/XM15/a_n50_n197#" "comparator_full_compact_1/clk" 0.166152
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" 0.938378
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/vo+" -3.09404
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" -0.182527
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_0/vo+" 0.000130113
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/vo+" -0.00111475
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/vo+" -0.0979658
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_0/V-" 0.00424938
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/Vdd" -8.47375
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/clk" 0.0475787
+cap "comparator_full_compact_0/V-" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 0.0826138
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 130.93
+cap "comparator_full_compact_1/vo1-" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 286.885
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/clk" 5.35902
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 9.27421
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" 0.399179
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/vo+" 0.0033699
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/vo+" 3.5226
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/latch_layout_0/XM15/a_n50_n197#" 1.25967
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 25.5187
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/vo+" -3.93753
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 18.6096
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/vo+" 56.0888
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/Vdd" -0.943933
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_1/vo+" 2.55526
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/vo+" 0.454355
+cap "comparator_full_compact_0/clk" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 0.000756826
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_0/vo-" 0.137597
+cap "comparator_full_compact_0/V-" "comparator_full_compact_1/Vc-" 0.000216855
+cap "comparator_full_compact_0/latch_layout_0/XM22/a_50_n100#" "comparator_full_compact_0/Vc-" 1.55826
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/V-" 17.9475
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" -0.375635
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" -0.00634143
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/vo1-" -0.173098
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/Q" 1.08341
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/vo+" -5.60169
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/V+" -2.8419
+cap "comparator_full_compact_0/V-" "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" 0.00141426
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/vo+" 2.71775
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/vo1-" 308.598
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" -3.09768
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo+" 1.96889
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/V-" 37.7036
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/Vc-" 0.00130113
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/Vdd" -0.784159
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/vo+" 46.548
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/clk" -3.06646
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/vo-" -2.27021
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/vo+" 0.0212739
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_0/Vc-" 7.63316
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/V-" 20.8315
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/V+" 0.135014
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/vo1-" 0.0988977
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/vo-" 0.00848553
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/vo1-" -0.0969347
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/vo-" 0.0033699
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/Vdd" 0.639208
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/vo+" 0.117733
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 148.982
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/vo+" 60.7834
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/vo-" 100.557
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/V-" 123.113
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/vo+" -24.7214
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/vo1-" 0.0864922
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_0/Vc-" -0.121381
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/clk" 0.185584
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/vo-" -0.103765
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/clk" -0.141898
+cap "comparator_full_compact_1/gnd" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_351_n42#" 0.0236549
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/Vc-" 348.435
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/clk" 0.0359689
+cap "comparator_full_compact_0/V-" "comparator_full_compact_1/vo-" 0.0135565
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/vo-" 0.597227
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_1/Vdd" 0.196764
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/V+" 1.56677
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/Vc+" -0.0226706
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_1/vo1-" 10.6547
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_50_n100#" 0.368888
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 175.459
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/Vc-" 1.79764
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_1/vo+" 181.305
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/vo-" 1.78284
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/Vc-" 21.521
+cap "comparator_full_compact_1/Vc-" "comparator_full_compact_1/clk" -1.268
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_1/clk" 0.199054
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/Vc-" 86.7928
+cap "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_1/vo+" -3.08531
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" 45.9325
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/vo+" 4.9694
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" -6.72727
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/vo1-" -0.315038
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/Vc-" -4.87341
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/vo+" -4.0933
+cap "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_1/clk" 1.65916
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" 3.63206
+cap "comparator_full_compact_1/V-" "comparator_full_compact_0/V-" -0.758851
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/clk" 0.144546
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/vo+" 198.189
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/Vc-" 61.0309
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/Vc-" 27.0452
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/vo1-" 41.9677
+cap "comparator_full_compact_0/V-" "comparator_full_compact_1/clk" 0.715395
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/Vc-" 6.36311
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/clk" -4.09973
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/comparator_layout_0/XM25/a_50_n100#" 0.22272
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/vo+" 19.415
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/Vdd" -1.83617
+cap "comparator_full_compact_0/V-" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" 120.637
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" -0.00307116
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/V-" -6.44468
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_50_n100#" 5.16128
+cap "comparator_full_compact_1/V-" "comparator_full_compact_0/vo-" 0.00393634
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/Vdd" 967.1
+cap "comparator_full_compact_1/V-" "comparator_full_compact_1/vo-" 0.0512276
+cap "comparator_full_compact_0/clk" "comparator_full_compact_1/clk" 0.0294396
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/clk" 0.00585622
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/clk" 3.44269
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" 5.68434e-14
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/vo-" 0.02753
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/Q1" 0.593569
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/comparator_layout_0/XM33/a_50_n100#" 1.02012
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 325.434
+cap "comparator_full_compact_1/clk" "comparator_full_compact_0/clk" 0.397259
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/Q1" 0.442158
+cap "comparator_full_compact_0/Q" "comparator_full_compact_1/Vdd" 1.22864
+cap "comparator_full_compact_1/Q" "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" 0.124362
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/latch_layout_0/XM14/a_50_n100#" 1.61858
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/vo-" 9.05445
+cap "Vdd" "comparator_full_compact_1/Vdd" -14.3212
+cap "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 0.123188
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/vo+" 106.201
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/Q1" 0.00445661
+cap "comparator_full_compact_1/latch_layout_0/XM22/a_50_n100#" "comparator_full_compact_1/Vdd" 0.310865
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 0.0540918
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 193.084
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/comparator_layout_0/XM33/a_50_n100#" -0.180287
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" 9.07006
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" -0.00943821
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/V-" 0.0904
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" 18.1934
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_0/vo-" -0.309917
+cap "comparator_full_compact_0/clk" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 16.3159
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 1.13757
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/Q" 0.249242
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/vo-" 82.8008
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/vo-" -2.274
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_1/vo+" 31.413
+cap "comparator_full_compact_1/comparator_layout_0/XM33/a_50_n100#" "comparator_full_compact_1/Vdd" 0.140917
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/clk" 0.500909
+cap "Vdd" "comparator_full_compact_1/gnd" -0.492734
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" 1.29792
+cap "comparator_full_compact_0/latch_layout_0/XM14/a_50_n100#" "comparator_full_compact_1/Vdd" 0.296739
+cap "comparator_full_compact_0/Q1" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 11.7592
+cap "comparator_full_compact_1/latch_layout_0/XM14/a_50_n100#" "comparator_full_compact_1/Vdd" 1.72563
+cap "comparator_full_compact_0/comparator_layout_0/XM33/a_50_n100#" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 30.4957
+cap "comparator_full_compact_0/Q1" "comparator_full_compact_1/Q1" 0.794458
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/clk" 5.567
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 100.113
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" -0.173505
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/vo+" 18.6422
+cap "comparator_full_compact_1/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_1/Vdd" 0.102697
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/Q1" 0.0247887
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/Vdd" 1124.51
+cap "Vdd" "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" 0.0067398
+cap "comparator_full_compact_0/latch_layout_0/XM22/a_50_n100#" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 4.01971
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 137.832
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/Q1" 5.38601
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/Vdd" 0.0989272
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/comparator_layout_0/XM33/a_50_n100#" 3.01617
+cap "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 0.162612
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 1.99202e-05
+cap "comparator_full_compact_0/Vc-" "comparator_full_compact_0/vo-" 0.0127804
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/vo-" 2.91979
+cap "comparator_full_compact_0/Q" "comparator_full_compact_0/clk" 0.00270082
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" 1.84902
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/Vdd" 0.782319
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/latch_layout_0/XM22/a_50_n100#" 5.4728
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/vo-" 15.2204
+cap "Vdd" "comparator_full_compact_0/clk" 0.33699
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" 1.87298
+cap "comparator_full_compact_0/Q" "comparator_full_compact_0/Q1" 0.0294154
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_1/Vdd" 0.153335
+cap "comparator_full_compact_1/clk" "comparator_full_compact_1/vo-" 0.0444293
+cap "comparator_full_compact_0/Q" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 19.0476
+cap "comparator_full_compact_0/clk" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 0.0826138
+cap "comparator_full_compact_0/Q" "comparator_full_compact_0/V-" 0.174618
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/clk" 6.20071
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/Vdd" 6.80075
+cap "comparator_full_compact_0/Q" "comparator_full_compact_0/vo-" 0.49026
+cap "comparator_full_compact_1/Q" "comparator_full_compact_1/Vdd" 0.360113
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" 0.224086
+cap "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" -0.173505
+cap "comparator_full_compact_0/Q" "comparator_full_compact_1/vo+" 2.67237
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_1/clk" 0.503165
+cap "comparator_full_compact_0/Q1" "comparator_full_compact_1/Vdd" 5.63352
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/vo-" 0.0374202
+cap "Vdd" "comparator_full_compact_0/vo-" 0.0067398
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/comparator_layout_0/XM33/a_50_n100#" 8.84705
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 86.8168
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/Q1" 5.97474
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" 0.865923
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" -0.660412
+cap "comparator_full_compact_0/latch_layout_0/XM22/a_50_n100#" "comparator_full_compact_1/Vdd" 1.76988
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/vo-" 22.8541
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" -0.105838
+cap "comparator_full_compact_1/gnd" "comparator_full_compact_0/clk" 0.889574
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_1/Vdd" 64.4263
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_351_n42#" 0.021545
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/Vdd" 0.425692
+cap "xnor_0/B" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 29.3987
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_820_297#" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 0.250753
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/gnd" 82.0422
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/Vdd" 6.07769
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_1/latch_layout_0/XM24/a_50_n100#" 0.316493
+cap "comparator_full_compact_0/latch_layout_0/XM24/a_50_n100#" "comparator_full_compact_1/Vdd" 1.96075
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/gnd" 207.69
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 42.5285
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" -0.323595
+cap "comparator_full_compact_1/latch_layout_0/XM16/a_50_n100#" "comparator_full_compact_1/Vdd" 1.68554
+cap "xnor_0/A" "comparator_full_compact_1/Vdd" 3.86834
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/Vdd" 1.8762
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM16/a_50_n100#" 2.92807
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" "comparator_full_compact_1/Vdd" 4.21728
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 3.55271e-15
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/Q1" 4.07891
+cap "comparator_full_compact_1/Vdd" "xnor_0/Vdd" -8.17073
+cap "xnor_0/B" "comparator_full_compact_1/Vdd" 7.64416
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPB" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 2.96989
+cap "comparator_full_compact_0/Vdd" "xnor_0/A" 0.144546
+cap "comparator_full_compact_0/clk" "xnor_0/B" 0.143162
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/latch_layout_0/XM16/a_50_n100#" 0.172407
+cap "xnor_0/A" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 0.0152127
+cap "comparator_full_compact_1/Vdd" "xnor_0/gnd" 935.399
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPB" 0.245606
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" -5.68434e-14
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_1/Vdd" 75.944
+cap "comparator_full_compact_0/Vdd" "xnor_0/Vdd" 0.0505536
+cap "xnor_0/B" "comparator_full_compact_0/Vdd" 35.0626
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM24/a_50_n100#" 41.4553
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/Vdd" 124.47
+cap "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" "xnor_0/Vdd" 1.39078
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 182.565
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "xnor_0/A" 0.00507389
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 5.77079
+cap "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_0/latch_layout_0/XM13/a_n50_n197#" -0.309917
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_1/latch_layout_0/XM24/a_50_n100#" -4.44089e-16
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" 0.277554
+cap "xnor_0/A" "comparator_full_compact_0/Q1" 0.135719
+cap "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" "xnor_0/gnd" 20.9119
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 38.4388
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/Vdd" 3.20608
+cap "xnor_0/B" "comparator_full_compact_0/comparator_layout_0/XM34/a_50_n100#" 0.0277689
+cap "xnor_0/B" "xnor_0/A" -20.1988
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "xnor_0/Vdd" 1.36364
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/latch_layout_0/XM24/a_50_n100#" 3.38272
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" 36.8403
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_1/Vdd" 0.873753
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_1/latch_layout_0/XM21/a_n50_n188#" -2.77556e-17
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 8.58161
+cap "comparator_full_compact_0/Q1" "xnor_0/Vdd" 5.03307
+cap "xnor_0/B" "comparator_full_compact_0/Q1" 27.079
+cap "comparator_full_compact_0/latch_layout_0/XM16/a_50_n100#" "comparator_full_compact_1/Vdd" 0.321174
+cap "xnor_0/A" "xnor_0/gnd" 0.900103
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "xnor_0/gnd" 0.213094
+cap "xnor_0/B" "xnor_0/Vdd" -26.5799
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPB" "comparator_full_compact_1/Vdd" 2.03512
+cap "xnor_0/A" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 30.7849
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 1.91134
+cap "xnor_0/gnd" "comparator_full_compact_0/Q1" 0.728682
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 6.97496
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM13/a_n50_n197#" 0.977487
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_0/Q1" 4.75649
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/A" -0.150949
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 1.10826
+cap "xnor_0/gnd" "xnor_0/Vdd" 2.47174
+cap "xnor_0/B" "xnor_0/gnd" 126.795
+cap "xnor_0/B" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 127.736
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/Vdd" 2.69029
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" 0.171006
+cap "comparator_full_compact_1/Q1" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 9.08312
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/Q1" 44.3951
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" 4.55439
+cap "xnor_0/A" "xnor_0/gnd" 0.24479
+cap "xnor_0/B" "xnor_0/Vdd" 27.4816
+cap "xnor_0/B" "xnor_0/gnd" 5.70699
+cap "xnor_0/Vdd" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 1.22105
+cap "xnor_0/B" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_820_297#" 0.615065
+cap "xnor_0/B" "xnor_0/Y" 0.10905
+cap "xnor_0/gnd" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 0.133685
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" 2.19559
+cap "xnor_0/B" "xnor_0/A" -1.07046
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_351_n42#" "xnor_0/gnd" -0.0616806
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 5.84686
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" "xnor_0/gnd" 0.935671
+cap "xnor_0/B" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" 14.8477
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_303_64#" "xnor_0/gnd" 0.0245921
+cap "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" "xnor_0/gnd" 6.21518
+cap "xnor_0/B" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_47#" 0.646828
+cap "comparator_full_compact_0/latch_layout_0/XM14/w_n246_n319#" "xnor_0/Vdd" 1.66193
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" "xnor_0/Vdd" 1.36427
+cap "xnor_0/B" "comparator_full_compact_1/latch_layout_0/XM19/a_n50_n188#" 0.105351
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" "xnor_0/gnd" 30.1505
+cap "xnor_0/B" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPB" 9.37698
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM14/w_n246_n319#" 0.0189268
+cap "xnor_0/B" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" 0.269337
+cap "xnor_0/Vdd" "comparator_full_compact_0/Q1" 5.02865
+cap "xnor_0/Vdd" "xnor_0/gnd" 3.03652
+cap "xnor_0/Vdd" "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" 1.26166
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "xnor_0/gnd" 0.398565
+cap "xnor_0/A" "xnor_0/Vdd" 0.842171
+cap "xnor_0/sky130_fd_sc_hd__xnor2_4_0/a_38_297#" "xnor_0/Y" 0.0357714
+cap "comparator_full_compact_0/vo1-" "clk" 59.0456
+cap "comparator_full_compact_0/vo1+" "clk" 72.5075
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" -1.08339
+cap "comparator_full_compact_0/vo1+" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" -0.162639
+cap "comparator_full_compact_0/vo1+" "V-" 0.639156
+cap "comparator_full_compact_0/Vc+" "reference_0/Vdd" -0.0997567
+cap "Vc-" "comparator_full_compact_0/vo1+" 0.132259
+cap "comparator_full_compact_0/vo1+" "comparator_full_compact_0/V+" 0.162243
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 0.0166722
+cap "comparator_full_compact_0/vo-" "reference_0/Vdd" 0.109257
+cap "comparator_full_compact_0/li_n693_n1#" "reference_0/Vdd" -0.0740942
+cap "comparator_full_compact_0/vo-" "clk" 0.762473
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" -1.48031
+cap "clk" "reference_0/Vdd" -10.1352
+cap "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "reference_0/Vdd" 65.2977
+cap "comparator_full_compact_1/vo1-" "reference_0/Vdd" 0.0305348
+cap "clk" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 84.12
+cap "reference_0/Vdd" "V-" -1.3703
+cap "Vc-" "reference_0/Vdd" -0.277776
+cap "comparator_full_compact_0/V+" "reference_0/Vdd" -9.74218
+cap "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" "V-" 0.113862
+cap "Vc-" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 0.0292053
+cap "comparator_full_compact_0/V+" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n50_n188#" 0.0199457
+cap "comparator_full_compact_0/vo1+" "comparator_full_compact_0/vo1-" -0.129255
+cap "comparator_full_compact_0/vo1+" "comparator_full_compact_0/Vc+" 0.107218
+cap "comparator_full_compact_0/vo1-" "reference_0/Vdd" 347.846
+cap "comparator_full_compact_0/vo1+" "reference_0/Vdd" 72.2907
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo1-" 70.3992
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_0/vo+" -12.3594
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_0/vo1+" -0.0632014
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_0/vo+" -1.85018
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/Vc-" 0.00982964
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/Vc-" -1.21929
+cap "comparator_full_compact_0/li_n693_n1#" "comparator_full_compact_0/vo-" -5.13913
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/li_n693_n1#" -2.43246
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_0/vo-" -12.044
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/V-" 1.5554
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/vo1-" 0.0707853
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 2.52497
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_0/vo-" -10.8306
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/vo+" 371.626
+cap "comparator_full_compact_0/V+" "comparator_full_compact_0/vo+" -4.05717
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/vo1+" 103.808
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/vo1+" -0.0756799
+cap "comparator_full_compact_0/V+" "comparator_full_compact_0/vo1+" 0.68128
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/vo-" 19.9078
+cap "comparator_full_compact_0/V+" "comparator_full_compact_0/vo-" 34.4437
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/V+" -27.5247
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo+" 426.525
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo1+" 1.3649
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/Vc-" 0.0872015
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/li_n693_n1#" -0.144498
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo-" 105.214
+cap "comparator_full_compact_0/clk" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" -77.1878
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/vo+" -7.17604
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_0/V-" 1.14831
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/vo+" -3.9823
+cap "comparator_full_compact_0/vo1+" "comparator_full_compact_0/V-" 0.0562783
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/vo1+" -0.105114
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/vo+" -5.21675
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/V-" 5.30022
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/vo-" -0.0660924
+cap "comparator_full_compact_0/Vc+" "comparator_full_compact_0/vo-" -2.29098
+cap "comparator_full_compact_0/Vc+" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" -1.35321
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/V-" -1.02635
+cap "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "comparator_full_compact_0/vo1-" 695.055
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/V+" 3.1546
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/vo-" -1.14544
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" 4.01757
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" -8.88178e-16
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" "comparator_full_compact_0/Vc-" 0.0512095
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/Vdd" 5.19778
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" -2.10946
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/Vc-" 1.35153
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/V-" -1.29223
+cap "comparator_full_compact_0/clk" "comparator_full_compact_1/Vdd" -0.13092
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/vo+" 0.0464888
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/gnd" 0.0881918
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_0/Vdd" 4.35551
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo+" 385.14
+cap "comparator_full_compact_0/vo1-" "comparator_full_compact_0/Vdd" 650.512
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_50_n100#" 1.11273
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/vo+" -29.3028
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/latch_layout_0/XM14/a_50_n100#" 0.132194
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/Vc-" 0.0160054
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" 2.24166
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/Vc-" -15.4614
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_1/Vdd" -8.50712
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/vo+" -2.21779
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/gnd" 5.68292
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/Q" 0.284173
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/vo+" 388.693
+cap "comparator_full_compact_1/latch_layout_0/XM14/a_n50_n197#" "comparator_full_compact_0/vo+" 0.0438699
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_50_n100#" 38.1478
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_0/V-" -2.9677
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo-" 269.533
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/comparator_layout_0/XM25/a_50_n100#" 4.69426
+cap "comparator_full_compact_0/comparator_layout_0/XM25/a_n108_n100#" "comparator_full_compact_0/vo+" -0.973172
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "comparator_full_compact_0/clk" 0.349925
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/Vdd" -8.3968
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_1/vo1-" 0.0477126
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_0/Vc-" 10.4211
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/vo+" 0.401005
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/Vdd" 38.7525
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/V-" -8.09881
+cap "comparator_full_compact_1/vo+" "comparator_full_compact_0/vo+" 2.69254
+cap "comparator_full_compact_0/gnd" "comparator_full_compact_0/vo+" -6.5184
+cap "comparator_full_compact_0/vo-" "comparator_full_compact_0/V-" 1.14847
+cap "comparator_full_compact_0/clk" "Vdd" 5.36405
+cap "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" "comparator_full_compact_0/vo-" 1.78571
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 0.556646
+cap "comparator_full_compact_0/clk" "comparator_full_compact_1/Vdd" 0.010091
+cap "comparator_full_compact_0/Q1" "comparator_full_compact_0/vo-" 1.77636e-15
+cap "comparator_full_compact_0/gnd" "comparator_full_compact_0/clk" 0.00676038
+cap "comparator_full_compact_0/Q1" "comparator_full_compact_0/Vdd" -5.68434e-14
+cap "Vdd" "comparator_full_compact_0/latch_layout_0/XM14/a_50_n100#" 6.59947
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "Vdd" 650.512
+cap "Vdd" "comparator_full_compact_0/vo-" 26.7558
+cap "comparator_full_compact_0/vo+" "Vdd" 394.645
+cap "comparator_full_compact_0/Vdd" "Vdd" 334.787
+cap "comparator_full_compact_0/Q1" "Vdd" 7.51815
+cap "comparator_full_compact_1/latch_layout_0/XM14/a_n50_n197#" "comparator_full_compact_0/vo+" 0.383279
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/vo-" 0.104184
+cap "Vdd" "comparator_full_compact_0/Q" 4.95494
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/vo+" 4.89935
+cap "comparator_full_compact_0/clk" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 0.393028
+cap "comparator_full_compact_0/vo+" "comparator_full_compact_1/vo+" 31.413
+cap "comparator_full_compact_0/gnd" "comparator_full_compact_0/vo-" 0.028762
+cap "comparator_full_compact_0/latch_layout_0/XM21/a_n50_n188#" "Vdd" 39.9712
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo-" 0.000192592
+cap "comparator_full_compact_0/gnd" "comparator_full_compact_0/vo+" 1.60607
+cap "comparator_full_compact_0/comparator_layout_0/XM33/a_50_n100#" "Vdd" 1.58678
+cap "comparator_full_compact_0/clk" "comparator_full_compact_0/vo+" -0.0888749
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/clk" -0.0534578
+cap "comparator_full_compact_1/Vdd" "Vdd" -13.6862
+cap "comparator_full_compact_0/comparator_layout_0/XM28/a_n108_n100#" "Vdd" 2.34347
+cap "Vdd" "comparator_full_compact_0/latch_layout_0/XM22/a_50_n100#" 2.69758
+cap "comparator_full_compact_1/vo-" "comparator_full_compact_0/vo+" 0.240047
+cap "comparator_full_compact_0/gnd" "Vdd" 10.3486
+cap "comparator_full_compact_0/Q1" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 5.36509
+cap "xnor_0/Vdd" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 380.671
+cap "xnor_0/Vdd" "comparator_full_compact_0/gnd" 9.98247
+cap "xnor_0/Vdd" "comparator_full_compact_0/Vdd" 371.554
+cap "comparator_full_compact_0/latch_layout_0/XM16/a_50_n100#" "comparator_full_compact_0/Q1" -2.84217e-14
+cap "comparator_full_compact_1/Vdd" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 0.796602
+cap "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" "xnor_0/B" 29.153
+cap "comparator_full_compact_0/latch_layout_0/XM16/a_50_n100#" "xnor_0/Vdd" 4.63152
+cap "xnor_0/Vdd" "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" 366.711
+cap "comparator_full_compact_0/gnd" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" -2.82401
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" -1.13687e-13
+cap "comparator_full_compact_0/Vdd" "xnor_0/B" 0.509449
+cap "xnor_0/Vdd" "comparator_full_compact_0/latch_layout_0/XM24/a_50_n100#" 2.66839
+cap "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_1/latch_layout_0/XM17/a_n50_n197#" 0.120077
+cap "xnor_0/Vdd" "comparator_full_compact_0/Q1" 37.2062
+cap "comparator_full_compact_0/latch_layout_0/XM16/a_50_n100#" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 1.77636e-15
+cap "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" -0.323595
+cap "comparator_full_compact_1/latch_layout_0/sky130_fd_pr__pfet_01v8_X3YSY6_0/a_n50_n197#" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" 6.77623
+cap "comparator_full_compact_0/latch_layout_0/XM24/a_50_n100#" "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" -4.44089e-16
+cap "comparator_full_compact_0/Q1" "comparator_full_compact_1/Vdd" 0.413387
+cap "comparator_full_compact_0/Q1" "xnor_0/B" 1.6353
+cap "comparator_full_compact_0/Q1" "comparator_full_compact_0/gnd" 0.0208147
+cap "comparator_full_compact_0/Vdd" "comparator_full_compact_0/Q1" 1.13687e-13
+cap "xnor_0/Vdd" "comparator_full_compact_1/Vdd" -9.78008
+cap "xnor_0/Vdd" "xnor_0/B" -14.7245
+cap "comparator_full_compact_0/latch_layout_0/XM17/a_n50_n197#" "xnor_0/Vdd" 0.108168
+cap "comparator_full_compact_0/latch_layout_0/XM19/a_n50_n188#" "xnor_0/Vdd" 1.21504
+cap "xnor_0/Vdd" "xnor_0/B" -0.0083178
+cap "comparator_full_compact_0/latch_layout_0/li_238_840#" "xnor_0/Vdd" 0.452227
+cap "xnor_0/Vdd" "comparator_full_compact_0/Q1" 0.00121813
+cap "xnor_0/B" "comparator_full_compact_0/latch_layout_0/XM14/w_n246_n319#" 0.0124436
+cap "xnor_0/Vdd" "comparator_full_compact_0/latch_layout_0/XM14/w_n246_n319#" 10.9694
+merge "comparator_full_compact_0/Vdd" "comparator_full_compact_1/latch_layout_0/li_30_2070#" -16052.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11478 -1478 0 0 -207123 -16426 -874673 -26754 -313600 -2800 -394800 -2800 -581896 -3460 0 0 0 0
+merge "comparator_full_compact_1/latch_layout_0/li_30_2070#" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPWR"
+merge "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VPWR" "xnor_0/Vdd"
+merge "xnor_0/Vdd" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_303_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_111_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_111_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n81_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n81_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_207_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_207_n130#" "m1_4854_n374#"
+merge "m1_4854_n374#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_15_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_15_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n177_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n177_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n369_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n369_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n273_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n273_64#" "a_4772_n388#"
+merge "a_4772_n388#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_303_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_303_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_111_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_111_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n81_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n81_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_207_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_207_n130#" "m1_3920_n376#"
+merge "m1_3920_n376#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_15_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_15_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n177_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n177_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n369_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n369_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n273_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n273_64#" "a_3830_n386#"
+merge "a_3830_n386#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_303_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_303_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_111_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_111_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_207_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_207_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n81_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_15_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_15_n130#" "m1_2934_n372#"
+merge "m1_2934_n372#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n177_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n177_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n369_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n369_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n273_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n273_64#" "a_2848_n384#"
+merge "a_2848_n384#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_303_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_303_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_111_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_111_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n81_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n81_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_207_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_207_n130#" "m1_1968_n372#"
+merge "m1_1968_n372#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_15_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_15_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n177_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n177_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n369_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n369_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n273_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n273_64#" "a_1890_n394#"
+merge "a_1890_n394#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_303_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_111_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_111_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n81_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n81_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_207_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_207_n130#" "m1_1014_n376#"
+merge "m1_1014_n376#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_15_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_15_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n177_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n177_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n369_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n369_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n273_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n273_64#" "a_932_n402#"
+merge "a_932_n402#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_303_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_303_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_111_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_111_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_207_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_207_n130#" "reference_0/Vdd"
+merge "reference_0/Vdd" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n81_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n81_64#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_15_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_15_n130#" "m1_124_n360#"
+merge "m1_124_n360#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n177_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n177_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n369_n130#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n369_n130#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n273_64#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n273_64#" "a_38_n375#"
+merge "a_38_n375#" "comparator_full_compact_1/Vdd"
+merge "comparator_full_compact_1/Vdd" "Vdd"
+merge "Vdd" "li_n16_n614#"
+merge "comparator_full_compact_0/latch_layout_0/li_238_840#" "comparator_full_compact_1/latch_layout_0/li_238_840#" -8130.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21952 -1436 -605064 -21892 0 0 0 0 0 0 0 0 0 0
+merge "comparator_full_compact_1/latch_layout_0/li_238_840#" "xnor_0/VSUBS"
+merge "xnor_0/VSUBS" "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VGND"
+merge "xnor_0/sky130_fd_sc_hd__xnor2_4_0/VGND" "xnor_0/gnd"
+merge "xnor_0/gnd" "comparator_full_compact_0/gnd"
+merge "comparator_full_compact_0/gnd" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_351_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_351_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_255_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_255_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_159_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_159_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_63_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_63_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n33_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n33_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n129_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n129_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n225_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n225_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n321_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n321_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n413_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/a_n413_n42#" "m1_4720_n472#"
+merge "m1_4720_n472#" "comparator_full_compact_1/gnd"
+merge "comparator_full_compact_1/gnd" "reference_0/gnd"
+merge "reference_0/gnd" "comparator_full_compact_1/li_n693_n1#"
+merge "comparator_full_compact_1/li_n693_n1#" "gnd"
+merge "gnd" "sky130_fd_pr__nfet_01v8_GWFSUW_5/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_5/VSUBS" "sky130_fd_pr__nfet_01v8_GWFSUW_4/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/VSUBS" "sky130_fd_pr__nfet_01v8_GWFSUW_3/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/VSUBS" "sky130_fd_pr__nfet_01v8_GWFSUW_2/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/VSUBS" "sky130_fd_pr__nfet_01v8_GWFSUW_1/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/VSUBS" "reference_0/VSUBS"
+merge "reference_0/VSUBS" "comparator_full_compact_0/VSUBS"
+merge "comparator_full_compact_0/VSUBS" "sky130_fd_pr__nfet_01v8_GWFSUW_0/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/VSUBS" "comparator_full_compact_1/VSUBS"
+merge "comparator_full_compact_1/VSUBS" "a_5661_n475#"
+merge "a_5661_n475#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_351_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_351_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_255_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_255_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_159_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_159_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_63_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_63_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n33_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n33_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n129_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n129_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n225_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n225_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n321_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n321_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n413_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_4/a_n413_n42#" "m1_3778_n476#"
+merge "m1_3778_n476#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_351_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_351_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_255_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_255_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_159_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_159_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_63_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_63_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_351_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_351_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n33_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n33_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n129_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n129_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n225_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n225_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n321_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n321_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n413_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_3/a_n413_n42#" "m1_2794_n476#"
+merge "m1_2794_n476#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_351_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_351_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_255_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_255_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_159_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_159_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_63_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_63_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n33_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n33_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n129_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n129_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n225_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n225_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n321_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n321_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n413_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_2/a_n413_n42#" "m1_1840_n454#"
+merge "m1_1840_n454#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_255_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_255_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_159_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_159_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_63_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_63_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n33_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n33_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n129_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n129_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n225_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n225_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n321_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n321_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n413_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_1/a_n413_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_351_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_351_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_255_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_255_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_159_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_159_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_63_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_63_n42#" "comparator_full_compact_0/li_n693_n1#"
+merge "comparator_full_compact_0/li_n693_n1#" "m1_302_n290#"
+merge "m1_302_n290#" "li_302_n290#"
+merge "li_302_n290#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n33_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n33_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n129_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n129_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n225_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n225_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n321_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n321_n42#" "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n413_n42#"
+merge "sky130_fd_pr__nfet_01v8_GWFSUW_0/a_n413_n42#" "m1_n14_n460#"
+merge "comparator_full_compact_0/V+" "comparator_full_compact_1/V+" -880.545 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7334 -568 -15450 -1060 0 0 0 0 0 0 0 0
+merge "comparator_full_compact_1/V+" "V+"
+merge "comparator_full_compact_0/V-" "comparator_full_compact_1/V-" -1833.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -181104 -5764 -25912 -796 -67528 -1880 0 0 0 0 0 0
+merge "comparator_full_compact_1/V-" "V-"
+merge "comparator_full_compact_1/comparator_layout_0/m1_2488_2128#" "comparator_full_compact_0/clk" -1593.12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5212 -300 -4510 -282 -61120 -1588 -156440 -3236 0 0 0 0
+merge "comparator_full_compact_0/clk" "comparator_full_compact_1/clk"
+merge "comparator_full_compact_1/clk" "clk"
+merge "xnor_0/A" "comparator_full_compact_1/Q" -327.983 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2016 -184 -6068 -314 0 0 0 0 0 0 0 0
+merge "comparator_full_compact_1/Q" "q"
+merge "xnor_0/B" "comparator_full_compact_0/Q" -465.546 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1444 -152 -6130 -318 0 0 0 0 0 0 0 0
+merge "comparator_full_compact_0/Q" "q2"
+merge "comparator_full_compact_1/comparator_layout_0/XM34/a_n50_n188#" "comparator_full_compact_1/Vc-" -932.335 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11039 -892 0 0 0 0 0 0 0 0 0 0
+merge "comparator_full_compact_1/Vc-" "comparator_full_compact_0/Vc+"
+merge "comparator_full_compact_0/Vc+" "reference_0/vo2"
+merge "reference_0/vo2" "m1_n1240_n878#"
+merge "m1_n1240_n878#" "Vc+"
+merge "comparator_full_compact_0/comparator_layout_0/XM34/a_n50_n188#" "comparator_full_compact_0/Vc-" -876.077 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12588 -1020 0 0 0 0 0 0 0 0 0 0
+merge "comparator_full_compact_0/Vc-" "comparator_full_compact_1/Vc+"
+merge "comparator_full_compact_1/Vc+" "reference_0/vo1"
+merge "reference_0/vo1" "Vc-"
+merge "Vc-" "vref-"
+merge "xnor_0/Y" "enable" -42.1812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2500 -200 0 0 0 0 0 0 0 0 0 0

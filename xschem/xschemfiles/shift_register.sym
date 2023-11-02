@@ -1,0 +1,62 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"}
+V {}
+S {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"}
+E {}
+L 4 -280 -190 -20 -190 {}
+L 4 -280 30 -20 30 {}
+L 4 -280 -190 -280 30 {}
+L 4 -20 -190 -20 30 {}
+L 4 -300 -180 -280 -180 {}
+L 4 -300 -160 -280 -160 {}
+L 4 -20 -120 0 -120 {}
+L 4 -20 -100 0 -100 {}
+L 4 -20 -80 0 -80 {}
+L 4 -20 -60 0 -60 {}
+L 4 -300 -80 -280 -80 {}
+L 4 -20 -40 0 -40 {}
+L 4 -20 -20 0 -20 {}
+L 4 -300 -60 -280 -60 {}
+L 4 -20 0 0 0 {}
+L 4 -20 20 0 20 {}
+L 4 -300 -40 -280 -40 {}
+L 7 -20 -180 0 -180 {}
+L 7 -20 -140 0 -140 {}
+B 5 -302.5 -182.5 -297.5 -177.5 {name=clk dir=in}
+B 5 -2.5 -182.5 2.5 -177.5 {name=VPWR dir=inout}
+B 5 -302.5 -162.5 -297.5 -157.5 {name=reset dir=in}
+B 5 -2.5 -142.5 2.5 -137.5 {name=VGND dir=inout}
+B 5 -2.5 -122.5 2.5 -117.5 {name=data_out[0] dir=out}
+B 5 -2.5 -102.5 2.5 -97.5 {name=data_out[1] dir=out}
+B 5 -2.5 -82.5 2.5 -77.5 {name=data_out[2] dir=out}
+B 5 -2.5 -62.5 2.5 -57.5 {name=data_out[3] dir=out}
+B 5 -302.5 -82.5 -297.5 -77.5 {name=data_in dir=in}
+B 5 -2.5 -42.5 2.5 -37.5 {name=data_out[4] dir=out}
+B 5 -2.5 -22.5 2.5 -17.5 {name=data_out[5] dir=out}
+B 5 -302.5 -62.5 -297.5 -57.5 {name=shift_left dir=in}
+B 5 -2.5 -2.5 2.5 2.5 {name=data_out[6] dir=out}
+B 5 -2.5 17.5 2.5 22.5 {name=data_out[7] dir=out}
+B 5 -302.5 -42.5 -297.5 -37.5 {name=shift_right dir=in}
+T {@symname} -271.5 -86 0 0 0.3 0.3 {}
+T {@name} -15 -202 0 0 0.2 0.2 {}
+T {clk} -275 -184 0 0 0.2 0.2 {}
+T {VPWR} -25 -184 0 1 0.2 0.2 {}
+T {reset} -275 -164 0 0 0.2 0.2 {}
+T {VGND} -25 -144 0 1 0.2 0.2 {}
+T {data_out0} -25 -124 0 1 0.2 0.2 {}
+T {data_out1} -25 -104 0 1 0.2 0.2 {}
+T {data_out2} -25 -84 0 1 0.2 0.2 {}
+T {data_out3} -25 -64 0 1 0.2 0.2 {}
+T {data_in} -275 -84 0 0 0.2 0.2 {}
+T {data_out4} -25 -44 0 1 0.2 0.2 {}
+T {data_out5} -25 -24 0 1 0.2 0.2 {}
+T {shiftleft} -275 -64 0 0 0.2 0.2 {}
+T {data_out6} -25 -4 0 1 0.2 0.2 {}
+T {data_out7} -25 16 0 1 0.2 0.2 {}
+T {shiftright} -275 -44 0 0 0.2 0.2 {}

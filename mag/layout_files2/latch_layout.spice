@@ -1,0 +1,15 @@
+* SPICE3 file created from latch_layout.ext - technology: sky130A
+
+X0 m1_430_1104# m1_1097_1325# m1_827_1096# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X1 m1_1595_1096# m1_430_1104# m1_1097_1325# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X2 m1_430_1104# m1_330_1963# li_30_2070# li_30_2070# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X3 m1_822_1732# m1_724_1961# li_30_2070# li_30_2070# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=1.16 ps=10.3 w=1 l=0.5
+X4 m1_430_1104# m1_1097_1325# m1_822_1732# li_30_2070# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X5 m1_1601_1730# m1_430_1104# m1_1097_1325# li_30_2070# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X6 li_30_2070# m1_1878_1968# m1_1601_1730# li_30_2070# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X7 li_30_2070# m1_1878_998# m1_1097_1325# li_30_2070# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X8 VSUBS m1_1878_998# m1_1595_1096# VSUBS sky130_fd_pr__nfet_01v8 ad=1.16 pd=10.3 as=0 ps=0 w=1 l=0.5
+X9 VSUBS m1_1878_1968# m1_1097_1325# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X10 m1_430_1104# m1_724_1961# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X11 m1_827_1096# m1_330_1963# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+C0 li_30_2070# VSUBS 7.27f **FLOATING

@@ -1,0 +1,12 @@
+* SPICE3 file created from integrator2.ext - technology: sky130A
+
+X0 m1_1996_2618# m1_3096_3514# Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.15
+X1 m1_1996_2618# m1_3062_2760# gnd gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X2 gnd m1_3062_2760# vo1 gnd sky130_fd_pr__nfet_01v8 ad=0.87 pd=9.48 as=0.145 ps=1.58 w=0.5 l=0.5
+X3 Vdd m1_3408_3282# vo1 Vdd sky130_fd_pr__pfet_01v8 ad=0.87 pd=9.48 as=0.145 ps=1.58 w=0.5 l=0.15
+X4 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X5 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X6 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X7 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X8 m1_1996_2618# vo1 sky130_fd_pr__cap_mim_m3_1 l=10 w=20
+

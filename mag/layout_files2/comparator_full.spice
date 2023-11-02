@@ -1,0 +1,30 @@
+* SPICE3 file created from comparator_full.ext - technology: sky130A
+
+X0 m1_1130_2098# m1_2010_2214# li_890_1638# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X1 m1_1130_2098# m1_2010_2214# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X2 m1_1130_1686# m1_1522_238# li_890_1638# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=2.9 ps=25.8 w=1 l=0.5
+X3 m1_1130_1686# m1_1522_238# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=2.03 ps=18.1 w=1 l=0.5
+X4 comparator_layout_0/m1_852_1342# m1_2142_478# m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X5 m1_2098_364# m2_2596_774# m1_950_364# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X6 VSUBS m2_2596_774# comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=1.45 ps=12.9 w=1 l=0.5
+X7 m1_950_364# m1_196_478# comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0.87 pd=7.74 as=0 ps=0 w=1 l=0.5
+X8 m1_950_364# m1_592_476# comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X9 m1_2010_2214# m1_1522_238# m1_950_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X10 m1_1522_238# m1_2010_2214# m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.87 ps=7.74 w=1 l=0.5
+X11 m1_2010_2214# m2_2596_774# li_890_1638# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X12 m1_2010_2214# m1_1522_238# li_890_1638# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X13 m1_1522_238# m1_2010_2214# li_890_1638# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X14 m1_1522_238# m2_2596_774# li_890_1638# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X15 comparator_layout_0/m1_852_1342# m1_1762_478# m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X16 m1_4122_652# m1_4296_658# latch_layout_0/m1_827_1096# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X17 latch_layout_0/m1_822_1780# m1_1130_2098# li_890_1638# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X18 m1_4122_652# m1_1522_238# li_890_1638# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X19 latch_layout_0/m1_1595_1096# m1_4122_652# m1_4296_658# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X20 m1_4122_652# m1_4296_658# latch_layout_0/m1_822_1780# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X21 latch_layout_0/m1_1601_1778# m1_4122_652# m1_4296_658# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X22 li_890_1638# m1_1130_1686# latch_layout_0/m1_1601_1778# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X23 li_890_1638# m1_2010_2214# m1_4296_658# li_890_1638# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X24 VSUBS m1_2010_2214# latch_layout_0/m1_1595_1096# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X25 VSUBS m1_1130_1686# m1_4296_658# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X26 m1_4122_652# m1_1130_2098# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X27 latch_layout_0/m1_827_1096# m1_1522_238# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5

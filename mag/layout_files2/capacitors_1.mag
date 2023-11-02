@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698844338
+<< metal1 >>
+rect 7096 -308 8176 -74
+<< metal2 >>
+rect 10380 1038 10648 1090
+<< metal3 >>
+rect 47 801 793 891
+rect 47 -848 137 801
+rect 10139 728 10655 974
+<< metal4 >>
+rect -634 1484 1202 2052
+rect -634 -48 -66 1484
+rect -634 -616 1518 -48
+rect -634 -848 -66 -616
+<< metal5 >>
+rect -1291 -8 900 582
+rect -1291 -848 -701 -8
+use capacitor_8  capacitor_8_0
+timestamp 1698839501
+transform 1 0 -22 0 1 8
+box 0 -430 10546 2050
+<< labels >>
+rlabel metal3 10596 870 10596 870 1 clk1
+port 12 n
+rlabel metal2 10608 1070 10608 1070 1 in1
+port 13 n
+<< end >>

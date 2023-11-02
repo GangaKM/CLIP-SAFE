@@ -1,0 +1,30 @@
+* SPICE3 file created from integrator_full.ext - technology: sky130A
+
+X0 cmfb_0/m1_604_1671# vo2 gnd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X1 cmfb_0/Vdd cmfb_0/m1_3238_1273# cmfb_0/Vcm gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X2 cmfb_0/Vdd cmfb_0/m1_3238_1273# cmfb_0/Vcm gnd sky130_fd_pr__nfet_01v8 ad=12.8 pd=147 as=0.29 ps=3.16 w=0.5 l=0.5
+X3 gnd cmfb_0/m1_3238_1273# cmfb_0/Vcm cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=16.2 pd=186 as=0.29 ps=3.16 w=0.5 l=0.5
+X4 gnd cmfb_0/m1_3238_1273# cmfb_0/Vcm cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X5 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=1.74 pd=19 as=0 ps=0 w=0.5 l=0.5
+X6 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=2.03 pd=21 as=0 ps=0 w=0.5 l=0.5
+X7 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X8 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X9 cmfb_0/m1_604_1671# vo1 gnd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X10 cmfb_0/m1_1719_1576# cmfb_0/m1_1719_1576# cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X11 cmfb_0/Vdd cmfb_0/m1_1719_1576# Vbn cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X12 cmfb_0/m1_1719_1576# cmfb_0/m1_604_1671# cmfb_0/m1_1600_1134# gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.58 ps=5.74 w=0.5 l=0.5
+X13 cmfb_0/m1_1600_1134# cmfb_0/Vcm Vbn gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X14 gnd Vbias cmfb_0/m1_1600_1134# gnd sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X15 cmfb_0/m1_604_1671# vo1 cmfb_0/Vdd gnd sky130_fd_pr__nfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X16 cmfb_0/m1_604_1671# vo2 cmfb_0/Vdd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X17 vo1 integrator2_0/m1_3096_3514# cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.15
+X18 vo1 Vbn gnd gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X19 gnd Vbn vo2 gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X20 cmfb_0/Vdd integrator2_0/m1_3408_3282# vo2 cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.15
+X21 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X22 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X23 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X24 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X25 vo1 vo2 sky130_fd_pr__cap_mim_m3_1 l=10 w=20
+X26 gnd Vbias Vbias gnd sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+

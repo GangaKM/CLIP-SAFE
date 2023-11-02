@@ -1,0 +1,35 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Class full_stage_compact.spice (0):  Merged 115 parallel devices.
+Class full_stage.spice (1):  Merged 23 parallel devices.
+Subcircuit summary:
+Circuit 1: full_stage_compact.spice        |Circuit 2: full_stage.spice                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (80->14)           |sky130_fd_pr__pfet_01v8 (26->14)           
+sky130_fd_pr__nfet_01v8 (68->20)           |sky130_fd_pr__nfet_01v8 (30->20)           
+sky130_fd_pr__pfet_01v8_lvt (4->3)         |sky130_fd_pr__pfet_01v8_lvt (4->3)         
+sky130_fd_pr__cap_mim_m3_1 (2)             |sky130_fd_pr__cap_mim_m3_1 (2)             
+Number of devices: 39                      |Number of devices: 39                      
+Number of nets: 21                         |Number of nets: 21                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes full_stage_compact.spice and full_stage.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

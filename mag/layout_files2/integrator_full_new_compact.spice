@@ -1,0 +1,308 @@
+* SPICE3 file created from integrator_full_new_compact.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_TM5SY6 w_n246_n269# a_n108_n50# a_50_n50# a_n50_n147#
++ VSUBS
+X0 a_50_n50# a_n50_n147# a_n108_n50# w_n246_n269# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+C0 a_50_n50# a_n108_n50# 0.0462f
+C1 w_n246_n269# a_50_n50# 0.0547f
+C2 w_n246_n269# a_n108_n50# 0.0547f
+C3 a_50_n50# a_n50_n147# 0.0101f
+C4 a_n50_n147# a_n108_n50# 0.0101f
+C5 w_n246_n269# a_n50_n147# 0.279f
+C6 a_50_n50# VSUBS 0.0334f
+C7 a_n108_n50# VSUBS 0.0334f
+C8 a_n50_n147# VSUBS 0.176f
+C9 w_n246_n269# VSUBS 1.21f
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_SMGLWN a_n50_n138# a_n210_n224# a_n108_n50# a_50_n50#
+X0 a_50_n50# a_n50_n138# a_n108_n50# a_n210_n224# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+C0 a_n50_n138# a_50_n50# 0.0101f
+C1 a_n108_n50# a_50_n50# 0.0462f
+C2 a_n50_n138# a_n108_n50# 0.0101f
+C3 a_50_n50# a_n210_n224# 0.0886f
+C4 a_n108_n50# a_n210_n224# 0.0886f
+C5 a_n50_n138# a_n210_n224# 0.44f
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PVEW3M a_n210_n274# a_50_n100# a_n108_n100# a_n50_n188#
+X0 a_50_n100# a_n50_n188# a_n108_n100# a_n210_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+C0 a_n50_n188# a_50_n100# 0.0163f
+C1 a_n108_n100# a_50_n100# 0.0906f
+C2 a_n50_n188# a_n108_n100# 0.0163f
+C3 a_50_n100# a_n210_n274# 0.141f
+C4 a_n108_n100# a_n210_n274# 0.141f
+C5 a_n50_n188# a_n210_n274# 0.443f
+.ends
+
+.subckt cmfb m1_604_1671# XM9/a_n50_n188# m1_541_1279# m1_904_1580# Vcm m1_1600_1134#
++ m1_1973_1162# Vdd m1_3238_1273# gnd m1_1719_1576#
+XXM12 Vdd gnd m1_604_1671# m1_904_1580# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM14 m1_3238_1273# gnd Vcm Vdd sky130_fd_pr__nfet_01v8_SMGLWN
+XXM13 m1_3238_1273# gnd Vcm Vdd sky130_fd_pr__nfet_01v8_SMGLWN
+XXM15 Vdd Vcm gnd m1_3238_1273# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM16 Vdd Vcm gnd m1_3238_1273# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM18 Vdd Vdd Vdd Vdd gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM1 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8_SMGLWN
+XXM2 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8_SMGLWN
+XXM3 Vdd Vdd Vdd Vdd gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM4 Vdd gnd m1_604_1671# m1_541_1279# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM5 Vdd Vdd m1_1719_1576# m1_1719_1576# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM6 Vdd m1_1973_1162# Vdd m1_1719_1576# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM7 m1_604_1671# gnd m1_1600_1134# m1_1719_1576# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM9 gnd gnd m1_1600_1134# XM9/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM8 Vcm gnd m1_1973_1162# m1_1600_1134# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM10 m1_541_1279# gnd Vdd m1_604_1671# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM11 m1_904_1580# gnd Vdd m1_604_1671# sky130_fd_pr__nfet_01v8_SMGLWN
+C0 m1_541_1279# m1_904_1580# 0.0367f
+C1 m1_3238_1273# m1_1719_1576# 2.95e-19
+C2 m1_1600_1134# m1_541_1279# 2.03e-19
+C3 m1_3238_1273# Vcm 0.392f
+C4 Vcm m1_1719_1576# 0.0189f
+C5 m1_3238_1273# XM9/a_n50_n188# 2.38e-19
+C6 m1_3238_1273# Vdd 0.434f
+C7 Vdd m1_1719_1576# 0.396f
+C8 Vcm XM9/a_n50_n188# 1.23e-19
+C9 Vcm Vdd 0.52f
+C10 Vdd XM9/a_n50_n188# 0.00327f
+C11 m1_3238_1273# m1_604_1671# 1.48e-19
+C12 m1_1719_1576# m1_604_1671# 0.181f
+C13 Vcm m1_604_1671# 0.0197f
+C14 Vdd m1_604_1671# 0.523f
+C15 m1_904_1580# m1_1719_1576# 0.00295f
+C16 m1_3238_1273# m1_1973_1162# 1.34e-19
+C17 m1_1719_1576# m1_1973_1162# 0.211f
+C18 m1_3238_1273# m1_1600_1134# 0.042f
+C19 m1_1600_1134# m1_1719_1576# 0.0279f
+C20 Vcm m1_904_1580# 1.35e-19
+C21 Vcm m1_1973_1162# 0.126f
+C22 Vcm m1_1600_1134# 0.19f
+C23 XM9/a_n50_n188# m1_1600_1134# 0.00778f
+C24 Vdd m1_904_1580# 0.169f
+C25 Vdd m1_1973_1162# 0.0534f
+C26 Vdd m1_1600_1134# 0.1f
+C27 Vdd m1_541_1279# 0.276f
+C28 m1_904_1580# m1_604_1671# 0.214f
+C29 m1_1973_1162# m1_604_1671# 4.34e-19
+C30 m1_1600_1134# m1_604_1671# 0.136f
+C31 m1_904_1580# m1_1973_1162# 2.21e-19
+C32 m1_541_1279# m1_604_1671# 0.152f
+C33 m1_1600_1134# m1_904_1580# 0.0106f
+C34 m1_1600_1134# m1_1973_1162# 0.012f
+C35 m1_3238_1273# gnd 1.44f
+C36 m1_904_1580# gnd 0.676f
+C37 m1_604_1671# gnd 1.1f
+C38 Vdd gnd 10.1f
+C39 m1_541_1279# gnd 0.71f
+C40 m1_1973_1162# gnd 0.133f
+C41 Vcm gnd 1.1f
+C42 XM9/a_n50_n188# gnd 0.498f
+C43 m1_1719_1576# gnd 0.305f
+C44 m1_1600_1134# gnd 1.27f
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_TM5SY6 w_n246_n269# a_n108_n50# a_50_n50# a_n50_n147#
++ VSUBS
+X0 a_50_n50# a_n50_n147# a_n108_n50# w_n246_n269# sky130_fd_pr__pfet_01v8_lvt ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+C0 w_n246_n269# a_n108_n50# 0.0547f
+C1 a_n50_n147# a_50_n50# 0.0101f
+C2 a_n50_n147# w_n246_n269# 0.279f
+C3 a_n50_n147# a_n108_n50# 0.0101f
+C4 w_n246_n269# a_50_n50# 0.0547f
+C5 a_n108_n50# a_50_n50# 0.0462f
+C6 a_50_n50# VSUBS 0.0334f
+C7 a_n108_n50# VSUBS 0.0334f
+C8 a_n50_n147# VSUBS 0.176f
+C9 w_n246_n269# VSUBS 1.21f
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_EJYG4R a_445_n69# a_n345_n69# a_n187_n69# a_287_n69#
++ a_29_n157# a_n129_n157# a_187_n157# a_n287_n157# a_345_n157# a_n445_n157# a_129_n69#
++ a_n605_n243# a_n29_n69# a_n503_n69#
+X0 a_129_n69# a_29_n157# a_n29_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X1 a_n187_n69# a_n287_n157# a_n345_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X2 a_n345_n69# a_n445_n157# a_n503_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.5
+X3 a_n29_n69# a_n129_n157# a_n187_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X4 a_287_n69# a_187_n157# a_129_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X5 a_445_n69# a_345_n157# a_287_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.5
+C0 a_345_n157# a_287_n69# 0.0163f
+C1 a_n187_n69# a_n129_n157# 0.0163f
+C2 a_n29_n69# a_29_n157# 0.0163f
+C3 a_n29_n69# a_129_n69# 0.0906f
+C4 a_187_n157# a_287_n69# 0.0163f
+C5 a_n187_n69# a_n29_n69# 0.0906f
+C6 a_n129_n157# a_n29_n69# 0.0163f
+C7 a_345_n157# a_445_n69# 0.0163f
+C8 a_187_n157# a_29_n157# 0.0594f
+C9 a_187_n157# a_129_n69# 0.0163f
+C10 a_n503_n69# a_n345_n69# 0.0906f
+C11 a_287_n69# a_129_n69# 0.0906f
+C12 a_n503_n69# a_n445_n157# 0.0163f
+C13 a_n345_n69# a_n287_n157# 0.0163f
+C14 a_445_n69# a_287_n69# 0.0906f
+C15 a_n287_n157# a_n187_n69# 0.0163f
+C16 a_n287_n157# a_n445_n157# 0.0594f
+C17 a_n287_n157# a_n129_n157# 0.0594f
+C18 a_29_n157# a_129_n69# 0.0163f
+C19 a_n129_n157# a_29_n157# 0.0594f
+C20 a_345_n157# a_187_n157# 0.0594f
+C21 a_n345_n69# a_n187_n69# 0.0906f
+C22 a_n345_n69# a_n445_n157# 0.0163f
+C23 a_445_n69# a_n605_n243# 0.145f
+C24 a_287_n69# a_n605_n243# 0.0517f
+C25 a_129_n69# a_n605_n243# 0.0517f
+C26 a_n29_n69# a_n605_n243# 0.0517f
+C27 a_n187_n69# a_n605_n243# 0.0517f
+C28 a_n345_n69# a_n605_n243# 0.0517f
+C29 a_n503_n69# a_n605_n243# 0.145f
+C30 a_345_n157# a_n605_n243# 0.283f
+C31 a_187_n157# a_n605_n243# 0.246f
+C32 a_29_n157# a_n605_n243# 0.246f
+C33 a_n129_n157# a_n605_n243# 0.246f
+C34 a_n287_n157# a_n605_n243# 0.246f
+C35 a_n445_n157# a_n605_n243# 0.283f
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_TNHPNJ m3_n2186_n1040# c1_n2146_n1000# VSUBS
+X0 c1_n2146_n1000# m3_n2186_n1040# sky130_fd_pr__cap_mim_m3_1 l=10 w=20
+C0 m3_n2186_n1040# c1_n2146_n1000# 18.1f
+C1 c1_n2146_n1000# VSUBS 1.72f
+C2 m3_n2186_n1040# VSUBS 5.88f
+.ends
+
+.subckt integrator_new1 XM1/a_n50_n138# XM2/a_n50_n138# m1_2976_3176# m1_2972_2748#
++ m1_4326_2667# Vdd vo1 m1_1624_2612# gnd
+XXM18 Vdd Vdd m1_1624_2612# m1_2976_3176# gnd sky130_fd_pr__pfet_01v8_lvt_TM5SY6
+Xsky130_fd_pr__pfet_01v8_lvt_TM5SY6_0 Vdd Vdd Vdd Vdd gnd sky130_fd_pr__pfet_01v8_lvt_TM5SY6
+XXM1 XM1/a_n50_n138# gnd m1_2972_2748# m1_1624_2612# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM2 XM2/a_n50_n138# gnd vo1 m1_2972_2748# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM3 Vdd vo1 Vdd m1_2976_3176# gnd sky130_fd_pr__pfet_01v8_lvt_TM5SY6
+Xsky130_fd_pr__nfet_01v8_EJYG4R_0 gnd m1_2972_2748# gnd m1_2972_2748# m1_4326_2667#
++ m1_4326_2667# m1_4326_2667# m1_4326_2667# m1_4326_2667# m1_4326_2667# gnd gnd m1_2972_2748#
++ gnd sky130_fd_pr__nfet_01v8_EJYG4R
+XXM6 Vdd Vdd Vdd Vdd gnd sky130_fd_pr__pfet_01v8_lvt_TM5SY6
+XXC3 vo1 m1_1624_2612# gnd sky130_fd_pr__cap_mim_m3_1_TNHPNJ
+Xsky130_fd_pr__nfet_01v8_SMGLWN_0 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8_SMGLWN
+Xsky130_fd_pr__nfet_01v8_SMGLWN_1 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8_SMGLWN
+C0 XM2/a_n50_n138# m1_2976_3176# 0.0209f
+C1 XM1/a_n50_n138# vo1 0.0101f
+C2 XM1/a_n50_n138# m1_2972_2748# 0.0222f
+C3 m1_1624_2612# gnd 0.568f
+C4 m1_4326_2667# vo1 0.0897f
+C5 m1_2972_2748# m1_4326_2667# 0.309f
+C6 XM2/a_n50_n138# vo1 0.0453f
+C7 m1_2972_2748# XM2/a_n50_n138# 0.0238f
+C8 XM1/a_n50_n138# gnd 0.0687f
+C9 Vdd m1_2976_3176# 0.336f
+C10 m1_4326_2667# gnd 0.601f
+C11 XM2/a_n50_n138# gnd 0.0563f
+C12 XM1/a_n50_n138# m1_1624_2612# 0.0847f
+C13 m1_4326_2667# m1_1624_2612# 0.0155f
+C14 Vdd vo1 0.156f
+C15 m1_2972_2748# Vdd 0.0647f
+C16 XM2/a_n50_n138# m1_1624_2612# 0.00632f
+C17 vo1 m1_2976_3176# 0.108f
+C18 m1_2972_2748# m1_2976_3176# 0.24f
+C19 XM1/a_n50_n138# m1_4326_2667# 9.93e-21
+C20 Vdd gnd 0.525f
+C21 XM1/a_n50_n138# XM2/a_n50_n138# 0.0158f
+C22 gnd m1_2976_3176# 0.00918f
+C23 XM2/a_n50_n138# m1_4326_2667# 2.04e-20
+C24 Vdd m1_1624_2612# 0.161f
+C25 m1_2972_2748# vo1 0.424f
+C26 m1_1624_2612# m1_2976_3176# 0.114f
+C27 XM1/a_n50_n138# Vdd 0.00813f
+C28 vo1 gnd 1.31f
+C29 m1_2972_2748# gnd 0.797f
+C30 XM1/a_n50_n138# m1_2976_3176# 0.0204f
+C31 XM2/a_n50_n138# Vdd 0.008f
+C32 m1_1624_2612# vo1 0.965f
+C33 m1_2972_2748# m1_1624_2612# 0.183f
+C34 gnd 0 1.33f
+C35 m1_4326_2667# 0 1.39f
+C36 vo1 0 5.32f
+C37 m1_2976_3176# 0 0.278f
+C38 XM2/a_n50_n138# 0 0.44f
+C39 m1_2972_2748# 0 0.687f
+C40 XM1/a_n50_n138# 0 0.44f
+C41 Vdd 0 4.01f
+C42 m1_1624_2612# 0 2.98f
+.ends
+
+.subckt integrator_full_new_compact Vdd gnd vin1 vin2 Vbias Vcmref vo2 vo1
+Xcmfb_0 cmfb_0/m1_604_1671# Vbias vo1 vo2 cmfb_0/Vcm cmfb_0/m1_1600_1134# m1_1946_216#
++ Vdd Vcmref gnd cmfb_0/m1_1719_1576# cmfb
+Xintegrator_new1_0 vin1 vin2 m1_1946_216# integrator_new1_0/m1_2972_2748# Vbias Vdd
++ vo2 vo1 gnd integrator_new1
+C0 cmfb_0/m1_604_1671# vo1 0.014f
+C1 vo1 Vdd 0.206f
+C2 vin1 integrator_new1_0/m1_2972_2748# 0.00275f
+C3 vo1 m1_1946_216# 0.00939f
+C4 vo1 vin2 5.26e-20
+C5 vo1 cmfb_0/Vcm 8.13e-19
+C6 vo1 Vbias 0.00507f
+C7 vo1 cmfb_0/m1_1719_1576# 1.57e-19
+C8 Vcmref Vbias 0.00305f
+C9 cmfb_0/m1_604_1671# vo2 0.045f
+C10 vo2 Vdd 0.303f
+C11 vo2 m1_1946_216# 0.244f
+C12 vin2 vo2 0.00514f
+C13 vo2 cmfb_0/Vcm 0.0015f
+C14 vo2 Vbias 0.0315f
+C15 cmfb_0/m1_1600_1134# vo1 0.00226f
+C16 vo2 cmfb_0/m1_1719_1576# 3.37e-19
+C17 vo1 vin1 0.00478f
+C18 cmfb_0/m1_604_1671# Vdd 0.00573f
+C19 cmfb_0/m1_1600_1134# vo2 0.0201f
+C20 cmfb_0/m1_604_1671# m1_1946_216# 0.00653f
+C21 Vdd m1_1946_216# 0.136f
+C22 vin2 Vdd 1.03e-19
+C23 Vdd cmfb_0/Vcm 0.00477f
+C24 Vdd Vbias 0.033f
+C25 vin2 m1_1946_216# 2.9e-19
+C26 vo1 integrator_new1_0/m1_2972_2748# 0.0173f
+C27 cmfb_0/Vcm m1_1946_216# 0.0199f
+C28 Vbias m1_1946_216# 0.0025f
+C29 vin2 Vbias 2.71e-20
+C30 cmfb_0/m1_1719_1576# Vdd 6.75e-19
+C31 Vbias cmfb_0/Vcm 2.21e-19
+C32 Vcmref integrator_new1_0/m1_2972_2748# 7.16e-19
+C33 cmfb_0/m1_1719_1576# m1_1946_216# 0.01f
+C34 vin1 vo2 6.53e-20
+C35 cmfb_0/m1_604_1671# cmfb_0/m1_1600_1134# -0.00118f
+C36 cmfb_0/m1_1600_1134# Vdd 0.0276f
+C37 vo2 integrator_new1_0/m1_2972_2748# 6.24e-21
+C38 cmfb_0/m1_1600_1134# m1_1946_216# 0.11f
+C39 cmfb_0/m1_1600_1134# cmfb_0/Vcm -0.00104f
+C40 cmfb_0/m1_1600_1134# Vbias 0.00157f
+C41 cmfb_0/m1_1600_1134# cmfb_0/m1_1719_1576# -4.98e-19
+C42 cmfb_0/m1_604_1671# vin1 4.23e-22
+C43 vin1 Vdd 9.41e-20
+C44 vin1 m1_1946_216# 2.31e-19
+C45 vin1 Vbias 1.27e-20
+C46 cmfb_0/m1_604_1671# integrator_new1_0/m1_2972_2748# 4.28e-20
+C47 vo1 Vcmref 0.00162f
+C48 integrator_new1_0/m1_2972_2748# Vdd 0.0205f
+C49 integrator_new1_0/m1_2972_2748# m1_1946_216# 0.00425f
+C50 vin2 integrator_new1_0/m1_2972_2748# 0.00226f
+C51 integrator_new1_0/m1_2972_2748# cmfb_0/Vcm 6.76e-19
+C52 integrator_new1_0/m1_2972_2748# Vbias 0.0134f
+C53 cmfb_0/m1_1719_1576# integrator_new1_0/m1_2972_2748# 7.99e-21
+C54 vo1 vo2 0.1f
+C55 Vcmref vo2 0.00249f
+C56 cmfb_0/m1_1600_1134# integrator_new1_0/m1_2972_2748# 0.0422f
+C57 Vbias gnd 2.99f
+C58 vo2 gnd 6.43f
+C59 vin2 gnd 0.445f
+C60 integrator_new1_0/m1_2972_2748# gnd 0.704f
+C61 vin1 gnd 0.444f
+C62 vo1 gnd 3.81f
+C63 Vcmref gnd 1.01f
+C64 cmfb_0/m1_604_1671# gnd 0.602f
+C65 Vdd gnd 13.4f
+C66 m1_1946_216# gnd 0.501f
+C67 cmfb_0/Vcm gnd 0.62f
+C68 cmfb_0/m1_1719_1576# gnd 0.256f
+C69 cmfb_0/m1_1600_1134# gnd 0.702f
+.ends
+
