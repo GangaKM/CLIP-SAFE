@@ -326,4 +326,18 @@ C {devices/lab_pin.sym} 3160 -420 1 0 {name=p84 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 3200 -210 1 0 {name=p85 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 3190 -320 3 0 {name=p86 sig_type=std_logic lab=gnd}
 C {devices/lab_pin.sym} 3230 -110 3 0 {name=p87 sig_type=std_logic lab=gnd}
+C {devices/ipin.sym} 710 -770 0 0 {name=p3 lab=clk_in}
+C {devices/iopin.sym} 730 -820 0 0 {name=p23 lab=gnd}
+C {devices/iopin.sym} 730 -850 0 0 {name=p25 lab=vdd}
+C {devices/opin.sym} 760 -720 0 0 {name=p31 lab=out}
+C {devices/ipin.sym} 710 -740 0 0 {name=p34 lab=vin}
+C {devices/ipin.sym} 705 -695 0 0 {name=p44 lab=in1}
+C {devices/ipin.sym} 705 -665 0 0 {name=p46 lab=in2}
+C {devices/ipin.sym} 700 -635 0 0 {name=p52 lab=in3}
+C {devices/ipin.sym} 700 -605 0 0 {name=p54 lab=in4}
+C {devices/ipin.sym} 700 -575 0 0 {name=p63 lab=in5}
+C {devices/ipin.sym} 700 -545 0 0 {name=p64 lab=in6}
+C {devices/ipin.sym} 700 -515 0 0 {name=p167 lab=in7}
+C {devices/ipin.sym} 700 -485 0 0 {name=p168 lab=in8}
 C {devices/lab_pin.sym} 3250 130 2 0 {name=p70 sig_type=std_logic lab=out}
+C {CP2_test.sym} -2930 -400 0 0 {name=x14}

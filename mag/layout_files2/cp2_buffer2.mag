@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698869963
+timestamp 1699074715
 << nwell >>
 rect 30476 -606 37144 -32
 rect 38102 -732 38770 -490
@@ -51,10 +51,12 @@ rect 39175 -873 39498 -840
 rect 39468 -890 39498 -873
 rect 39746 -890 39790 -590
 rect 39468 -940 39790 -890
-rect 37742 -1118 37776 -996
-rect 37960 -1118 37994 -996
-rect 38800 -1118 38834 -986
-rect 39018 -1118 39052 -985
+rect 37742 -1060 37776 -996
+rect 37960 -1060 37994 -996
+rect 38800 -1054 38834 -986
+rect 39018 -1054 39052 -985
+rect 37728 -1118 38014 -1060
+rect 38756 -1118 39060 -1054
 rect 37634 -1168 39158 -1118
 rect 37634 -1218 37754 -1168
 rect 28380 -1416 37754 -1218
@@ -147,16 +149,16 @@ rect 28014 -1416 37754 -1168
 rect 39040 -1416 51269 -1168
 rect 28014 -1767 51269 -1416
 rect 50606 -1775 51264 -1767
-use buffer_digital  buffer_digital_2 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use buffer_digital  buffer_digital_2
+timestamp 1699074083
 transform 1 0 37744 0 1 -1030
-box -274 0 415 576
+box -274 -74 412 576
 use buffer_digital  buffer_digital_3
-timestamp 1698771642
+timestamp 1699074083
 transform 1 0 38802 0 1 -1020
-box -274 0 415 576
+box -274 -74 412 576
 use charge_pump_reverse  charge_pump_reverse_0
-timestamp 1698849032
+timestamp 1699074106
 transform 1 0 27508 0 -1 26452
 box 498 -3206 23756 25968
 use nmos_decap_10  nmos_decap_10_0

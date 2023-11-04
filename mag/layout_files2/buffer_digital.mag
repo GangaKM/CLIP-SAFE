@@ -1,24 +1,21 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698497581
+timestamp 1699074083
 << poly >>
-rect -274 186 -42 202
+rect 44 202 74 240
+rect 262 208 292 232
+rect -274 186 74 202
 rect -274 146 -256 186
-rect -62 184 -42 186
-rect 44 184 74 240
-rect 262 204 292 232
-rect -62 152 74 184
-rect -62 146 -42 152
-rect -274 130 -42 146
-rect 44 130 74 152
-rect 116 194 292 204
+rect -72 146 74 186
+rect 116 194 292 208
 rect 116 158 140 194
 rect 242 158 292 194
 rect 116 148 292 158
+rect -274 130 74 146
 rect 262 122 292 148
 << polycont >>
-rect -256 146 -62 186
+rect -256 146 -72 186
 rect 140 158 242 194
 << locali >>
 rect -274 186 -42 202
@@ -27,24 +24,25 @@ rect -62 146 -42 186
 rect 116 194 274 204
 rect 116 158 140 194
 rect 242 158 274 194
-rect 116 150 274 158
+rect 116 152 274 158
 rect -274 130 -42 146
 << viali >>
-rect -256 146 -62 186
+rect -256 146 -72 186
+rect -72 146 -62 186
 rect 140 158 242 194
 << metal1 >>
-rect -2 542 251 576
+rect -2 542 250 576
 rect -2 474 32 542
 rect 216 466 250 542
-rect 86 204 120 260
+rect 86 208 120 260
 rect -274 194 -42 202
 rect -274 136 -256 194
 rect -62 136 -42 194
 rect -274 130 -42 136
-rect 86 194 274 204
+rect 86 194 276 208
 rect 86 158 140 194
-rect 242 158 274 194
-rect 86 148 274 158
+rect 242 158 276 194
+rect 86 148 276 158
 rect 304 182 338 260
 rect 304 154 412 182
 rect 86 88 120 148
@@ -52,7 +50,8 @@ rect 304 98 338 154
 rect -2 -1 32 62
 rect 216 29 250 74
 rect 216 -1 251 29
-rect -2 -35 251 -1
+rect -2 -26 251 -1
+rect -4 -74 252 -26
 << via1 >>
 rect -256 186 -62 194
 rect -256 146 -62 186
@@ -62,7 +61,7 @@ rect -274 194 -42 202
 rect -274 136 -256 194
 rect -62 136 -42 194
 rect -274 130 -42 136
-use sky130_fd_pr__nfet_01v8_DQBD8A  sky130_fd_pr__nfet_01v8_DQBD8A_0 ~/Desktop/charge_pumps2/layout_files
+use sky130_fd_pr__nfet_01v8_DQBD8A  sky130_fd_pr__nfet_01v8_DQBD8A_0
 timestamp 1698148304
 transform 1 0 59 0 1 70
 box -73 -68 73 68
@@ -70,7 +69,7 @@ use sky130_fd_pr__nfet_01v8_DQBD8A  sky130_fd_pr__nfet_01v8_DQBD8A_1
 timestamp 1698148304
 transform 1 0 277 0 1 70
 box -73 -68 73 68
-use sky130_fd_pr__pfet_01v8_FXZ64Q  sky130_fd_pr__pfet_01v8_FXZ64Q_0 ~/Desktop/charge_pumps2/layout_files
+use sky130_fd_pr__pfet_01v8_FXZ64Q  sky130_fd_pr__pfet_01v8_FXZ64Q_0
 timestamp 1698095665
 transform 1 0 59 0 1 368
 box -109 -188 109 188

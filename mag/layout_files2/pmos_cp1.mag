@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698771642
+timestamp 1698996391
 << nwell >>
 rect 352 76 858 724
 rect -14 68 26 76
@@ -119,20 +119,20 @@ rect 532 650 612 688
 rect 532 74 540 650
 rect 600 74 612 650
 rect 532 58 612 74
-use sky130_fd_pr__pfet_01v8_9AYYDL  sky130_fd_pr__pfet_01v8_9AYYDL_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__pfet_01v8_9AYYDL  sky130_fd_pr__pfet_01v8_9AYYDL_0
+timestamp 1698154195
 transform 1 0 182 0 1 362
 box -194 -362 194 362
 use sky130_fd_pr__pfet_01v8_9AYYDL  sky130_fd_pr__pfet_01v8_9AYYDL_1
-timestamp 1698771642
+timestamp 1698154195
 transform 1 0 440 0 1 362
 box -194 -362 194 362
-use sky130_fd_pr__pfet_01v8_E9H44Q  sky130_fd_pr__pfet_01v8_E9H44Q_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__pfet_01v8_E9H44Q  sky130_fd_pr__pfet_01v8_E9H44Q_0
+timestamp 1698154195
 transform 1 0 183 0 1 -34
 box -109 -104 109 104
 use sky130_fd_pr__pfet_01v8_E9H44Q  sky130_fd_pr__pfet_01v8_E9H44Q_1
-timestamp 1698771642
+timestamp 1698154195
 transform 1 0 439 0 1 -34
 box -109 -104 109 104
 << end >>

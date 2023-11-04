@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1698771642
+timestamp 1698998396
 << nwell >>
 rect 2663 717 2843 722
 rect 2663 708 2876 717
@@ -108,12 +108,12 @@ rect -4 217 3724 270
 rect -4 45 68 217
 rect 2402 45 3724 217
 rect -4 -15 3724 45
-use and_gate  and_gate_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use and_gate  and_gate_0
+timestamp 1698389451
 transform 1 0 2881 0 1 345
 box -342 -344 844 658
-use buffer  buffer_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use buffer  buffer_0
+timestamp 1698998396
 transform 1 0 665 0 1 -388
 box -665 388 2095 1171
 << labels >>

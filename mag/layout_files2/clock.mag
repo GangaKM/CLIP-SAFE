@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698771642
+timestamp 1698996391
 << nwell >>
 rect 864 676 1684 680
 rect 864 672 3592 676
@@ -3838,80 +3838,80 @@ rect -410 -1716 -320 -1708
 rect 1250 -1716 5994 -1708
 rect -410 -1830 5994 -1716
 rect -410 -1832 5988 -1830
-use inverter_27x  inverter_27x_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use inverter_27x  inverter_27x_0
+timestamp 1698152391
 transform 1 0 4518 0 1 -1396
 box -1236 1310 1512 2140
-use sky130_fd_pr__nfet_01v8_5ACVEW  sky130_fd_pr__nfet_01v8_5ACVEW_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__nfet_01v8_5ACVEW  sky130_fd_pr__nfet_01v8_5ACVEW_0
+timestamp 1698095665
 transform 1 0 2101 0 1 44
 box -173 -130 173 130
-use sky130_fd_pr__nfet_01v8_D4CDWR  sky130_fd_pr__nfet_01v8_D4CDWR_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__nfet_01v8_D4CDWR  sky130_fd_pr__nfet_01v8_D4CDWR_0
+timestamp 1698095665
 transform 1 0 2803 0 1 44
 box -461 -130 461 130
-use sky130_fd_pr__nfet_01v8_DQBD8A  sky130_fd_pr__nfet_01v8_DQBD8A_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__nfet_01v8_DQBD8A  sky130_fd_pr__nfet_01v8_DQBD8A_0
+timestamp 1698148304
 transform 1 0 971 0 1 40
 box -73 -68 73 68
 use sky130_fd_pr__nfet_01v8_DQBD8A  sky130_fd_pr__nfet_01v8_DQBD8A_1
-timestamp 1698771642
+timestamp 1698148304
 transform 1 0 1171 0 1 42
 box -73 -68 73 68
 use sky130_fd_pr__nfet_01v8_DQBD8A  sky130_fd_pr__nfet_01v8_DQBD8A_2
-timestamp 1698771642
+timestamp 1698148304
 transform 1 0 1373 0 1 40
 box -73 -68 73 68
 use sky130_fd_pr__nfet_01v8_DQBD8A  sky130_fd_pr__nfet_01v8_DQBD8A_3
-timestamp 1698771642
+timestamp 1698148304
 transform 1 0 1573 0 1 42
 box -73 -68 73 68
-use sky130_fd_pr__nfet_01v8_KMMFCM  sky130_fd_pr__nfet_01v8_KMMFCM_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__nfet_01v8_KMMFCM  sky130_fd_pr__nfet_01v8_KMMFCM_0
+timestamp 1697695294
 transform 1 0 71 0 1 40
 box -73 -68 73 68
 use sky130_fd_pr__nfet_01v8_KMMFCM  sky130_fd_pr__nfet_01v8_KMMFCM_1
-timestamp 1698771642
+timestamp 1697695294
 transform 1 0 359 0 1 42
 box -73 -68 73 68
 use sky130_fd_pr__nfet_01v8_KMMFCM  sky130_fd_pr__nfet_01v8_KMMFCM_2
-timestamp 1698771642
+timestamp 1697695294
 transform 1 0 271 0 1 42
 box -73 -68 73 68
-use sky130_fd_pr__pfet_01v8_29EZRJ  sky130_fd_pr__pfet_01v8_29EZRJ_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__pfet_01v8_29EZRJ  sky130_fd_pr__pfet_01v8_29EZRJ_0
+timestamp 1698095665
 transform 1 0 71 0 1 392
 box -109 -188 109 188
 use sky130_fd_pr__pfet_01v8_29EZRJ  sky130_fd_pr__pfet_01v8_29EZRJ_1
-timestamp 1698771642
+timestamp 1698095665
 transform 1 0 359 0 1 440
 box -109 -188 109 188
 use sky130_fd_pr__pfet_01v8_29EZRJ  sky130_fd_pr__pfet_01v8_29EZRJ_2
-timestamp 1698771642
+timestamp 1698095665
 transform 1 0 271 0 1 440
 box -109 -188 109 188
 use sky130_fd_pr__pfet_01v8_29EZRJ  sky130_fd_pr__pfet_01v8_29EZRJ_3
-timestamp 1698771642
+timestamp 1698095665
 transform 1 0 971 0 1 394
 box -109 -188 109 188
-use sky130_fd_pr__pfet_01v8_FBZ64Q  sky130_fd_pr__pfet_01v8_FBZ64Q_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__pfet_01v8_FBZ64Q  sky130_fd_pr__pfet_01v8_FBZ64Q_0
+timestamp 1698095665
 transform 1 0 2801 0 1 440
 box -497 -226 497 226
-use sky130_fd_pr__pfet_01v8_FL984Q  sky130_fd_pr__pfet_01v8_FL984Q_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__pfet_01v8_FL984Q  sky130_fd_pr__pfet_01v8_FL984Q_0
+timestamp 1698095665
 transform 1 0 2105 0 1 440
 box -209 -226 209 226
-use sky130_fd_pr__pfet_01v8_FXZ64Q  sky130_fd_pr__pfet_01v8_FXZ64Q_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use sky130_fd_pr__pfet_01v8_FXZ64Q  sky130_fd_pr__pfet_01v8_FXZ64Q_0
+timestamp 1698095665
 transform 1 0 1171 0 1 394
 box -109 -188 109 188
 use sky130_fd_pr__pfet_01v8_FXZ64Q  sky130_fd_pr__pfet_01v8_FXZ64Q_1
-timestamp 1698771642
+timestamp 1698095665
 transform 1 0 1373 0 1 394
 box -109 -188 109 188
 use sky130_fd_pr__pfet_01v8_FXZ64Q  sky130_fd_pr__pfet_01v8_FXZ64Q_2
-timestamp 1698771642
+timestamp 1698095665
 transform 1 0 1573 0 1 394
 box -109 -188 109 188
 << labels >>

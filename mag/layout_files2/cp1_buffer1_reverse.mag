@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698913416
+timestamp 1699075837
 << nwell >>
 rect 3128 308 6366 888
 rect 7840 300 8660 626
@@ -22,6 +22,8 @@ rect 8012 352 8190 370
 << viali >>
 rect 8038 370 8154 524
 << metal1 >>
+rect 23559 26724 23927 27196
+rect 23659 26688 23927 26724
 rect 832 7360 1272 9514
 rect 832 6628 936 7360
 rect 1120 6628 1272 7360
@@ -49,16 +51,18 @@ rect 8154 370 8190 524
 rect 8012 352 8190 370
 rect 9154 386 9514 422
 rect 9154 252 9188 386
-rect 7815 199 8520 232
+rect 7768 199 8520 232
 rect 9016 219 9188 252
 rect 7460 -10 7494 86
 rect 7678 -10 7712 86
-rect 8706 -10 8740 102
-rect 8924 -10 8958 102
+rect 8706 36 8740 102
+rect 8924 36 8958 102
 rect 9154 88 9188 219
 rect 9462 88 9514 386
 rect 9154 56 9514 88
-rect 7456 -12 8966 -10
+rect 8706 12 8958 36
+rect 8652 -10 9018 12
+rect 7456 -12 9018 -10
 rect 9854 -12 13168 440
 rect 14776 -12 21690 394
 rect 21932 -12 25160 302
@@ -186,16 +190,16 @@ rect 789 -276 7518 -28
 rect 8874 -276 25904 -28
 rect 789 -507 25904 -276
 rect 789 -558 25892 -507
-use buffer_digital  buffer_digital_0 ~/Desktop/charge_pumps2/layout_files
-timestamp 1698771642
+use buffer_digital  buffer_digital_0
+timestamp 1699074083
 transform 1 0 8708 0 1 68
-box -274 0 415 576
+box -274 -74 412 576
 use buffer_digital  buffer_digital_1
-timestamp 1698771642
+timestamp 1699074083
 transform 1 0 7462 0 1 52
-box -274 0 415 576
+box -274 -74 412 576
 use charge_pump1_reverse  charge_pump1_reverse_0
-timestamp 1698913416
+timestamp 1699075837
 transform 1 0 821 0 -1 27108
 box -313 -2944 25321 25896
 use nmos_decap_10  nmos_decap_10_0

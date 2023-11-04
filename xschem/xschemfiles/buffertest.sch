@@ -39,10 +39,10 @@ N -610 -310 -610 -270 {
 lab=Vcmref}
 N -720 -310 -720 -270 {
 lab=Vdd}
-N -410 -340 -410 -300 {}
-N -220 -340 -220 -290 {}
-N -410 -240 -410 -200 {}
-N -220 -240 -220 -200 {}
+N -410 -340 -220 -340 {
+lab=GND}
+N -410 -200 -210 -200 {
+lab=Vdd}
 C {devices/gnd.sym} -310 -140 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} -310 -400 0 0 {name=p5 sig_type=std_logic lab=Vdd
 }
@@ -93,34 +93,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} -430 -200 0 0 {name=M15
-L=0.5
-W=0.5
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} -200 -200 0 1 {name=M16
-L=0.5
-W=0.5
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {devices/code.sym} -70 -90 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -140,4 +112,34 @@ C {devices/lab_wire.sym} -720 -290 0 0 {name=p1 sig_type=std_logic lab=Vdd
 }
 C {devices/gnd.sym} -320 -340 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -310 -200 0 0 {name=p2 sig_type=std_logic lab=Vdd
+}
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} -430 -200 0 0 {name=M1
+L=0.15
+W=1
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} -200 -200 0 1 {name=M2
+L=0.15
+W=1
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
 }

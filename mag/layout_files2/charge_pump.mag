@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698849032
+timestamp 1699074106
 << dnwell >>
 rect 12148 -412 12324 -348
 << nwell >>
@@ -843,15 +843,15 @@ rect 23560 -300 23633 24
 rect 23043 -4695 23633 -300
 rect 13677 -5285 23633 -4695
 use capacitors_5  capacitors_5_0
-timestamp 1698845573
+timestamp 1699074106
 transform 1 0 2736 0 1 14838
 box -1972 -14958 10096 2068
 use capacitors_5  capacitors_5_1
-timestamp 1698845573
+timestamp 1699074106
 transform -1 0 21784 0 1 14844
 box -1972 -14958 10096 2068
 use clock  clock_0
-timestamp 1698771642
+timestamp 1698996391
 transform 0 -1 12414 1 0 -7452
 box -410 -1832 6030 1274
 use nmos_diode2  nmos_diode2_0

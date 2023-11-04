@@ -113,6 +113,24 @@ N -310 310 -290 310 {
 lab=in7}
 N -310 330 -290 330 {
 lab=in8}
+N -500 -40 -500 20 {
+lab=#net1}
+N -780 20 -500 20 {
+lab=#net1}
+N -780 20 -780 90 {
+lab=#net1}
+N -780 90 -760 90 {
+lab=#net1}
+N -500 -80 -500 -50 {
+lab=#net1}
+N -500 -50 -500 -40 {
+lab=#net1}
+N -460 130 -380 130 {
+lab=#net2}
+N -820 -120 -800 -120 {
+lab=clk_in}
+N -380 -130 -380 130 {}
+N -380 -130 -320 -130 {}
 C {devices/lab_pin.sym} 540 150 1 0 {name=p1 sig_type=std_logic lab=clk1}
 C {devices/lab_pin.sym} 560 150 1 0 {name=p2 sig_type=std_logic lab=clk2}
 C {devices/lab_pin.sym} 580 150 1 0 {name=p3 sig_type=std_logic lab=clk3}
@@ -234,7 +252,6 @@ C {devices/lab_pin.sym} -310 450 0 0 {name=p254 sig_type=std_logic lab=clk}
 C {devices/lab_pin.sym} -310 470 0 0 {name=p255 sig_type=std_logic lab=clkb}
 C {devices/lab_pin.sym} -140 90 1 0 {name=p264 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} -150 -190 1 0 {name=p20 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} -320 -130 0 0 {name=p21 sig_type=std_logic lab=clk_in}
 C {devices/lab_pin.sym} 20 -110 2 0 {name=p22 sig_type=std_logic lab=clk}
 C {devices/lab_pin.sym} 20 -90 2 0 {name=p23 sig_type=std_logic lab=clkb}
 C {devices/lab_pin.sym} -150 -40 3 0 {name=p26 sig_type=std_logic lab=gnd}
@@ -256,3 +273,10 @@ C {devices/lab_pin.sym} -310 270 0 0 {name=p260 sig_type=std_logic lab=in5}
 C {devices/lab_pin.sym} -310 290 0 0 {name=p261 sig_type=std_logic lab=in6}
 C {devices/lab_pin.sym} -310 310 0 0 {name=p262 sig_type=std_logic lab=in7}
 C {devices/lab_pin.sym} -310 330 0 0 {name=p263 sig_type=std_logic lab=in8}
+C {buffer_digital.sym} -650 -100 0 0 {name=x16}
+C {buffer_digital.sym} -610 110 0 0 {name=x20}
+C {devices/lab_pin.sym} -660 -150 1 0 {name=p154 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} -620 60 1 0 {name=p155 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} -630 -50 3 0 {name=p156 sig_type=std_logic lab=gnd}
+C {devices/lab_pin.sym} -590 160 3 0 {name=p170 sig_type=std_logic lab=gnd}
+C {devices/lab_pin.sym} -820 -120 0 0 {name=p41 sig_type=std_logic lab=clk_in}
