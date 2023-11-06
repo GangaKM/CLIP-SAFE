@@ -1,0 +1,22 @@
+* SPICE3 file created from buffer_digital.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_FXZ64Q a_n73_n126# w_n109_n188# a_15_n126# a_n15_n152#
++ VSUBS
+X0 a_15_n126# a_n15_n152# a_n73_n126# w_n109_n188# sky130_fd_pr__pfet_01v8 ad=0.365 pd=3.1 as=0.365 ps=3.1 w=1.26 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_DQBD8A a_15_n42# a_n15_n68# a_n73_n42# VSUBS
+X0 a_15_n42# a_n15_n68# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt buffer_digital
+Xsky130_fd_pr__pfet_01v8_FXZ64Q_0 w_n192_202# w_n192_202# a_116_148# a_n274_130# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ sky130_fd_pr__pfet_01v8_FXZ64Q
+Xsky130_fd_pr__pfet_01v8_FXZ64Q_1 w_n192_202# w_n192_202# m1_304_98# a_116_148# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ sky130_fd_pr__pfet_01v8_FXZ64Q
+Xsky130_fd_pr__nfet_01v8_DQBD8A_0 a_116_148# a_n274_130# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS sky130_fd_pr__nfet_01v8_DQBD8A
+Xsky130_fd_pr__nfet_01v8_DQBD8A_1 m1_304_98# a_116_148# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS sky130_fd_pr__nfet_01v8_DQBD8A
+.ends
+

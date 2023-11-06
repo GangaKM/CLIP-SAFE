@@ -1,4 +1,4 @@
-timestamp 1698771642
+timestamp 1699103691
 version 8.3
 tech sky130A
 style ngspice()
@@ -18,21 +18,21 @@ node "clkb" 643 387.785 680 1916 m1 0 0 0 0 0 0 0 0 5208 292 0 0 0 0 0 0 0 0 0 0
 node "clk" 701 360.585 -66 1896 m1 0 0 0 0 0 0 0 0 5208 292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 147320 2592 0 0 14040 712 60368 2040 0 0 0 0 0 0 0 0 0 0
 node "vs" 31108 6638.93 -372 1752 nw 1095640 4228 1856116 5636 1085692 10160 0 0 20664 660 20664 660 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67404 1040 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "clk" "vin" 344.186
-cap "out2" "vs" 329.261
-cap "out2" "clkb" 159.223
-cap "out1" "out2" 121.221
-cap "out2" "clk" 243.797
-cap "out2" "vin" 212.845
-cap "clkb" "vs" 496.752
-cap "out1" "vs" 237.472
-cap "out1" "clkb" 242.512
-cap "clk" "vs" 529.046
-cap "clkb" "clk" 289.304
-cap "vin" "vs" 105.746
-cap "out1" "clk" 125.237
 cap "clkb" "vin" 414.689
+cap "vs" "out2" 329.261
+cap "clkb" "clk" 289.304
+cap "out1" "out2" 121.221
+cap "clkb" "vs" 496.752
+cap "clk" "vin" 344.186
+cap "clkb" "out1" 242.512
+cap "vs" "vin" 105.746
 cap "out1" "vin" 212.028
+cap "clk" "vs" 529.046
+cap "clk" "out1" 125.237
+cap "vs" "out1" 237.472
+cap "clkb" "out2" 159.223
+cap "vin" "out2" 212.845
+cap "clk" "out2" 243.797
 device msubckt sky130_fd_pr__nfet_01v8 330 1200 331 1201 l=200 w=600 "vs" "clk" 400 0 "vin" 600 37800,726 "out2" 600 66000,1420
 device msubckt sky130_fd_pr__nfet_01v8 4 1200 5 1201 l=200 w=600 "vs" "clkb" 400 0 "out1" 600 66000,1420 "vin" 600 37800,726
 device msubckt sky130_fd_pr__nfet_01v8 422 1858 423 1859 l=30 w=84 "vs" "clk" 60 0 "vin" 84 5040,288 "clkb" 84 5208,292

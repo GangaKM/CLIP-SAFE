@@ -92,7 +92,7 @@ lab=vdd}
 N -150 -190 -150 -160 {
 lab=vdd}
 N -320 -130 -300 -130 {
-lab=clk_in}
+lab=clk_out}
 N 0 -110 20 -110 {
 lab=clk}
 N 0 -90 20 -90 {
@@ -113,24 +113,26 @@ N -310 310 -290 310 {
 lab=in7}
 N -310 330 -290 330 {
 lab=in8}
-N -500 -40 -500 20 {
+N -460 -60 -460 0 {
 lab=#net1}
-N -780 20 -500 20 {
+N -740 0 -460 0 {
 lab=#net1}
-N -780 20 -780 90 {
+N -740 0 -740 70 {
 lab=#net1}
-N -780 90 -760 90 {
+N -740 70 -720 70 {
 lab=#net1}
-N -500 -80 -500 -50 {
+N -460 -100 -460 -70 {
 lab=#net1}
-N -500 -50 -500 -40 {
+N -460 -70 -460 -60 {
 lab=#net1}
-N -460 130 -380 130 {
-lab=#net2}
-N -820 -120 -800 -120 {
-lab=clk_in}
-N -380 -130 -380 130 {}
-N -380 -130 -320 -130 {}
+N -420 110 -340 110 {
+lab=clk_out}
+N -340 -130 -340 110 {
+lab=clk_out}
+N -340 -130 -300 -130 {
+lab=clk_out}
+N -340 -210 -340 -120 {
+lab=clk_out}
 C {devices/lab_pin.sym} 540 150 1 0 {name=p1 sig_type=std_logic lab=clk1}
 C {devices/lab_pin.sym} 560 150 1 0 {name=p2 sig_type=std_logic lab=clk2}
 C {devices/lab_pin.sym} 580 150 1 0 {name=p3 sig_type=std_logic lab=clk3}
@@ -273,10 +275,12 @@ C {devices/lab_pin.sym} -310 270 0 0 {name=p260 sig_type=std_logic lab=in5}
 C {devices/lab_pin.sym} -310 290 0 0 {name=p261 sig_type=std_logic lab=in6}
 C {devices/lab_pin.sym} -310 310 0 0 {name=p262 sig_type=std_logic lab=in7}
 C {devices/lab_pin.sym} -310 330 0 0 {name=p263 sig_type=std_logic lab=in8}
-C {buffer_digital.sym} -650 -100 0 0 {name=x16}
-C {buffer_digital.sym} -610 110 0 0 {name=x20}
-C {devices/lab_pin.sym} -660 -150 1 0 {name=p154 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} -620 60 1 0 {name=p155 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} -630 -50 3 0 {name=p156 sig_type=std_logic lab=gnd}
-C {devices/lab_pin.sym} -590 160 3 0 {name=p170 sig_type=std_logic lab=gnd}
-C {devices/lab_pin.sym} -820 -120 0 0 {name=p41 sig_type=std_logic lab=clk_in}
+C {devices/lab_pin.sym} -760 -140 0 0 {name=p144 sig_type=std_logic lab=clk_in}
+C {buffer_digital.sym} -610 -120 0 0 {name=x16}
+C {buffer_digital.sym} -570 90 0 0 {name=x20}
+C {devices/lab_pin.sym} -620 -170 1 0 {name=p154 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} -580 40 1 0 {name=p155 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} -590 -70 3 0 {name=p156 sig_type=std_logic lab=gnd}
+C {devices/lab_pin.sym} -550 140 3 0 {name=p170 sig_type=std_logic lab=gnd}
+C {devices/lab_pin.sym} -340 -210 1 0 {name=p21 sig_type=std_logic lab=clk_out}
+C {devices/opin.sym} 320 -30 0 0 {name=p41 lab=clk_out}

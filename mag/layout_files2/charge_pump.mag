@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699074106
+timestamp 1699177610
 << dnwell >>
 rect 12148 -412 12324 -348
 << nwell >>
@@ -843,55 +843,55 @@ rect 23560 -300 23633 24
 rect 23043 -4695 23633 -300
 rect 13677 -5285 23633 -4695
 use capacitors_5  capacitors_5_0
-timestamp 1699074106
+timestamp 1699177610
 transform 1 0 2736 0 1 14838
 box -1972 -14958 10096 2068
 use capacitors_5  capacitors_5_1
-timestamp 1699074106
+timestamp 1699177610
 transform -1 0 21784 0 1 14844
 box -1972 -14958 10096 2068
 use clock  clock_0
-timestamp 1698996391
+timestamp 1699103691
 transform 0 -1 12414 1 0 -7452
 box -410 -1832 6030 1274
 use nmos_diode2  nmos_diode2_0
-timestamp 1698771642
+timestamp 1699103691
 transform 1 0 11416 0 1 576
 box -46 -1200 1896 182
 use nmos_dnw3  nmos_dnw3_0
-timestamp 1698771642
+timestamp 1699103691
 transform 1 0 11936 0 1 16204
 box -424 892 1176 2258
 use sky130_fd_pr__cap_mim_m3_1_MH6KF8  sky130_fd_pr__cap_mim_m3_1_MH6KF8_0
-timestamp 1698771642
+timestamp 1699103691
 transform -1 0 16844 0 1 -2266
 box -1086 -940 1086 940
 use sky130_fd_pr__cap_mim_m3_1_MH6KF8  sky130_fd_pr__cap_mim_m3_1_MH6KF8_1
-timestamp 1698771642
+timestamp 1699103691
 transform 1 0 8830 0 1 -2176
 box -1086 -940 1086 940
 use sky130_fd_pr__cap_mim_m3_1_MH6KF8  sky130_fd_pr__cap_mim_m3_1_MH6KF8_4
-timestamp 1698771642
+timestamp 1699103691
 transform -1 0 9516 0 1 18074
 box -1086 -940 1086 940
 use sky130_fd_pr__cap_mim_m3_1_MH6KF8  sky130_fd_pr__cap_mim_m3_1_MH6KF8_5
-timestamp 1698771642
+timestamp 1699103691
 transform 1 0 15220 0 1 18046
 box -1086 -940 1086 940
 use sky130_fd_pr__nfet_01v8_NJGC8F  sky130_fd_pr__nfet_01v8_NJGC8F_0
-timestamp 1698771642
+timestamp 1699103691
 transform 0 1 1358 -1 0 12825
 box -3869 -130 3869 130
 use sky130_fd_pr__nfet_01v8_NJGC8F  sky130_fd_pr__nfet_01v8_NJGC8F_1
-timestamp 1698771642
+timestamp 1699103691
 transform 0 1 23234 -1 0 4047
 box -3869 -130 3869 130
 use sky130_fd_pr__pfet_01v8_4RPJ49  sky130_fd_pr__pfet_01v8_4RPJ49_0
-timestamp 1698771642
+timestamp 1699103691
 transform 0 -1 1472 1 0 4485
 box -3905 -142 3905 142
 use sky130_fd_pr__pfet_01v8_4RPJ49  sky130_fd_pr__pfet_01v8_4RPJ49_1
-timestamp 1698771642
+timestamp 1699103691
 transform 0 1 23042 -1 0 12489
 box -3905 -142 3905 142
 << labels >>
@@ -935,8 +935,4 @@ rlabel metal4 10632 18112 10632 18112 1 g1
 port 21 n
 rlabel metal4 14056 18118 14056 18118 1 g2
 port 22 n
-rlabel metal4 8518 -5084 8518 -5084 1 gnd
-port 23 n
-rlabel metal5 18444 -5000 18444 -5000 1 vdd
-port 24 n
 << end >>

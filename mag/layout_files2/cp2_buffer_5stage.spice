@@ -1,43 +1,5 @@
 * SPICE3 file created from cp2_buffer_5stage.ext - technology: sky130A
 
-.subckt sky130_fd_pr__cap_mim_m3_1_MH6KF8 c1_n1046_n900# m3_n1086_n940# VSUBS
-X0 c1_n1046_n900# m3_n1086_n940# sky130_fd_pr__cap_mim_m3_1 l=9 w=9
-C0 c1_n1046_n900# m3_n1086_n940# 7.78f
-C1 m3_n1086_n940# VSUBS 3.31f
-.ends
-
-.subckt sky130_fd_pr__pfet_01v8_FXZ64Q a_n73_n126# w_n109_n188# a_15_n126# a_n15_n152#
-+ VSUBS
-X0 a_15_n126# a_n15_n152# a_n73_n126# w_n109_n188# sky130_fd_pr__pfet_01v8 ad=0.365 pd=3.1 as=0.365 ps=3.1 w=1.26 l=0.15
-.ends
-
-.subckt sky130_fd_pr__nfet_01v8_DQBD8A a_15_n42# a_n15_n68# a_n73_n42# VSUBS
-X0 a_15_n42# a_n15_n68# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
-.ends
-
-.subckt buffer_digital m1_304_98# m1_n2_474# sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#
-+ m1_216_0# a_n274_130# m1_n2_0# VSUBS
-Xsky130_fd_pr__pfet_01v8_FXZ64Q_0 m1_n2_474# sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#
-+ a_116_148# a_n274_130# VSUBS sky130_fd_pr__pfet_01v8_FXZ64Q
-Xsky130_fd_pr__pfet_01v8_FXZ64Q_1 m1_n2_474# sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#
-+ m1_304_98# a_116_148# VSUBS sky130_fd_pr__pfet_01v8_FXZ64Q
-Xsky130_fd_pr__nfet_01v8_DQBD8A_0 a_116_148# a_n274_130# m1_n2_0# VSUBS sky130_fd_pr__nfet_01v8_DQBD8A
-Xsky130_fd_pr__nfet_01v8_DQBD8A_1 m1_304_98# a_116_148# m1_216_0# VSUBS sky130_fd_pr__nfet_01v8_DQBD8A
-.ends
-
-.subckt sky130_fd_pr__nfet_01v8_D4CMYK a_15_n130# a_63_n42# a_n177_n130# a_255_n42#
-+ a_n129_n42# a_111_64# a_n321_n42# a_159_n42# a_n81_64# a_n273_64# a_351_n42# a_207_n130#
-+ a_303_64# a_n33_n42# a_n369_n130# a_n225_n42# a_n413_n42# VSUBS
-X0 a_63_n42# a_15_n130# a_n33_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X1 a_n33_n42# a_n81_64# a_n129_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X2 a_351_n42# a_303_64# a_255_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
-X3 a_159_n42# a_111_64# a_63_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X4 a_255_n42# a_207_n130# a_159_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X5 a_n321_n42# a_n369_n130# a_n413_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
-X6 a_n225_n42# a_n273_64# a_n321_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X7 a_n129_n42# a_n177_n130# a_n225_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-.ends
-
 .subckt sky130_fd_pr__pfet_01v8_4ZKXAA a_63_n42# a_n417_n42# a_303_n139# w_n545_n142#
 + a_255_n42# a_n465_n139# a_n129_n42# a_111_n139# a_447_n42# a_n273_n139# a_n177_73#
 + a_n321_n42# a_207_73# a_n509_n42# a_159_n42# a_15_73# a_n81_n139# a_351_n42# a_n33_n42#
@@ -52,6 +14,52 @@ X6 a_n225_n42# a_n273_n139# a_n321_n42# w_n545_n142# sky130_fd_pr__pfet_01v8 ad=
 X7 a_n417_n42# a_n465_n139# a_n509_n42# w_n545_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
 X8 a_n129_n42# a_n177_73# a_n225_n42# w_n545_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X9 a_63_n42# a_15_73# a_n33_n42# w_n545_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+.ends
+
+.subckt pmos_decap_10 a_12_230# w_6_4# VSUBS
+Xsky130_fd_pr__pfet_01v8_4ZKXAA_0 w_6_4# w_6_4# a_12_230# w_6_4# w_6_4# a_12_230#
++ w_6_4# a_12_230# w_6_4# a_12_230# a_12_230# w_6_4# a_12_230# w_6_4# w_6_4# a_12_230#
++ a_12_230# w_6_4# w_6_4# a_12_230# w_6_4# a_12_230# VSUBS sky130_fd_pr__pfet_01v8_4ZKXAA
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_MH6KF8 c1_n1046_n900# m3_n1086_n940# VSUBS
+X0 c1_n1046_n900# m3_n1086_n940# sky130_fd_pr__cap_mim_m3_1 l=9 w=9
+C0 m3_n1086_n940# c1_n1046_n900# 7.78f
+C1 m3_n1086_n940# VSUBS 3.31f
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_FXZ64Q a_n73_n126# w_n109_n188# a_15_n126# a_n15_n152#
++ VSUBS
+X0 a_15_n126# a_n15_n152# a_n73_n126# w_n109_n188# sky130_fd_pr__pfet_01v8 ad=0.365 pd=3.1 as=0.365 ps=3.1 w=1.26 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_DQBD8A a_15_n42# a_n15_n68# a_n73_n42# VSUBS
+X0 a_15_n42# a_n15_n68# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt buffer_digital m1_304_98# a_n274_130# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ w_n192_202#
+Xsky130_fd_pr__pfet_01v8_FXZ64Q_0 w_n192_202# w_n192_202# a_116_148# a_n274_130# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ sky130_fd_pr__pfet_01v8_FXZ64Q
+Xsky130_fd_pr__pfet_01v8_FXZ64Q_1 w_n192_202# w_n192_202# m1_304_98# a_116_148# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ sky130_fd_pr__pfet_01v8_FXZ64Q
+Xsky130_fd_pr__nfet_01v8_DQBD8A_0 a_116_148# a_n274_130# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS sky130_fd_pr__nfet_01v8_DQBD8A
+Xsky130_fd_pr__nfet_01v8_DQBD8A_1 m1_304_98# a_116_148# sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS
++ sky130_fd_pr__pfet_01v8_FXZ64Q_1/VSUBS sky130_fd_pr__nfet_01v8_DQBD8A
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_D4CMYK a_15_n130# a_63_n42# a_n177_n130# a_255_n42#
++ a_n129_n42# a_111_64# a_n321_n42# a_159_n42# a_n81_64# a_n273_64# a_351_n42# a_207_n130#
++ a_303_64# a_n33_n42# a_n369_n130# a_n225_n42# a_n413_n42# VSUBS
+X0 a_63_n42# a_15_n130# a_n33_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X1 a_n33_n42# a_n81_64# a_n129_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X2 a_351_n42# a_303_64# a_255_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X3 a_159_n42# a_111_64# a_63_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X4 a_255_n42# a_207_n130# a_159_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X5 a_n321_n42# a_n369_n130# a_n413_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X6 a_n225_n42# a_n273_64# a_n321_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X7 a_n129_n42# a_n177_n130# a_n225_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_NJGC45 a_63_n42# a_15_64# a_n417_n42# a_111_n130#
@@ -223,8 +231,8 @@ X50 a_1596_1398# a_1436_1552# a_1504_1398# VSUBS sky130_fd_pr__nfet_01v8 ad=0.06
 X51 a_1596_1398# a_1436_1552# a_1504_1398# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X52 a_1596_1398# a_1436_1552# a_1504_1860# w_1358_2156# sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 ps=1.59 w=1.26 l=0.15
 X53 a_1504_1860# a_1436_1552# a_1596_1398# w_1358_2156# sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 ps=1.59 w=1.26 l=0.15
-C0 w_1358_2156# a_1436_1552# 2.61f
-C1 a_1596_1398# a_1504_1860# 6.79f
+C0 a_1504_1860# a_1596_1398# 6.79f
+C1 w_1358_2156# a_1436_1552# 2.61f
 C2 a_1436_1552# a_1596_1398# 2.21f
 C3 a_1596_1398# a_1504_1398# 2.65f
 C4 m5_n1320_776# VSUBS 2.52f
@@ -278,7 +286,7 @@ X10 w_n260_286# a_n162_206# a_n78_396# w_n260_286# sky130_fd_pr__pfet_01v8 ad=0.
 X11 sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS a_n162_206# a_n78_n64# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X12 a_n78_n64# a_n162_206# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X13 a_n78_n64# a_n162_206# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0.0651 pd=0.73 as=0.0693 ps=0.75 w=0.42 l=0.15
-C0 a_n78_396# w_n260_286# 3.02f
+C0 w_n260_286# a_n78_396# 3.02f
 C1 a_n78_396# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS 2.46f
 C2 w_n260_286# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS 6.96f
 .ends
@@ -296,8 +304,7 @@ C5 gnd 0 7.18f
 
 .subckt capacitor_5 m3_7768_402# buffer_and_gate_0/clk a_540_n178# a_6656_n300# w_1652_n318#
 + w_5484_n346# buffer_and_gate_0/vdd m2_n660_928# VSUBS
-Xbuffer_digital_1 buffer_and_gate_0/in1 buffer_and_gate_0/vdd buffer_and_gate_0/vdd
-+ VSUBS m2_n660_928# VSUBS VSUBS buffer_digital
+Xbuffer_digital_1 buffer_and_gate_0/in1 m2_n660_928# VSUBS buffer_and_gate_0/vdd buffer_digital
 Xsky130_fd_pr__nfet_01v8_D4CMYK_0 a_6656_n300# VSUBS a_6656_n300# VSUBS VSUBS a_6656_n300#
 + VSUBS VSUBS a_6656_n300# a_6656_n300# VSUBS a_6656_n300# a_6656_n300# VSUBS a_6656_n300#
 + VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8_D4CMYK
@@ -322,13 +329,13 @@ Xsky130_fd_pr__nfet_01v8_NJGC45_1 VSUBS w_1652_n318# VSUBS w_1652_n318# w_1652_n
 Xbuffer_and_gate_0 buffer_and_gate_0/in1 buffer_and_gate_0/clk buffer_and_gate_0/out
 + VSUBS buffer_and_gate_0/vdd buffer_and_gate
 X0 buffer_and_gate_0/out m3_7768_402# sky130_fd_pr__cap_mim_m3_1 l=4.97 w=5
-C0 buffer_and_gate_0/in1 m2_n660_928# 2.94f
+C0 m2_n660_928# buffer_and_gate_0/in1 2.94f
 C1 w_1652_n318# VSUBS 3.6f
 C2 buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C3 buffer_and_gate_0/clk 0 7.41f
+C3 buffer_and_gate_0/clk 0 7.4f
 C4 buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C5 buffer_and_gate_0/vdd 0 20.2f
-C6 VSUBS 0 11f
+C5 buffer_and_gate_0/vdd 0 19.8f
+C6 VSUBS 0 10.8f
 C7 a_540_n178# 0 2.32f
 C8 w_1652_n318# 0 5.55f
 C9 a_6656_n300# 0 2.22f
@@ -338,8 +345,8 @@ C10 buffer_and_gate_0/in1 0 2.57f
 .subckt capacitors_5 m3_8778_734# capacitor_5_7/w_5484_n346# capacitor_5_7/a_6656_n300#
 + capacitor_5_7/a_540_n178# capacitor_5_5/m2_n660_928# capacitor_5_0/m2_n660_928#
 + capacitor_5_2/m2_n660_928# capacitor_5_4/m2_n660_928# capacitor_5_6/m2_n660_928#
-+ capacitor_5_3/m2_n660_928# capacitor_5_7/w_1652_n318# capacitor_5_7/buffer_and_gate_0/clk
-+ capacitor_5_1/m2_n660_928# capacitor_5_7/m2_n660_928# VSUBS capacitor_5_7/buffer_and_gate_0/vdd
++ capacitor_5_1/m2_n660_928# capacitor_5_7/buffer_and_gate_0/clk capacitor_5_7/w_1652_n318#
++ capacitor_5_3/m2_n660_928# capacitor_5_7/m2_n660_928# VSUBS capacitor_5_7/buffer_and_gate_0/vdd
 Xcapacitor_5_5 m3_8778_734# capacitor_5_7/buffer_and_gate_0/clk capacitor_5_7/buffer_and_gate_0/vdd
 + capacitor_5_7/buffer_and_gate_0/vdd capacitor_5_7/buffer_and_gate_0/vdd capacitor_5_7/buffer_and_gate_0/vdd
 + capacitor_5_7/buffer_and_gate_0/vdd capacitor_5_5/m2_n660_928# VSUBS capacitor_5
@@ -364,11 +371,11 @@ Xcapacitor_5_3 m3_8778_734# capacitor_5_7/buffer_and_gate_0/clk capacitor_5_7/bu
 Xcapacitor_5_4 m3_8778_734# capacitor_5_7/buffer_and_gate_0/clk capacitor_5_7/buffer_and_gate_0/vdd
 + capacitor_5_7/buffer_and_gate_0/vdd capacitor_5_7/buffer_and_gate_0/vdd capacitor_5_7/buffer_and_gate_0/vdd
 + capacitor_5_7/buffer_and_gate_0/vdd capacitor_5_4/m2_n660_928# VSUBS capacitor_5
-C0 VSUBS m3_8778_734# 5.94f
-C1 m3_8778_734# capacitor_5_7/buffer_and_gate_0/vdd 11.7f
-C2 VSUBS capacitor_5_7/buffer_and_gate_0/clk 3.99f
-C3 capacitor_5_7/buffer_and_gate_0/vdd capacitor_5_7/buffer_and_gate_0/clk 13f
-C4 VSUBS capacitor_5_7/buffer_and_gate_0/vdd 97.4f
+C0 VSUBS capacitor_5_7/buffer_and_gate_0/vdd 97.5f
+C1 capacitor_5_7/buffer_and_gate_0/vdd capacitor_5_7/buffer_and_gate_0/clk 13.1f
+C2 m3_8778_734# capacitor_5_7/buffer_and_gate_0/vdd 11.7f
+C3 VSUBS capacitor_5_7/buffer_and_gate_0/clk 4.04f
+C4 m3_8778_734# VSUBS 5.94f
 C5 capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C6 capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
 C7 capacitor_5_4/buffer_and_gate_0/in1 0 2.57f
@@ -386,10 +393,10 @@ C18 capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
 C19 capacitor_5_0/buffer_and_gate_0/in1 0 2.57f
 C20 m3_8778_734# 0 14.1f
 C21 capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C22 capacitor_5_7/buffer_and_gate_0/clk 0 62.5f
+C22 capacitor_5_7/buffer_and_gate_0/clk 0 62.3f
 C23 capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C24 capacitor_5_7/buffer_and_gate_0/vdd 0 0.18p
-C25 VSUBS 0 62.2f
+C24 capacitor_5_7/buffer_and_gate_0/vdd 0 0.176p
+C25 VSUBS 0 60.6f
 C26 capacitor_5_7/a_540_n178# 0 2.32f
 C27 capacitor_5_7/w_1652_n318# 0 5.55f
 C28 capacitor_5_7/a_6656_n300# 0 2.22f
@@ -617,10 +624,10 @@ X94 vdd a_2432_n962# clkb vdd sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 
 X95 clkb a_2432_n962# gnd gnd sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X96 a_786_n2# a_586_n2# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.365 pd=3.1 as=0.365 ps=3.1 w=1.26 l=0.15
 X97 clkb a_2432_n962# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 ps=1.59 w=1.26 l=0.15
-C0 a_2432_n962# clkb 2.67f
-C1 vdd a_2432_n962# 7.04f
-C2 vdd clkb 7.31f
-C3 vdd a_2020_n482# 2.66f
+C0 vdd clkb 7.31f
+C1 clkb a_2432_n962# 2.67f
+C2 vdd a_2020_n482# 2.66f
+C3 vdd a_2432_n962# 7.04f
 C4 clkb gnd 5.1f
 C5 a_2432_n962# gnd 8.71f
 C6 a_2020_n482# gnd 2.57f
@@ -850,13 +857,13 @@ X1 a_350_n764# a_970_n762# a_970_n762# dw_118_n1078# sky130_fd_pr__nfet_01v8 ad=
 C0 dw_118_n1078# VSUBS 8.16f
 .ends
 
-.subckt charge_pump in2 in3 in4 input1 input2 out clk clkb clk_in g1 g2 vin gnd vdd
-+ in8 in1 in6 in7 in5 vs
+.subckt charge_pump in2 in3 in4 in7 in8 input1 input2 out clk clkb clk_in g1 g2 vin
++ a_18057_18271# in6 in5 in1 vs vdd gnd
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_4 g1 clk vdd sky130_fd_pr__cap_mim_m3_1_MH6KF8
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_5 g2 clkb vdd sky130_fd_pr__cap_mim_m3_1_MH6KF8
-Xcapacitors_5_1 input2 gnd gnd gnd in6 in1 in3 in5 in7 in4 gnd clkb in2 in8 vdd gnd
+Xcapacitors_5_1 input2 gnd gnd gnd in6 in1 in3 in5 in7 in2 clkb gnd in4 in8 vdd gnd
 + capacitors_5
-Xcapacitors_5_0 input1 gnd gnd gnd in6 in1 in3 in5 in7 in4 gnd clk in2 in8 vdd gnd
+Xcapacitors_5_0 input1 gnd gnd gnd in6 in1 in3 in5 in7 in2 clk gnd in4 in8 vdd gnd
 + capacitors_5
 Xnmos_dnw3_0 vin input1 input2 g1 g2 vs vdd nmos_dnw3
 Xclock_0 clk_in gnd vdd clk clkb clock
@@ -899,22 +906,22 @@ Xsky130_fd_pr__nfet_01v8_NJGC8F_1 gnd vdd vdd gnd gnd vdd vdd gnd vdd gnd vdd vd
 Xnmos_diode2_0 out input2 input1 vs nmos_diode2_0/VSUBS nmos_diode2
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_0 input2 clkb vdd sky130_fd_pr__cap_mim_m3_1_MH6KF8
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_1 input1 clk vdd sky130_fd_pr__cap_mim_m3_1_MH6KF8
-C0 vs clkb 2.34f
-C1 gnd clkb 17.4f
-C2 out vs 14.2f
-C3 out gnd 2.32f
-C4 vdd clkb 3.09f
-C5 clk vs 2.64f
-C6 input1 input2 8.76f
-C7 clk gnd 26.5f
-C8 clk vdd 2.68f
-C9 vs input2 4.02f
-C10 vdd input2 2.5f
-C11 vs input1 3.39f
-C12 vin vs 8.81f
-C13 vin gnd 5.35f
-C14 gnd vs 12f
-C15 gnd vdd 35.5f
+C0 vdd gnd 35.6f
+C1 vs clk 2.64f
+C2 vdd input2 2.5f
+C3 gnd clk 26.5f
+C4 vs gnd 12f
+C5 vdd clkb 3.1f
+C6 out vs 14.2f
+C7 vs input2 4.02f
+C8 vs input1 3.39f
+C9 out gnd 2.32f
+C10 vs clkb 2.34f
+C11 vdd clk 2.67f
+C12 gnd clkb 17.4f
+C13 vs vin 8.81f
+C14 input1 input2 8.76f
+C15 vin gnd 5.36f
 C16 vs nmos_diode2_0/VSUBS 19f
 C17 clock_0/a_2432_n962# nmos_diode2_0/VSUBS 8.68f **FLOATING
 C18 clock_0/a_2020_n482# nmos_diode2_0/VSUBS 2.57f **FLOATING
@@ -940,36 +947,36 @@ C37 capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_di
 C38 capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
 C39 input1 nmos_diode2_0/VSUBS 15f
 C40 capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C41 clk nmos_diode2_0/VSUBS 76.7f
+C41 clk nmos_diode2_0/VSUBS 76.6f
 C42 capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C43 capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
-C44 capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C45 capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C46 capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
-C47 capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C48 capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C49 capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
-C50 capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C51 capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C52 capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
-C53 capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C54 capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C55 capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
-C56 capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C57 capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C58 capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
-C59 capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C60 capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C61 capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
-C62 capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C63 capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C64 capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
-C65 input2 nmos_diode2_0/VSUBS 13.6f
-C66 capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
-C67 clkb nmos_diode2_0/VSUBS 78.4f
-C68 capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
-C69 gnd nmos_diode2_0/VSUBS 0.463p
-C70 vdd nmos_diode2_0/VSUBS 0.138p
+C43 gnd nmos_diode2_0/VSUBS 0.455p
+C44 vdd nmos_diode2_0/VSUBS 0.128p
+C45 capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
+C46 capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
+C47 capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
+C48 capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
+C49 capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
+C50 capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
+C51 capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
+C52 capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
+C53 capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
+C54 capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
+C55 capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
+C56 capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
+C57 capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
+C58 capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
+C59 capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
+C60 capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
+C61 capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
+C62 capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
+C63 capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
+C64 capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
+C65 capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
+C66 capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
+C67 input2 nmos_diode2_0/VSUBS 13.6f
+C68 capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
+C69 clkb nmos_diode2_0/VSUBS 78.2f
+C70 capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
 C71 capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
 C72 capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# nmos_diode2_0/VSUBS 2.34f
 C73 capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# nmos_diode2_0/VSUBS 8.93f
@@ -980,88 +987,115 @@ C77 capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 nmos_diode2_0/VSUBS 2.57f
 C78 g1 nmos_diode2_0/VSUBS 2.63f
 .ends
 
-.subckt cp2_buffer1 charge_pump_0/gnd charge_pump_0/vin charge_pump_0/out charge_pump_0/in5
-+ charge_pump_0/in4 charge_pump_0/in3 charge_pump_0/vs charge_pump_0/clk_in charge_pump_0/in2
-+ charge_pump_0/in7 charge_pump_0/in6 charge_pump_0/in8 charge_pump_0/in1 m2_12638_n930#
-+ VSUBS
-Xcharge_pump_0 charge_pump_0/in2 charge_pump_0/in3 charge_pump_0/in4 charge_pump_0/input1
-+ charge_pump_0/input2 charge_pump_0/out charge_pump_0/clk charge_pump_0/clkb charge_pump_0/clk_in
-+ charge_pump_0/g1 charge_pump_0/g2 charge_pump_0/vin charge_pump_0/gnd VSUBS charge_pump_0/in8
-+ charge_pump_0/in1 charge_pump_0/in6 charge_pump_0/in7 charge_pump_0/in5 charge_pump_0/vs
-+ charge_pump
-Xbuffer_digital_0 charge_pump_0/clk_in charge_pump_0/gnd charge_pump_0/gnd VSUBS m1_13863_n865#
-+ VSUBS VSUBS buffer_digital
-Xbuffer_digital_1 m1_13863_n865# charge_pump_0/gnd charge_pump_0/gnd VSUBS m2_12638_n930#
-+ VSUBS VSUBS buffer_digital
-C0 m2_12638_n930# charge_pump_0/gnd 2.72f
-C1 VSUBS charge_pump_0/gnd 13.6f
-C2 charge_pump_0/gnd charge_pump_0/clk_in 3.8f
-C3 VSUBS charge_pump_0/clk_in 2.23f
-C4 m2_12638_n930# charge_pump_0/nmos_diode2_0/VSUBS 5.52f
-C5 charge_pump_0/vs charge_pump_0/nmos_diode2_0/VSUBS 19f
-C6 charge_pump_0/clock_0/a_2432_n962# charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
-C7 charge_pump_0/clock_0/a_2020_n482# charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
-C8 charge_pump_0/clock_0/a_344_102# charge_pump_0/nmos_diode2_0/VSUBS 2.81f
-C9 charge_pump_0/clock_0/a_2402_572# charge_pump_0/nmos_diode2_0/VSUBS 2.17f
-C10 charge_pump_0/clock_0/a_344_n986# charge_pump_0/nmos_diode2_0/VSUBS 2.38f
-C11 charge_pump_0/clk_in charge_pump_0/nmos_diode2_0/VSUBS 8.41f
-C12 charge_pump_0/clock_0/a_3246_118# charge_pump_0/nmos_diode2_0/VSUBS 6.83f
-C13 charge_pump_0/g2 charge_pump_0/nmos_diode2_0/VSUBS 2.44f
-C14 charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C15 charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C16 charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C17 charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C18 charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C19 charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C20 charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C21 charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C22 charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C23 charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C24 charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C25 charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C26 charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C27 charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C28 charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C29 charge_pump_0/input1 charge_pump_0/nmos_diode2_0/VSUBS 15f
-C30 charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C31 charge_pump_0/clk charge_pump_0/nmos_diode2_0/VSUBS 76.7f
-C32 charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C33 charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C34 charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C35 charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C36 charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C37 charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C38 charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C39 charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C40 charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C41 charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C42 charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C43 charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C44 charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C45 charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C46 charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C47 charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C48 charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C49 charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C50 charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C51 charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C52 charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C53 charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C54 charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C55 charge_pump_0/input2 charge_pump_0/nmos_diode2_0/VSUBS 13.6f
-C56 charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C57 charge_pump_0/clkb charge_pump_0/nmos_diode2_0/VSUBS 78.4f
-C58 charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C59 charge_pump_0/gnd charge_pump_0/nmos_diode2_0/VSUBS 0.471p
-C60 VSUBS charge_pump_0/nmos_diode2_0/VSUBS 0.151p
-C61 charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C62 charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C63 charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C64 charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C65 charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C66 charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C67 charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C68 charge_pump_0/g1 charge_pump_0/nmos_diode2_0/VSUBS 2.63f
+.subckt nmos_decap_10 a_n2_210# m1_n10_n42# VSUBS
+Xsky130_fd_pr__nfet_01v8_NJGC45_0 m1_n10_n42# a_n2_210# m1_n10_n42# a_n2_210# a_n2_210#
++ m1_n10_n42# m1_n10_n42# a_n2_210# a_n2_210# m1_n10_n42# a_n2_210# m1_n10_n42# m1_n10_n42#
++ m1_n10_n42# m1_n10_n42# m1_n10_n42# a_n2_210# m1_n10_n42# a_n2_210# a_n2_210# a_n2_210#
++ VSUBS sky130_fd_pr__nfet_01v8_NJGC45
+C0 a_n2_210# VSUBS 2.33f
+.ends
+
+.subckt cp2_buffer1 charge_pump_0/a_18057_18271# charge_pump_0/clk_in charge_pump_0/in5
++ charge_pump_0/vin charge_pump_0/out charge_pump_0/in4 charge_pump_0/in8 charge_pump_0/in3
++ charge_pump_0/vs charge_pump_0/in7 charge_pump_0/in2 charge_pump_0/in6 charge_pump_0/in1
++ m2_12638_n930# charge_pump_0/gnd VSUBS
+Xpmos_decap_10_10 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_11 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_12 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_13 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xcharge_pump_0 charge_pump_0/in2 charge_pump_0/in3 charge_pump_0/in4 charge_pump_0/in7
++ charge_pump_0/in8 charge_pump_0/input1 charge_pump_0/input2 charge_pump_0/out charge_pump_0/clk
++ charge_pump_0/clkb charge_pump_0/clk_in charge_pump_0/g1 charge_pump_0/g2 charge_pump_0/vin
++ charge_pump_0/a_18057_18271# charge_pump_0/in6 charge_pump_0/in5 charge_pump_0/in1
++ charge_pump_0/vs VSUBS charge_pump_0/gnd charge_pump
+Xbuffer_digital_0 charge_pump_0/clk_in m1_13863_n865# VSUBS charge_pump_0/gnd buffer_digital
+Xbuffer_digital_1 m1_13863_n865# m2_12638_n930# VSUBS charge_pump_0/gnd buffer_digital
+Xnmos_decap_10_0 charge_pump_0/gnd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_1 charge_pump_0/gnd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_2 charge_pump_0/gnd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_3 charge_pump_0/gnd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_4 charge_pump_0/gnd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_5 charge_pump_0/gnd VSUBS VSUBS nmos_decap_10
+Xpmos_decap_10_0 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_1 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_2 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_3 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_4 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_5 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_6 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_7 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_9 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+Xpmos_decap_10_8 VSUBS charge_pump_0/gnd VSUBS pmos_decap_10
+C0 charge_pump_0/gnd VSUBS 26.4f
+C1 m2_12638_n930# VSUBS 4.27f
+C2 VSUBS charge_pump_0/clk_in 8.29f
+C3 m2_12638_n930# charge_pump_0/gnd 3.74f
+C4 charge_pump_0/gnd charge_pump_0/clk_in 4.8f
+C5 m2_12638_n930# charge_pump_0/nmos_diode2_0/VSUBS 4.02f
+C6 charge_pump_0/vs charge_pump_0/nmos_diode2_0/VSUBS 19f
+C7 charge_pump_0/clock_0/a_2432_n962# charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
+C8 charge_pump_0/clock_0/a_2020_n482# charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
+C9 charge_pump_0/clock_0/a_344_102# charge_pump_0/nmos_diode2_0/VSUBS 2.81f
+C10 charge_pump_0/clock_0/a_2402_572# charge_pump_0/nmos_diode2_0/VSUBS 2.17f
+C11 charge_pump_0/clock_0/a_344_n986# charge_pump_0/nmos_diode2_0/VSUBS 2.38f
+C12 charge_pump_0/clk_in charge_pump_0/nmos_diode2_0/VSUBS 4.24f
+C13 charge_pump_0/clock_0/a_3246_118# charge_pump_0/nmos_diode2_0/VSUBS 6.83f
+C14 charge_pump_0/g2 charge_pump_0/nmos_diode2_0/VSUBS 2.44f
+C15 charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C16 charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C17 charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C18 charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C19 charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C20 charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C21 charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C22 charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C23 charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C24 charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C25 charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C26 charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C27 charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C28 charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C29 charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C30 charge_pump_0/input1 charge_pump_0/nmos_diode2_0/VSUBS 15f
+C31 charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C32 charge_pump_0/clk charge_pump_0/nmos_diode2_0/VSUBS 76.6f
+C33 charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C34 charge_pump_0/gnd charge_pump_0/nmos_diode2_0/VSUBS 0.53p
+C35 VSUBS charge_pump_0/nmos_diode2_0/VSUBS 0.165p
+C36 charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C37 charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C38 charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C39 charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C40 charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C41 charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C42 charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C43 charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C44 charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C45 charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C46 charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C47 charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C48 charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C49 charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C50 charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C51 charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C52 charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C53 charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C54 charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C55 charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C56 charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C57 charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C58 charge_pump_0/input2 charge_pump_0/nmos_diode2_0/VSUBS 13.6f
+C59 charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C60 charge_pump_0/clkb charge_pump_0/nmos_diode2_0/VSUBS 78.2f
+C61 charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C62 charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C63 charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C64 charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C65 charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C66 charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C67 charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C68 charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C69 charge_pump_0/g1 charge_pump_0/nmos_diode2_0/VSUBS 2.63f
 .ends
 
 .subckt charge_pump_reverse m1_11946_n452# nmos_dnw3_0/vin m2_10336_11702# clock_0/vdd
@@ -1070,11 +1104,11 @@ C68 charge_pump_0/g1 charge_pump_0/nmos_diode2_0/VSUBS 2.63f
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_4 nmos_dnw3_0/clk clock_0/clkb clock_0/gnd sky130_fd_pr__cap_mim_m3_1_MH6KF8
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_5 nmos_dnw3_0/clkb clock_0/clk clock_0/gnd sky130_fd_pr__cap_mim_m3_1_MH6KF8
 Xcapacitors_5_1 nmos_dnw3_0/out2 clock_0/vdd clock_0/vdd clock_0/vdd m2_10400_5448#
-+ m2_10266_15868# m2_10336_11702# m2_10388_7530# m2_10362_3360# m2_10426_9616# clock_0/vdd
-+ clock_0/clk m2_10308_13784# m2_10436_1276# clock_0/gnd clock_0/vdd capacitors_5
++ m2_10266_15868# m2_10336_11702# m2_10388_7530# m2_10362_3360# m2_10308_13784# clock_0/clk
++ clock_0/vdd m2_10426_9616# m2_10436_1276# clock_0/gnd clock_0/vdd capacitors_5
 Xcapacitors_5_0 nmos_dnw3_0/out1 clock_0/vdd clock_0/vdd clock_0/vdd m2_10400_5448#
-+ m2_10266_15868# m2_10336_11702# m2_10388_7530# m2_10362_3360# m2_10426_9616# clock_0/vdd
-+ clock_0/clkb m2_10308_13784# m2_10436_1276# clock_0/gnd clock_0/vdd capacitors_5
++ m2_10266_15868# m2_10336_11702# m2_10388_7530# m2_10362_3360# m2_10308_13784# clock_0/clkb
++ clock_0/vdd m2_10426_9616# m2_10436_1276# clock_0/gnd clock_0/vdd capacitors_5
 Xnmos_dnw3_0 nmos_dnw3_0/vin nmos_dnw3_0/out1 nmos_dnw3_0/out2 nmos_dnw3_0/clk nmos_dnw3_0/clkb
 + nmos_dnw3_0/vs clock_0/gnd nmos_dnw3
 Xclock_0 clock_0/clk_in clock_0/vdd clock_0/gnd clock_0/clk clock_0/clkb clock
@@ -1178,16 +1212,16 @@ Xnmos_diode2_0 m1_11946_n452# nmos_dnw3_0/out2 nmos_dnw3_0/out1 nmos_dnw3_0/vs c
 + nmos_diode2
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_0 nmos_dnw3_0/out2 clock_0/clk clock_0/gnd sky130_fd_pr__cap_mim_m3_1_MH6KF8
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_1 nmos_dnw3_0/out1 clock_0/clkb clock_0/gnd sky130_fd_pr__cap_mim_m3_1_MH6KF8
-C0 clock_0/vdd clock_0/clk 20f
+C0 clock_0/vdd clock_0/gnd 20.7f
 C1 nmos_dnw3_0/out1 nmos_dnw3_0/vs 3.31f
-C2 nmos_dnw3_0/vs clock_0/vdd 2.48f
-C3 clock_0/vdd nmos_dnw3_0/vin 8.88f
-C4 nmos_dnw3_0/vs m1_11946_n452# 13.5f
-C5 clock_0/vdd clock_0/gnd 20.5f
-C6 clock_0/vdd clock_0/clkb 24.4f
-C7 nmos_dnw3_0/vs nmos_dnw3_0/out2 5.26f
-C8 clock_0/vdd m1_11946_n452# 2.55f
-C9 nmos_dnw3_0/out1 nmos_dnw3_0/out2 8.76f
+C2 clock_0/clk clock_0/vdd 20f
+C3 nmos_dnw3_0/out2 nmos_dnw3_0/out1 8.76f
+C4 clock_0/clkb clock_0/vdd 24.4f
+C5 nmos_dnw3_0/vin clock_0/vdd 8.88f
+C6 clock_0/vdd nmos_dnw3_0/vs 2.48f
+C7 clock_0/vdd m1_11946_n452# 2.55f
+C8 m1_11946_n452# nmos_dnw3_0/vs 13.5f
+C9 nmos_dnw3_0/out2 nmos_dnw3_0/vs 5.26f
 C10 nmos_dnw3_0/vs 0 18.8f
 C11 clock_0/a_2432_n962# 0 8.68f **FLOATING
 C12 clock_0/a_2020_n482# 0 2.57f **FLOATING
@@ -1214,9 +1248,9 @@ C32 capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
 C33 capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 0 2.57f
 C34 nmos_dnw3_0/out1 0 15.1f
 C35 capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C36 clock_0/clkb 0 86.3f
+C36 clock_0/clkb 0 86.1f
 C37 capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C38 clock_0/vdd 0 0.477p
+C38 clock_0/vdd 0 0.47p
 C39 capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 0 2.57f
 C40 capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C41 capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
@@ -1241,9 +1275,9 @@ C59 capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
 C60 capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 0 2.57f
 C61 nmos_dnw3_0/out2 0 14.8f
 C62 capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C63 clock_0/clk 0 79.9f
+C63 clock_0/clk 0 79.7f
 C64 capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C65 clock_0/gnd 0 0.116p
+C65 clock_0/gnd 0 0.113p
 C66 capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 0 2.57f
 C67 capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C68 capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
@@ -1259,106 +1293,135 @@ C73 nmos_dnw3_0/clk 0 2.43f
 + charge_pump_reverse_0/m2_10388_7530# charge_pump_reverse_0/clock_0/vdd charge_pump_reverse_0/nmos_dnw3_0/vs
 + charge_pump_reverse_0/m2_10336_11702# charge_pump_reverse_0/m2_10426_9616# charge_pump_reverse_0/m1_11946_n452#
 + m2_37248_n936# charge_pump_reverse_0/m2_10362_3360# VSUBS charge_pump_reverse_0/m2_10436_1276#
-Xbuffer_digital_2 m1_38117_n883# charge_pump_reverse_0/clock_0/vdd charge_pump_reverse_0/clock_0/vdd
-+ VSUBS m2_37248_n936# VSUBS VSUBS buffer_digital
-Xbuffer_digital_3 charge_pump_reverse_0/clock_0/clk_in charge_pump_reverse_0/clock_0/vdd
-+ charge_pump_reverse_0/clock_0/vdd VSUBS m1_38117_n883# VSUBS VSUBS buffer_digital
+Xpmos_decap_10_10 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_11 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_12 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_13 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_14 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_15 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xbuffer_digital_2 m1_38117_n883# m2_37248_n936# VSUBS charge_pump_reverse_0/clock_0/vdd
++ buffer_digital
+Xbuffer_digital_3 charge_pump_reverse_0/clock_0/clk_in m1_38117_n883# VSUBS charge_pump_reverse_0/clock_0/vdd
++ buffer_digital
+Xnmos_decap_10_0 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_1 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
 Xcharge_pump_reverse_0 charge_pump_reverse_0/m1_11946_n452# charge_pump_reverse_0/nmos_dnw3_0/vin
 + charge_pump_reverse_0/m2_10336_11702# charge_pump_reverse_0/clock_0/vdd charge_pump_reverse_0/m2_10362_3360#
 + charge_pump_reverse_0/m2_10308_13784# VSUBS VSUBS charge_pump_reverse_0/m2_10400_5448#
 + charge_pump_reverse_0/m2_10266_15868# charge_pump_reverse_0/clock_0/clk_in charge_pump_reverse_0/m2_10426_9616#
 + charge_pump_reverse_0/m2_10388_7530# charge_pump_reverse_0/nmos_dnw3_0/vs charge_pump_reverse_0/m2_10436_1276#
 + charge_pump_reverse
-C0 charge_pump_reverse_0/clock_0/clkb charge_pump_reverse_0/clock_0/vdd 3.39f
-C1 charge_pump_reverse_0/clock_0/clk_in charge_pump_reverse_0/clock_0/vdd 3.72f
-C2 VSUBS charge_pump_reverse_0/clock_0/vdd 18.8f
-C3 m2_37248_n936# charge_pump_reverse_0/clock_0/vdd 2.75f
-C4 charge_pump_reverse_0/nmos_dnw3_0/vs 0 18.8f
-C5 charge_pump_reverse_0/clock_0/a_2432_n962# 0 8.68f **FLOATING
-C6 charge_pump_reverse_0/clock_0/a_2020_n482# 0 2.57f **FLOATING
-C7 charge_pump_reverse_0/clock_0/a_344_102# 0 2.81f
-C8 charge_pump_reverse_0/clock_0/a_2402_572# 0 2.17f
-C9 charge_pump_reverse_0/clock_0/a_344_n986# 0 2.38f
-C10 charge_pump_reverse_0/clock_0/clk_in 0 7.14f
-C11 charge_pump_reverse_0/clock_0/a_3246_118# 0 6.83f
-C12 charge_pump_reverse_0/nmos_dnw3_0/vin 0 2.47f
-C13 charge_pump_reverse_0/nmos_dnw3_0/clkb 0 2.23f
-C14 charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C15 charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C16 charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 0 2.57f
-C17 charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C18 charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C19 charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 0 2.57f
-C20 charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C21 charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C22 charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 0 2.57f
-C23 charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C24 charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C25 charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 0 2.57f
-C26 charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C27 charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C28 charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 0 2.57f
-C29 charge_pump_reverse_0/nmos_dnw3_0/out1 0 15.1f
-C30 charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C31 charge_pump_reverse_0/clock_0/clkb 0 86.3f
-C32 charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C33 charge_pump_reverse_0/clock_0/vdd 0 0.483p
-C34 charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 0 2.57f
-C35 charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C36 charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C37 charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 0 2.57f
-C38 charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C39 charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C40 charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 0 2.57f
-C41 charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C42 charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C43 charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 0 2.57f
-C44 charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C45 charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C46 charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 0 2.57f
-C47 charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C48 charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C49 charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 0 2.57f
-C50 charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C51 charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C52 charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 0 2.57f
-C53 charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C54 charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C55 charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 0 2.57f
-C56 charge_pump_reverse_0/nmos_dnw3_0/out2 0 14.8f
-C57 charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C58 charge_pump_reverse_0/clock_0/clk 0 79.9f
-C59 charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C60 VSUBS 0 0.126p
-C61 charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 0 2.57f
-C62 charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C63 charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C64 charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 0 2.57f
-C65 charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C66 charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C67 charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 0 2.57f
-C68 charge_pump_reverse_0/nmos_dnw3_0/clk 0 2.43f
-C69 m2_37248_n936# 0 6.02f
+Xnmos_decap_10_2 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_3 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_4 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_5 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_6 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_7 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_8 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xnmos_decap_10_9 charge_pump_reverse_0/clock_0/vdd VSUBS VSUBS nmos_decap_10
+Xpmos_decap_10_0 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_1 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_2 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_3 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_4 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_5 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_6 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_7 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_9 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+Xpmos_decap_10_8 VSUBS charge_pump_reverse_0/clock_0/vdd VSUBS pmos_decap_10
+C0 charge_pump_reverse_0/clock_0/clkb charge_pump_reverse_0/clock_0/vdd 3.55f
+C1 m2_37248_n936# VSUBS 7.39f
+C2 charge_pump_reverse_0/clock_0/vdd charge_pump_reverse_0/clock_0/clk_in 5.15f
+C3 VSUBS charge_pump_reverse_0/clock_0/clk_in 8.33f
+C4 VSUBS charge_pump_reverse_0/clock_0/vdd 42.1f
+C5 m2_37248_n936# charge_pump_reverse_0/clock_0/vdd 3.65f
+C6 charge_pump_reverse_0/nmos_dnw3_0/vs 0 18.8f
+C7 charge_pump_reverse_0/clock_0/a_2432_n962# 0 8.68f **FLOATING
+C8 charge_pump_reverse_0/clock_0/a_2020_n482# 0 2.57f **FLOATING
+C9 charge_pump_reverse_0/clock_0/a_344_102# 0 2.81f
+C10 charge_pump_reverse_0/clock_0/a_2402_572# 0 2.17f
+C11 charge_pump_reverse_0/clock_0/a_344_n986# 0 2.38f
+C12 charge_pump_reverse_0/clock_0/clk_in 0 3.12f
+C13 charge_pump_reverse_0/clock_0/a_3246_118# 0 6.83f
+C14 charge_pump_reverse_0/nmos_dnw3_0/vin 0 2.47f
+C15 charge_pump_reverse_0/nmos_dnw3_0/clkb 0 2.23f
+C16 charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C17 charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C18 charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 0 2.57f
+C19 charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C20 charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C21 charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 0 2.57f
+C22 charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C23 charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C24 charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 0 2.57f
+C25 charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C26 charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C27 charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 0 2.57f
+C28 charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C29 charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C30 charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 0 2.57f
+C31 charge_pump_reverse_0/nmos_dnw3_0/out1 0 15.1f
+C32 charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C33 charge_pump_reverse_0/clock_0/clkb 0 86.1f
+C34 charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C35 charge_pump_reverse_0/clock_0/vdd 0 0.536p
+C36 charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 0 2.57f
+C37 charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C38 charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C39 charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 0 2.57f
+C40 charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C41 charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C42 charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 0 2.57f
+C43 charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C44 charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C45 charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 0 2.57f
+C46 charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C47 charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C48 charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 0 2.57f
+C49 charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C50 charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C51 charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 0 2.57f
+C52 charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C53 charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C54 charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 0 2.57f
+C55 charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C56 charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C57 charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 0 2.57f
+C58 charge_pump_reverse_0/nmos_dnw3_0/out2 0 14.8f
+C59 charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C60 charge_pump_reverse_0/clock_0/clk 0 79.7f
+C61 charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C62 VSUBS 0 0.153p
+C63 charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 0 2.57f
+C64 charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C65 charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C66 charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 0 2.57f
+C67 charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
+C68 charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
+C69 charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 0 2.57f
+C70 charge_pump_reverse_0/nmos_dnw3_0/clk 0 2.43f
+C71 m2_37248_n936# 0 3.29f
 .ends
 
 .subckt cp2_buffer_5stage
-Xcp2_buffer1_0 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_0/charge_pump_0/vin cp2_buffer1_0/charge_pump_0/out
-+ cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/in3
-+ cp2_buffer1_0/charge_pump_0/vs cp2_buffer1_0/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/in2
-+ cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/in8
-+ cp2_buffer1_2/charge_pump_0/in1 cp2_buffer1_0/m2_12638_n930# VSUBS cp2_buffer1
-Xcp2_buffer1_1 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_1/charge_pump_0/vin cp2_buffer1_1/charge_pump_0/out
-+ cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/in3
-+ cp2_buffer1_1/charge_pump_0/vs cp2_buffer1_1/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/in2
-+ cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/in8
-+ cp2_buffer1_2/charge_pump_0/in1 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clk_in
-+ VSUBS cp2_buffer1
-Xcp2_buffer1_2 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_2/charge_pump_0/vin cp2_buffer1_2/charge_pump_0/out
-+ cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/in3
-+ cp2_buffer1_2/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/in2
-+ cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/in8
+Xcp2_buffer1_0 cp2_buffer1_0/charge_pump_0/a_18057_18271# cp2_buffer1_0/charge_pump_0/clk_in
++ cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_0/charge_pump_0/vin cp2_buffer1_0/charge_pump_0/out
++ cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/in8 cp2_buffer1_2/charge_pump_0/in3
++ cp2_buffer1_0/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/in2
++ cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/in1 cp2_buffer1_0/m2_12638_n930#
++ cp2_buffer1_2/charge_pump_0/gnd VSUBS cp2_buffer1
+Xcp2_buffer1_1 cp2_buffer1_1/charge_pump_0/a_18057_18271# cp2_buffer1_1/charge_pump_0/clk_in
++ cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_1/charge_pump_0/vin cp2_buffer1_1/charge_pump_0/out
++ cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/in8 cp2_buffer1_2/charge_pump_0/in3
++ cp2_buffer1_1/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/in2
++ cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/in1 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clk_in
++ cp2_buffer1_2/charge_pump_0/gnd VSUBS cp2_buffer1
+Xcp2_buffer1_2 VSUBS cp2_buffer1_2/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/in5
++ cp2_buffer1_2/charge_pump_0/vin cp2_buffer1_2/charge_pump_0/out cp2_buffer1_2/charge_pump_0/in4
++ cp2_buffer1_2/charge_pump_0/in8 cp2_buffer1_2/charge_pump_0/in3 cp2_buffer1_2/charge_pump_0/vs
++ cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/in2 cp2_buffer1_2/charge_pump_0/in6
 + cp2_buffer1_2/charge_pump_0/in1 cp2_buffer2_1/charge_pump_reverse_0/clock_0/clk_in
-+ VSUBS cp2_buffer1
++ cp2_buffer1_2/charge_pump_0/gnd VSUBS cp2_buffer1
 Xcp2_buffer2_0 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clk_in cp2_buffer1_2/charge_pump_0/in7
 + cp2_buffer1_0/charge_pump_0/out cp2_buffer1_2/charge_pump_0/in3 cp2_buffer1_2/charge_pump_0/in8
 + cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/vs
@@ -1371,30 +1434,30 @@ Xcp2_buffer2_1 cp2_buffer2_1/charge_pump_reverse_0/clock_0/clk_in cp2_buffer1_2/
 + cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_2/charge_pump_0/vin
 + cp2_buffer1_1/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/in2 VSUBS cp2_buffer1_2/charge_pump_0/in1
 + cp2_buffer2
-C0 VSUBS cp2_buffer1_2/charge_pump_0/in2 4.25f
-C1 cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/gnd 4.45f
-C2 cp2_buffer1_2/charge_pump_0/in8 cp2_buffer1_2/charge_pump_0/gnd 4.64f
-C3 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_2/charge_pump_0/in2 4.4f
-C4 cp2_buffer1_2/charge_pump_0/in7 VSUBS 4.3f
-C5 cp2_buffer1_2/charge_pump_0/in4 VSUBS 4.27f
-C6 cp2_buffer1_2/charge_pump_0/in3 VSUBS 4.27f
-C7 cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/gnd 4.45f
-C8 cp2_buffer1_2/charge_pump_0/in1 VSUBS 4.18f
-C9 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_2/charge_pump_0/in4 4.39f
-C10 cp2_buffer1_2/charge_pump_0/in5 VSUBS 4.25f
-C11 cp2_buffer1_2/charge_pump_0/in3 cp2_buffer1_2/charge_pump_0/gnd 4.42f
-C12 cp2_buffer1_2/charge_pump_0/in1 cp2_buffer1_2/charge_pump_0/gnd 4.32f
-C13 cp2_buffer1_2/charge_pump_0/in6 VSUBS 4.29f
-C14 cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_2/charge_pump_0/gnd 4.39f
-C15 cp2_buffer1_2/charge_pump_0/in8 VSUBS 4.52f
-C16 cp2_buffer1_2/charge_pump_0/gnd VSUBS 7.82f
+C0 cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_2/charge_pump_0/gnd 4.4f
+C1 cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/gnd 4.39f
+C2 cp2_buffer1_2/charge_pump_0/in3 VSUBS 4.3f
+C3 VSUBS cp2_buffer1_2/charge_pump_0/in6 4.32f
+C4 cp2_buffer1_2/charge_pump_0/in8 VSUBS 4.58f
+C5 cp2_buffer1_2/charge_pump_0/in3 cp2_buffer1_2/charge_pump_0/gnd 4.42f
+C6 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_2/charge_pump_0/in6 4.45f
+C7 cp2_buffer1_2/charge_pump_0/in8 cp2_buffer1_2/charge_pump_0/gnd 4.65f
+C8 cp2_buffer1_2/charge_pump_0/in1 VSUBS 4.01f
+C9 cp2_buffer1_2/charge_pump_0/in1 cp2_buffer1_2/charge_pump_0/gnd 4.33f
+C10 VSUBS cp2_buffer1_2/charge_pump_0/gnd 79.3f
+C11 VSUBS cp2_buffer1_2/charge_pump_0/in2 4.27f
+C12 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_2/charge_pump_0/in2 4.41f
+C13 cp2_buffer1_2/charge_pump_0/in7 VSUBS 4.32f
+C14 cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/gnd 4.45f
+C15 cp2_buffer1_2/charge_pump_0/in5 VSUBS 4.26f
+C16 cp2_buffer1_2/charge_pump_0/in4 VSUBS 4.28f
 C17 cp2_buffer2_1/charge_pump_reverse_0/nmos_dnw3_0/vs cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 18.8f
 C18 cp2_buffer2_1/charge_pump_reverse_0/clock_0/a_2432_n962# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
 C19 cp2_buffer2_1/charge_pump_reverse_0/clock_0/a_2020_n482# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
 C20 cp2_buffer2_1/charge_pump_reverse_0/clock_0/a_344_102# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.81f
 C21 cp2_buffer2_1/charge_pump_reverse_0/clock_0/a_2402_572# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.17f
 C22 cp2_buffer2_1/charge_pump_reverse_0/clock_0/a_344_n986# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.38f
-C23 cp2_buffer2_1/charge_pump_reverse_0/clock_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 13.1f
+C23 cp2_buffer2_1/charge_pump_reverse_0/clock_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 7.41f
 C24 cp2_buffer2_1/charge_pump_reverse_0/clock_0/a_3246_118# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.83f
 C25 cp2_buffer2_1/charge_pump_reverse_0/nmos_dnw3_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.23f
 C26 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
@@ -1414,7 +1477,7 @@ C39 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_
 C40 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
 C41 cp2_buffer2_1/charge_pump_reverse_0/nmos_dnw3_0/out1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 15.1f
 C42 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C43 cp2_buffer2_1/charge_pump_reverse_0/clock_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 86.3f
+C43 cp2_buffer2_1/charge_pump_reverse_0/clock_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 86.1f
 C44 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
 C45 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
 C46 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
@@ -1440,7 +1503,7 @@ C65 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_
 C66 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
 C67 cp2_buffer2_1/charge_pump_reverse_0/nmos_dnw3_0/out2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 14.8f
 C68 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C69 cp2_buffer2_1/charge_pump_reverse_0/clock_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 79.9f
+C69 cp2_buffer2_1/charge_pump_reverse_0/clock_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 79.7f
 C70 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
 C71 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
 C72 cp2_buffer2_1/charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
@@ -1456,209 +1519,209 @@ C81 cp2_buffer2_0/charge_pump_reverse_0/clock_0/a_2020_n482# cp2_buffer1_2/charg
 C82 cp2_buffer2_0/charge_pump_reverse_0/clock_0/a_344_102# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.81f
 C83 cp2_buffer2_0/charge_pump_reverse_0/clock_0/a_2402_572# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.17f
 C84 cp2_buffer2_0/charge_pump_reverse_0/clock_0/a_344_n986# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.38f
-C85 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 12.5f
+C85 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 7.27f
 C86 cp2_buffer2_0/charge_pump_reverse_0/clock_0/a_3246_118# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.83f
-C87 cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.23f
-C88 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C89 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C90 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C91 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C92 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C93 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C94 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C95 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C96 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C97 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C98 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C99 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C100 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C101 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C102 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C103 cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/out1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 15.1f
-C104 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C105 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 86.3f
-C106 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C107 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C108 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C109 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C110 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C111 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C112 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C113 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C114 cp2_buffer1_2/charge_pump_0/in3 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 5.22f
-C115 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C116 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C117 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C118 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C119 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C120 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C121 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C122 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C123 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C124 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C125 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C126 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C127 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C128 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C129 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C130 cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/out2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 14.8f
-C131 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C132 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 79.9f
-C133 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C134 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C135 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C136 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C137 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C138 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C139 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C140 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C141 cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.43f
-C142 cp2_buffer1_2/charge_pump_0/vin cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 3.24f
-C143 cp2_buffer1_2/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 19f
-C144 cp2_buffer1_2/charge_pump_0/clock_0/a_2432_n962# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
-C145 cp2_buffer1_2/charge_pump_0/clock_0/a_2020_n482# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
-C146 cp2_buffer1_2/charge_pump_0/clock_0/a_344_102# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.81f
-C147 cp2_buffer1_2/charge_pump_0/clock_0/a_2402_572# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.17f
-C148 cp2_buffer1_2/charge_pump_0/clock_0/a_344_n986# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.38f
-C149 cp2_buffer1_2/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.41f
-C150 cp2_buffer1_2/charge_pump_0/clock_0/a_3246_118# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.83f
-C151 cp2_buffer1_2/charge_pump_0/g2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.44f
-C152 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C153 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C154 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C155 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C156 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C157 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C158 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C159 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C160 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C161 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C162 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C163 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C164 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C165 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C166 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C167 cp2_buffer1_2/charge_pump_0/input1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 15f
-C168 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C169 cp2_buffer1_2/charge_pump_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 76.7f
-C170 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C171 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C172 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C173 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C174 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C175 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C176 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C177 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C178 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C179 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C180 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C181 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C182 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C183 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C184 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C185 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C186 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C187 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C188 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C189 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C190 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C191 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C192 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C193 cp2_buffer1_2/charge_pump_0/input2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 13.6f
-C194 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C195 cp2_buffer1_2/charge_pump_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 78.4f
-C196 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C197 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C198 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C199 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C200 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C201 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C202 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C203 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C204 cp2_buffer1_2/charge_pump_0/g1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.63f
-C205 cp2_buffer1_1/charge_pump_0/vin cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 3.25f
-C206 cp2_buffer1_1/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 19f
-C207 cp2_buffer1_1/charge_pump_0/out cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 3.62f
-C208 cp2_buffer1_1/charge_pump_0/clock_0/a_2432_n962# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
-C209 cp2_buffer1_1/charge_pump_0/clock_0/a_2020_n482# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
-C210 cp2_buffer1_1/charge_pump_0/clock_0/a_344_102# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.81f
-C211 cp2_buffer1_1/charge_pump_0/clock_0/a_2402_572# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.17f
-C212 cp2_buffer1_1/charge_pump_0/clock_0/a_344_n986# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.38f
-C213 cp2_buffer1_1/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 11.8f
-C214 cp2_buffer1_1/charge_pump_0/clock_0/a_3246_118# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.83f
-C215 cp2_buffer1_1/charge_pump_0/g2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.44f
-C216 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C217 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C218 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C219 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C220 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C221 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C222 cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 5.4f
-C223 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C224 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C225 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C226 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C227 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C228 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C229 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C230 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C231 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C232 cp2_buffer1_1/charge_pump_0/input1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 15f
-C233 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C234 cp2_buffer1_1/charge_pump_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 76.7f
-C235 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C236 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C237 cp2_buffer1_2/charge_pump_0/in8 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.43f
-C238 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C239 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C240 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C241 cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.5f
-C242 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C243 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C244 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C245 cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.47f
-C246 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C247 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C248 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C249 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C250 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C251 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C252 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C253 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C254 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C255 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C256 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C257 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C258 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C259 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C260 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C261 cp2_buffer1_1/charge_pump_0/input2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 13.6f
-C262 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C263 cp2_buffer1_1/charge_pump_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 78.4f
-C264 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C265 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C266 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C267 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C268 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C269 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C270 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C271 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C272 cp2_buffer1_1/charge_pump_0/g1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.63f
-C273 cp2_buffer1_0/m2_12638_n930# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 5.52f
-C274 cp2_buffer1_0/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 19f
-C275 cp2_buffer1_0/charge_pump_0/out cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 3.71f
-C276 cp2_buffer1_0/charge_pump_0/clock_0/a_2432_n962# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
-C277 cp2_buffer1_0/charge_pump_0/clock_0/a_2020_n482# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
-C278 cp2_buffer1_0/charge_pump_0/clock_0/a_344_102# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.81f
-C279 cp2_buffer1_0/charge_pump_0/clock_0/a_2402_572# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.17f
-C280 cp2_buffer1_0/charge_pump_0/clock_0/a_344_n986# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.38f
-C281 cp2_buffer1_0/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 13.5f
-C282 cp2_buffer1_0/charge_pump_0/clock_0/a_3246_118# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.83f
-C283 cp2_buffer1_0/charge_pump_0/g2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.44f
-C284 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C285 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C286 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C287 cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.64f
+C87 cp2_buffer1_0/charge_pump_0/out cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 4.14f
+C88 cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.23f
+C89 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C90 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C91 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C92 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C93 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C94 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C95 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C96 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C97 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C98 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C99 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C100 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C101 cp2_buffer1_2/charge_pump_0/in7 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.26f
+C102 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C103 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C104 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C105 cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/out1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 15.1f
+C106 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C107 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 86.1f
+C108 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C109 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C110 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C111 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C112 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C113 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C114 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C115 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C116 cp2_buffer1_2/charge_pump_0/in3 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 4.98f
+C117 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C118 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C119 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C120 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C121 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C122 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C123 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C124 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C125 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C126 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C127 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C128 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C129 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C130 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C131 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C132 cp2_buffer1_2/charge_pump_0/in8 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.18f
+C133 cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/out2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 14.8f
+C134 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C135 cp2_buffer2_0/charge_pump_reverse_0/clock_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 79.7f
+C136 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C137 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C138 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C139 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C140 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C141 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C142 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C143 cp2_buffer2_0/charge_pump_reverse_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C144 cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.43f
+C145 cp2_buffer1_2/charge_pump_0/vin cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 3.3f
+C146 cp2_buffer1_2/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 19f
+C147 cp2_buffer1_2/charge_pump_0/clock_0/a_2432_n962# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
+C148 cp2_buffer1_2/charge_pump_0/clock_0/a_2020_n482# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
+C149 cp2_buffer1_2/charge_pump_0/clock_0/a_344_102# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.81f
+C150 cp2_buffer1_2/charge_pump_0/clock_0/a_2402_572# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.17f
+C151 cp2_buffer1_2/charge_pump_0/clock_0/a_344_n986# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.38f
+C152 cp2_buffer1_2/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 4.24f
+C153 cp2_buffer1_2/charge_pump_0/clock_0/a_3246_118# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.83f
+C154 cp2_buffer1_2/charge_pump_0/g2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.44f
+C155 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C156 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C157 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C158 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C159 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C160 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C161 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C162 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C163 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C164 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C165 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C166 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C167 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C168 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C169 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C170 cp2_buffer1_2/charge_pump_0/input1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 15f
+C171 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C172 cp2_buffer1_2/charge_pump_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 76.6f
+C173 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C174 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C175 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C176 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C177 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C178 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C179 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C180 cp2_buffer1_2/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C181 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C182 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C183 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C184 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C185 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C186 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C187 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C188 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C189 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C190 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C191 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C192 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C193 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C194 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C195 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C196 cp2_buffer1_2/charge_pump_0/input2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 13.6f
+C197 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C198 cp2_buffer1_2/charge_pump_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 78.2f
+C199 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C200 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C201 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C202 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C203 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C204 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C205 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C206 cp2_buffer1_2/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C207 cp2_buffer1_2/charge_pump_0/g1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.63f
+C208 cp2_buffer1_1/charge_pump_0/vin cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 3.43f
+C209 cp2_buffer1_1/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 19f
+C210 cp2_buffer1_1/charge_pump_0/out cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 3.65f
+C211 cp2_buffer1_1/charge_pump_0/clock_0/a_2432_n962# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
+C212 cp2_buffer1_1/charge_pump_0/clock_0/a_2020_n482# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
+C213 cp2_buffer1_1/charge_pump_0/clock_0/a_344_102# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.81f
+C214 cp2_buffer1_1/charge_pump_0/clock_0/a_2402_572# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.17f
+C215 cp2_buffer1_1/charge_pump_0/clock_0/a_344_n986# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.38f
+C216 cp2_buffer1_1/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.49f
+C217 cp2_buffer1_1/charge_pump_0/clock_0/a_3246_118# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.83f
+C218 cp2_buffer1_1/charge_pump_0/g2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.44f
+C219 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C220 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C221 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C222 cp2_buffer1_2/charge_pump_0/in5 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.4f
+C223 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C224 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C225 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C226 cp2_buffer1_2/charge_pump_0/in4 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 5.16f
+C227 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C228 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C229 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C230 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C231 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C232 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C233 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C234 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C235 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C236 cp2_buffer1_1/charge_pump_0/input1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 15f
+C237 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C238 cp2_buffer1_1/charge_pump_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 76.6f
+C239 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C240 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C241 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C242 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C243 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C244 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C245 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C246 cp2_buffer1_1/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C247 cp2_buffer1_2/charge_pump_0/in6 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.23f
+C248 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C249 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C250 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C251 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C252 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C253 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C254 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C255 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C256 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C257 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C258 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C259 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C260 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C261 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C262 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C263 cp2_buffer1_1/charge_pump_0/input2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 13.6f
+C264 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C265 cp2_buffer1_1/charge_pump_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 78.2f
+C266 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C267 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C268 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C269 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C270 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C271 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C272 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C273 cp2_buffer1_1/charge_pump_0/capacitors_5_1/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C274 cp2_buffer1_1/charge_pump_0/g1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.63f
+C275 cp2_buffer1_0/m2_12638_n930# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 4.02f
+C276 cp2_buffer1_0/charge_pump_0/vs cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 19f
+C277 cp2_buffer1_0/charge_pump_0/clock_0/a_2432_n962# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.68f **FLOATING
+C278 cp2_buffer1_0/charge_pump_0/clock_0/a_2020_n482# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f **FLOATING
+C279 cp2_buffer1_0/charge_pump_0/clock_0/a_344_102# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.81f
+C280 cp2_buffer1_0/charge_pump_0/clock_0/a_2402_572# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.17f
+C281 cp2_buffer1_0/charge_pump_0/clock_0/a_344_n986# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.38f
+C282 cp2_buffer1_0/charge_pump_0/clk_in cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 7.63f
+C283 cp2_buffer1_0/charge_pump_0/clock_0/a_3246_118# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 6.83f
+C284 cp2_buffer1_0/charge_pump_0/g2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.44f
+C285 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C286 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C287 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
 C288 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
 C289 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
 C290 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
@@ -1668,42 +1731,42 @@ C293 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_2/buffer_and_gate_0/
 C294 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
 C295 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
 C296 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C297 cp2_buffer1_2/charge_pump_0/in2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 5.25f
+C297 cp2_buffer1_2/charge_pump_0/in2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 5.02f
 C298 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
 C299 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
 C300 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
 C301 cp2_buffer1_0/charge_pump_0/input1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 15f
 C302 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C303 cp2_buffer1_0/charge_pump_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 76.7f
+C303 cp2_buffer1_0/charge_pump_0/clk cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 76.6f
 C304 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C305 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C306 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C307 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C308 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C309 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C310 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C311 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C312 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C313 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C314 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C315 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C316 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C317 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C318 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C319 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C320 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C321 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C322 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C323 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C324 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C325 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C326 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
-C327 cp2_buffer1_0/charge_pump_0/input2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 13.6f
-C328 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
-C329 cp2_buffer1_0/charge_pump_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 78.4f
-C330 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
-C331 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.37p
-C332 VSUBS cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 0.696p
+C305 cp2_buffer1_2/charge_pump_0/gnd cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.66p
+C306 VSUBS cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 0.799p
+C307 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C308 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C309 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C310 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_6/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C311 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C312 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C313 cp2_buffer1_0/charge_pump_0/capacitors_5_0/capacitor_5_5/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C314 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C315 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C316 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_4/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C317 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C318 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C319 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_3/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C320 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C321 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C322 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_2/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C323 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C324 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C325 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_1/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C326 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C327 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
+C328 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_0/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
+C329 cp2_buffer1_0/charge_pump_0/input2 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 13.6f
+C330 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
+C331 cp2_buffer1_0/charge_pump_0/clkb cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 78.2f
+C332 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f
 C333 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_7/buffer_and_gate_0/in1 cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.57f
 C334 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/and_gate_0/a_n78_396# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 2.34f
 C335 cp2_buffer1_0/charge_pump_0/capacitors_5_1/capacitor_5_6/buffer_and_gate_0/buffer_0/a_1436_1552# cp2_buffer1_2/charge_pump_0/nmos_diode2_0/VSUBS 8.93f

@@ -329,10 +329,10 @@ X94 vdd a_2432_n962# clkb vdd sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 
 X95 clkb a_2432_n962# gnd gnd sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X96 a_786_n2# a_586_n2# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.365 pd=3.1 as=0.365 ps=3.1 w=1.26 l=0.15
 X97 clkb a_2432_n962# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 ps=1.59 w=1.26 l=0.15
-C0 vdd a_2432_n962# 7.04f
-C1 clkb a_2432_n962# 2.67f
-C2 a_2020_n482# vdd 2.66f
-C3 clkb vdd 7.31f
+C0 clkb vdd 7.31f
+C1 vdd a_2020_n482# 2.66f
+C2 vdd a_2432_n962# 7.04f
+C3 clkb a_2432_n962# 2.67f
 C4 clkb gnd 5.1f
 C5 a_2432_n962# gnd 8.71f
 C6 a_2020_n482# gnd 2.57f
@@ -343,14 +343,11 @@ C10 a_344_n986# gnd 2.43f
 C11 a_3246_118# gnd 6.79f
 .ends
 
-.subckt buffer_digital m1_304_98# m1_n2_0# m1_n2_474# sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#
-+ m1_216_0# a_n274_130# VSUBS
-Xsky130_fd_pr__pfet_01v8_FXZ64Q_0 m1_n2_474# sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#
-+ a_116_148# a_n274_130# VSUBS sky130_fd_pr__pfet_01v8_FXZ64Q
-Xsky130_fd_pr__pfet_01v8_FXZ64Q_1 m1_n2_474# sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#
-+ m1_304_98# a_116_148# VSUBS sky130_fd_pr__pfet_01v8_FXZ64Q
-Xsky130_fd_pr__nfet_01v8_DQBD8A_0 a_116_148# a_n274_130# m1_n2_0# VSUBS sky130_fd_pr__nfet_01v8_DQBD8A
-Xsky130_fd_pr__nfet_01v8_DQBD8A_1 m1_304_98# a_116_148# m1_216_0# VSUBS sky130_fd_pr__nfet_01v8_DQBD8A
+.subckt buffer_digital i in VDD GND
+Xsky130_fd_pr__pfet_01v8_FXZ64Q_0 VDD VDD a_116_148# i GND sky130_fd_pr__pfet_01v8_FXZ64Q
+Xsky130_fd_pr__pfet_01v8_FXZ64Q_1 VDD VDD in a_116_148# GND sky130_fd_pr__pfet_01v8_FXZ64Q
+Xsky130_fd_pr__nfet_01v8_DQBD8A_0 a_116_148# i GND GND sky130_fd_pr__nfet_01v8_DQBD8A
+Xsky130_fd_pr__nfet_01v8_DQBD8A_1 in a_116_148# GND GND sky130_fd_pr__nfet_01v8_DQBD8A
 .ends
 
 .subckt sky130_fd_pr__pfet_01v8_4ZKXAA a_63_n42# a_n417_n42# a_303_n139# w_n545_n142#
@@ -519,10 +516,10 @@ X50 a_1596_1398# a_1436_1552# a_1504_1398# VSUBS sky130_fd_pr__nfet_01v8 ad=0.06
 X51 a_1596_1398# a_1436_1552# a_1504_1398# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X52 a_1596_1398# a_1436_1552# a_1504_1860# w_1358_2156# sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 ps=1.59 w=1.26 l=0.15
 X53 a_1504_1860# a_1436_1552# a_1596_1398# w_1358_2156# sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 ps=1.59 w=1.26 l=0.15
-C0 a_1504_1860# a_1596_1398# 6.79f
-C1 a_1596_1398# a_1436_1552# 2.21f
-C2 a_1596_1398# a_1504_1398# 2.65f
-C3 w_1358_2156# a_1436_1552# 2.61f
+C0 a_1436_1552# a_1596_1398# 2.21f
+C1 a_1436_1552# w_1358_2156# 2.61f
+C2 a_1504_1860# a_1596_1398# 6.79f
+C3 a_1504_1398# a_1596_1398# 2.65f
 C4 m5_n1320_776# VSUBS 2.52f
 C5 a_n1158_1778# VSUBS 7.08f
 C6 a_1436_1552# VSUBS 8.93f
@@ -574,7 +571,7 @@ X10 w_n260_286# a_n162_206# a_n78_396# w_n260_286# sky130_fd_pr__pfet_01v8 ad=0.
 X11 sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS a_n162_206# a_n78_n64# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X12 a_n78_n64# a_n162_206# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
 X13 a_n78_n64# a_n162_206# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0.0651 pd=0.73 as=0.0693 ps=0.75 w=0.42 l=0.15
-C0 a_n78_396# w_n260_286# 3.02f
+C0 w_n260_286# a_n78_396# 3.02f
 C1 a_n78_396# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS 2.46f
 C2 w_n260_286# sky130_fd_pr__pfet_01v8_X4L24Q_0/VSUBS 6.96f
 .ends
@@ -590,94 +587,93 @@ C4 vdd 0 17.7f
 C5 gnd 0 7.18f
 .ends
 
-.subckt capacito7 a_2858_n174# m2_n739_1036# sky130_fd_pr__pfet_01v8_4ZKXAA_0/w_n545_n142#
+.subckt capacito7 a_2858_n174# buffer_digital_0/i sky130_fd_pr__pfet_01v8_4ZKXAA_0/w_n545_n142#
 + a_5270_n124# m3_7758_166# buffer_and_gate_0/clk sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#
-+ m1_6370_n278# buffer_and_gate_0/gnd buffer_and_gate_0/vdd m1_602_n334#
-Xbuffer_digital_0 buffer_and_gate_0/in1 buffer_and_gate_0/gnd buffer_and_gate_0/vdd
-+ buffer_and_gate_0/vdd buffer_and_gate_0/gnd m2_n739_1036# buffer_and_gate_0/gnd
++ m1_6370_n278# buffer_digital_0/GND buffer_digital_0/VDD m1_602_n334#
+Xbuffer_digital_0 buffer_digital_0/i buffer_digital_0/in buffer_digital_0/VDD buffer_digital_0/GND
 + buffer_digital
-Xsky130_fd_pr__pfet_01v8_4ZKXAA_0 m1_6370_n278# m1_6370_n278# buffer_and_gate_0/gnd
-+ sky130_fd_pr__pfet_01v8_4ZKXAA_0/w_n545_n142# m1_6370_n278# buffer_and_gate_0/gnd
-+ m1_6370_n278# buffer_and_gate_0/gnd m1_6370_n278# buffer_and_gate_0/gnd buffer_and_gate_0/gnd
-+ m1_6370_n278# buffer_and_gate_0/gnd m1_6370_n278# m1_6370_n278# buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd m1_6370_n278# m1_6370_n278# buffer_and_gate_0/gnd m1_6370_n278#
-+ buffer_and_gate_0/gnd buffer_and_gate_0/gnd sky130_fd_pr__pfet_01v8_4ZKXAA
-Xsky130_fd_pr__nfet_01v8_9LGCGE_0 a_2858_n174# a_2858_n174# buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd a_2858_n174# buffer_and_gate_0/gnd a_2858_n174# buffer_and_gate_0/gnd
-+ a_2858_n174# buffer_and_gate_0/gnd buffer_and_gate_0/gnd buffer_and_gate_0/gnd a_2858_n174#
-+ buffer_and_gate_0/gnd buffer_and_gate_0/gnd a_2858_n174# buffer_and_gate_0/gnd a_2858_n174#
-+ a_2858_n174# buffer_and_gate_0/gnd a_2858_n174# a_2858_n174# buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd buffer_and_gate_0/gnd buffer_and_gate_0/gnd a_2858_n174# a_2858_n174#
-+ a_2858_n174# buffer_and_gate_0/gnd a_2858_n174# a_2858_n174# buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd a_2858_n174# a_2858_n174# a_2858_n174# buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd a_2858_n174# buffer_and_gate_0/gnd buffer_and_gate_0/gnd sky130_fd_pr__nfet_01v8_9LGCGE
-Xsky130_fd_pr__pfet_01v8_49FP49_0 m1_602_n334# m1_602_n334# buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd m1_602_n334# buffer_and_gate_0/gnd sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#
-+ m1_602_n334# m1_602_n334# buffer_and_gate_0/gnd buffer_and_gate_0/gnd m1_602_n334#
-+ buffer_and_gate_0/gnd buffer_and_gate_0/gnd buffer_and_gate_0/gnd m1_602_n334# buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd m1_602_n334# m1_602_n334# m1_602_n334# buffer_and_gate_0/gnd
-+ m1_602_n334# m1_602_n334# m1_602_n334# buffer_and_gate_0/gnd m1_602_n334# m1_602_n334#
-+ buffer_and_gate_0/gnd buffer_and_gate_0/gnd buffer_and_gate_0/gnd m1_602_n334# m1_602_n334#
-+ m1_602_n334# buffer_and_gate_0/gnd m1_602_n334# m1_602_n334# buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd m1_602_n334# buffer_and_gate_0/gnd buffer_and_gate_0/gnd buffer_and_gate_0/gnd
+Xsky130_fd_pr__pfet_01v8_4ZKXAA_0 m1_6370_n278# m1_6370_n278# buffer_digital_0/GND
++ sky130_fd_pr__pfet_01v8_4ZKXAA_0/w_n545_n142# m1_6370_n278# buffer_digital_0/GND
++ m1_6370_n278# buffer_digital_0/GND m1_6370_n278# buffer_digital_0/GND buffer_digital_0/GND
++ m1_6370_n278# buffer_digital_0/GND m1_6370_n278# m1_6370_n278# buffer_digital_0/GND
++ buffer_digital_0/GND m1_6370_n278# m1_6370_n278# buffer_digital_0/GND m1_6370_n278#
++ buffer_digital_0/GND buffer_digital_0/GND sky130_fd_pr__pfet_01v8_4ZKXAA
+Xsky130_fd_pr__nfet_01v8_9LGCGE_0 a_2858_n174# a_2858_n174# buffer_digital_0/GND buffer_digital_0/GND
++ a_2858_n174# buffer_digital_0/GND a_2858_n174# buffer_digital_0/GND a_2858_n174#
++ buffer_digital_0/GND buffer_digital_0/GND buffer_digital_0/GND a_2858_n174# buffer_digital_0/GND
++ buffer_digital_0/GND a_2858_n174# buffer_digital_0/GND a_2858_n174# a_2858_n174#
++ buffer_digital_0/GND a_2858_n174# a_2858_n174# buffer_digital_0/GND buffer_digital_0/GND
++ buffer_digital_0/GND buffer_digital_0/GND a_2858_n174# a_2858_n174# a_2858_n174#
++ buffer_digital_0/GND a_2858_n174# a_2858_n174# buffer_digital_0/GND buffer_digital_0/GND
++ a_2858_n174# a_2858_n174# a_2858_n174# buffer_digital_0/GND buffer_digital_0/GND
++ a_2858_n174# buffer_digital_0/GND buffer_digital_0/GND sky130_fd_pr__nfet_01v8_9LGCGE
+Xsky130_fd_pr__pfet_01v8_49FP49_0 m1_602_n334# m1_602_n334# buffer_digital_0/GND buffer_digital_0/GND
++ m1_602_n334# buffer_digital_0/GND sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#
++ m1_602_n334# m1_602_n334# buffer_digital_0/GND buffer_digital_0/GND m1_602_n334#
++ buffer_digital_0/GND buffer_digital_0/GND buffer_digital_0/GND m1_602_n334# buffer_digital_0/GND
++ buffer_digital_0/GND m1_602_n334# m1_602_n334# m1_602_n334# buffer_digital_0/GND
++ m1_602_n334# m1_602_n334# m1_602_n334# buffer_digital_0/GND m1_602_n334# m1_602_n334#
++ buffer_digital_0/GND buffer_digital_0/GND buffer_digital_0/GND m1_602_n334# m1_602_n334#
++ m1_602_n334# buffer_digital_0/GND m1_602_n334# m1_602_n334# buffer_digital_0/GND
++ buffer_digital_0/GND m1_602_n334# buffer_digital_0/GND buffer_digital_0/GND buffer_digital_0/GND
 + sky130_fd_pr__pfet_01v8_49FP49
-Xsky130_fd_pr__nfet_01v8_NJGC45_0 buffer_and_gate_0/gnd a_5270_n124# buffer_and_gate_0/gnd
-+ a_5270_n124# a_5270_n124# buffer_and_gate_0/gnd buffer_and_gate_0/gnd a_5270_n124#
-+ a_5270_n124# buffer_and_gate_0/gnd a_5270_n124# buffer_and_gate_0/gnd buffer_and_gate_0/gnd
-+ buffer_and_gate_0/gnd buffer_and_gate_0/gnd buffer_and_gate_0/gnd a_5270_n124# buffer_and_gate_0/gnd
-+ a_5270_n124# a_5270_n124# a_5270_n124# buffer_and_gate_0/gnd sky130_fd_pr__nfet_01v8_NJGC45
-Xbuffer_and_gate_0 buffer_and_gate_0/in1 buffer_and_gate_0/clk buffer_and_gate_0/out
-+ buffer_and_gate_0/gnd buffer_and_gate_0/vdd buffer_and_gate
+Xsky130_fd_pr__nfet_01v8_NJGC45_0 buffer_digital_0/GND a_5270_n124# buffer_digital_0/GND
++ a_5270_n124# a_5270_n124# buffer_digital_0/GND buffer_digital_0/GND a_5270_n124#
++ a_5270_n124# buffer_digital_0/GND a_5270_n124# buffer_digital_0/GND buffer_digital_0/GND
++ buffer_digital_0/GND buffer_digital_0/GND buffer_digital_0/GND a_5270_n124# buffer_digital_0/GND
++ a_5270_n124# a_5270_n124# a_5270_n124# buffer_digital_0/GND sky130_fd_pr__nfet_01v8_NJGC45
+Xbuffer_and_gate_0 buffer_digital_0/in buffer_and_gate_0/clk buffer_and_gate_0/out
++ buffer_digital_0/GND buffer_digital_0/VDD buffer_and_gate
 X0 buffer_and_gate_0/out m3_7758_166# sky130_fd_pr__cap_mim_m3_1 l=7.99 w=7.97
-C0 buffer_and_gate_0/gnd a_2858_n174# 2.03f
-C1 buffer_and_gate_0/in1 m2_n739_1036# 2.94f
+C0 buffer_digital_0/in buffer_digital_0/i 2.94f
+C1 a_2858_n174# buffer_digital_0/GND 2.03f
 C2 m3_7758_166# 0 2.32f
 C3 buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C4 buffer_and_gate_0/clk 0 7.7f
 C5 buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C6 buffer_and_gate_0/vdd 0 18.2f
-C7 buffer_and_gate_0/gnd 0 8.36f
+C6 buffer_digital_0/VDD 0 18.4f
+C7 buffer_digital_0/GND 0 8.14f
 C8 a_5270_n124# 0 2.36f
 C9 a_2858_n174# 0 4.67f
-C10 buffer_and_gate_0/in1 0 2.66f
+C10 buffer_digital_0/in 0 2.66f
 .ends
 
-.subckt capacitor_8 capacitor_7_0/a_5270_n124# capacitor_7_0/m3_7758_166# capacitor_7_0/buffer_and_gate_0/vdd
-+ capacitor_7_0/buffer_and_gate_0/clk capacitor_7_0/a_2858_n174# w_7118_n356# w_1380_n364#
-+ VSUBS capacitor_7_0/m2_n739_1036#
-Xcapacitor_7_0 capacitor_7_0/a_2858_n174# capacitor_7_0/m2_n739_1036# w_7118_n356#
+.subckt capacitor_8 capacitor_7_0/a_5270_n124# capacitor_7_0/buffer_digital_0/VDD
++ capacitor_7_0/m3_7758_166# capacitor_7_0/buffer_and_gate_0/clk capacitor_7_0/a_2858_n174#
++ w_7118_n356# w_1380_n364# VSUBS capacitor_7_0/buffer_digital_0/i
+Xcapacitor_7_0 capacitor_7_0/a_2858_n174# capacitor_7_0/buffer_digital_0/i w_7118_n356#
 + capacitor_7_0/a_5270_n124# capacitor_7_0/m3_7758_166# capacitor_7_0/buffer_and_gate_0/clk
-+ w_1380_n364# w_7118_n356# VSUBS capacitor_7_0/buffer_and_gate_0/vdd w_1380_n364#
++ w_1380_n364# w_7118_n356# VSUBS capacitor_7_0/buffer_digital_0/VDD w_1380_n364#
 + capacito7
 C0 capacitor_7_0/m3_7758_166# 0 2.32f
 C1 capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C2 capacitor_7_0/buffer_and_gate_0/clk 0 7.7f
 C3 capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C4 capacitor_7_0/buffer_and_gate_0/vdd 0 18.3f
-C5 VSUBS 0 8.2f
+C4 capacitor_7_0/buffer_digital_0/VDD 0 18.5f
+C5 VSUBS 0 7.98f
 C6 capacitor_7_0/a_5270_n124# 0 2.36f
 C7 w_1380_n364# 0 3.28f
 C8 capacitor_7_0/a_2858_n174# 0 4.67f
-C9 capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C9 capacitor_7_0/buffer_digital_0/in 0 2.66f
 .ends
 
 .subckt capacitors_1 clk1 in1 capacitor_8_0/capacitor_7_0/a_2858_n174# capacitor_8_0/capacitor_7_0/a_5270_n124#
-+ capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk capacitor_8_0/capacitor_7_0/buffer_and_gate_0/vdd
++ capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk capacitor_8_0/capacitor_7_0/buffer_digital_0/VDD
 + m1_7096_n308# capacitor_8_0/w_1380_n364# VSUBS
-Xcapacitor_8_0 capacitor_8_0/capacitor_7_0/a_5270_n124# clk1 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/vdd
-+ capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk capacitor_8_0/capacitor_7_0/a_2858_n174#
+Xcapacitor_8_0 capacitor_8_0/capacitor_7_0/a_5270_n124# capacitor_8_0/capacitor_7_0/buffer_digital_0/VDD
++ clk1 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk capacitor_8_0/capacitor_7_0/a_2858_n174#
 + m1_7096_n308# capacitor_8_0/w_1380_n364# VSUBS in1 capacitor_8
-C0 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/vdd VSUBS 2.83f
+C0 VSUBS capacitor_8_0/capacitor_7_0/buffer_digital_0/VDD 2.84f
 C1 clk1 0 2.38f
 C2 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C3 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk 0 8.5f
+C3 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk 0 8.49f
 C4 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C5 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/vdd 0 18.3f
-C6 VSUBS 0 8.2f
+C5 capacitor_8_0/capacitor_7_0/buffer_digital_0/VDD 0 20.4f
+C6 VSUBS 0 8.83f
 C7 capacitor_8_0/capacitor_7_0/a_5270_n124# 0 2.36f
 C8 capacitor_8_0/w_1380_n364# 0 3.28f
 C9 capacitor_8_0/capacitor_7_0/a_2858_n174# 0 4.67f
-C10 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C10 capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 .ends
 
 .subckt sky130_fd_pr__pfet_01v8_4RPJ49 a_2031_73# a_1887_n42# a_3615_n42# a_3183_73#
@@ -921,8 +917,8 @@ Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_4 g1 clk gnd sky130_fd_pr__cap_mim_m3_1_MH6KF
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_5 g2 clkb gnd sky130_fd_pr__cap_mim_m3_1_MH6KF8
 Xnmos_dnw3_0 vin input1 input2 g1 g2 vin gnd nmos_dnw3
 Xclock_0 clk_in vdd gnd clk clkb clock
-Xcapacitor_8_0 vdd input1 vdd clk vdd vdd vdd gnd in8 capacitor_8
-Xcapacitor_8_1 vdd input2 vdd clkb vdd vdd vdd gnd in8 capacitor_8
+Xcapacitor_8_0 vdd vdd input1 clk vdd vdd vdd gnd in8 capacitor_8
+Xcapacitor_8_1 vdd vdd input2 clkb vdd vdd vdd gnd in8 capacitor_8
 Xcapacitors_1_0 input1 in1 vdd vdd clk vdd vdd vdd gnd capacitors_1
 Xcapacitors_1_1 input2 in1 vdd vdd clkb vdd vdd vdd gnd capacitors_1
 Xcapacitors_1_2 input1 in2 vdd vdd clk vdd vdd vdd gnd capacitors_1
@@ -978,76 +974,76 @@ Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_0 clkb input2 gnd sky130_fd_pr__cap_mim_m3_1_
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_1 clk input1 gnd sky130_fd_pr__cap_mim_m3_1_MH6KF8
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_3 m1_12659_300# clkb gnd sky130_fd_pr__cap_mim_m3_1_MH6KF8
 Xsky130_fd_pr__cap_mim_m3_1_MH6KF8_2 m1_4341_n519# clk gnd sky130_fd_pr__cap_mim_m3_1_MH6KF8
-C0 clkb m1_12464_n576# 2.21f
-C1 vdd clk 32f
-C2 vdd input2 26.5f
-C3 gnd input1 8.5f
-C4 clk vin 2.19f
-C5 clk m1_12464_n576# 2.31f
-C6 vdd vin 9.13f
-C7 gnd clk 2.49f
-C8 gnd input2 8.88f
-C9 input1 input2 3.06f
+C0 clk vdd 32.2f
+C1 gnd input2 8.88f
+C2 input2 input1 3.06f
+C3 m1_12464_n576# clk 2.31f
+C4 input2 vdd 26.5f
+C5 clkb vdd 26.2f
+C6 m1_12464_n576# clkb 2.21f
+C7 vin vdd 9.14f
+C8 gnd input1 8.5f
+C9 clk vin 2.19f
 C10 gnd vdd 0.171p
-C11 vdd input1 26.8f
-C12 vdd clkb 26f
+C11 input1 vdd 26.8f
+C12 gnd clk 2.59f
 C13 input1 0 22.5f
 C14 input2 0 22.2f
 C15 capacitors_1_12/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C16 capacitors_1_12/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C17 capacitors_1_12/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C17 capacitors_1_12/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C18 capacitors_1_13/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C19 capacitors_1_13/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C20 capacitors_1_13/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C20 capacitors_1_13/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C21 capacitors_1_11/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C22 capacitors_1_11/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C23 capacitors_1_11/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C23 capacitors_1_11/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C24 capacitors_1_10/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C25 capacitors_1_10/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C26 capacitors_1_10/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C26 capacitors_1_10/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C27 m1_4341_n519# 0 3.77f
 C28 m1_12659_300# 0 2.54f
 C29 m1_12464_n576# 0 4.25f
 C30 capacitors_1_9/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C31 capacitors_1_9/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C32 capacitors_1_9/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C32 capacitors_1_9/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C33 capacitors_1_8/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C34 capacitors_1_8/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C35 capacitors_1_8/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C35 capacitors_1_8/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C36 capacitors_1_7/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C37 capacitors_1_7/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C38 capacitors_1_7/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C38 capacitors_1_7/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C39 capacitors_1_6/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C40 capacitors_1_6/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C41 capacitors_1_6/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C41 capacitors_1_6/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C42 capacitors_1_5/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C43 capacitors_1_5/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C44 capacitors_1_5/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C44 capacitors_1_5/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C45 capacitors_1_4/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C46 capacitors_1_4/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C47 capacitors_1_4/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C47 capacitors_1_4/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C48 capacitors_1_3/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C49 capacitors_1_3/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C50 capacitors_1_3/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C50 capacitors_1_3/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C51 capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C52 capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C53 capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C53 capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C54 capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C55 capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C56 capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C56 capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C57 capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C58 capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C59 capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C59 capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C60 capacitor_8_1/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C61 clkb 0 86.1f
+C61 clkb 0 85.9f
 C62 capacitor_8_1/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C63 capacitor_8_1/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C63 capacitor_8_1/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C64 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C65 clk 0 85.2f
+C65 clk 0 85.1f
 C66 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C67 vdd 0 0.458p
-C68 gnd 0 48.9f
-C69 capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C67 vdd 0 0.487p
+C68 gnd 0 35.4f
+C69 capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C70 clock_0/a_2432_n962# 0 8.68f **FLOATING
 C71 clock_0/a_2020_n482# 0 2.57f **FLOATING
 C72 clock_0/a_344_102# 0 2.81f
@@ -1056,87 +1052,6 @@ C74 clock_0/a_344_n986# 0 2.38f
 C75 clock_0/a_3246_118# 0 6.83f
 C76 g2 0 2.34f
 C77 vin 0 10.4f
-.ends
-
-.subckt sky130_fd_pr__pfet_01v8_49YUAA a_2031_73# a_1887_n42# a_n2529_n42# a_1503_n42#
-+ a_n753_n139# a_63_n42# a_n369_n139# a_n1425_73# a_n1281_n42# a_687_73# a_n2577_73#
-+ a_n417_n42# a_2367_n42# a_n1761_n42# a_n2673_n139# a_2607_73# a_n2289_n139# a_2847_n42#
-+ a_n1713_n139# a_n1329_n139# a_255_n42# a_1455_73# a_n2241_n42# a_735_n42# a_1551_n139#
-+ a_1599_n42# a_1167_n139# a_n2721_n42# a_n81_73# a_2511_n139# a_1215_n42# a_n273_73#
-+ a_2127_n139# a_n993_n42# a_n2909_n42# a_15_n139# a_303_73# a_n561_n139# a_n129_n42#
-+ a_2079_n42# a_n1473_n42# a_n177_n139# a_n1041_73# a_n609_n42# a_2559_n42# a_n2193_73#
-+ a_n1953_n42# w_n2945_n142# a_n849_73# a_n2481_n139# a_n2097_n139# a_2223_73# a_n1521_n139#
-+ a_1791_n42# a_447_n42# a_n1137_n139# a_n2433_n42# a_927_n42# a_1071_73# a_n1617_73#
-+ a_975_n139# a_879_73# a_n2769_73# a_n321_n42# a_1407_n42# a_2271_n42# a_n1185_n42#
-+ a_n801_n42# a_2751_n42# a_n1665_n42# a_1647_73# a_2799_73# a_159_n42# a_n2145_n42#
-+ a_n465_73# a_1983_n42# a_639_n42# a_n2625_n42# a_1119_n42# a_n897_n42# a_n513_n42#
-+ a_n1233_73# a_783_n139# a_2463_n42# a_495_73# a_399_n139# a_n2385_73# a_n1377_n42#
-+ a_1935_n139# a_n1857_n42# a_351_n42# a_2415_73# a_n33_n42# a_831_n42# a_1695_n42#
-+ a_1263_73# a_n945_n139# a_n2337_n42# a_1311_n42# a_n1809_73# a_n2817_n42# a_n225_n42#
-+ a_2175_n42# a_n2865_n139# a_n1089_n42# a_111_73# a_n2001_73# a_n1905_n139# a_n705_n42#
-+ a_2655_n42# a_591_n139# a_1839_73# a_n1569_n42# a_1743_n139# a_207_n139# a_543_n42#
-+ a_n657_73# a_1359_n139# a_2703_n139# VSUBS a_2319_n139# a_n2049_n42# a_1023_n42#
-X0 a_n2241_n42# a_n2289_n139# a_n2337_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X1 a_n2721_n42# a_n2769_73# a_n2817_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X2 a_n2625_n42# a_n2673_n139# a_n2721_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X3 a_n2433_n42# a_n2481_n139# a_n2529_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X4 a_n2337_n42# a_n2385_73# a_n2433_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X5 a_n2145_n42# a_n2193_73# a_n2241_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X6 a_n2049_n42# a_n2097_n139# a_n2145_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X7 a_n2817_n42# a_n2865_n139# a_n2909_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
-X8 a_n2529_n42# a_n2577_73# a_n2625_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X9 a_2079_n42# a_2031_73# a_1983_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X10 a_2175_n42# a_2127_n139# a_2079_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X11 a_2271_n42# a_2223_73# a_2175_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X12 a_2367_n42# a_2319_n139# a_2271_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X13 a_2463_n42# a_2415_73# a_2367_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X14 a_2655_n42# a_2607_73# a_2559_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X15 a_2751_n42# a_2703_n139# a_2655_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X16 a_2559_n42# a_2511_n139# a_2463_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X17 a_2847_n42# a_2799_73# a_2751_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
-X18 a_927_n42# a_879_73# a_831_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X19 a_1023_n42# a_975_n139# a_927_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X20 a_n1953_n42# a_n2001_73# a_n2049_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X21 a_n1761_n42# a_n1809_73# a_n1857_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X22 a_n1665_n42# a_n1713_n139# a_n1761_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X23 a_n1857_n42# a_n1905_n139# a_n1953_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X24 a_n1569_n42# a_n1617_73# a_n1665_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X25 a_1119_n42# a_1071_73# a_1023_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X26 a_1215_n42# a_1167_n139# a_1119_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X27 a_1311_n42# a_1263_73# a_1215_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X28 a_1407_n42# a_1359_n139# a_1311_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X29 a_1503_n42# a_1455_73# a_1407_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X30 a_1695_n42# a_1647_73# a_1599_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X31 a_1791_n42# a_1743_n139# a_1695_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X32 a_1599_n42# a_1551_n139# a_1503_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X33 a_1887_n42# a_1839_73# a_1791_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X34 a_1983_n42# a_1935_n139# a_1887_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X35 a_n33_n42# a_n81_73# a_n129_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X36 a_351_n42# a_303_73# a_255_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X37 a_159_n42# a_111_73# a_63_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X38 a_255_n42# a_207_n139# a_159_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X39 a_447_n42# a_399_n139# a_351_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X40 a_543_n42# a_495_73# a_447_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X41 a_639_n42# a_591_n139# a_543_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X42 a_735_n42# a_687_73# a_639_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X43 a_831_n42# a_783_n139# a_735_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X44 a_n1473_n42# a_n1521_n139# a_n1569_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X45 a_n1377_n42# a_n1425_73# a_n1473_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X46 a_n1281_n42# a_n1329_n139# a_n1377_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X47 a_n1185_n42# a_n1233_73# a_n1281_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X48 a_n1089_n42# a_n1137_n139# a_n1185_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X49 a_n993_n42# a_n1041_73# a_n1089_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X50 a_n801_n42# a_n849_73# a_n897_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X51 a_n513_n42# a_n561_n139# a_n609_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X52 a_n321_n42# a_n369_n139# a_n417_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X53 a_n225_n42# a_n273_73# a_n321_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X54 a_n897_n42# a_n945_n139# a_n993_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X55 a_n705_n42# a_n753_n139# a_n801_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X56 a_n609_n42# a_n657_73# a_n705_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X57 a_n417_n42# a_n465_73# a_n513_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X58 a_n129_n42# a_n177_n139# a_n225_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-X59 a_63_n42# a_15_n139# a_n33_n42# w_n2945_n142# sky130_fd_pr__pfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
-C0 w_n2945_n142# VSUBS 5f
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_TKGCLY a_n1425_n130# a_1887_n42# a_1503_n42# a_63_n42#
@@ -1221,139 +1136,106 @@ Xsky130_fd_pr__pfet_01v8_4ZKXAA_0 w_6_4# w_6_4# a_12_230# w_6_4# w_6_4# a_12_230
 .ends
 
 .subckt cp1_buffer1
-Xsky130_fd_pr__nfet_01v8_HRDN5X_0 charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd
-+ charge_pump1_0/vdd charge_pump1_0/vdd VSUBS VSUBS VSUBS charge_pump1_0/vdd VSUBS
-+ charge_pump1_0/vdd VSUBS VSUBS VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd
-+ charge_pump1_0/vdd VSUBS VSUBS VSUBS VSUBS charge_pump1_0/vdd VSUBS sky130_fd_pr__nfet_01v8_HRDN5X
-Xcharge_pump1_0 charge_pump1_0/clk_in charge_pump1_0/input1 charge_pump1_0/input2
-+ VSUBS charge_pump1_0/in1 charge_pump1_0/in3 charge_pump1_0/in2 charge_pump1_0/in4
-+ charge_pump1_0/in5 charge_pump1_0/in6 charge_pump1_0/in7 charge_pump1_0/in8 charge_pump1_0/g1
-+ charge_pump1_0/g2 charge_pump1_0/clk charge_pump1_0/clkb VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vin charge_pump1
-Xsky130_fd_pr__pfet_01v8_49YUAA_0 charge_pump1_0/vdd VSUBS VSUBS VSUBS charge_pump1_0/vdd
-+ VSUBS charge_pump1_0/vdd charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd VSUBS
-+ charge_pump1_0/vdd charge_pump1_0/vdd VSUBS charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd
-+ VSUBS charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd
-+ VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd
-+ charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd VSUBS
-+ VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd VSUBS
-+ VSUBS charge_pump1_0/vdd VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd VSUBS VSUBS VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd VSUBS VSUBS VSUBS charge_pump1_0/vdd
-+ VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd charge_pump1_0/vdd VSUBS charge_pump1_0/vdd VSUBS VSUBS sky130_fd_pr__pfet_01v8_49YUAA
-Xsky130_fd_pr__nfet_01v8_TKGCLY_0 charge_pump1_0/vdd VSUBS VSUBS VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS VSUBS charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd VSUBS
-+ VSUBS VSUBS VSUBS charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd charge_pump1_0/vdd VSUBS VSUBS VSUBS VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd
-+ charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd VSUBS
-+ VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd VSUBS VSUBS
-+ charge_pump1_0/vdd VSUBS charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS charge_pump1_0/vdd charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd VSUBS
-+ VSUBS charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd VSUBS VSUBS charge_pump1_0/vdd
-+ charge_pump1_0/vdd charge_pump1_0/vdd VSUBS VSUBS VSUBS charge_pump1_0/vdd VSUBS
-+ VSUBS VSUBS VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS VSUBS charge_pump1_0/vdd VSUBS charge_pump1_0/vdd VSUBS charge_pump1_0/vdd
-+ VSUBS charge_pump1_0/vdd VSUBS charge_pump1_0/vdd charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8_TKGCLY
-Xbuffer_digital_0 charge_pump1_0/clk_in VSUBS charge_pump1_0/vdd charge_pump1_0/vdd
-+ VSUBS m1_7815_199# VSUBS buffer_digital
-Xbuffer_digital_1 m1_7815_199# VSUBS charge_pump1_0/vdd charge_pump1_0/vdd VSUBS m2_6586_52#
-+ VSUBS buffer_digital
-Xnmos_decap_10_0 VSUBS charge_pump1_0/vdd VSUBS nmos_decap_10
-Xnmos_decap_10_1 VSUBS charge_pump1_0/vdd VSUBS nmos_decap_10
-Xnmos_decap_10_2 VSUBS charge_pump1_0/vdd VSUBS nmos_decap_10
-Xnmos_decap_10_3 VSUBS charge_pump1_0/vdd VSUBS nmos_decap_10
-Xnmos_decap_10_4 VSUBS charge_pump1_0/vdd VSUBS nmos_decap_10
-Xnmos_decap_10_6 VSUBS charge_pump1_0/vdd VSUBS nmos_decap_10
-Xnmos_decap_10_5 VSUBS charge_pump1_0/vdd VSUBS nmos_decap_10
-Xpmos_decap_10_0 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_1 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_2 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_3 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_4 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_5 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_6 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_7 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_9 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-Xpmos_decap_10_8 VSUBS charge_pump1_0/vdd VSUBS pmos_decap_10
-C0 VSUBS charge_pump1_0/vdd 25.6f
-C1 m2_6586_52# VSUBS 3.75f
-C2 VSUBS charge_pump1_0/clk_in 9.65f
-C3 charge_pump1_0/vdd charge_pump1_0/clk_in 5.3f
-C4 m2_6586_52# 0 2.96f
+Xsky130_fd_pr__nfet_01v8_HRDN5X_0 vdd gnd vdd vdd vdd vdd gnd gnd gnd vdd gnd vdd
++ gnd gnd gnd gnd vdd vdd gnd gnd gnd vdd vdd vdd vdd vdd gnd gnd gnd gnd vdd gnd
++ sky130_fd_pr__nfet_01v8_HRDN5X
+Xcharge_pump1_0 clk_out charge_pump1_0/input1 charge_pump1_0/input2 gnd charge_pump1_0/in1
++ charge_pump1_0/in3 charge_pump1_0/in2 charge_pump1_0/in4 charge_pump1_0/in5 charge_pump1_0/in6
++ charge_pump1_0/in7 charge_pump1_0/in8 charge_pump1_0/g1 charge_pump1_0/g2 charge_pump1_0/clk
++ charge_pump1_0/clkb gnd vdd charge_pump1_0/vin charge_pump1
+Xsky130_fd_pr__nfet_01v8_TKGCLY_0 vdd gnd gnd gnd vdd vdd gnd vdd vdd vdd gnd gnd
++ vdd gnd vdd vdd gnd gnd gnd gnd vdd gnd gnd vdd gnd vdd vdd vdd gnd gnd gnd gnd
++ vdd vdd gnd vdd vdd vdd vdd vdd vdd vdd gnd gnd gnd vdd vdd vdd gnd gnd vdd gnd
++ vdd gnd gnd vdd vdd gnd vdd vdd gnd gnd vdd gnd gnd vdd gnd gnd vdd gnd gnd vdd
++ vdd vdd gnd gnd gnd vdd gnd gnd gnd gnd vdd vdd vdd vdd gnd gnd vdd gnd vdd gnd
++ vdd gnd vdd gnd vdd vdd vdd gnd gnd gnd sky130_fd_pr__nfet_01v8_TKGCLY
+Xbuffer_digital_0 clk_int clk_out vdd gnd buffer_digital
+Xbuffer_digital_1 clk_in clk_int vdd gnd buffer_digital
+Xnmos_decap_10_0 gnd vdd gnd nmos_decap_10
+Xnmos_decap_10_1 gnd vdd gnd nmos_decap_10
+Xnmos_decap_10_2 gnd vdd gnd nmos_decap_10
+Xnmos_decap_10_3 gnd vdd gnd nmos_decap_10
+Xnmos_decap_10_4 gnd vdd gnd nmos_decap_10
+Xnmos_decap_10_6 gnd vdd gnd nmos_decap_10
+Xnmos_decap_10_5 gnd vdd gnd nmos_decap_10
+Xpmos_decap_10_0 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_1 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_2 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_3 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_4 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_5 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_6 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_7 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_9 gnd vdd gnd pmos_decap_10
+Xpmos_decap_10_8 gnd vdd gnd pmos_decap_10
+C0 vdd gnd 19.3f
+C1 gnd clk_in 3.79f
+C2 clk_out gnd 9.58f
+C3 vdd clk_out 5.29f
+C4 clk_in 0 2.92f
 C5 charge_pump1_0/input1 0 22.5f
 C6 charge_pump1_0/input2 0 22.2f
 C7 charge_pump1_0/capacitors_1_12/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C8 charge_pump1_0/capacitors_1_12/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C9 charge_pump1_0/capacitors_1_12/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C9 charge_pump1_0/capacitors_1_12/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C10 charge_pump1_0/capacitors_1_13/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C11 charge_pump1_0/capacitors_1_13/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C12 charge_pump1_0/capacitors_1_13/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C12 charge_pump1_0/capacitors_1_13/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C13 charge_pump1_0/capacitors_1_11/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C14 charge_pump1_0/capacitors_1_11/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C15 charge_pump1_0/capacitors_1_11/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C15 charge_pump1_0/capacitors_1_11/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C16 charge_pump1_0/capacitors_1_10/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C17 charge_pump1_0/capacitors_1_10/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C18 charge_pump1_0/capacitors_1_10/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C18 charge_pump1_0/capacitors_1_10/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C19 charge_pump1_0/m1_4341_n519# 0 3.77f
 C20 charge_pump1_0/m1_12659_300# 0 2.54f
 C21 charge_pump1_0/m1_12464_n576# 0 4.25f
 C22 charge_pump1_0/capacitors_1_9/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C23 charge_pump1_0/capacitors_1_9/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C24 charge_pump1_0/capacitors_1_9/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C24 charge_pump1_0/capacitors_1_9/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C25 charge_pump1_0/capacitors_1_8/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C26 charge_pump1_0/capacitors_1_8/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C27 charge_pump1_0/capacitors_1_8/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C27 charge_pump1_0/capacitors_1_8/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C28 charge_pump1_0/capacitors_1_7/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C29 charge_pump1_0/capacitors_1_7/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C30 charge_pump1_0/capacitors_1_7/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C30 charge_pump1_0/capacitors_1_7/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C31 charge_pump1_0/capacitors_1_6/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C32 charge_pump1_0/capacitors_1_6/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C33 charge_pump1_0/capacitors_1_6/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C33 charge_pump1_0/capacitors_1_6/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C34 charge_pump1_0/capacitors_1_5/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C35 charge_pump1_0/capacitors_1_5/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C36 charge_pump1_0/capacitors_1_5/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C36 charge_pump1_0/capacitors_1_5/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C37 charge_pump1_0/capacitors_1_4/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C38 charge_pump1_0/capacitors_1_4/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C39 charge_pump1_0/capacitors_1_4/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C39 charge_pump1_0/capacitors_1_4/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C40 charge_pump1_0/capacitors_1_3/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C41 charge_pump1_0/capacitors_1_3/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C42 charge_pump1_0/capacitors_1_3/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C42 charge_pump1_0/capacitors_1_3/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C43 charge_pump1_0/capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C44 charge_pump1_0/capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C45 charge_pump1_0/capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C45 charge_pump1_0/capacitors_1_2/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C46 charge_pump1_0/capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C47 charge_pump1_0/capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C48 charge_pump1_0/capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C48 charge_pump1_0/capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C49 charge_pump1_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
 C50 charge_pump1_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C51 charge_pump1_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C51 charge_pump1_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C52 charge_pump1_0/capacitor_8_1/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C53 charge_pump1_0/clkb 0 86.1f
+C53 charge_pump1_0/clkb 0 85.9f
 C54 charge_pump1_0/capacitor_8_1/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C55 charge_pump1_0/capacitor_8_1/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C55 charge_pump1_0/capacitor_8_1/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C56 charge_pump1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396# 0 2.34f
-C57 charge_pump1_0/clk 0 85.2f
+C57 charge_pump1_0/clk 0 85.1f
 C58 charge_pump1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/buffer_0/a_1436_1552# 0 8.93f
-C59 charge_pump1_0/vdd 0 0.539p
-C60 VSUBS 0 0.103p
-C61 charge_pump1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/in1 0 2.66f
+C59 vdd 0 0.56p
+C60 gnd 0 72.2f
+C61 charge_pump1_0/capacitor_8_0/capacitor_7_0/buffer_digital_0/in 0 2.66f
 C62 charge_pump1_0/clock_0/a_2432_n962# 0 8.68f **FLOATING
 C63 charge_pump1_0/clock_0/a_2020_n482# 0 2.57f **FLOATING
 C64 charge_pump1_0/clock_0/a_344_102# 0 2.81f
 C65 charge_pump1_0/clock_0/a_2402_572# 0 2.17f
 C66 charge_pump1_0/clock_0/a_344_n986# 0 2.38f
-C67 charge_pump1_0/clk_in 0 3.56f
+C67 clk_out 0 3.55f
 C68 charge_pump1_0/clock_0/a_3246_118# 0 6.83f
 C69 charge_pump1_0/g2 0 2.34f
 C70 charge_pump1_0/vin 0 10.4f

@@ -211,23 +211,23 @@ spiceprefix=X
 }
 C {sky130_fd_pr/cap_mim_m3_1.sym} -180 -80 3 0 {name=C1 model=cap_mim_m3_1 W=9 L=9 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} -180 70 3 0 {name=C2 model=cap_mim_m3_1 W=9 L=9 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -130 -200 2 0 {name=C5 model=cap_mim_m3_1 W=9 L=9 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -180 200 0 0 {name=C3 model=cap_mim_m3_1 W=9 L=9 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -20 -200 2 0 {name=C8 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 20 -200 2 0 {name=C9 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 40 -200 2 0 {name=C10 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 100 -200 2 0 {name=C11 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 150 -200 2 0 {name=C12 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 190 -200 2 0 {name=C13 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 230 -200 2 0 {name=C14 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -130 200 0 0 {name=C15 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -70 200 0 0 {name=C16 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -10 200 0 0 {name=C17 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 30 200 0 0 {name=C18 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 60 200 0 0 {name=C19 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 120 200 0 0 {name=C20 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 180 200 0 0 {name=C21 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 220 200 0 0 {name=C22 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -130 -200 0 0 {name=C5 model=cap_mim_m3_1 W=9 L=9 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -180 200 2 0 {name=C3 model=cap_mim_m3_1 W=9 L=9 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -20 -200 0 0 {name=C8 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 20 -200 0 0 {name=C9 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 40 -200 0 0 {name=C10 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 100 -200 0 0 {name=C11 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 150 -200 0 0 {name=C12 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 190 -200 0 0 {name=C13 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 230 -200 0 0 {name=C14 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -130 200 2 0 {name=C15 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -70 200 2 0 {name=C16 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -10 200 2 0 {name=C17 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 30 200 2 0 {name=C18 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 60 200 2 0 {name=C19 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 120 200 2 0 {name=C20 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 180 200 2 0 {name=C21 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 220 200 2 0 {name=C22 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} -130 -80 2 0 {name=p2 sig_type=std_logic lab=clkb}
 C {devices/lab_pin.sym} -130 70 2 0 {name=p3 sig_type=std_logic lab=clk}
 C {devices/lab_pin.sym} -130 -250 0 0 {name=p7 sig_type=std_logic lab=clk}
@@ -259,7 +259,7 @@ C {devices/lab_pin.sym} -310 90 3 0 {name=p28 sig_type=std_logic lab=Vs}
 C {devices/lab_pin.sym} -250 160 3 0 {name=p29 sig_type=std_logic lab=Vs}
 C {devices/lab_pin.sym} 300 260 3 0 {name=p30 sig_type=std_logic lab=Vs}
 C {devices/ipin.sym} 300 240 0 0 {name=p31 lab=Vs}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -70 -200 2 0 {name=C4 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -70 -200 0 0 {name=C4 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 300 120 3 1 {name=M5
 L=0.15
 W=1

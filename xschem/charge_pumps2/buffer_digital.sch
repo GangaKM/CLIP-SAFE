@@ -35,7 +35,33 @@ N -230 -20 -180 -20 {
 lab=i}
 N 20 -10 50 -10 {
 lab=in}
-C {sky130_fd_pr/nfet3_01v8.sym} -140 40 0 0 {name=M13
+N -120 40 -80 40 {
+lab=GND}
+N -80 40 -80 80 {
+lab=GND}
+N -120 80 -80 80 {
+lab=GND}
+N 20 40 50 40 {
+lab=GND}
+N 50 40 50 80 {
+lab=GND}
+N 20 80 50 80 {
+lab=GND}
+N -120 -60 -100 -60 {
+lab=VDD}
+N -100 -100 -100 -60 {
+lab=VDD}
+N -120 -100 -100 -100 {
+lab=VDD}
+N 20 -60 50 -60 {
+lab=VDD}
+N 50 -90 50 -60 {
+lab=VDD}
+N 50 -100 50 -90 {
+lab=VDD}
+N 20 -100 50 -100 {
+lab=VDD}
+C {sky130_fd_pr/nfet_01v8.sym} -140 40 0 0 {name=M13
 L=0.15
 W=0.42
 body=GND
@@ -50,7 +76,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8.sym} -140 -60 0 0 {name=M14
+C {sky130_fd_pr/pfet_01v8.sym} -140 -60 0 0 {name=M14
 L=0.15
 W=1.26
 body=VDD
@@ -67,7 +93,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} -120 -110 1 0 {name=p7 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -120 90 3 0 {name=p14 sig_type=std_logic lab=GND}
-C {sky130_fd_pr/nfet3_01v8.sym} 0 40 0 0 {name=M23
+C {sky130_fd_pr/nfet_01v8.sym} 0 40 0 0 {name=M23
 L=0.15
 W=0.42
 body=GND
@@ -82,7 +108,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8.sym} 0 -60 0 0 {name=M24
+C {sky130_fd_pr/pfet_01v8.sym} 0 -60 0 0 {name=M24
 L=0.15
 W=1.26
 body=VDD

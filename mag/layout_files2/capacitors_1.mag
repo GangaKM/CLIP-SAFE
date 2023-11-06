@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699075837
+timestamp 1699130246
 << metal1 >>
 rect 7096 -308 8176 -74
 << metal2 >>
@@ -19,7 +19,7 @@ rect -634 -848 -66 -616
 rect -1291 -8 900 582
 rect -1291 -848 -701 -8
 use capacitor_8  capacitor_8_0
-timestamp 1699075837
+timestamp 1699130246
 transform 1 0 -22 0 1 8
 box 0 -430 10546 2050
 << labels >>

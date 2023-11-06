@@ -140,9 +140,9 @@ lab=Vcmref}
 N 470 -480 520 -480 {
 lab=Vbias}
 N -160 -320 -160 -280 {
-lab=vin1}
+lab=#net2}
 N -160 -190 -160 -150 {
-lab=vin2}
+lab=#net3}
 N 440 -150 440 -80 {
 lab=vo1}
 N 770 -150 770 -80 {
@@ -168,11 +168,11 @@ lab=Vdd}
 N 590 0 590 30 {
 lab=Vs1}
 N 590 90 590 120 {
-lab=#net2}
+lab=#net4}
 N 500 60 550 60 {
 lab=Vbias}
 N 590 60 590 110 {
-lab=#net2}
+lab=#net4}
 N 440 -50 770 -50 {
 lab=GND}
 N 560 -480 560 -440 {
@@ -186,13 +186,13 @@ lab=GND}
 N -250 -460 -250 -420 {
 lab=GND}
 N 50 -230 50 -190 {
-lab=#net3}
+lab=vin1}
 N 70 -80 70 -40 {
-lab=#net4}
-N 650 -680 730 -680 {
-lab=Vbn}
-N 730 -680 730 -670 {
-lab=Vbn}
+lab=vin2}
+N 440 -190 570 -190 {
+lab=vo1}
+N 630 -190 770 -190 {
+lab=vo2}
 C {devices/gnd.sym} 590 180 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 560 -370 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 180 -540 0 0 {name=l3 lab=GND}
@@ -276,11 +276,11 @@ C {devices/lab_wire.sym} -310 -490 0 0 {name=p23 sig_type=std_logic lab=Vbias
 C {devices/lab_wire.sym} 490 -480 0 0 {name=p24 sig_type=std_logic lab=Vbias
 
 }
-C {devices/vsource.sym} -160 -250 0 0 {name=V3 value="pwl(0 1.1 2u 1.2)"}
+C {devices/vsource.sym} -160 -250 0 0 {name=V3 value="pwl(0 1.1 2u 1.1)"}
 C {devices/gnd.sym} -160 -220 0 0 {name=l9 lab=GND}
-C {devices/vsource.sym} -160 -120 0 0 {name=V4 value="pwl(0 1.1 2u 1)"}
+C {devices/vsource.sym} -160 -120 0 0 {name=V4 value="pwl(0 1.1 2u 1.1)"}
 C {devices/gnd.sym} -160 -90 0 0 {name=l10 lab=GND}
-C {devices/lab_wire.sym} -160 -170 0 0 {name=p26 sig_type=std_logic lab=vin2
+C {devices/lab_wire.sym} 70 -60 0 0 {name=p26 sig_type=std_logic lab=vin2
 }
 C {devices/code_shown.sym} 980 -350 0 0 {name=s1 only_toplevel=false 
 value=".tran 1u 1m
@@ -509,6 +509,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {sky130_fd_pr/cap_mim_m3_1.sym} 600 -140 1 0 {name=C3 model=cap_mim_m3_1 W=20 L=10 MF=1 spiceprefix=X}
 C {devices/code.sym} 1210 -460 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -535,7 +536,7 @@ C {devices/lab_wire.sym} 580 -730 0 0 {name=p27 sig_type=std_logic lab=Vg
 
 
 }
-C {devices/lab_wire.sym} -160 -310 0 0 {name=p28 sig_type=std_logic lab=vin1
+C {devices/lab_wire.sym} 50 -210 0 0 {name=p28 sig_type=std_logic lab=vin1
 }
 C {devices/gnd.sym} 170 -740 0 0 {name=l12 lab=GND}
 C {devices/gnd.sym} 950 -710 0 0 {name=l13 lab=GND}
@@ -599,8 +600,12 @@ C {devices/lab_wire.sym} 610 0 0 0 {name=p32 sig_type=std_logic lab=Vs1
 
 }
 C {devices/gnd.sym} 580 -50 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 50 -160 0 0 {name=V6 value="1.1 AC 1"}
+C {devices/vsource.sym} 50 -160 0 0 {name=V6 value="pwl(0 1.1 5u 1.2)"}
 C {devices/gnd.sym} 50 -130 0 0 {name=l11 lab=GND}
-C {devices/vsource.sym} 70 -10 0 0 {name=V8 value="1.1 AC -1"}
+C {devices/vsource.sym} 70 -10 0 0 {name=V8 value="pwl(0 1.1 5u 1)"}
 C {devices/gnd.sym} 70 20 0 0 {name=l15 lab=GND}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 600 -140 1 0 {name=C1 model=cap_mim_m3_1 W=100 L=200 MF=1 spiceprefix=X}
+C {devices/res.sym} 600 -190 1 0 {name=R1
+value=1k
+footprint=1206
+device=resistor
+m=1}

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698914177
+timestamp 1699156492
 << psubdiff >>
 rect 5661 -409 5748 -383
 rect 5661 -450 5688 -409
@@ -31,6 +31,7 @@ rect 5722 -451 5748 -409
 rect 5661 -475 5748 -451
 rect -16 -612 5796 -526
 rect -16 -614 666 -612
+rect 6186 -1148 8514 -508
 << viali >>
 rect 5687 -450 5688 -409
 rect 5688 -450 5722 -409
@@ -464,10 +465,6 @@ use sky130_fd_pr__nfet_01v8_GWFSUW  sky130_fd_pr__nfet_01v8_GWFSUW_5
 timestamp 1698873245
 transform 1 0 5123 0 1 -446
 box -413 -130 413 130
-use xnor  xnor_0 ~/Desktop/charge_pumps2/layout_files2
-timestamp 1698771789
-transform 1 0 6348 0 1 -1100
-box -162 -48 2166 592
 << labels >>
 rlabel metal2 -258 -1435 -258 -1435 1 Vc-
 rlabel metal2 -253 -1302 -253 -1302 1 V+

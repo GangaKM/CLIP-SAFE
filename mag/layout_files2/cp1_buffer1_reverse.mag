@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699075837
+timestamp 1699130246
 << nwell >>
 rect 3128 308 6366 888
 rect 7840 300 8660 626
@@ -22,8 +22,7 @@ rect 8012 352 8190 370
 << viali >>
 rect 8038 370 8154 524
 << metal1 >>
-rect 23559 26724 23927 27196
-rect 23659 26688 23927 26724
+rect 24410 13554 24535 13615
 rect 832 7360 1272 9514
 rect 832 6628 936 7360
 rect 1120 6628 1272 7360
@@ -41,8 +40,10 @@ rect 1578 808 7532 994
 rect 8980 808 25052 994
 rect 1578 650 25052 808
 rect 1600 644 24906 650
-rect 7450 600 9094 644
+rect 7322 602 9094 644
+rect 7450 600 9094 602
 rect 8036 548 8156 600
+rect 8524 574 8574 600
 rect 846 -12 1290 540
 rect 8012 524 8190 548
 rect 1930 -12 6418 428
@@ -51,18 +52,18 @@ rect 8154 370 8190 524
 rect 8012 352 8190 370
 rect 9154 386 9514 422
 rect 9154 252 9188 386
-rect 7768 199 8520 232
+rect 7766 199 8520 232
 rect 9016 219 9188 252
-rect 7460 -10 7494 86
-rect 7678 -10 7712 86
-rect 8706 36 8740 102
-rect 8924 36 8958 102
+rect 7460 48 7494 86
+rect 7678 48 7712 86
+rect 7460 20 7714 48
+rect 7456 -10 7714 20
+rect 8706 -10 8740 102
+rect 8924 -10 8958 102
 rect 9154 88 9188 219
 rect 9462 88 9514 386
 rect 9154 56 9514 88
-rect 8706 12 8958 36
-rect 8652 -10 9018 12
-rect 7456 -12 9018 -10
+rect 7456 -12 8966 -10
 rect 9854 -12 13168 440
 rect 14776 -12 21690 394
 rect 21932 -12 25160 302
@@ -191,127 +192,127 @@ rect 8874 -276 25904 -28
 rect 789 -507 25904 -276
 rect 789 -558 25892 -507
 use buffer_digital  buffer_digital_0
-timestamp 1699074083
+timestamp 1699114361
 transform 1 0 8708 0 1 68
-box -274 -74 412 576
+box -274 -35 412 578
 use buffer_digital  buffer_digital_1
-timestamp 1699074083
+timestamp 1699114361
 transform 1 0 7462 0 1 52
-box -274 -74 412 576
+box -274 -35 412 578
 use charge_pump1_reverse  charge_pump1_reverse_0
-timestamp 1699075837
+timestamp 1699130246
 transform 1 0 821 0 -1 27108
 box -313 -2944 25321 25896
 use nmos_decap_10  nmos_decap_10_0
-timestamp 1698837560
+timestamp 1699103691
 transform 0 1 1262 -1 0 2080
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_1
-timestamp 1698837560
+timestamp 1699103691
 transform 0 1 1262 -1 0 3040
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_2
-timestamp 1698837560
+timestamp 1699103691
 transform 0 1 1262 -1 0 4000
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_3
-timestamp 1698837560
+timestamp 1699103691
 transform 0 1 1262 -1 0 4960
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_4
-timestamp 1698837560
+timestamp 1699103691
 transform 0 1 1262 -1 0 5920
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_5
-timestamp 1698837560
+timestamp 1699103691
 transform 1 0 13860 0 1 352
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_6
-timestamp 1698837560
+timestamp 1699103691
 transform 1 0 14820 0 1 352
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_7
-timestamp 1698837560
+timestamp 1699103691
 transform 1 0 15780 0 1 352
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_8
-timestamp 1698837560
+timestamp 1699103691
 transform 1 0 16740 0 1 352
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_9
-timestamp 1698837560
+timestamp 1699103691
 transform 1 0 17700 0 1 352
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_10
-timestamp 1698837560
+timestamp 1699103691
 transform 1 0 18660 0 1 352
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_11
-timestamp 1698837560
+timestamp 1699103691
 transform 1 0 19620 0 1 352
 box -10 -42 1060 416
 use nmos_decap_10  nmos_decap_10_12
-timestamp 1698837560
+timestamp 1699103691
 transform 1 0 20580 0 1 352
 box -10 -42 1060 416
 use pmos_decap_10  pmos_decap_10_0
-timestamp 1698841269
+timestamp 1699103691
 transform 0 1 25002 -1 0 2222
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_1
-timestamp 1698841269
+timestamp 1699103691
 transform 0 1 25006 -1 0 3572
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_2
-timestamp 1698841269
+timestamp 1699103691
 transform 0 1 25006 -1 0 4920
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_3
-timestamp 1698841269
+timestamp 1699103691
 transform 0 1 25022 -1 0 6270
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_4
-timestamp 1698841269
+timestamp 1699103691
 transform 0 1 25044 -1 0 7660
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_5
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 2056 0 -1 770
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_6
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 3128 0 -1 772
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_7
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 4200 0 -1 772
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_8
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 5272 0 -1 778
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_9
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 9896 0 -1 768
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_10
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 10968 0 -1 774
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_11
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 12042 0 -1 774
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_12
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 21932 0 -1 652
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_13
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 23004 0 -1 662
 box 0 -108 1098 464
 use pmos_decap_10  pmos_decap_10_14
-timestamp 1698841269
+timestamp 1699103691
 transform 1 0 24076 0 -1 666
 box 0 -108 1098 464
 << end >>

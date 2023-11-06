@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698841269
+timestamp 1699103691
 << nwell >>
 rect 98 198 128 266
 rect 290 200 320 268
@@ -53,8 +53,8 @@ rect 816 2 1086 4
 rect 816 -34 996 2
 rect 1034 -34 1086 2
 rect 816 -78 1086 -34
-use sky130_fd_pr__pfet_01v8_4ZKXAA  sky130_fd_pr__pfet_01v8_4ZKXAA_0 ~/Desktop/charge_pumps2/layout_files2
-timestamp 1698837886
+use sky130_fd_pr__pfet_01v8_4ZKXAA  sky130_fd_pr__pfet_01v8_4ZKXAA_0
+timestamp 1699103691
 transform 1 0 545 0 1 142
 box -545 -142 545 142
 << end >>

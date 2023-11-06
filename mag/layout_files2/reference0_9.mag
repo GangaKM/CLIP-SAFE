@@ -1,12 +1,19 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698902493
+timestamp 1699232519
 << nwell >>
 rect 0 242 992 502
-rect 0 0 930 242
-rect -32 -498 930 -288
-rect -32 -858 978 -498
+rect 0 88 930 242
+rect 0 0 826 88
+rect 876 54 930 88
+rect 876 18 916 54
+rect 914 8 916 18
+rect -32 -544 874 -288
+rect 916 -498 930 -402
+rect -32 -554 876 -544
+rect 916 -554 978 -498
+rect -32 -858 978 -554
 << nsubdiff >>
 rect 186 434 282 460
 rect 186 398 216 434
@@ -55,15 +62,22 @@ rect 266 392 278 442
 rect 50 388 278 392
 rect 50 110 84 388
 rect 190 386 278 388
-rect 880 242 952 292
-rect 880 130 938 242
-rect 864 16 938 130
-rect 20 -530 70 -364
+rect 880 234 952 382
+rect 880 130 970 234
+rect 864 88 970 130
+rect 868 12 970 88
+rect 880 4 970 12
+rect 44 -288 90 -286
+rect 44 -364 228 -288
+rect 20 -374 228 -364
+rect 20 -530 90 -374
+rect 922 -402 970 4
 rect 20 -600 92 -530
-rect 884 -548 938 16
+rect 916 -554 970 -402
+rect 906 -564 970 -554
 rect 20 -646 108 -600
 rect 20 -788 92 -646
-rect 906 -692 936 -548
+rect 906 -692 936 -564
 rect 850 -698 938 -692
 rect 850 -748 862 -698
 rect 926 -748 938 -698
@@ -135,18 +149,17 @@ rect -62 -1088 -38 -820
 rect 984 -1088 1008 -820
 rect -62 -1112 1008 -1088
 rect -38 -1120 984 -1112
-use sky130_fd_pr__pfet_01v8_lvt_46RJ2R  sky130_fd_pr__pfet_01v8_lvt_46RJ2R_0
-timestamp 1698771642
-transform 1 0 494 0 1 164
-box -494 -164 494 198
-use sky130_fd_pr__pfet_01v8_lvt_46RJ2R  sky130_fd_pr__pfet_01v8_lvt_46RJ2R_1
-timestamp 1698771642
-transform 1 0 480 0 1 -490
-box -494 -164 494 198
+use sky130_fd_pr__pfet_01v8_lvt_Y7VTPE  sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0
+timestamp 1699232519
+transform -1 0 500 0 -1 162
+box -494 -198 494 164
+use sky130_fd_pr__pfet_01v8_lvt_Y7VTPE  sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_1
+timestamp 1699232519
+transform 1 0 482 0 1 -422
+box -494 -198 494 164
 << labels >>
 rlabel metal4 544 612 544 612 1 Vdd
 port 1 n
 rlabel metal5 470 -1100 470 -1100 1 gnd
 port 2 n
-rlabel metal1 900 -144 900 -144 1 vout
 << end >>
