@@ -1,0 +1,68 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"}
+V {}
+S {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+E {}
+L 4 -140 100 120 100 {}
+L 4 -140 320 120 320 {}
+L 4 -140 100 -140 320 {}
+L 4 120 100 120 320 {}
+L 4 -160 110 -140 110 {}
+L 4 -160 200 -140 200 {}
+L 4 120 110 140 110 {}
+L 4 -160 220 -140 220 {}
+L 4 -160 240 -140 240 {}
+L 4 120 230 140 230 {}
+L 4 120 150 140 150 {}
+L 4 120 250 140 250 {}
+L 4 120 170 140 170 {}
+L 4 120 270 140 270 {}
+L 4 120 180 140 180 {}
+L 4 -160 270 -140 270 {}
+L 4 120 290 140 290 {}
+L 4 120 210 140 210 {}
+L 4 -160 170 -140 170 {}
+L 7 -10 80 -10 100 {}
+L 7 -10 320 -10 340 {}
+B 5 -162.5 107.5 -157.5 112.5 {name=clk dir=in}
+B 5 -162.5 197.5 -157.5 202.5 {name=reset dir=in}
+B 5 137.5 107.5 142.5 112.5 {name=scan_out dir=out}
+B 5 -162.5 217.5 -157.5 222.5 {name=scan_en dir=in}
+B 5 -162.5 237.5 -157.5 242.5 {name=scan_in dir=in}
+B 5 137.5 227.5 142.5 232.5 {name=data_out[4] dir=out}
+B 5 137.5 147.5 142.5 152.5 {name=data_out[0] dir=out}
+B 5 137.5 247.5 142.5 252.5 {name=data_out[5] dir=out}
+B 5 137.5 167.5 142.5 172.5 {name=data_out[1] dir=out}
+B 5 137.5 267.5 142.5 272.5 {name=data_out[6] dir=out}
+B 5 137.5 187.5 142.5 192.5 {name=data_out[2] dir=out}
+B 5 -162.5 267.5 -157.5 272.5 {name=shift dir=in}
+B 5 137.5 287.5 142.5 292.5 {name=data_out[7] dir=out}
+B 5 137.5 207.5 142.5 212.5 {name=data_out[3] dir=out}
+B 5 -12.5 77.5 -7.5 82.5 {name=VDD dir=inout}
+B 5 -12.5 337.5 -7.5 342.5 {name=GND dir=inout}
+B 5 -162.5 167.5 -157.5 172.5 {name=enable dir=in}
+T {@name} 125 88 0 0 0.2 0.2 {}
+T {clk} -135 106 0 0 0.2 0.2 {}
+T {reset} -135 196 0 0 0.2 0.2 {}
+T {scan_out} 115 106 0 1 0.2 0.2 {}
+T {scan_en} -135 216 0 0 0.2 0.2 {}
+T {scan_in} -135 236 0 0 0.2 0.2 {}
+T {data_out[4]} 115 226 0 1 0.2 0.2 {}
+T {data_out[0]} 115 146 0 1 0.2 0.2 {}
+T {data_out[5]} 115 246 0 1 0.2 0.2 {}
+T {data_out[1]} 115 166 0 1 0.2 0.2 {}
+T {data_out[6]} 115 266 0 1 0.2 0.2 {}
+T {data_out[2]} 115 186 0 1 0.2 0.2 {}
+T {shift} -135 266 0 0 0.2 0.2 {}
+T {data_out[7]} 115 286 0 1 0.2 0.2 {}
+T {data_out[3]} 115 206 0 1 0.2 0.2 {}
+T {VDD} -14 105 3 1 0.2 0.2 {}
+T {GND} -6 315 1 1 0.2 0.2 {}
+T {enable} -135 166 0 0 0.2 0.2 {}

@@ -46,7 +46,7 @@ C {devices/lab_pin.sym} -300 10 0 0 {name=p152 sig_type=std_logic lab=in8
 value=0}
 C {devices/lab_pin.sym} -300 -150 0 0 {name=p153 sig_type=std_logic lab=clk_in}
 C {devices/lab_pin.sym} 0 -150 2 0 {name=p190 sig_type=std_logic lab=gnd}
-C {/home/ganga/Desktop/xschemfiles/scanchain.sym} -670 -290 0 0 {name=x2
+C {scanchain.sym} -670 -290 0 0 {name=x2
 type=primitive
 format="@name @@GND @@VDD @@clk @@data_out[0] @@data_out[1] @@data_out[2] @@data_out[3] @@data_out[4] @@data_out[5] @@data_out[6] @@data_out[7] @@enable @@reset @@scan_en @@scan_in @@scan_out @@shift @symname"
 template="name=x1"}
