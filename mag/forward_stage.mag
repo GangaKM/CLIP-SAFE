@@ -1,0 +1,34 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698651924
+<< error_s >>
+rect 4052 0 4534 208
+<< metal1 >>
+rect 2598 3454 2730 3503
+rect 2688 3444 2726 3454
+rect 628 3346 640 3386
+rect 538 2658 562 2674
+rect 538 2650 576 2658
+rect 538 2636 584 2650
+use buffer  buffer_0
+timestamp 1698651669
+transform 1 0 7427 0 1 -2213
+box -217 -59 950 1017
+use comparator_final_compact  comparator_final_compact_0
+timestamp 1698651669
+transform 1 0 10890 0 1 1900
+box -2212 -2214 6449 1614
+use full_stage_compact  full_stage_compact_0
+timestamp 1698651669
+transform 1 0 3400 0 1 386
+box -3924 -570 4779 4979
+use reference  reference_0
+timestamp 1698586885
+transform 1 0 10942 0 1 5412
+box -66 -1120 1956 620
+use scanchain  scanchain_0 ~/Openlane/designs/scanchain/runs/RUN_2023.10.27_01.31.12/results/signoff
+timestamp 1698350526
+transform -1 0 27433 0 1 -5180
+box 0 0 9026 9920
+<< end >>

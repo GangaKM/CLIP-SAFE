@@ -1,0 +1,108 @@
+magic
+tech sky130A
+timestamp 1698913862
+<< nwell >>
+rect 0 244 495 250
+rect 0 0 496 244
+rect -16 -429 489 -144
+rect 616 -236 849 -48
+<< nsubdiff >>
+rect 93 217 141 230
+rect 93 199 108 217
+rect 127 199 141 217
+rect 93 186 141 199
+rect 783 -167 831 -154
+rect 783 -185 798 -167
+rect 817 -185 831 -167
+rect 783 -198 831 -185
+rect 423 -353 471 -340
+rect 423 -371 438 -353
+rect 457 -371 471 -353
+rect 423 -384 471 -371
+<< nsubdiffcont >>
+rect 108 199 127 217
+rect 798 -185 817 -167
+rect 438 -371 457 -353
+<< locali >>
+rect 93 221 141 230
+rect 93 196 101 221
+rect 133 196 141 221
+rect 93 186 141 196
+rect 783 -163 831 -154
+rect 783 -188 791 -163
+rect 823 -188 831 -163
+rect 783 -198 831 -188
+rect 423 -349 471 -340
+rect 423 -374 431 -349
+rect 463 -374 471 -349
+rect 423 -384 471 -374
+<< viali >>
+rect 101 217 133 221
+rect 101 199 108 217
+rect 108 199 127 217
+rect 127 199 133 217
+rect 101 196 133 199
+rect 791 -167 823 -163
+rect 791 -185 798 -167
+rect 798 -185 817 -167
+rect 817 -185 823 -167
+rect 791 -188 823 -185
+rect 431 -353 463 -349
+rect 431 -371 438 -353
+rect 438 -371 457 -353
+rect 457 -371 463 -353
+rect 431 -374 463 -371
+<< metal1 >>
+rect 25 218 42 246
+rect 123 224 138 230
+rect 95 221 139 224
+rect 95 218 101 221
+rect 25 196 101 218
+rect 133 196 139 221
+rect 25 194 139 196
+rect 25 55 42 194
+rect 95 193 139 194
+rect 440 119 476 146
+rect 440 103 737 119
+rect 440 65 476 103
+rect 432 53 476 65
+rect 432 8 470 53
+rect 635 -174 656 -86
+rect 721 -98 737 103
+rect 813 -160 828 -154
+rect 785 -163 829 -160
+rect 10 -265 35 -182
+rect 635 -206 668 -174
+rect 722 -177 791 -163
+rect 785 -188 791 -177
+rect 823 -188 829 -163
+rect 785 -191 829 -188
+rect 442 -214 706 -206
+rect 442 -229 978 -214
+rect 662 -230 978 -229
+rect 10 -300 46 -265
+rect 10 -323 54 -300
+rect 10 -389 46 -323
+rect 453 -346 468 -249
+rect 425 -349 469 -346
+rect 425 -374 431 -349
+rect 463 -374 469 -349
+rect 425 -377 469 -374
+use sky130_fd_pr__pfet_01v8_lvt_46RJ2R  sky130_fd_pr__pfet_01v8_lvt_46RJ2R_0
+timestamp 1698771642
+transform 1 0 247 0 1 82
+box -247 -82 247 99
+use sky130_fd_pr__pfet_01v8_lvt_46RJ2R  sky130_fd_pr__pfet_01v8_lvt_46RJ2R_1
+timestamp 1698771642
+transform 1 0 240 0 1 -245
+box -247 -82 247 99
+use sky130_fd_pr__pfet_01v8_lvt_T5G9WD  sky130_fd_pr__pfet_01v8_lvt_T5G9WD_0
+timestamp 1698771642
+transform 1 0 689 0 1 -150
+box -72 -82 72 99
+<< labels >>
+rlabel metal1 905 -221 905 -221 1 vo1
+port 3 n
+rlabel metal1 643 109 643 109 1 vo2
+port 4 n
+<< end >>

@@ -1,0 +1,197 @@
+timestamp 1698822673
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use charge_pump1_reverse charge_pump1_reverse_0 1 0 821 0 -1 27110
+use buffer_digital buffer_digital_1 1 0 7462 0 1 52
+use buffer_digital buffer_digital_0 1 0 8708 0 1 68
+node "m2_6586_52#" 1 3495.76 6586 52 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 278726 2358 2060526 11666 0 0 0 0 0 0
+node "m1_7456_n302#" 2 22369.3 7456 -302 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 455064 4436 440920 3604 440920 3604 440920 3604 27443918 92776 0 0
+node "m1_7815_199#" 3 88.5316 7815 199 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23265 1476 0 0 0 0 0 0 0 0 0 0
+node "m1_9016_219#" 3 9855.84 9016 219 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136314 1728 131760 1452 6298726 35532 0 0 0 0 0 0
+node "w_7840_300#" 2538 21093 7840 300 nw 0 0 0 0 267320 2292 0 0 34888 748 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34888 748 774352 4792 473400 3840 473400 3840 22145964 79132 0 0 0 0
+node "w_12753_8730#" 5822 0 12753 8730 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_6586_52#" "w_7840_300#" 1021.35
+cap "m2_6586_52#" "m1_7815_199#" 2.9465
+cap "m1_7456_n302#" "m2_6586_52#" 1103.47
+cap "w_7840_300#" "m1_9016_219#" 3317.46
+cap "m1_7815_199#" "m1_9016_219#" 4.04406
+cap "m1_7456_n302#" "m1_9016_219#" 3271.44
+cap "m1_7815_199#" "w_7840_300#" 153.692
+cap "m1_7456_n302#" "w_7840_300#" 6790.43
+cap "m1_7456_n302#" "m1_7815_199#" 143.692
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_1/a_n274_130#" 14.1229
+cap "buffer_digital_1/a_n274_130#" "buffer_digital_0/m1_n2_474#" 43.9768
+cap "buffer_digital_1/a_n274_130#" "buffer_digital_0/m1_216_0#" 31.4227
+cap "buffer_digital_0/m1_216_0#" "buffer_digital_0/m1_n2_474#" 8.20875
+cap "buffer_digital_1/a_n274_130#" "buffer_digital_0/a_n274_130#" 6.3428
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_1/a_n274_130#" 0.598159
+cap "buffer_digital_0/m1_304_98#" "buffer_digital_1/a_n274_130#" 0.00122342
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/m1_216_0#" -15.53
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/a_n274_130#" 7.8164
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_1/a_n274_130#" 0.00321842
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_1/a_n274_130#" 7.2397
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 2.46965
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_0/m1_304_98#" 2.68585
+cap "buffer_digital_0/m1_216_0#" "buffer_digital_1/a_n274_130#" 14.7099
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 0.0133979
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_304_98#" 0.0446921
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/a_n274_130#" 255.766
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_0/m1_216_0#" 156.681
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 34.9329
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_216_0#" 83.7723
+cap "buffer_digital_0/a_n274_130#" "buffer_digital_1/a_n274_130#" 1.36852
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 23.1864
+cap "buffer_digital_0/m1_n2_474#" "buffer_digital_0/m1_304_98#" -1.96577
+cap "buffer_digital_0/m1_216_0#" "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 53.4404
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_1/a_n274_130#" 3.93151
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_n2_474#" 13.2442
+cap "buffer_digital_0/m1_304_98#" "buffer_digital_0/m1_216_0#" 6.82407
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_216_0#" 9.24264
+cap "buffer_digital_0/m1_304_98#" "buffer_digital_0/a_n274_130#" 8.45639
+cap "buffer_digital_0/m1_216_0#" "buffer_digital_0/m1_n2_474#" 6.64118
+cap "buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_304_98#" 28.2052
+cap "buffer_digital_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "buffer_digital_0/m1_304_98#" 1.45842
+cap "buffer_digital_0/m1_304_98#" "buffer_digital_0/m1_n2_474#" 23.3247
+cap "w_7840_300#" "m1_9016_219#" 2.84217e-14
+cap "charge_pump1_reverse_0/clock_1/clk_in" "m1_9016_219#" 0.608442
+cap "charge_pump1_reverse_0/clock_1/gnd" "m1_7456_n302#" 39.9556
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/a_344_n986#" 0.552785
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "m1_9016_219#" 0.386361
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_7456_n302#" 2.82532
+cap "charge_pump1_reverse_0/clock_1/gnd" "m1_9016_219#" 27.6613
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_9016_219#" 7.97339
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "m1_9016_219#" 0.114833
+cap "charge_pump1_reverse_0/clock_1/a_338_n132#" "m1_9016_219#" 0.595953
+cap "m1_7456_n302#" "charge_pump1_reverse_0/clock_1/clk_in" 2.97987
+cap "m1_7456_n302#" "charge_pump1_reverse_0/clock_1/vdd" 9.165
+cap "charge_pump1_reverse_0/clock_1/a_344_n986#" "m1_9016_219#" 0.0413305
+cap "charge_pump1_reverse_0/clock_1/a_416_120#" "m1_9016_219#" 0.501917
+cap "charge_pump1_reverse_0/clock_1/gnd" "m1_9016_219#" 0.969718
+cap "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_n15_n68#" "m1_9016_219#" 1.22395
+cap "m1_7456_n302#" "charge_pump1_reverse_0/clock_1/gnd" 2.08653
+cap "charge_pump1_reverse_0/clock_1/clk_in" "m1_9016_219#" 23.3495
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_9016_219#" 15.6123
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/vdd" 20.3203
+cap "m1_7456_n302#" "charge_pump1_reverse_0/clock_1/vdd" 3.21424
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_9016_219#" 4.37501
+cap "charge_pump1_reverse_0/clock_1/a_286_n960#" "m1_9016_219#" 0.0277743
+cap "charge_pump1_reverse_0/clock_1/gnd" "m1_7456_n302#" 49.1224
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/clk_in" 1.068
+cap "charge_pump1_reverse_0/clock_1/a_992_n918#" "w_7840_300#" 0.00871228
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/gnd" 588.405
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_7456_n302#" 1.80004
+cap "charge_pump1_reverse_0/clock_1/clk_in" "m1_9016_219#" 0.0587935
+cap "charge_pump1_reverse_0/clock_1/gnd" "m1_9016_219#" 60.7241
+cap "charge_pump1_reverse_0/clock_1/a_344_n986#" "w_7840_300#" 0.663363
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_586_n912#" 1.4191
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_786_n912#" 0.03082
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/vdd" 49.9861
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_286_n960#" 1.71637
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_586_n912#" 0.702096
+cap "charge_pump1_reverse_0/clock_1/gnd" "charge_pump1_reverse_0/clock_1/clk_in" -5.29519
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/clk_in" 70.1662
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_586_n2#" 1.50056
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/gnd" 46.4088
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_DQBD8A_1/a_n15_n68#" 0.491015
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/vdd" 111.969
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_286_n960#" 2.69244
+cap "charge_pump1_reverse_0/clock_1/a_344_n986#" "w_7840_300#" 4.61767
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/gnd" 87.2041
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_338_n132#" 3.29438
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_416_120#" 3.90204
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/vdd" 27.7503
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_992_n918#" 0.4597
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/a_286_n960#" 0.0567763
+cap "m1_7456_n302#" "charge_pump1_reverse_0/clock_1/clk_in" 0.39219
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_n15_n68#" 5.01173
+cap "charge_pump1_reverse_0/clock_1/a_344_n986#" "m1_9016_219#" 0.249016
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_286_n478#" 0.0400559
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_15_n42#" 0.034715
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/a_338_n132#" 0.0720205
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/a_416_120#" 0.029674
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_n15_n68#" 0.96909
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_786_n912#" 0.838326
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/sky130_fd_pr__nfet_01v8_KMMFCM_2/a_n15_n68#" 0.0784377
+cap "charge_pump1_reverse_0/clock_1/gnd" "m1_7456_n302#" 2.86353
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/clk_in" 48.4715
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_7456_n302#" 5.8733
+cap "charge_pump1_reverse_0/clock_1/vdd" "w_7840_300#" 224.567
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_9016_219#" 27.0223
+cap "charge_pump1_reverse_0/clock_1/vdd" "m1_7456_n302#" 4.57399
+cap "charge_pump1_reverse_0/clock_1/a_586_n912#" "w_7840_300#" 0.052671
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/vdd" 0.0602435
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/vdd" 0.135226
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/gnd" 0.00880572
+cap "w_7840_300#" "charge_pump1_reverse_0/clock_1/a_586_n2#" 0.052671
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/a_786_n912#" 0.00340263
+cap "m1_9016_219#" "charge_pump1_reverse_0/clock_1/a_992_n918#" 0.000504732
+cap "m1_7456_n302#" "w_7840_300#" 700.438
+cap "m1_7456_n302#" "w_7840_300#" 395.156
+cap "m1_7456_n302#" "w_7840_300#" 249.359
+cap "m1_7456_n302#" "charge_pump1_reverse_0/m1_936_n2064#" -6.55185
+cap "m1_7456_n302#" "w_7840_300#" 50.7171
+cap "charge_pump1_reverse_0/m1_936_n2064#" "w_7840_300#" 117.349
+cap "w_7840_300#" "charge_pump1_reverse_0/m1_936_n2064#" 135.024
+cap "w_7840_300#" "charge_pump1_reverse_0/gnd" 475.05
+cap "w_7840_300#" "charge_pump1_reverse_0/m1_12826_19325#" 2.29493
+cap "charge_pump1_reverse_0/m1_12826_19325#" "charge_pump1_reverse_0/gnd" 14.2773
+cap "m1_7456_n302#" "charge_pump1_reverse_0/a_12396_17274#" -3.42549
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_3340_18086#" 127.068
+cap "m1_7456_n302#" "charge_pump1_reverse_0/a_3340_18086#" -27.5232
+cap "charge_pump1_reverse_0/m1_936_n2064#" "charge_pump1_reverse_0/vdd" 657.772
+cap "charge_pump1_reverse_0/m1_936_n2064#" "m1_7456_n302#" -159.65
+cap "charge_pump1_reverse_0/vdd" "m1_7456_n302#" 706.037
+cap "charge_pump1_reverse_0/m1_936_n2064#" "charge_pump1_reverse_0/vdd" 804.343
+cap "m1_7456_n302#" "charge_pump1_reverse_0/m1_936_n2064#" -97.4431
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/vdd" 44.3722
+cap "m1_7456_n302#" "charge_pump1_reverse_0/vdd" 393.72
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/m4_13752_21330#" 169.731
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/sky130_fd_pr__nfet_01v8_NJGC8F_0/a_n3869_n42#" 12.9168
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/m1_12826_19325#" 39.811
+cap "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" "charge_pump1_reverse_0/vdd" 396.734
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_12396_17274#" -7.00465
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_402_8144#" 60.3002
+cap "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" "charge_pump1_reverse_0/a_3340_18086#" -47.6092
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_402_8144#" 1.40804
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_3340_18086#" -105.704
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_12396_17274#" 66.4829
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" 537.052
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_12396_17274#" 20.5073
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_3340_18086#" -0.814369
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_402_8144#" -7.10543e-15
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/capacitors_1_1/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" 0.634245
+cap "charge_pump1_reverse_0/capacitors_1_1/capacitor_8_0/w_228_1012#" "charge_pump1_reverse_0/gnd" 0.945058
+cap "charge_pump1_reverse_0/sky130_fd_pr__nfet_01v8_NJGC8F_0/a_n3869_n42#" "charge_pump1_reverse_0/gnd" 0.622619
+cap "charge_pump1_reverse_0/gnd" "charge_pump1_reverse_0/a_12396_17274#" 2.10341
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" -0.42918
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_402_8144#" 0.182566
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_402_8144#" 0.233412
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/vdd" -50.5533
+cap "charge_pump1_reverse_0/a_3340_18086#" "charge_pump1_reverse_0/a_12396_17274#" -0.51063
+cap "charge_pump1_reverse_0/capacitors_1_0/capacitor_8_0/capacitor_7_0/buffer_and_gate_0/clk" "charge_pump1_reverse_0/a_3340_18086#" -0.646747
+cap "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/a_3340_18086#" 0.312739
+merge "buffer_digital_0/a_n274_130#" "buffer_digital_1/m1_304_98#" -405.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4884 -428 0 0 0 0 0 0 0 0 0 0
+merge "buffer_digital_1/m1_304_98#" "m1_7815_199#"
+merge "buffer_digital_0/VSUBS" "buffer_digital_1/VSUBS" -14360.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4624 -544 0 0 0 0 0 0 -18017558 -64948 0 0
+merge "buffer_digital_1/VSUBS" "charge_pump1_reverse_0/gnd"
+merge "charge_pump1_reverse_0/gnd" "VSUBS"
+merge "VSUBS" "charge_pump1_reverse_0/a_3340_18086#"
+merge "charge_pump1_reverse_0/a_3340_18086#" "buffer_digital_0/m1_216_0#"
+merge "buffer_digital_0/m1_216_0#" "buffer_digital_0/m1_n2_0#"
+merge "buffer_digital_0/m1_n2_0#" "buffer_digital_1/m1_216_0#"
+merge "buffer_digital_1/m1_216_0#" "buffer_digital_1/m1_n2_0#"
+merge "buffer_digital_1/m1_n2_0#" "m1_7456_n302#"
+merge "buffer_digital_1/a_n274_130#" "m2_6586_52#" -157.866 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14616 -550 0 0 0 0 0 0 0 0
+merge "charge_pump1_reverse_0/vdd" "charge_pump1_reverse_0/m4_13752_21330#" -15064.3 0 0 0 0 -3112 -1284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23620 -1644 0 0 0 0 -16228120 -58574 0 0 0 0
+merge "charge_pump1_reverse_0/m4_13752_21330#" "buffer_digital_0/m1_n2_474#"
+merge "buffer_digital_0/m1_n2_474#" "buffer_digital_0/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#"
+merge "buffer_digital_0/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#" "buffer_digital_1/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#"
+merge "buffer_digital_1/sky130_fd_pr__pfet_01v8_FXZ64Q_1/w_n109_n188#" "buffer_digital_1/m1_n2_474#"
+merge "buffer_digital_1/m1_n2_474#" "w_7840_300#"
+merge "charge_pump1_reverse_0/nmos_dnw3_0/vin" "charge_pump1_reverse_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "charge_pump1_reverse_0/nmos_dnw3_0/vs" "w_12753_8730#"
+merge "buffer_digital_0/m1_304_98#" "m1_9016_219#" -4275.82 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3223 -280 0 0 -2762044 -15732 0 0 0 0 0 0

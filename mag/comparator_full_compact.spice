@@ -1,0 +1,80 @@
+* SPICE3 file created from comparator_full_compact.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_BH9SS5 w_n246_n319# a_n50_n197# a_50_n100# a_n108_n100#
++ VSUBS
+X0 a_50_n100# a_n50_n197# a_n108_n100# w_n246_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_53744R a_n210_n274# a_50_n100# a_n108_n100# a_n50_n188#
+X0 a_50_n100# a_n50_n188# a_n108_n100# a_n210_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt inverter m1_176_134# m1_272_214# li_n18_880# VSUBS
+Xsky130_fd_pr__pfet_01v8_BH9SS5_0 li_n18_880# m1_176_134# m1_272_214# li_n18_880#
++ VSUBS sky130_fd_pr__pfet_01v8_BH9SS5
+Xsky130_fd_pr__nfet_01v8_53744R_0 VSUBS m1_272_214# VSUBS m1_176_134# sky130_fd_pr__nfet_01v8_53744R
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PVEW3M a_n210_n274# a_50_n100# a_n108_n100# a_n50_n188#
+X0 a_50_n100# a_n50_n188# a_n108_n100# a_n210_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_X3YSY6 w_n246_n319# a_n50_n197# a_50_n100# a_n108_n100#
++ VSUBS
+X0 a_50_n100# a_n50_n197# a_n108_n100# w_n246_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_B5E2Q5 w_n246_n319# a_n50_n197# a_50_n100# a_n108_n100#
++ VSUBS
+X0 a_50_n100# a_n50_n197# a_n108_n100# w_n246_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt comparator_layout m1_2488_2128# m1_1704_1482# m1_1411_1896# li_905_2237# m1_2014_1251#
++ XM33/a_n50_n188# XM34/a_n50_n188# m1_1061_1257# VSUBS XM25/a_n50_n188# XM26/a_n50_n188#
+XXM34 VSUBS m1_852_1342# m1_2014_1251# XM34/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM35 VSUBS VSUBS m1_852_1342# m1_2488_2128# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM25 VSUBS m1_1061_1257# m1_852_1342# XM25/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM26 VSUBS m1_1061_1257# m1_852_1342# XM26/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM27 VSUBS m1_1411_1896# m1_1061_1257# m1_1704_1482# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM28 VSUBS m1_1704_1482# m1_2014_1251# m1_1411_1896# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM29 li_905_2237# m1_2488_2128# m1_1411_1896# li_905_2237# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+Xsky130_fd_pr__pfet_01v8_B5E2Q5_0 li_905_2237# m1_2488_2128# m1_2014_1251# m1_1061_1257#
++ VSUBS sky130_fd_pr__pfet_01v8_B5E2Q5
+XXM30 li_905_2237# m1_1704_1482# m1_1411_1896# li_905_2237# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM31 li_905_2237# m1_1411_1896# m1_1704_1482# li_905_2237# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM32 li_905_2237# m1_2488_2128# m1_1704_1482# li_905_2237# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM33 VSUBS m1_852_1342# m1_2014_1251# XM33/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+C0 li_905_2237# VSUBS 6.29f
+C1 m1_852_1342# VSUBS 2.36f
+.ends
+
+.subckt latch_layout m1_724_1961# m1_1878_998# m1_1097_1325# m1_430_1104# m1_330_1963#
++ m1_1878_1968# li_30_2070# VSUBS
+XXM23 VSUBS m1_430_1104# m1_827_1096# m1_1097_1325# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM24 VSUBS m1_1595_1096# m1_1097_1325# m1_430_1104# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM14 li_30_2070# m1_724_1961# m1_822_1732# li_30_2070# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM13 li_30_2070# m1_330_1963# m1_430_1104# li_30_2070# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM15 li_30_2070# m1_1097_1325# m1_430_1104# m1_822_1732# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM16 li_30_2070# m1_430_1104# m1_1601_1730# m1_1097_1325# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM17 li_30_2070# m1_1878_1968# li_30_2070# m1_1601_1730# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM19 VSUBS VSUBS m1_1595_1096# m1_1878_998# sky130_fd_pr__nfet_01v8_PVEW3M
+Xsky130_fd_pr__pfet_01v8_X3YSY6_0 li_30_2070# m1_1878_998# li_30_2070# m1_1097_1325#
++ VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM20 VSUBS VSUBS m1_1097_1325# m1_1878_1968# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM21 VSUBS m1_430_1104# VSUBS m1_724_1961# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM22 VSUBS m1_827_1096# VSUBS m1_330_1963# sky130_fd_pr__nfet_01v8_PVEW3M
+C0 li_30_2070# VSUBS 7.27f
+.ends
+
+.subckt comparator_full_compact Vdd gnd clk Vc- V+ V- Vc+ Q Q1
+Xinverter_0 vo- vo1- Vdd gnd inverter
+Xinverter_1 vo+ vo1+ Vdd gnd inverter
+Xcomparator_layout_0 clk vo- vo+ Vdd m1_2098_364# V- Vc- m1_950_364# gnd Vc+ V+ comparator_layout
+Xlatch_layout_0 vo1+ vo+ Q1 Q vo- vo1- Vdd gnd latch_layout
+C0 vo1+ vo1- 2.5f
+C1 vo1- gnd 2.22f
+C2 vo- gnd 2.12f
+C3 vo+ gnd 3.92f
+C4 Vdd gnd 14.6f
+.ends
+

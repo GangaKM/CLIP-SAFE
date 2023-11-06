@@ -1,0 +1,100 @@
+timestamp 1697554601
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use integrator_full integrator_full_0 1 0 386 0 1 3314
+port "vo2" 6 3926 2250 3926 2250 m2
+port "vo1" 5 1068 2300 1068 2300 m2
+port "gnd" 2 3494 2234 3494 2234 m1
+port "vin2" 4 2250 3092 2250 3092 m1
+port "vin1" 3 1816 3096 1816 3096 m1
+port "Vdd" 1 116 3254 116 3254 m1
+port "Vbias" 8 2460 3546 2460 3546 m1
+port "Vcmref" 7 4272 3952 4272 3952 m1
+node "vo2" 1 89.7564 3926 2250 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8536 476 0 0 0 0 0 0 0 0
+node "vo1" 1 93.6033 1068 2300 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8536 476 0 0 0 0 0 0 0 0
+node "gnd" 1 257.76 3494 2234 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26656 1186 0 0 0 0 0 0 0 0 0 0
+node "vin2" 0 36.9813 2250 3092 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2232 196 0 0 0 0 0 0 0 0 0 0
+node "vin1" 0 50.0434 1816 3096 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3312 256 0 0 0 0 0 0 0 0 0 0
+node "Vdd" 1 267.331 116 3254 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37100 1200 0 0 0 0 0 0 0 0 0 0
+node "Vbias" 1 161.486 2460 3546 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12920 756 0 0 0 0 0 0 0 0 0 0
+node "Vcmref" 2 330.298 4272 3952 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27158 1542 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "gnd" "vo2" 5.62401
+cap "vin1" "vin2" 4.29885
+cap "Vbias" "vin2" 0.190476
+cap "integrator_full_0/integrator2_0/XC3/m3_n2186_n1040#" "integrator_full_0/integrator2_0/vo2" 4.72132
+cap "integrator_full_0/cmfb_0/gnd" "integrator_full_0/integrator2_0/vo2" 8.89251
+cap "integrator_full_0/Vbias" "integrator_full_0/integrator2_0/vo2" 0.00408551
+cap "integrator_full_0/integrator2_0/vo2" "integrator_full_0/vo2" 0.0303509
+cap "integrator_full_0/integrator2_0/Vdd" "integrator_full_0/integrator2_0/vo2" 0.602251
+cap "integrator_full_0/integrator2_0/XC3/m3_n2186_n1040#" "integrator_full_0/integrator2_0/Vdd" 0.659919
+cap "integrator_full_0/integrator2_0/XM1/a_n50_n138#" "integrator_full_0/integrator2_0/vo2" 0.0227675
+cap "integrator_full_0/integrator2_0/vo2" "integrator_full_0/integrator2_0/Vdd" -0.212343
+cap "integrator_full_0/Vbias" "integrator_full_0/integrator2_0/vo2" 0.349163
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/cmfb_0/gnd" 0.169927
+cap "integrator_full_0/integrator2_0/vo2" "integrator_full_0/cmfb_0/gnd" 0.76197
+cap "integrator_full_0/integrator2_0/Vdd" "integrator_full_0/Vbn" -0.0820419
+cap "integrator_full_0/Vbias" "integrator_full_0/Vbn" 0.111777
+cap "integrator_full_0/integrator2_0/XM3/a_n33_n147#" "integrator_full_0/integrator2_0/vo2" 0.0570137
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/integrator2_0/Vdd" -0.153021
+cap "integrator_full_0/Vbn" "integrator_full_0/cmfb_0/gnd" -0.0331754
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/Vbias" 0.244658
+cap "integrator_full_0/Vbias" "integrator_full_0/cmfb_0/gnd" 0.0132177
+cap "integrator_full_0/integrator2_0/XM18/a_n33_n147#" "integrator_full_0/integrator2_0/vo2" 0.103432
+cap "integrator_full_0/integrator2_0/XM3/a_n33_n147#" "integrator_full_0/Vbn" 0.0637173
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/cmfb_0/gnd" -0.0387709
+cap "integrator_full_0/integrator2_0/vo2" "integrator_full_0/integrator2_0/vo1" 0.0293212
+cap "integrator_full_0/integrator2_0/XM18/a_n33_n147#" "integrator_full_0/Vbn" 0.0523643
+cap "integrator_full_0/integrator2_0/XM3/a_n33_n147#" "integrator_full_0/integrator2_0/vo1" 0.0454243
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/integrator2_0/XM18/a_n33_n147#" 0.0635566
+cap "integrator_full_0/integrator2_0/vo2" "integrator_full_0/Vbn" 2.84217e-14
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/integrator2_0/XC3/c1_n2146_n1000#" 1.64424
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/Vbn" 1.80851
+cap "integrator_full_0/cmfb_0/gnd" "integrator_full_0/integrator2_0/XC3/c1_n2146_n1000#" 4.48024
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/cmfb_0/gnd" 143.579
+cap "integrator_full_0/Vbn" "integrator_full_0/cmfb_0/gnd" 1.42109e-14
+cap "integrator_full_0/cmfb_0/gnd" "integrator_full_0/integrator2_0/vo2" 0.0550104
+cap "integrator_full_0/cmfb_0/Vdd" "integrator_full_0/integrator2_0/vo2" 0.748003
+cap "integrator_full_0/cmfb_0/gnd" "integrator_full_0/cmfb_0/Vdd" 0.66884
+cap "integrator_full_0/cmfb_0/Vdd" "integrator_full_0/integrator2_0/XC3/m3_n2186_n1040#" 1.69224
+cap "integrator_full_0/integrator2_0/XM18/a_n33_n147#" "integrator_full_0/integrator2_0/vo2" 0.0279817
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/cmfb_0/gnd" -0.0414682
+cap "integrator_full_0/Vbias" "integrator_full_0/cmfb_0/Vcm" 0.231219
+cap "integrator_full_0/Vbias" "integrator_full_0/cmfb_0/Vdd" 41.2361
+cap "integrator_full_0/Vbias" "integrator_full_0/cmfb_0/XM7/a_n108_n50#" 0.636078
+cap "integrator_full_0/integrator2_0/XM18/a_n33_n147#" "integrator_full_0/cmfb_0/Vdd" 39.1983
+cap "integrator_full_0/integrator2_0/XM18/a_n33_n147#" "integrator_full_0/integrator2_0/XM3/a_n33_n147#" -4.29885
+cap "integrator_full_0/Vbias" "integrator_full_0/integrator2_0/XM3/a_n33_n147#" -0.134042
+cap "integrator_full_0/integrator2_0/XM18/a_n33_n147#" "integrator_full_0/integrator2_0/vo1" 0.885551
+cap "integrator_full_0/Vbias" "integrator_full_0/cmfb_0/gnd" 82.6558
+cap "integrator_full_0/Vbias" "integrator_full_0/integrator2_0/vo1" 0.12321
+cap "integrator_full_0/cmfb_0/Vdd" "integrator_full_0/cmfb_0/XM7/a_n108_n50#" -0.0603801
+cap "integrator_full_0/cmfb_0/XM7/a_n108_n50#" "integrator_full_0/integrator2_0/XM3/a_n33_n147#" 0.0157178
+cap "integrator_full_0/cmfb_0/Vdd" "integrator_full_0/integrator2_0/XM3/a_n33_n147#" 34.8567
+cap "integrator_full_0/Vbias" "integrator_full_0/Vbn" 0.0854228
+cap "integrator_full_0/cmfb_0/XM7/a_n108_n50#" "integrator_full_0/cmfb_0/gnd" -0.168862
+cap "integrator_full_0/cmfb_0/Vdd" "integrator_full_0/cmfb_0/gnd" -25.9019
+cap "integrator_full_0/cmfb_0/Vdd" "integrator_full_0/integrator2_0/vo1" -0.723675
+cap "integrator_full_0/integrator2_0/XM3/a_n33_n147#" "integrator_full_0/integrator2_0/vo1" 0.732643
+cap "integrator_full_0/Vbn" "integrator_full_0/Vbias" 0.670514
+cap "integrator_full_0/integrator2_0/vo1" "integrator_full_0/cmfb_0/gnd" -0.00100564
+cap "integrator_full_0/Vbn" "integrator_full_0/cmfb_0/gnd" -0.119317
+cap "integrator_full_0/cmfb_0/XM14/a_n50_n138#" "integrator_full_0/cmfb_0/gnd" 1.21618
+cap "integrator_full_0/Vbn" "integrator_full_0/integrator2_0/Vdd" -0.0839376
+cap "integrator_full_0/Vbn" "integrator_full_0/integrator2_0/XM3/a_n33_n147#" 0.0261772
+cap "integrator_full_0/cmfb_0/gnd" "integrator_full_0/Vbias" 0.355259
+cap "integrator_full_0/Vbias" "integrator_full_0/cmfb_0/XM6/a_n108_n50#" 0.0489497
+merge "integrator_full_0/VSUBS" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "integrator_full_0/cmfb_0/XM14/a_n50_n138#" "Vcmref" -234.939 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18944 -1098 0 0 0 0 0 0 0 0 0 0
+merge "integrator_full_0/integrator2_0/XM18/a_n33_n147#" "vin1" -50.0434 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1908 -178 0 0 0 0 0 0 0 0 0 0
+merge "integrator_full_0/integrator2_0/vo2" "vo1" -95.5411 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1716 -166 0 0 0 0 0 0 0 0
+merge "integrator_full_0/integrator2_0/vo1" "vo2" -48.0218 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1628 -162 0 0 0 0 0 0 0 0
+merge "integrator_full_0/cmfb_0/Vdd" "integrator_full_0/integrator2_0/Vdd" -80.7802 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6790 -334 0 0 0 0 0 0 0 0 0 0
+merge "integrator_full_0/integrator2_0/Vdd" "Vdd"
+merge "integrator_full_0/cmfb_0/gnd" "integrator_full_0/integrator2_0/gnd" -90.5711 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2401 -196 0 0 0 0 0 0 0 0 0 0
+merge "integrator_full_0/integrator2_0/gnd" "gnd"
+merge "integrator_full_0/Vbias" "Vbias" -120.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1520 -156 0 0 0 0 0 0 0 0 0 0
+merge "integrator_full_0/integrator2_0/XM3/a_n33_n147#" "vin2" -36.936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1044 -130 0 0 0 0 0 0 0 0 0 0

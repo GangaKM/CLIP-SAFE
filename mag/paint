@@ -1,0 +1,49 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698475697
+<< nwell >>
+rect 228 1012 1238 1466
+<< psubdiff >>
+rect 744 740 858 764
+rect 744 644 768 740
+rect 834 644 858 740
+rect 744 616 858 644
+<< nsubdiff >>
+rect 712 1340 854 1366
+rect 712 1128 740 1340
+rect 826 1128 854 1340
+rect 712 1100 854 1128
+<< psubdiffcont >>
+rect 768 644 834 740
+<< nsubdiffcont >>
+rect 740 1128 826 1340
+<< locali >>
+rect 712 1340 854 1366
+rect 712 1128 740 1340
+rect 826 1128 854 1340
+rect 712 1100 854 1128
+rect 744 740 858 764
+rect 744 644 768 740
+rect 834 644 858 740
+rect 744 616 858 644
+<< viali >>
+rect 740 1128 826 1340
+rect 768 644 834 740
+<< metal1 >>
+rect 738 1368 862 1814
+rect 712 1340 864 1368
+rect 712 1128 740 1340
+rect 826 1128 864 1340
+rect 712 1100 864 1128
+rect 744 740 858 764
+rect 744 728 768 740
+rect 742 644 768 728
+rect 834 644 858 740
+rect 742 528 858 644
+rect 768 486 836 528
+use capacitor_7  capacitor_7_0
+timestamp 1698474969
+transform 1 0 739 0 1 0
+box -739 0 9807 2050
+<< end >>

@@ -1,0 +1,8 @@
+* SPICE3 file created from nmos_diode2.ext - technology: sky130A
+
+.subckt nmos_diode2 out in1 in2 vs
+X0 in1 in1 out vs sky130_fd_pr__nfet_01v8 ad=0.873 pd=6.6 as=0.903 ps=6.62 w=3.01 l=1
+X1 out in2 in2 vs sky130_fd_pr__nfet_01v8 ad=0.993 pd=6.68 as=0.873 ps=6.6 w=3.01 l=1
+C0 vs VSUBS 8.16f
+.ends
+

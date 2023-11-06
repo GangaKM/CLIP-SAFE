@@ -1,0 +1,10 @@
+* SPICE3 file created from nmos_dnw3.ext - technology: sky130A
+
+.subckt nmos_dnw3 vin out1 out2 clk clkb vs
+X0 clkb clk vin vs sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.126 ps=1.44 w=0.42 l=0.15
+X1 vin clkb clk vs sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.13 ps=1.46 w=0.42 l=0.15
+X2 out2 clk vin vs sky130_fd_pr__nfet_01v8 ad=1.65 pd=7.1 as=0.945 ps=3.63 w=3 l=1
+X3 vin clkb out1 vs sky130_fd_pr__nfet_01v8 ad=0.945 pd=3.63 as=1.65 ps=7.1 w=3 l=1
+C0 vs VSUBS 6.64f
+.ends
+

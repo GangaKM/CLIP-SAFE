@@ -1,0 +1,89 @@
+* SPICE3 file created from integrator_full_new_compact.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_TM5SY6 w_n246_n269# a_n108_n50# a_50_n50# a_n50_n147#
++ VSUBS
+X0 a_50_n50# a_n50_n147# a_n108_n50# w_n246_n269# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_SMGLWN a_n50_n138# a_n210_n224# a_n108_n50# a_50_n50#
+X0 a_50_n50# a_n50_n138# a_n108_n50# a_n210_n224# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PVEW3M a_n210_n274# a_50_n100# a_n108_n100# a_n50_n188#
+X0 a_50_n100# a_n50_n188# a_n108_n100# a_n210_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt cmfb XM9/a_n50_n188# m1_541_1279# m1_904_1580# m1_1973_1162# Vdd m1_3238_1273#
++ gnd
+XXM12 Vdd gnd m1_604_1671# m1_904_1580# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM14 m1_3238_1273# gnd Vcm Vdd sky130_fd_pr__nfet_01v8_SMGLWN
+XXM13 m1_3238_1273# gnd Vcm Vdd sky130_fd_pr__nfet_01v8_SMGLWN
+XXM15 Vdd Vcm gnd m1_3238_1273# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM16 Vdd Vcm gnd m1_3238_1273# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM18 Vdd Vdd Vdd Vdd gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM1 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8_SMGLWN
+XXM2 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8_SMGLWN
+XXM3 Vdd Vdd Vdd Vdd gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM4 Vdd gnd m1_604_1671# m1_541_1279# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM5 Vdd Vdd m1_1719_1576# m1_1719_1576# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM6 Vdd m1_1973_1162# Vdd m1_1719_1576# gnd sky130_fd_pr__pfet_01v8_TM5SY6
+XXM7 m1_604_1671# gnd m1_1600_1134# m1_1719_1576# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM9 gnd gnd m1_1600_1134# XM9/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM8 Vcm gnd m1_1973_1162# m1_1600_1134# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM10 m1_541_1279# gnd Vdd m1_604_1671# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM11 m1_904_1580# gnd Vdd m1_604_1671# sky130_fd_pr__nfet_01v8_SMGLWN
+C0 Vdd gnd 10.1f
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_TM5SY6 w_n246_n269# a_n108_n50# a_50_n50# a_n50_n147#
++ VSUBS
+X0 a_50_n50# a_n50_n147# a_n108_n50# w_n246_n269# sky130_fd_pr__pfet_01v8_lvt ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_EJYG4R a_445_n69# a_n345_n69# a_n187_n69# a_287_n69#
++ a_29_n157# a_n129_n157# a_187_n157# a_n287_n157# a_345_n157# a_n445_n157# a_129_n69#
++ a_n605_n243# a_n29_n69# a_n503_n69#
+X0 a_129_n69# a_29_n157# a_n29_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X1 a_n187_n69# a_n287_n157# a_n345_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X2 a_n345_n69# a_n445_n157# a_n503_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.5
+X3 a_n29_n69# a_n129_n157# a_n187_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X4 a_287_n69# a_187_n157# a_129_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X5 a_445_n69# a_345_n157# a_287_n69# a_n605_n243# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_TNHPNJ m3_n2186_n1040# c1_n2146_n1000# VSUBS
+X0 c1_n2146_n1000# m3_n2186_n1040# sky130_fd_pr__cap_mim_m3_1 l=10 w=20
+C0 m3_n2186_n1040# c1_n2146_n1000# 18.1f
+C1 m3_n2186_n1040# VSUBS 5.88f
+.ends
+
+.subckt integrator_new1 m1_2976_3044# m1_5204_2614# m1_1624_2482# vo1 gnd
+XXM18 Vdd Vdd m1_1624_2482# m1_2976_3044# gnd sky130_fd_pr__pfet_01v8_lvt_TM5SY6
+XXM1 XM1/a_n50_n138# gnd m1_2972_2616# m1_1624_2482# sky130_fd_pr__nfet_01v8_SMGLWN
+Xsky130_fd_pr__pfet_01v8_lvt_TM5SY6_0 Vdd Vdd Vdd Vdd gnd sky130_fd_pr__pfet_01v8_lvt_TM5SY6
+XXM2 XM2/a_n50_n138# gnd vo1 m1_2972_2616# sky130_fd_pr__nfet_01v8_SMGLWN
+XXM3 Vdd vo1 Vdd m1_2976_3044# gnd sky130_fd_pr__pfet_01v8_lvt_TM5SY6
+Xsky130_fd_pr__nfet_01v8_EJYG4R_0 m1_2972_2616# gnd m1_2972_2616# gnd m1_5204_2614#
++ m1_5204_2614# m1_5204_2614# m1_5204_2614# m1_5204_2614# m1_5204_2614# m1_2972_2616#
++ gnd gnd m1_2972_2616# sky130_fd_pr__nfet_01v8_EJYG4R
+XXM6 Vdd Vdd Vdd Vdd gnd sky130_fd_pr__pfet_01v8_lvt_TM5SY6
+XXC3 vo1 m1_1624_2482# gnd sky130_fd_pr__cap_mim_m3_1_TNHPNJ
+Xsky130_fd_pr__nfet_01v8_SMGLWN_0 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8_SMGLWN
+Xsky130_fd_pr__nfet_01v8_SMGLWN_1 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8_SMGLWN
+C0 vo1 0 6.43f
+C1 Vdd 0 3.97f
+C2 m1_1624_2482# 0 3.02f
+.ends
+
+.subckt integrator_full_new_compact
+Xcmfb_0 m1_2968_n304# m1_514_118# integrator_new1_0/vo1 m1_1946_216# cmfb_0/Vdd m1_3488_148#
++ VSUBS cmfb
+Xintegrator_new1_0 m1_1946_216# m1_2968_n304# m1_514_118# integrator_new1_0/vo1 VSUBS
++ integrator_new1
+C0 m1_2968_n304# VSUBS 2.33f
+C1 integrator_new1_0/vo1 VSUBS 7.48f
+C2 integrator_new1_0/Vdd VSUBS 4.49f
+C3 cmfb_0/Vdd VSUBS 8.37f
+C4 m1_514_118# VSUBS 3.95f
+.ends
+

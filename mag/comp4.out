@@ -1,0 +1,30 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Class full_stage.spice (0):  Merged 16 parallel devices.
+Class full_stage_xschem.spice (1):  Merged 16 parallel devices.
+Subcircuit summary:
+Circuit 1: full_stage.spice                |Circuit 2: full_stage_xschem.spice         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (24->15)           |sky130_fd_pr__pfet_01v8 (24->15)           
+sky130_fd_pr__nfet_01v8 (24->17)           |sky130_fd_pr__nfet_01v8 (24->17)           
+sky130_fd_pr__cap_mim_m3_1 (2)             |sky130_fd_pr__cap_mim_m3_1 (2)             
+Number of devices: 34                      |Number of devices: 34                      
+Number of nets: 19                         |Number of nets: 19                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes full_stage.spice and full_stage_xschem.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

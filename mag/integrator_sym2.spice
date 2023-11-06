@@ -1,0 +1,93 @@
+* SPICE3 file created from integrator_sym.ext - technology: sky130A
+
+.subckt integrator_sym Vdd gnd vin1 vin2 vo1 vo2 Vcmref Vbias
+X0 integrator_full_0/cmfb_0/m1_604_1671# vo2 gnd Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X1 Vdd Vcmref integrator_full_0/cmfb_0/Vcm gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X2 Vdd Vcmref integrator_full_0/cmfb_0/Vcm gnd sky130_fd_pr__nfet_01v8 ad=12.8 pd=147 as=0.29 ps=3.16 w=0.5 l=0.5
+X3 gnd Vcmref integrator_full_0/cmfb_0/Vcm Vdd sky130_fd_pr__pfet_01v8 ad=16.2 pd=186 as=0.29 ps=3.16 w=0.5 l=0.5
+X4 gnd Vcmref integrator_full_0/cmfb_0/Vcm Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X5 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8 ad=1.74 pd=19 as=0 ps=0 w=0.5 l=0.5
+X6 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=2.03 pd=21 as=0 ps=0 w=0.5 l=0.5
+X7 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X8 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X9 integrator_full_0/cmfb_0/m1_604_1671# vo1 gnd Vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X10 integrator_full_0/cmfb_0/m1_1719_1576# integrator_full_0/cmfb_0/m1_1719_1576# Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X11 Vdd integrator_full_0/cmfb_0/m1_1719_1576# integrator_full_0/Vbn Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X12 integrator_full_0/cmfb_0/m1_1719_1576# integrator_full_0/cmfb_0/m1_604_1671# integrator_full_0/cmfb_0/m1_1600_1134# gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.58 ps=5.74 w=0.5 l=0.5
+X13 integrator_full_0/cmfb_0/m1_1600_1134# integrator_full_0/cmfb_0/Vcm integrator_full_0/Vbn gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X14 gnd Vbias integrator_full_0/cmfb_0/m1_1600_1134# gnd sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X15 integrator_full_0/cmfb_0/m1_604_1671# vo1 Vdd gnd sky130_fd_pr__nfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X16 integrator_full_0/cmfb_0/m1_604_1671# vo2 Vdd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X17 vo1 vin1 Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.15
+X18 vo1 integrator_full_0/Vbn gnd gnd sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X19 gnd integrator_full_0/Vbn vo2 gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X20 Vdd vin2 vo2 Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.15
+X21 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X22 gnd gnd gnd gnd sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X23 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X24 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X25 vo1 vo2 sky130_fd_pr__cap_mim_m3_1 l=10 w=20
+X26 gnd Vbias Vbias gnd sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+C0 Vbias integrator_full_0/Vbn 0.00471f
+C1 vo2 integrator_full_0/Vbn 0.491f
+C2 Vdd integrator_full_0/cmfb_0/m1_1600_1134# 0.0248f
+C3 Vbias integrator_full_0/cmfb_0/Vcm 2.31e-19
+C4 vin2 integrator_full_0/cmfb_0/m1_1719_1576# 3.92e-20
+C5 vo2 integrator_full_0/cmfb_0/Vcm 2.25e-19
+C6 vo1 integrator_full_0/cmfb_0/m1_1600_1134# 4.73e-20
+C7 Vcmref integrator_full_0/cmfb_0/m1_1600_1134# 5.96e-26
+C8 integrator_full_0/cmfb_0/m1_1719_1576# integrator_full_0/Vbn 0.24f
+C9 vo2 Vbias 0.0721f
+C10 integrator_full_0/cmfb_0/Vcm integrator_full_0/cmfb_0/m1_1719_1576# 0.0189f
+C11 integrator_full_0/cmfb_0/m1_604_1671# integrator_full_0/Vbn 0.00182f
+C12 vo1 Vdd 1.11f
+C13 integrator_full_0/cmfb_0/m1_604_1671# integrator_full_0/cmfb_0/Vcm 0.0197f
+C14 Vdd Vcmref 1.03f
+C15 vin2 integrator_full_0/cmfb_0/m1_1600_1134# 9.45e-19
+C16 Vdd vin1 0.376f
+C17 Vbias integrator_full_0/cmfb_0/m1_1719_1576# 5.46e-19
+C18 vo1 vin1 0.055f
+C19 vo2 integrator_full_0/cmfb_0/m1_1719_1576# 0.0031f
+C20 integrator_full_0/cmfb_0/m1_604_1671# Vbias 7.69e-19
+C21 integrator_full_0/cmfb_0/m1_1600_1134# integrator_full_0/Vbn 0.154f
+C22 vo2 integrator_full_0/cmfb_0/m1_604_1671# 0.261f
+C23 integrator_full_0/cmfb_0/m1_1600_1134# integrator_full_0/cmfb_0/Vcm 0.119f
+C24 vin2 Vdd 0.37f
+C25 vo1 vin2 0.00151f
+C26 integrator_full_0/cmfb_0/m1_604_1671# integrator_full_0/cmfb_0/m1_1719_1576# 0.191f
+C27 vin2 vin1 0.0196f
+C28 Vbias integrator_full_0/cmfb_0/m1_1600_1134# 0.0357f
+C29 Vdd integrator_full_0/Vbn 0.35f
+C30 vo2 integrator_full_0/cmfb_0/m1_1600_1134# 0.0588f
+C31 vo1 integrator_full_0/Vbn 0.156f
+C32 Vdd integrator_full_0/cmfb_0/Vcm 0.724f
+C33 Vcmref integrator_full_0/Vbn 0.046f
+C34 integrator_full_0/Vbn vin1 0.0104f
+C35 vo1 integrator_full_0/cmfb_0/Vcm 1.49e-20
+C36 Vcmref integrator_full_0/cmfb_0/Vcm 0.432f
+C37 integrator_full_0/cmfb_0/m1_1600_1134# integrator_full_0/cmfb_0/m1_1719_1576# 0.0578f
+C38 Vbias Vdd 0.278f
+C39 vo2 Vdd 1.34f
+C40 vo1 Vbias 0.145f
+C41 integrator_full_0/cmfb_0/m1_604_1671# integrator_full_0/cmfb_0/m1_1600_1134# 0.134f
+C42 vo1 vo2 19.4f
+C43 Vbias vin1 7.74e-20
+C44 vin2 integrator_full_0/Vbn 0.0112f
+C45 vo2 vin1 0.0118f
+C46 Vdd integrator_full_0/cmfb_0/m1_1719_1576# 1.08f
+C47 integrator_full_0/cmfb_0/m1_604_1671# Vdd 0.726f
+C48 integrator_full_0/cmfb_0/Vcm integrator_full_0/Vbn 0.326f
+C49 Vcmref integrator_full_0/cmfb_0/m1_1719_1576# 2.76e-19
+C50 vo1 integrator_full_0/cmfb_0/m1_604_1671# 0.179f
+C51 Vbias vin2 5.2e-19
+C52 vo2 vin2 0.0743f
+C53 integrator_full_0/cmfb_0/m1_604_1671# Vcmref 3.07e-20
+C54 integrator_full_0/cmfb_0/m1_604_1671# vin1 1.76e-20
+C55 Vbias gnd 1.74f
+C56 vin2 gnd 0.039f
+C57 vin1 gnd 0.0392f
+C58 vo2 gnd 8.18f
+C60 vo1 gnd 4.91f
+C61 Vcmref gnd 1.7f
+C63 Vdd gnd 15.4f
+.ends

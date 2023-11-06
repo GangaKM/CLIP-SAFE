@@ -1,0 +1,169 @@
+* SPICE3 file created from comparator_final_compact.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_BH9SS5 w_n246_n319# a_n50_n197# a_50_n100# a_n108_n100#
++ VSUBS
+X0 a_50_n100# a_n50_n197# a_n108_n100# w_n246_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_53744R a_n210_n274# a_50_n100# a_n108_n100# a_n50_n188#
+X0 a_50_n100# a_n50_n188# a_n108_n100# a_n210_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt inverter m1_176_134# m1_272_214# li_n18_880# VSUBS
+Xsky130_fd_pr__pfet_01v8_BH9SS5_0 li_n18_880# m1_176_134# m1_272_214# li_n18_880#
++ VSUBS sky130_fd_pr__pfet_01v8_BH9SS5
+Xsky130_fd_pr__nfet_01v8_53744R_0 VSUBS m1_272_214# VSUBS m1_176_134# sky130_fd_pr__nfet_01v8_53744R
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PVEW3M a_n210_n274# a_50_n100# a_n108_n100# a_n50_n188#
+X0 a_50_n100# a_n50_n188# a_n108_n100# a_n210_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_X3YSY6 w_n246_n319# a_n50_n197# a_50_n100# a_n108_n100#
++ VSUBS
+X0 a_50_n100# a_n50_n197# a_n108_n100# w_n246_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_B5E2Q5 w_n246_n319# a_n50_n197# a_50_n100# a_n108_n100#
++ VSUBS
+X0 a_50_n100# a_n50_n197# a_n108_n100# w_n246_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt comparator_layout m1_2488_2128# m1_1704_1482# m1_1411_1896# li_905_2237# m1_2014_1251#
++ XM33/a_n50_n188# XM34/a_n50_n188# m1_1061_1257# VSUBS XM25/a_n50_n188# XM26/a_n50_n188#
+XXM34 VSUBS m1_852_1342# m1_2014_1251# XM34/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM35 VSUBS VSUBS m1_852_1342# m1_2488_2128# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM25 VSUBS m1_1061_1257# m1_852_1342# XM25/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM26 VSUBS m1_1061_1257# m1_852_1342# XM26/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM27 VSUBS m1_1411_1896# m1_1061_1257# m1_1704_1482# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM28 VSUBS m1_1704_1482# m1_2014_1251# m1_1411_1896# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM29 li_905_2237# m1_2488_2128# m1_1411_1896# li_905_2237# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+Xsky130_fd_pr__pfet_01v8_B5E2Q5_0 li_905_2237# m1_2488_2128# m1_2014_1251# m1_1061_1257#
++ VSUBS sky130_fd_pr__pfet_01v8_B5E2Q5
+XXM30 li_905_2237# m1_1704_1482# m1_1411_1896# li_905_2237# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM31 li_905_2237# m1_1411_1896# m1_1704_1482# li_905_2237# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM32 li_905_2237# m1_2488_2128# m1_1704_1482# li_905_2237# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM33 VSUBS m1_852_1342# m1_2014_1251# XM33/a_n50_n188# sky130_fd_pr__nfet_01v8_PVEW3M
+C0 li_905_2237# VSUBS 6.29f
+C1 m1_852_1342# VSUBS 2.36f
+.ends
+
+.subckt latch_layout m1_724_1961# m1_1878_998# m1_1097_1325# m1_430_1104# m1_330_1963#
++ m1_1878_1968# li_30_2070# VSUBS
+XXM23 VSUBS m1_430_1104# m1_827_1096# m1_1097_1325# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM24 VSUBS m1_1595_1096# m1_1097_1325# m1_430_1104# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM14 li_30_2070# m1_724_1961# m1_822_1732# li_30_2070# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM13 li_30_2070# m1_330_1963# m1_430_1104# li_30_2070# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM15 li_30_2070# m1_1097_1325# m1_430_1104# m1_822_1732# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM16 li_30_2070# m1_430_1104# m1_1601_1730# m1_1097_1325# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM17 li_30_2070# m1_1878_1968# li_30_2070# m1_1601_1730# VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM19 VSUBS VSUBS m1_1595_1096# m1_1878_998# sky130_fd_pr__nfet_01v8_PVEW3M
+Xsky130_fd_pr__pfet_01v8_X3YSY6_0 li_30_2070# m1_1878_998# li_30_2070# m1_1097_1325#
++ VSUBS sky130_fd_pr__pfet_01v8_X3YSY6
+XXM20 VSUBS VSUBS m1_1097_1325# m1_1878_1968# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM21 VSUBS m1_430_1104# VSUBS m1_724_1961# sky130_fd_pr__nfet_01v8_PVEW3M
+XXM22 VSUBS m1_827_1096# VSUBS m1_330_1963# sky130_fd_pr__nfet_01v8_PVEW3M
+C0 li_30_2070# VSUBS 7.27f
+.ends
+
+.subckt comparator_full_compact Vdd clk Vc- V+ V- Vc+ Q Q1 gnd
+Xinverter_0 vo- vo1- Vdd gnd inverter
+Xinverter_1 vo+ vo1+ Vdd gnd inverter
+Xcomparator_layout_0 clk vo- vo+ Vdd m1_2098_364# V- Vc- m1_950_364# gnd Vc+ V+ comparator_layout
+Xlatch_layout_0 vo1+ vo+ Q1 Q vo- vo1- Vdd gnd latch_layout
+C0 vo1+ vo1- 2.5f
+C1 vo1- gnd 2.22f
+C2 vo- gnd 2.12f
+C3 vo+ gnd 3.92f
+C4 Vdd gnd 14.6f
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_GWFSUW a_15_n130# a_63_n42# a_n177_n130# a_255_n42#
++ a_n129_n42# a_111_64# a_n321_n42# a_159_n42# a_n81_64# a_n273_64# a_351_n42# a_207_n130#
++ a_303_64# a_n33_n42# a_n369_n130# a_n225_n42# a_n413_n42# VSUBS
+X0 a_63_n42# a_15_n130# a_n33_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X1 a_n33_n42# a_n81_64# a_n129_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X2 a_351_n42# a_303_64# a_255_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X3 a_159_n42# a_111_64# a_63_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X4 a_255_n42# a_207_n130# a_159_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X5 a_n321_n42# a_n369_n130# a_n413_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X6 a_n225_n42# a_n273_64# a_n321_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X7 a_n129_n42# a_n177_n130# a_n225_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_T5G9WD a_n108_n64# w_n144_n164# a_50_n64# a_n50_n161#
++ VSUBS
+X0 a_50_n64# a_n50_n161# a_n108_n64# w_n144_n164# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_46RJ2R w_n494_n164# a_400_n64# a_n400_n161# a_n458_n64#
++ VSUBS
+X0 a_400_n64# a_n400_n161# a_n458_n64# w_n494_n164# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=4
+.ends
+
+.subckt reference vo1 vo2 VSUBS
+Xsky130_fd_pr__pfet_01v8_lvt_T5G9WD_0 vo1 vo2 vo2 vo1 VSUBS sky130_fd_pr__pfet_01v8_lvt_T5G9WD
+Xsky130_fd_pr__pfet_01v8_lvt_46RJ2R_0 w_0_0# vo2 vo2 w_0_0# VSUBS sky130_fd_pr__pfet_01v8_lvt_46RJ2R
+Xsky130_fd_pr__pfet_01v8_lvt_46RJ2R_1 vo1 vo1 m1_20_n778# m1_20_n778# VSUBS sky130_fd_pr__pfet_01v8_lvt_46RJ2R
+C0 vo1 VSUBS 2.44f
+C1 vo2 VSUBS 2.19f
+.ends
+
+.subckt comparator_final_compact V+ q enable clk V- q2
+Xcomparator_full_compact_1 comparator_full_compact_1/Vdd clk Vc+ V+ V- Vc- q comparator_full_compact_1/Q1
++ reference_0/VSUBS comparator_full_compact
+Xsky130_fd_pr__nfet_01v8_GWFSUW_1 comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd
++ reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd
++ reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS reference_0/VSUBS
++ sky130_fd_pr__nfet_01v8_GWFSUW
+Xsky130_fd_pr__nfet_01v8_GWFSUW_2 comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd
++ reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd
++ reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS reference_0/VSUBS
++ sky130_fd_pr__nfet_01v8_GWFSUW
+Xsky130_fd_pr__nfet_01v8_GWFSUW_3 comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd
++ reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd
++ reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS reference_0/VSUBS
++ sky130_fd_pr__nfet_01v8_GWFSUW
+Xsky130_fd_pr__nfet_01v8_GWFSUW_4 comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd
++ reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd
++ reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS reference_0/VSUBS
++ sky130_fd_pr__nfet_01v8_GWFSUW
+Xsky130_fd_pr__nfet_01v8_GWFSUW_5 comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd
++ reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd
++ reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS reference_0/VSUBS
++ sky130_fd_pr__nfet_01v8_GWFSUW
+Xreference_0 Vc- Vc+ reference_0/VSUBS reference
+Xcomparator_full_compact_0 comparator_full_compact_1/Vdd clk Vc- V+ V- Vc+ q2 comparator_full_compact_0/Q1
++ reference_0/VSUBS comparator_full_compact
+Xsky130_fd_pr__nfet_01v8_GWFSUW_0 comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd
++ reference_0/VSUBS reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd
++ reference_0/VSUBS comparator_full_compact_1/Vdd comparator_full_compact_1/Vdd reference_0/VSUBS
++ comparator_full_compact_1/Vdd reference_0/VSUBS reference_0/VSUBS reference_0/VSUBS
++ sky130_fd_pr__nfet_01v8_GWFSUW
+C0 comparator_full_compact_0/vo1- comparator_full_compact_1/Vdd 2.74f
+C1 V- clk 2.13f
+C2 li_6186_n1148# reference_0/VSUBS 2.66f **FLOATING
+C3 comparator_full_compact_0/vo1- reference_0/VSUBS 2.14f
+C4 comparator_full_compact_0/vo- reference_0/VSUBS 2.01f
+C5 comparator_full_compact_0/vo+ reference_0/VSUBS 3.83f
+C6 Vc- reference_0/VSUBS 4.66f
+C7 Vc+ reference_0/VSUBS 6.08f
+C8 comparator_full_compact_1/vo1- reference_0/VSUBS 3.41f
+C9 q reference_0/VSUBS 2.61f
+C10 comparator_full_compact_1/vo- reference_0/VSUBS 2.44f
+C11 comparator_full_compact_1/vo+ reference_0/VSUBS 4.6f
+C12 comparator_full_compact_1/Vdd reference_0/VSUBS 45.1f
+C13 comparator_full_compact_1/comparator_layout_0/m1_852_1342# reference_0/VSUBS 2.66f
+.ends
+

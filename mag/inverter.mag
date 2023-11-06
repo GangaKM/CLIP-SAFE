@@ -1,0 +1,19 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698871213
+<< locali >>
+rect -18 880 132 928
+rect -18 256 132 304
+<< metal1 >>
+rect 176 134 218 1122
+rect 272 214 308 1030
+use sky130_fd_pr__nfet_01v8_53744R  sky130_fd_pr__nfet_01v8_53744R_0
+timestamp 1698787694
+transform 1 0 193 0 1 305
+box -246 -310 246 310
+use sky130_fd_pr__pfet_01v8_BH9SS5  sky130_fd_pr__pfet_01v8_BH9SS5_0
+timestamp 1698787694
+transform 1 0 192 0 1 941
+box -246 -319 246 319
+<< end >>

@@ -1,0 +1,428 @@
+timestamp 1698871213
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use latch_layout latch_layout_0 1 0 2625 0 1 -844
+use inverter inverter_1 -1 0 -276 0 1 36
+use inverter inverter_0 -1 0 110 0 1 36
+use comparator_layout comparator_layout_0 1 0 -679 0 1 -1004
+port "clk" 3 2612 750 2612 750 m2
+port "gnd" 2 2844 16 2844 16 m1
+port "Vc-" 4 2134 494 2134 494 m1
+port "V+" 5 606 486 606 486 m1
+port "V-" 6 1762 486 1762 486 m1
+port "Vc+" 7 220 492 220 492 m1
+port "Q1" 9 4064 760 4064 760 m1
+port "Q" 8 3864 766 3864 766 m1
+port "Vdd" 1 2650 1244 2650 1244 m1
+node "clk" 1 72.4592 2612 750 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5248 392 0 0 0 0 0 0 0 0
+node "gnd" 0 90.6595 2844 16 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13970 474 0 0 0 0 0 0 0 0 0 0
+node "m1_1522_238#" 0 91.9558 1522 238 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4212 264 13116 500 0 0 0 0 0 0 0 0
+node "m1_2098_364#" 0 118.024 2098 364 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4032 256 16072 556 0 0 0 0 0 0 0 0
+node "m1_1718_356#" 1 72.6253 1718 356 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4212 264 10564 488 0 0 0 0 0 0 0 0
+node "m1_1330_352#" 0 97.4002 1330 352 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4560 272 13020 512 0 0 0 0 0 0 0 0
+node "m1_950_364#" 0 89.773 950 364 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5120 288 5040 288 0 0 0 0 0 0 0 0
+node "Vc-" 0 39.2858 2134 494 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3536 276 0 0 0 0 0 0 0 0 0 0
+node "V+" 0 40.5092 606 486 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2992 244 0 0 0 0 0 0 0 0 0 0
+node "V-" 0 36.8597 1762 486 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3484 272 0 0 0 0 0 0 0 0 0 0
+node "Vc+" 0 41.9508 220 492 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2992 244 0 0 0 0 0 0 0 0 0 0
+node "m1_4122_652#" 0 30.4359 4122 652 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1632 164 0 0 0 0 0 0 0 0 0 0
+node "Q1" 0 10.1453 4064 760 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 220 64 0 0 0 0 0 0 0 0 0 0
+node "Q" 0 17.0286 3864 766 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 676 104 0 0 0 0 0 0 0 0 0 0
+node "vo1+" 18 411.401 -625 893 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16928 546 171244 9894 0 0 0 0 0 0 0 0
+node "vo1-" 29 1993.57 -225 896 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21575 910 235814 14642 0 0 0 0 0 0 0 0
+node "vo-" 12 767.473 -143 1118 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16366 774 150551 7448 0 0 0 0 0 0 0 0
+node "vo+" 6 2538.2 -527 1123 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15804 746 30755 1216 390756 12056 0 0 0 0 0 0
+node "m1_5047_1222#" 0 67.2447 5047 1222 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7068 352 0 0 0 0 0 0 0 0 0 0
+node "m1_3723_1222#" 1 369.305 3723 1222 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 85158 1722 0 0 0 0 0 0 0 0 0 0
+node "m1_3340_1222#" 0 138.538 3340 1222 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30666 766 0 0 0 0 0 0 0 0 0 0
+node "li_2778_n3#" 15 105.49 2778 -3 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13970 474 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n693_n1#" 93 691.239 -693 -1 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74868 1672 74926 1674 0 0 0 0 0 0 0 0 0 0
+node "li_824_1264#" 13 57.381 824 1264 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4900 280 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2558_1232#" 47 235.085 2558 1232 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41000 988 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vdd" 114 2168.8 2650 1244 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118944 2252 446656 8110 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_2558_1232#" "vo-" 3.02872
+cap "Vdd" "m1_3340_1222#" 25.08
+cap "vo1-" "vo-" 0.0181016
+cap "vo1+" "vo-" 1267.83
+cap "m1_3723_1222#" "Q" 2.36364
+cap "m1_1718_356#" "m1_1330_352#" 9.44043
+cap "vo+" "m1_1718_356#" 0.460871
+cap "Q" "vo1-" 0.022512
+cap "Vdd" "m1_2098_364#" 1.65941
+cap "m1_3723_1222#" "m1_3340_1222#" 30.5854
+cap "clk" "vo-" 2.95203
+cap "m1_1330_352#" "vo-" 3.62954
+cap "m1_1330_352#" "m1_950_364#" 15.7304
+cap "V-" "m1_1718_356#" 20.8476
+cap "m1_3340_1222#" "li_2558_1232#" 1.0208
+cap "m1_1522_238#" "m1_1718_356#" 42.9676
+cap "vo+" "m1_950_364#" 0.248309
+cap "vo+" "vo-" 538.505
+cap "m1_3340_1222#" "vo1-" 13.2747
+cap "vo-" "Vc-" 0.0802487
+cap "Q1" "Q" 2.67826
+cap "V-" "vo-" 0.078945
+cap "m1_1522_238#" "vo-" 3.54402
+cap "m1_3340_1222#" "vo1+" 78.5209
+cap "Q" "clk" 0.0131132
+cap "vo+" "Q" 0.106409
+cap "vo+" "m1_3340_1222#" 20.1727
+cap "Vdd" "gnd" 4.79657
+cap "Vdd" "li_n693_n1#" 28.3001
+cap "m1_1330_352#" "m1_2098_364#" 0.13739
+cap "vo+" "m1_2098_364#" 0.601128
+cap "m1_2098_364#" "Vc-" 24.0952
+cap "m1_1718_356#" "vo-" 3.05106
+cap "m1_1718_356#" "m1_950_364#" 0.670189
+cap "m1_1522_238#" "m1_2098_364#" 0.325607
+cap "vo-" "m1_950_364#" 4.45686
+cap "V+" "Vdd" 5.08136
+cap "Vdd" "li_824_1264#" 43.3869
+cap "vo1-" "li_n693_n1#" 6.41632
+cap "vo1+" "li_n693_n1#" 5.37065
+cap "Vdd" "Vc+" 5.14729
+cap "vo+" "gnd" 0.456677
+cap "V+" "Vc+" 3.93296
+cap "gnd" "li_2778_n3#" 39.8843
+cap "Vdd" "li_2558_1232#" 153.225
+cap "vo+" "li_n693_n1#" 6.96961
+cap "Vdd" "vo1-" 120.039
+cap "li_824_1264#" "vo1-" 0.435634
+cap "m1_1718_356#" "m1_2098_364#" 30.9529
+cap "Vdd" "vo1+" 414.83
+cap "li_824_1264#" "vo1+" 0.513156
+cap "vo-" "m1_2098_364#" 4.32489
+cap "m1_2098_364#" "m1_950_364#" 0.496687
+cap "m1_3723_1222#" "li_2558_1232#" 0.641209
+cap "m1_3723_1222#" "vo1-" 71.5471
+cap "Vdd" "clk" 0.586761
+cap "Vdd" "m1_1330_352#" 4.00021
+cap "vo1-" "li_2558_1232#" 2.44406
+cap "vo+" "Vdd" 513.659
+cap "vo+" "V+" 0.223908
+cap "Vdd" "li_2778_n3#" 0.00779988
+cap "m1_3723_1222#" "vo1+" 4.18743
+cap "Vdd" "Vc-" 6.02105
+cap "vo1+" "li_2558_1232#" 2.97005
+cap "V-" "Vdd" 5.78765
+cap "V+" "V-" 1.33571
+cap "m1_1522_238#" "Vdd" 3.05899
+cap "vo1-" "vo1+" 2489.22
+cap "Q1" "m1_3723_1222#" 0.887097
+cap "m1_3723_1222#" "m1_4122_652#" 3.6041
+cap "vo+" "Vc+" 0.224932
+cap "Q1" "vo1-" 0.00711959
+cap "clk" "li_2558_1232#" 0.343205
+cap "vo1-" "m1_4122_652#" 0.040929
+cap "m1_3723_1222#" "vo+" 72.566
+cap "V-" "Vc+" 0.0575916
+cap "vo+" "li_2558_1232#" 0.839897
+cap "li_2558_1232#" "li_2778_n3#" 2.81364
+cap "vo-" "gnd" 0.136156
+cap "m1_3723_1222#" "m1_5047_1222#" 8
+cap "vo+" "vo1-" 231.375
+cap "m1_5047_1222#" "vo1-" 0.561258
+cap "vo+" "vo1+" 361.4
+cap "li_n693_n1#" "vo-" 5.82035
+cap "Q1" "clk" 0.00308107
+cap "Q1" "vo+" 0.0335967
+cap "m1_4122_652#" "clk" 0.00098367
+cap "vo+" "m1_4122_652#" 0.189387
+cap "vo+" "clk" 0.686973
+cap "vo+" "m1_1330_352#" 0.890944
+cap "Vdd" "m1_1718_356#" 1.78246
+cap "vo+" "Vc-" 0.265828
+cap "m1_1522_238#" "m1_1330_352#" 48.317
+cap "m1_5047_1222#" "vo+" 7.6428
+cap "vo+" "V-" 0.261525
+cap "Vdd" "m1_950_364#" 3.86338
+cap "Vdd" "vo-" 1022.9
+cap "vo+" "m1_1522_238#" 1.72281
+cap "V+" "vo-" 0.211227
+cap "li_824_1264#" "vo-" 0.533392
+cap "V-" "Vc-" 4.58896
+cap "vo-" "Vc+" 0.212564
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM25/a_n108_n100#" 51.7922
+cap "comparator_layout_0/XM25/a_n108_n100#" "comparator_layout_0/XM25/a_n50_n188#" 34.718
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM25/a_n108_n100#" 24.9981
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM27/a_n108_n100#" 12.6685
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM27/a_n108_n100#" 0.608437
+cap "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM25/a_n50_n188#" 0.0421242
+cap "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM30/a_n50_n197#" 24.6671
+cap "comparator_layout_0/XM25/a_n210_n274#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 68.3321
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM31/a_n50_n197#" 50.6981
+cap "comparator_layout_0/li_905_2237#" "comparator_layout_0/XM25/a_n108_n100#" -1.67171
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/XM25/a_n50_n188#" 3.75737
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM31/a_n50_n197#" 42.7866
+cap "comparator_layout_0/XM29/a_n50_n197#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.128748
+cap "comparator_layout_0/li_905_2237#" "comparator_layout_0/XM27/a_n108_n100#" 0.134595
+cap "comparator_layout_0/li_905_2237#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 181.757
+cap "comparator_layout_0/li_905_2237#" "comparator_layout_0/XM31/a_n50_n197#" 90.5762
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM25/a_n50_n188#" 26.5566
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM30/a_n50_n197#" 38.6981
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM28/a_n108_n100#" 0.00784675
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM25/a_n50_n188#" 2.94855
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM25/a_n108_n100#" 0.105088
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/XM25/a_n108_n100#" 8.79849
+cap "comparator_layout_0/li_905_2237#" "comparator_layout_0/XM25/a_n210_n274#" 0.251902
+cap "comparator_layout_0/li_905_2237#" "comparator_layout_0/XM25/a_n50_n188#" -1.51466
+cap "comparator_layout_0/li_905_2237#" "comparator_layout_0/XM30/a_n50_n197#" 121.35
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/XM27/a_n108_n100#" 9.22909
+cap "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 8.42297
+cap "comparator_layout_0/XM33/a_n50_n188#" "comparator_layout_0/XM25/a_n50_n188#" -0.0287958
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM31/a_n50_n197#" 24.2676
+cap "comparator_layout_0/XM30/a_n50_n197#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.633917
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/XM30/a_n50_n197#" 0.157457
+cap "comparator_layout_0/XM25/a_n210_n274#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 10.1227
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/XM25/a_n50_n188#" -3.77304
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM25/a_n50_n188#" 0.047065
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM26/a_n50_n188#" 1.14309
+cap "comparator_layout_0/XM29/a_n50_n197#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 2.46597
+cap "comparator_layout_0/li_905_2237#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 48.9486
+cap "comparator_layout_0/li_905_2237#" "comparator_layout_0/XM26/a_n50_n188#" -0.808399
+cap "comparator_layout_0/XM29/a_n50_n197#" "comparator_layout_0/XM31/a_n50_n197#" 0.10368
+cap "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM25/a_n108_n100#" 0.378
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM25/a_n108_n100#" -3.38431
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/XM25/a_n108_n100#" 2.11402
+cap "comparator_layout_0/XM29/a_n50_n197#" "comparator_layout_0/XM30/a_n50_n197#" 4.68434
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/XM27/a_n108_n100#" 1.88855
+cap "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM31/a_n50_n197#" 137.39
+cap "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/li_905_2237#" 8.3044
+cap "comparator_layout_0/m1_2488_2128#" "comparator_layout_0/XM31/a_n50_n197#" 45.576
+cap "comparator_layout_0/XM25/a_n50_n188#" "comparator_layout_0/XM33/a_n50_n188#" -0.0287958
+cap "comparator_layout_0/XM25/a_n108_n100#" "comparator_layout_0/XM34/a_n50_n188#" 0.723725
+cap "comparator_layout_0/XM26/a_n50_n188#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.000421242
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM31/a_n50_n197#" 0.312021
+cap "comparator_layout_0/XM25/a_n50_n188#" "comparator_layout_0/XM30/a_n50_n197#" 0.00649289
+cap "comparator_layout_0/XM33/a_n50_n188#" "comparator_layout_0/XM30/a_n50_n197#" 0.92538
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/m1_2488_2128#" 0.692187
+cap "comparator_layout_0/m1_2488_2128#" "comparator_layout_0/XM25/a_n210_n274#" -0.023976
+cap "comparator_layout_0/XM27/a_n108_n100#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.0547153
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM33/a_n50_n188#" 8.83068
+cap "comparator_layout_0/XM33/a_n50_n188#" "comparator_layout_0/li_905_2237#" 1.09861
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM30/a_n50_n197#" 15.1086
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM31/a_n50_n197#" 7.78268
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM31/a_n50_n197#" 8.47217
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/XM33/a_n50_n188#" -1.33571
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM25/a_n210_n274#" 0.249157
+cap "comparator_layout_0/m1_2488_2128#" "latch_layout_0/XM13/a_50_n100#" 0.306557
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/XM30/a_n50_n197#" -0.11818
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/li_905_2237#" 84.3694
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/li_905_2237#" -10.2551
+cap "comparator_layout_0/m1_2488_2128#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 1.59994
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/li_905_2237#" -4.27285
+cap "comparator_layout_0/XM31/a_n50_n197#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 5.01514
+cap "comparator_layout_0/XM25/a_n108_n100#" "comparator_layout_0/XM30/a_n50_n197#" 1.6951
+cap "comparator_layout_0/XM27/a_n108_n100#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.0971835
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM25/a_n108_n100#" 5.18317
+cap "comparator_layout_0/m1_2488_2128#" "comparator_layout_0/XM33/a_n50_n188#" 1.81791
+cap "comparator_layout_0/XM25/a_n108_n100#" "comparator_layout_0/li_905_2237#" -0.31972
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM33/a_n50_n188#" 0.00047065
+cap "comparator_layout_0/XM25/a_n108_n100#" "comparator_layout_0/XM26/a_n50_n188#" 21.3727
+cap "comparator_layout_0/m1_2488_2128#" "comparator_layout_0/XM30/a_n50_n197#" 81.7681
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM30/a_n50_n197#" 0.24407
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/XM33/a_n50_n188#" 4.00921
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/m1_2488_2128#" -1.23866
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM33/a_n50_n188#" 1.61997
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM33/a_n50_n188#" 2.4145
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/XM30/a_n50_n197#" 257.674
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM25/a_n50_n188#" 0.0493035
+cap "comparator_layout_0/m1_2488_2128#" "comparator_layout_0/XM26/a_n50_n188#" -0.00577812
+cap "comparator_layout_0/m1_2488_2128#" "comparator_layout_0/li_905_2237#" 13.828
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/li_905_2237#" 9.79763
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM26/a_n50_n188#" 0.00047065
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM31/a_n50_n197#" 39.1692
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM30/a_n50_n197#" 1.54003
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/XM30/a_n50_n197#" 8.41742
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM27/a_n108_n100#" -16.1111
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM25/a_n210_n274#" 6.85202
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM33/a_n50_n188#" -2.096
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/XM31/a_n50_n197#" 3.83326
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/li_905_2237#" 62.2046
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM30/a_n50_n197#" -0.314017
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/li_905_2237#" -3.19615
+cap "comparator_layout_0/XM25/a_n210_n274#" "comparator_layout_0/li_905_2237#" -1.35814
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM26/a_n50_n188#" 9.94168
+cap "comparator_layout_0/XM26/a_n50_n188#" "comparator_layout_0/XM25/a_n210_n274#" -0.659038
+cap "comparator_layout_0/m1_2488_2128#" "comparator_layout_0/XM25/a_n108_n100#" -0.147908
+cap "latch_layout_0/XM13/a_50_n100#" "comparator_layout_0/XM30/a_n50_n197#" 2.80303
+cap "comparator_layout_0/XM33/a_n50_n188#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.000421242
+cap "comparator_layout_0/XM25/a_n108_n100#" "comparator_layout_0/XM31/a_n50_n197#" 1.86794
+cap "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM30/a_n50_n197#" 0.173519
+cap "comparator_layout_0/XM25/a_n108_n100#" "comparator_layout_0/XM25/a_n210_n274#" -0.000659945
+cap "latch_layout_0/XM13/a_50_n100#" "comparator_layout_0/li_905_2237#" 0.00130665
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM25/a_n108_n100#" -8.13966
+cap "comparator_layout_0/m1_2488_2128#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.431762
+cap "comparator_layout_0/XM28/a_n108_n100#" "latch_layout_0/XM13/w_n246_n319#" 17.5875
+cap "latch_layout_0/m1_724_1961#" "comparator_layout_0/m1_2488_2128#" 24.4831
+cap "comparator_layout_0/XM34/a_n50_n188#" "latch_layout_0/XM17/a_n50_n197#" 0.000421242
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/XM26/a_n108_n100#" 4.04423
+cap "comparator_layout_0/XM27/a_n108_n100#" "latch_layout_0/m1_430_1104#" 0.202655
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/m1_724_1961#" -0.488487
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM31/a_n50_n197#" 9.46349
+cap "latch_layout_0/XM17/a_n50_n197#" "comparator_layout_0/m1_2488_2128#" 0.215222
+cap "comparator_layout_0/XM26/a_n108_n100#" "latch_layout_0/XM13/w_n246_n319#" 0.142793
+cap "comparator_layout_0/XM30/a_n50_n197#" "latch_layout_0/XM13/w_n246_n319#" -37.7324
+cap "comparator_layout_0/XM31/a_n50_n197#" "latch_layout_0/m1_430_1104#" 6.4815
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM33/a_n50_n188#" 3.16104
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM28/a_n108_n100#" -7.03156
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM26/a_n108_n100#" 3.66278
+cap "latch_layout_0/m1_430_1104#" "latch_layout_0/XM13/w_n246_n319#" 5.72964
+cap "latch_layout_0/XM14/a_50_n100#" "comparator_layout_0/m1_2488_2128#" 0.000514779
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM27/a_n108_n100#" 0.831782
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM33/a_n50_n188#" 0.00291187
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/XM35/a_n210_n274#" 11.0867
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM26/a_n108_n100#" 15.7987
+cap "comparator_layout_0/XM28/a_n108_n100#" "latch_layout_0/m1_430_1104#" 0.253947
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/m1_2488_2128#" -1.42109e-14
+cap "comparator_layout_0/XM35/a_n210_n274#" "latch_layout_0/XM13/w_n246_n319#" 16.7735
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM31/a_n50_n197#" 3.86193
+cap "comparator_layout_0/XM34/a_n50_n188#" "latch_layout_0/XM13/w_n246_n319#" -6.02097
+cap "comparator_layout_0/XM31/a_n50_n197#" "latch_layout_0/m1_724_1961#" 13.7312
+cap "latch_layout_0/m1_430_1104#" "comparator_layout_0/XM26/a_n108_n100#" 8.04893
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/XM35/a_n210_n274#" 5.38146
+cap "comparator_layout_0/XM30/a_n50_n197#" "latch_layout_0/m1_430_1104#" 2.80364
+cap "latch_layout_0/m1_1097_1325#" "comparator_layout_0/m1_2488_2128#" 0.0230263
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/m1_2488_2128#" 108.477
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM28/a_n108_n100#" 14.9675
+cap "latch_layout_0/m1_724_1961#" "latch_layout_0/XM13/w_n246_n319#" 40.1975
+cap "comparator_layout_0/m1_2488_2128#" "latch_layout_0/XM13/w_n246_n319#" 77.2893
+cap "comparator_layout_0/XM28/a_n108_n100#" "comparator_layout_0/m1_2488_2128#" 0.00626621
+cap "comparator_layout_0/XM26/a_n108_n100#" "comparator_layout_0/XM35/a_n210_n274#" -0.408244
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/XM13/w_n246_n319#" 8.51469
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM33/a_n50_n188#" -2.29448
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM35/a_n210_n274#" 65.9631
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM30/a_n50_n197#" -0.0745264
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM26/a_n108_n100#" 22.8886
+cap "latch_layout_0/m1_724_1961#" "comparator_layout_0/XM26/a_n108_n100#" 0.783368
+cap "latch_layout_0/m1_430_1104#" "comparator_layout_0/XM35/a_n210_n274#" 0.982741
+cap "comparator_layout_0/XM30/a_n50_n197#" "latch_layout_0/m1_724_1961#" -1.15347
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/m1_2488_2128#" 550.51
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM31/a_n50_n197#" 5.10853
+cap "latch_layout_0/m1_430_1104#" "latch_layout_0/m1_724_1961#" 0.00719917
+cap "comparator_layout_0/XM30/a_n50_n197#" "latch_layout_0/XM17/a_n50_n197#" 0.173837
+cap "latch_layout_0/m1_430_1104#" "comparator_layout_0/m1_2488_2128#" 2.47022
+cap "comparator_layout_0/XM27/a_n108_n100#" "latch_layout_0/XM13/w_n246_n319#" -0.0359242
+cap "comparator_layout_0/XM27/a_n108_n100#" "comparator_layout_0/XM28/a_n108_n100#" 3.22366
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/XM35/a_n210_n274#" 0.718442
+cap "latch_layout_0/m1_724_1961#" "comparator_layout_0/XM35/a_n210_n274#" 0.0372851
+cap "comparator_layout_0/XM31/a_n50_n197#" "latch_layout_0/XM13/w_n246_n319#" 51.7017
+cap "latch_layout_0/m1_1097_1325#" "latch_layout_0/XM13/w_n246_n319#" 0.000191002
+cap "comparator_layout_0/XM34/a_n50_n188#" "latch_layout_0/m1_724_1961#" 0.00047065
+cap "comparator_layout_0/m1_2488_2128#" "comparator_layout_0/XM35/a_n210_n274#" -4.54928
+cap "comparator_layout_0/XM34/a_n50_n188#" "comparator_layout_0/m1_2488_2128#" 0.00225887
+cap "comparator_layout_0/XM31/a_n50_n197#" "comparator_layout_0/XM28/a_n108_n100#" 9.14726
+cap "comparator_layout_0/XM30/a_n50_n197#" "comparator_layout_0/XM27/a_n108_n100#" 12.4226
+cap "latch_layout_0/m1_724_1961#" "latch_layout_0/m1_1878_998#" 3.29836
+cap "latch_layout_0/m1_1097_1325#" "latch_layout_0/m1_430_1104#" 0.344528
+cap "latch_layout_0/m1_1097_1325#" "comparator_layout_0/XM33/a_50_n100#" 0.0120366
+cap "latch_layout_0/m1_1097_1325#" "latch_layout_0/XM13/w_n246_n319#" -3.05607
+cap "latch_layout_0/XM14/a_50_n100#" "latch_layout_0/m1_1878_998#" 16.2144
+cap "latch_layout_0/m1_1878_998#" "comparator_layout_0/XM35/a_n210_n274#" 13.9669
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/m1_330_1963#" -0.00744859
+cap "latch_layout_0/m1_724_1961#" "latch_layout_0/XM13/w_n246_n319#" 7.25203
+cap "comparator_layout_0/XM34/a_n108_n100#" "latch_layout_0/m1_1097_1325#" 0.0121249
+cap "latch_layout_0/m1_430_1104#" "comparator_layout_0/XM35/a_n210_n274#" 0.730638
+cap "latch_layout_0/XM14/a_50_n100#" "latch_layout_0/XM13/w_n246_n319#" 0.51853
+cap "latch_layout_0/XM13/w_n246_n319#" "comparator_layout_0/XM35/a_n210_n274#" 0.00860881
+cap "latch_layout_0/m1_1097_1325#" "comparator_layout_0/XM34/a_n50_n188#" 0.0422264
+cap "comparator_layout_0/sky130_fd_pr__pfet_01v8_B5E2Q5_0/a_n108_n100#" "latch_layout_0/m1_1097_1325#" 0.000332923
+cap "latch_layout_0/XM16/a_50_n100#" "latch_layout_0/XM17/a_n50_n197#" 3.74358
+cap "latch_layout_0/XM14/a_50_n100#" "latch_layout_0/m1_1097_1325#" 2.84217e-14
+cap "latch_layout_0/m1_1878_998#" "latch_layout_0/m1_330_1963#" 1.3957
+cap "latch_layout_0/m1_1097_1325#" "comparator_layout_0/XM35/a_n210_n274#" 0.011579
+cap "latch_layout_0/XM24/a_50_n100#" "latch_layout_0/m1_1878_998#" 2.97898
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/m1_1878_998#" 11.2626
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/m1_430_1104#" 9.52736
+cap "comparator_layout_0/m1_2488_2128#" "latch_layout_0/m1_430_1104#" 0.0232092
+cap "latch_layout_0/XM13/w_n246_n319#" "latch_layout_0/m1_330_1963#" 0.000557898
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/XM13/w_n246_n319#" 141.021
+cap "latch_layout_0/XM16/a_50_n100#" "latch_layout_0/m1_1878_998#" 11.736
+cap "latch_layout_0/m1_1097_1325#" "latch_layout_0/XM17/a_n50_n197#" 64.9858
+cap "latch_layout_0/m1_724_1961#" "latch_layout_0/XM17/a_n50_n197#" 1.67053
+cap "latch_layout_0/m1_1097_1325#" "comparator_layout_0/m1_2488_2128#" 0.173697
+cap "latch_layout_0/XM16/a_50_n100#" "latch_layout_0/XM13/w_n246_n319#" -1.36319
+cap "latch_layout_0/m1_430_1104#" "latch_layout_0/m1_1878_998#" 20.7061
+cap "latch_layout_0/m1_330_1963#" "comparator_layout_0/XM35/a_n210_n274#" 1.42109e-14
+cap "latch_layout_0/XM13/w_n246_n319#" "latch_layout_0/m1_1878_998#" 96.044
+cap "latch_layout_0/m1_430_1104#" "latch_layout_0/XM13/w_n246_n319#" -3.4867
+cap "latch_layout_0/XM22/a_50_n100#" "latch_layout_0/m1_1878_998#" 2.97898
+cap "latch_layout_0/XM22/a_50_n100#" "latch_layout_0/XM13/w_n246_n319#" 0.000311739
+cap "latch_layout_0/m1_1097_1325#" "latch_layout_0/m1_1878_998#" 41.7915
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/XM13/w_n246_n319#" -0.286466
+cap "latch_layout_0/m1_1878_998#" "latch_layout_0/m1_430_1104#" 0.476634
+cap "latch_layout_0/m1_1878_998#" "latch_layout_0/XM21/a_n210_n274#" 1.1968
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/m1_430_1104#" 0.0149973
+cap "latch_layout_0/m1_430_1104#" "latch_layout_0/m1_1097_1325#" -1.77636e-15
+cap "latch_layout_0/m1_1878_998#" "latch_layout_0/m1_1097_1325#" 8.78674
+cap "latch_layout_0/m1_1878_998#" "latch_layout_0/XM17/a_n50_n197#" 11.4031
+cap "latch_layout_0/XM13/w_n246_n319#" "latch_layout_0/XM21/a_n210_n274#" 0.00111584
+cap "latch_layout_0/m1_1878_998#" "latch_layout_0/m1_724_1961#" -1.14157
+cap "latch_layout_0/m1_1878_998#" "latch_layout_0/XM13/w_n246_n319#" 40.7933
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.61337
+cap "comparator_layout_0/li_905_2237#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 5.64808
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM31/a_n50_n197#" 0.0455619
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/XM25/a_n210_n274#" 0.0427723
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/li_905_2237#" 20.5945
+cap "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "comparator_layout_0/li_905_2237#" 5.76866
+cap "comparator_layout_0/m1_2488_2128#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" 0.540289
+cap "latch_layout_0/XM13/w_n246_n319#" "latch_layout_0/XM17/a_n50_n197#" 0.00960324
+cap "latch_layout_0/XM13/w_n246_n319#" "latch_layout_0/m1_724_1961#" 30.388
+cap "comparator_layout_0/XM30/a_n50_n197#" "latch_layout_0/m1_724_1961#" 0.318066
+cap "latch_layout_0/m1_430_1104#" "latch_layout_0/m1_724_1961#" 1.48617
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/XM16/a_50_n100#" 2.09119
+cap "latch_layout_0/m1_430_1104#" "latch_layout_0/XM17/a_n50_n197#" 12.0603
+cap "latch_layout_0/m1_724_1961#" "latch_layout_0/XM17/a_n50_n197#" 0.989942
+cap "latch_layout_0/XM13/w_n246_n319#" "latch_layout_0/XM17/a_n50_n197#" 40.3565
+cap "latch_layout_0/XM17/a_n50_n197#" "latch_layout_0/XM14/a_50_n100#" 3.86085
+cap "latch_layout_0/m1_1097_1325#" "latch_layout_0/XM17/a_n50_n197#" 38.788
+cap "latch_layout_0/m1_1878_998#" "latch_layout_0/XM17/a_n50_n197#" -7.10543e-15
+merge "latch_layout_0/m1_1097_1325#" "Q1" -105.095 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -220 -64 0 0 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/XM35/a_n210_n274#" "comparator_layout_0/XM25/a_n210_n274#" -1705.05 0 0 0 0 0 0 0 0 0 0 -55896 -3492 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -95138 -5940 -11305 -848 0 0 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/XM25/a_n210_n274#" "latch_layout_0/XM21/a_n210_n274#"
+merge "latch_layout_0/XM21/a_n210_n274#" "gnd"
+merge "gnd" "li_2778_n3#"
+merge "li_2778_n3#" "inverter_0/sky130_fd_pr__nfet_01v8_53744R_0/a_n210_n274#"
+merge "inverter_0/sky130_fd_pr__nfet_01v8_53744R_0/a_n210_n274#" "inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n210_n274#"
+merge "inverter_1/sky130_fd_pr__nfet_01v8_53744R_0/a_n210_n274#" "li_n693_n1#"
+merge "latch_layout_0/VSUBS" "comparator_layout_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/VSUBS" "inverter_0/VSUBS"
+merge "inverter_0/VSUBS" "inverter_1/VSUBS"
+merge "inverter_1/VSUBS" "VSUBS"
+merge "comparator_layout_0/m1_2488_2128#" "clk" -471.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5248 -392 0 0 0 0 0 0 0 0
+merge "latch_layout_0/li_30_2070#" "latch_layout_0/XM13/w_n246_n319#" -3567.68 0 0 0 0 -67628 -1488 0 0 -19244 -1200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90694 -4546 -419999 -9114 0 0 0 0 0 0 0 0 0 0
+merge "latch_layout_0/XM13/w_n246_n319#" "m1_5047_1222#"
+merge "m1_5047_1222#" "m1_3723_1222#"
+merge "m1_3723_1222#" "m1_3340_1222#"
+merge "m1_3340_1222#" "li_2558_1232#"
+merge "li_2558_1232#" "comparator_layout_0/li_905_2237#"
+merge "comparator_layout_0/li_905_2237#" "li_824_1264#"
+merge "li_824_1264#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/w_n246_n319#"
+merge "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/w_n246_n319#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/w_n246_n319#"
+merge "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/w_n246_n319#" "Vdd"
+merge "latch_layout_0/m1_430_1104#" "m1_4122_652#" -95.9645 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1696 -232 0 0 0 0 0 0 0 0 0 0
+merge "m1_4122_652#" "Q"
+merge "latch_layout_0/m1_1878_998#" "comparator_layout_0/XM31/a_n50_n197#" -1029.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7820 -538 -6886 -350 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/XM31/a_n50_n197#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_n50_n197#"
+merge "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_n50_n197#" "vo+"
+merge "latch_layout_0/m1_724_1961#" "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" -311.149 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9735 -464 -2884 -246 0 0 0 0 0 0 0 0
+merge "inverter_1/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "vo1+"
+merge "comparator_layout_0/XM27/a_n108_n100#" "m1_950_364#" -120.536 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3904 -250 -2520 -228 0 0 0 0 0 0 0 0
+merge "latch_layout_0/m1_330_1963#" "comparator_layout_0/XM30/a_n50_n197#" -1150.67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10962 -758 -6255 -502 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/XM30/a_n50_n197#" "m1_1522_238#"
+merge "m1_1522_238#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_n50_n197#"
+merge "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_n50_n197#" "vo-"
+merge "comparator_layout_0/XM34/a_n108_n100#" "comparator_layout_0/XM28/a_n108_n100#" -303.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7428 -602 -16244 -896 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/XM28/a_n108_n100#" "m1_2098_364#"
+merge "m1_2098_364#" "m1_1718_356#"
+merge "m1_1718_356#" "m1_1330_352#"
+merge "latch_layout_0/XM17/a_n50_n197#" "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" -662.929 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13740 -762 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/sky130_fd_pr__pfet_01v8_BH9SS5_0/a_50_n100#" "vo1-"
+merge "comparator_layout_0/XM26/a_n50_n188#" "V+" -38.2933 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1258 -142 0 0 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/XM25/a_n50_n188#" "Vc+" -53.6863 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -918 -122 0 0 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/XM34/a_n50_n188#" "Vc-" -36.5069 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1462 -154 0 0 0 0 0 0 0 0 0 0
+merge "comparator_layout_0/XM33/a_n50_n188#" "V-" -33.9042 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1672 -170 0 0 0 0 0 0 0 0 0 0

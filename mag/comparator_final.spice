@@ -1,0 +1,69 @@
+* SPICE3 file created from comparator_final.ext - technology: sky130A
+
+X0 comparator_full_0/m1_1130_2098# comparator_full_0/m1_2010_2214# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X1 comparator_full_0/m1_1130_2098# comparator_full_0/m1_2010_2214# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X2 comparator_full_0/m1_1130_1686# comparator_full_0/m1_1522_238# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=5.8 ps=51.6 w=1 l=0.5
+X3 comparator_full_0/m1_1130_1686# comparator_full_0/m1_1522_238# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=4.06 ps=36.1 w=1 l=0.5
+X4 comparator_full_0/comparator_layout_0/m1_852_1342# comparator_full_0/m1_2142_478# comparator_full_0/m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X5 comparator_full_0/m1_2098_364# comparator_full_0/m2_2596_774# comparator_full_0/m1_950_364# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X6 VSUBS comparator_full_0/m2_2596_774# comparator_full_0/comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=1.45 ps=12.9 w=1 l=0.5
+X7 comparator_full_0/m1_950_364# comparator_full_0/m1_196_478# comparator_full_0/comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0.87 pd=7.74 as=0 ps=0 w=1 l=0.5
+X8 comparator_full_0/m1_950_364# comparator_full_0/m1_592_476# comparator_full_0/comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X9 comparator_full_0/m1_2010_2214# comparator_full_0/m1_1522_238# comparator_full_0/m1_950_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X10 comparator_full_0/m1_1522_238# comparator_full_0/m1_2010_2214# comparator_full_0/m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.87 ps=7.74 w=1 l=0.5
+X11 comparator_full_0/m1_2010_2214# comparator_full_0/m2_2596_774# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X12 comparator_full_0/m1_2010_2214# comparator_full_0/m1_1522_238# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X13 comparator_full_0/m1_1522_238# comparator_full_0/m1_2010_2214# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X14 comparator_full_0/m1_1522_238# comparator_full_0/m2_2596_774# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X15 comparator_full_0/comparator_layout_0/m1_852_1342# comparator_full_0/m1_1762_478# comparator_full_0/m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X16 comparator_full_0/m1_4122_652# comparator_full_0/m1_4296_658# comparator_full_0/latch_layout_0/m1_827_1096# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X17 comparator_full_0/latch_layout_0/m1_822_1780# comparator_full_0/m1_1130_2098# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X18 comparator_full_0/m1_4122_652# comparator_full_0/m1_1522_238# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X19 comparator_full_0/latch_layout_0/m1_1595_1096# comparator_full_0/m1_4122_652# comparator_full_0/m1_4296_658# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X20 comparator_full_0/m1_4122_652# comparator_full_0/m1_4296_658# comparator_full_0/latch_layout_0/m1_822_1780# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X21 comparator_full_0/latch_layout_0/m1_1601_1778# comparator_full_0/m1_4122_652# comparator_full_0/m1_4296_658# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X22 m1_n22_2898# comparator_full_0/m1_1130_1686# comparator_full_0/latch_layout_0/m1_1601_1778# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X23 m1_n22_2898# comparator_full_0/m1_2010_2214# comparator_full_0/m1_4296_658# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X24 VSUBS comparator_full_0/m1_2010_2214# comparator_full_0/latch_layout_0/m1_1595_1096# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X25 VSUBS comparator_full_0/m1_1130_1686# comparator_full_0/m1_4296_658# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X26 comparator_full_0/m1_4122_652# comparator_full_0/m1_1130_2098# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X27 comparator_full_0/latch_layout_0/m1_827_1096# comparator_full_0/m1_1522_238# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X28 comparator_full_1/m1_1130_2098# comparator_full_1/m1_2010_2214# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X29 comparator_full_1/m1_1130_2098# comparator_full_1/m1_2010_2214# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X30 comparator_full_1/m1_1130_1686# comparator_full_1/m1_1522_238# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X31 comparator_full_1/m1_1130_1686# comparator_full_1/m1_1522_238# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X32 comparator_full_1/comparator_layout_0/m1_852_1342# comparator_full_1/m1_2142_478# comparator_full_1/m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=1.45 pd=12.9 as=0.87 ps=7.74 w=1 l=0.5
+X33 comparator_full_1/m1_2098_364# comparator_full_1/m2_2596_774# comparator_full_1/m1_950_364# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X34 VSUBS comparator_full_1/m2_2596_774# comparator_full_1/comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X35 comparator_full_1/m1_950_364# comparator_full_1/m1_196_478# comparator_full_1/comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0.87 pd=7.74 as=0 ps=0 w=1 l=0.5
+X36 comparator_full_1/m1_950_364# comparator_full_1/m1_592_476# comparator_full_1/comparator_layout_0/m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X37 comparator_full_1/m1_2010_2214# comparator_full_1/m1_1522_238# comparator_full_1/m1_950_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X38 comparator_full_1/m1_1522_238# comparator_full_1/m1_2010_2214# comparator_full_1/m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X39 comparator_full_1/m1_2010_2214# comparator_full_1/m2_2596_774# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X40 comparator_full_1/m1_2010_2214# comparator_full_1/m1_1522_238# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X41 comparator_full_1/m1_1522_238# comparator_full_1/m1_2010_2214# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X42 comparator_full_1/m1_1522_238# comparator_full_1/m2_2596_774# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X43 comparator_full_1/comparator_layout_0/m1_852_1342# comparator_full_1/m1_1762_478# comparator_full_1/m1_2098_364# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X44 comparator_full_1/m1_4122_652# comparator_full_1/m1_4296_658# comparator_full_1/latch_layout_0/m1_827_1096# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X45 comparator_full_1/latch_layout_0/m1_822_1780# comparator_full_1/m1_1130_2098# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X46 comparator_full_1/m1_4122_652# comparator_full_1/m1_1522_238# m1_n22_2898# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X47 comparator_full_1/latch_layout_0/m1_1595_1096# comparator_full_1/m1_4122_652# comparator_full_1/m1_4296_658# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X48 comparator_full_1/m1_4122_652# comparator_full_1/m1_4296_658# comparator_full_1/latch_layout_0/m1_822_1780# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X49 comparator_full_1/latch_layout_0/m1_1601_1778# comparator_full_1/m1_4122_652# comparator_full_1/m1_4296_658# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.5
+X50 m1_n22_2898# comparator_full_1/m1_1130_1686# comparator_full_1/latch_layout_0/m1_1601_1778# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X51 m1_n22_2898# comparator_full_1/m1_2010_2214# comparator_full_1/m1_4296_658# m1_n22_2898# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X52 VSUBS comparator_full_1/m1_2010_2214# comparator_full_1/latch_layout_0/m1_1595_1096# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X53 VSUBS comparator_full_1/m1_1130_1686# comparator_full_1/m1_4296_658# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X54 comparator_full_1/m1_4122_652# comparator_full_1/m1_1130_2098# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X55 comparator_full_1/latch_layout_0/m1_827_1096# comparator_full_1/m1_1522_238# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+C0 m1_n22_2898# comparator_full_1/m1_1522_238# 2.51f
+C1 m1_n22_2898# comparator_full_0/m1_1522_238# 2.54f
+C2 m1_n22_2898# comparator_full_1/m1_2010_2214# 2.59f
+C3 m1_n22_2898# comparator_full_0/m1_2010_2214# 3.06f
+C4 m1_n22_2898# VSUBS 36.4f **FLOATING
+C5 comparator_full_1/m1_2010_2214# VSUBS 5.19f **FLOATING
+C6 comparator_full_1/m1_1522_238# VSUBS 3.35f **FLOATING
+C7 comparator_full_1/comparator_layout_0/m1_852_1342# VSUBS 2.87f **FLOATING
+C8 comparator_full_0/m1_2010_2214# VSUBS 4.89f **FLOATING
+C9 comparator_full_0/m1_1522_238# VSUBS 3.22f **FLOATING
+C10 comparator_full_0/comparator_layout_0/m1_852_1342# VSUBS 2.5f **FLOATING

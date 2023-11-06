@@ -1,0 +1,16 @@
+* SPICE3 file created from comparator_layout.ext - technology: sky130A
+
+X0 m1_852_1342# XM34/a_n50_n188# m1_2014_1251# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X1 m1_2014_1251# m1_2488_2176# m1_1061_1257# li_905_2285# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X2 VSUBS m1_2488_2176# m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=1.45 ps=12.9 w=1 l=0.5
+X3 m1_1061_1257# XM25/a_n50_n188# m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0.87 pd=7.74 as=0 ps=0 w=1 l=0.5
+X4 m1_1061_1257# XM26/a_n50_n188# m1_852_1342# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X5 m1_1411_1944# m1_1704_1482# m1_1061_1257# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.5
+X6 m1_1704_1482# m1_1411_1944# m1_2014_1251# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.87 ps=7.74 w=1 l=0.5
+X7 m1_1411_1944# m1_2488_2176# li_905_2285# li_905_2285# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X8 m1_1411_1944# m1_1704_1482# li_905_2285# li_905_2285# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=1.16 ps=10.3 w=1 l=0.5
+X9 m1_1704_1482# m1_1411_1944# li_905_2285# li_905_2285# sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.5
+X10 m1_1704_1482# m1_2488_2176# li_905_2285# li_905_2285# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+X11 m1_852_1342# XM33/a_n50_n188# m1_2014_1251# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.5
+C0 li_905_2285# VSUBS 6.18f **FLOATING
+C1 m1_852_1342# VSUBS 2.46f **FLOATING

@@ -1,0 +1,36 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697554601
+<< metal1 >>
+rect 3572 3939 4306 3976
+rect 2260 3528 2600 3566
+rect -175 3185 355 3255
+rect 1810 3078 1902 3114
+rect 2200 3080 2262 3116
+rect 3238 2189 3782 2238
+<< metal2 >>
+rect 1044 2134 1088 2328
+rect 3902 2136 3946 2330
+use integrator_full  integrator_full_0
+timestamp 1697390274
+transform 1 0 386 0 1 3314
+box -386 -3314 4076 1617
+<< labels >>
+rlabel metal1 116 3254 116 3254 1 Vdd
+port 1 n
+rlabel metal1 3494 2234 3494 2234 1 gnd
+port 2 n
+rlabel metal1 1816 3096 1816 3096 7 vin1
+port 3 w
+rlabel metal1 2250 3092 2250 3092 3 vin2
+port 4 e
+rlabel metal2 1068 2300 1068 2300 1 vo1
+port 5 n
+rlabel metal2 3926 2250 3926 2250 1 vo2
+port 6 n
+rlabel metal1 4272 3952 4272 3952 1 Vcmref
+port 7 n
+rlabel metal1 2460 3546 2460 3546 1 Vbias
+port 8 n
+<< end >>

@@ -1,0 +1,41 @@
+* SPICE3 file created from full_stage_new.ext - technology: sky130A
+
+X0 integrator_full_new1_0/vin1 m1_n2432_2259# cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X1 cmfb_0/m1_604_1671# integrator_full_new1_0/vin1 VSUBS cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=3.16 as=29.2 ps=337 w=0.5 l=0.5
+X2 cmfb_0/Vdd integrator_full_new1_0/Vcmref cmfb_0/Vcm VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X3 cmfb_0/Vdd integrator_full_new1_0/Vcmref cmfb_0/Vcm VSUBS sky130_fd_pr__nfet_01v8 ad=26.6 pd=305 as=0.29 ps=3.16 w=0.5 l=0.5
+X4 VSUBS integrator_full_new1_0/Vcmref cmfb_0/Vcm cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.29 ps=3.16 w=0.5 l=0.5
+X5 VSUBS integrator_full_new1_0/Vcmref cmfb_0/Vcm cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X6 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=3.48 pd=37.9 as=0 ps=0 w=0.5 l=0.5
+X7 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=3.77 pd=37 as=0 ps=0 w=0.5 l=0.5
+X8 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X9 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X10 cmfb_0/m1_604_1671# integrator_full_new1_0/vin2 VSUBS cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X11 cmfb_0/m1_1719_1576# cmfb_0/m1_1719_1576# cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X12 cmfb_0/Vdd cmfb_0/m1_1719_1576# m1_n2432_2259# cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X13 cmfb_0/m1_1719_1576# cmfb_0/m1_604_1671# cmfb_0/m1_1600_1134# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.58 ps=5.74 w=0.5 l=0.5
+X14 VSUBS cmfb_0/XM9/a_n50_n188# cmfb_0/m1_1600_1134# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+X15 cmfb_0/m1_1600_1134# cmfb_0/Vcm m1_n2432_2259# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.145 ps=1.58 w=0.5 l=0.5
+X16 cmfb_0/m1_604_1671# integrator_full_new1_0/vin2 cmfb_0/Vdd VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=0.5
+X17 cmfb_0/m1_604_1671# integrator_full_new1_0/vin1 cmfb_0/Vdd VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X18 integrator_full_new1_0/vin2 m1_n2432_2259# cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0 ps=0 w=0.5 l=0.5
+X19 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X20 cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd cmfb_0/Vdd sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X21 m1_n2432_2259# cmfb_0/Vdd sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X22 m1_n1808_3061# m1_n1212_3129# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+C0 cmfb_0/Vdd integrator_full_new1_0/vo2 2.21f
+C1 integrator_full_new1_0/vo1 integrator_full_new1_0/vo2 18.9f
+C2 integrator_full_new1_0/Vcmref cmfb_0/Vdd 3.01f
+C3 m1_n2432_2259# cmfb_0/Vdd 11.9f
+Xintegrator_full_new1_0 cmfb_0/Vdd VSUBS integrator_full_new1_0/vin1 integrator_full_new1_0/vin2
++ integrator_full_new1_0/Vbias integrator_full_new1_0/Vcmref integrator_full_new1_0/vo2
++ integrator_full_new1_0/vo1 integrator_full_new1
+C4 integrator_full_new1_0/Vbias VSUBS 4.51f
+C5 integrator_full_new1_0/vo2 VSUBS 7.77f
+C6 integrator_full_new1_0/vo1 VSUBS 4.35f
+C7 integrator_full_new1_0/integrator_new1_0/m1_2972_2832# VSUBS 2.04f **FLOATING
+C8 integrator_full_new1_0/vin1 VSUBS 2.97f
+C9 integrator_full_new1_0/Vcmref VSUBS 4.13f
+C10 integrator_full_new1_0/vin2 VSUBS 3.06f
+C11 cmfb_0/Vdd VSUBS 34f
+C12 m1_n2432_2259# VSUBS 3.72f **FLOATING

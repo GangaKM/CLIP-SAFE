@@ -1,0 +1,29 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699103691
+<< poly >>
+rect -2 210 1060 286
+rect 62 182 92 210
+rect 254 188 284 210
+rect 446 186 476 210
+rect 638 188 668 210
+rect 830 190 860 210
+<< locali >>
+rect -2 364 1056 414
+rect -2 288 82 364
+rect 976 288 1056 364
+rect -2 210 1056 288
+<< viali >>
+rect 82 288 976 364
+<< metal1 >>
+rect -2 364 1056 416
+rect -2 288 82 364
+rect 976 288 1056 364
+rect -2 272 1056 288
+rect -10 -42 1048 162
+use sky130_fd_pr__nfet_01v8_NJGC45  sky130_fd_pr__nfet_01v8_NJGC45_0
+timestamp 1699103691
+transform 1 0 509 0 1 130
+box -509 -130 509 130
+<< end >>

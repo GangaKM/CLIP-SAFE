@@ -1,0 +1,60 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699103691
+<< nwell >>
+rect 98 198 128 266
+rect 290 200 320 268
+rect 482 198 512 266
+rect 674 200 704 268
+rect 866 200 896 268
+rect 1058 122 1086 276
+rect 1056 94 1086 122
+rect 816 60 1094 94
+rect 6 4 1094 60
+rect 816 -108 1094 4
+<< nsubdiff >>
+rect 972 2 1058 28
+rect 972 -34 996 2
+rect 1034 -34 1058 2
+rect 972 -60 1058 -34
+<< nsubdiffcont >>
+rect 996 -34 1034 2
+<< poly >>
+rect 12 230 1086 320
+rect 98 198 128 230
+rect 290 200 320 230
+rect 482 198 512 230
+rect 674 200 704 230
+rect 866 200 896 230
+<< locali >>
+rect 12 424 1098 464
+rect 12 302 32 424
+rect 1060 386 1098 424
+rect 1060 302 1086 386
+rect 12 230 1086 302
+rect 972 2 1058 28
+rect 972 -34 996 2
+rect 1034 -34 1058 2
+rect 972 -60 1058 -34
+<< viali >>
+rect 32 302 1060 424
+rect 996 -34 1034 2
+<< metal1 >>
+rect 12 424 1098 462
+rect 12 302 32 424
+rect 1060 386 1098 424
+rect 1060 302 1086 386
+rect 12 272 1086 302
+rect 1050 258 1086 272
+rect 1054 230 1086 258
+rect 6 4 1086 174
+rect 816 2 1086 4
+rect 816 -34 996 2
+rect 1034 -34 1086 2
+rect 816 -78 1086 -34
+use sky130_fd_pr__pfet_01v8_4ZKXAA  sky130_fd_pr__pfet_01v8_4ZKXAA_0
+timestamp 1699103691
+transform 1 0 545 0 1 142
+box -545 -142 545 142
+<< end >>

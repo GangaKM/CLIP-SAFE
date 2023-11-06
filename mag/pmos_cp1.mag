@@ -1,0 +1,138 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699103691
+<< nwell >>
+rect 352 76 858 724
+rect -14 68 26 76
+rect 30 68 430 76
+rect -14 -102 430 68
+rect 544 -102 858 76
+rect -14 -142 858 -102
+rect 544 -144 846 -142
+<< nsubdiff >>
+rect 710 660 812 686
+rect 710 540 736 660
+rect 788 540 812 660
+rect 710 516 812 540
+<< nsubdiffcont >>
+rect 736 540 788 660
+<< poly >>
+rect 168 22 198 62
+rect 424 18 454 64
+rect 168 -118 198 -80
+rect 164 -134 290 -118
+rect 164 -168 180 -134
+rect 274 -168 290 -134
+rect 164 -184 290 -168
+rect 424 -212 454 -92
+rect 328 -228 454 -212
+rect 328 -262 342 -228
+rect 438 -262 454 -228
+rect 328 -278 454 -262
+<< polycont >>
+rect 180 -168 274 -134
+rect 342 -262 438 -228
+<< locali >>
+rect 710 660 812 686
+rect 710 540 736 660
+rect 788 540 812 660
+rect 710 516 812 540
+rect 164 -134 290 -118
+rect 164 -168 180 -134
+rect 274 -168 290 -134
+rect 164 -184 290 -168
+rect 328 -228 454 -212
+rect 328 -262 342 -228
+rect 438 -262 454 -228
+rect 328 -278 454 -262
+<< viali >>
+rect 736 540 788 660
+rect 180 -168 274 -134
+rect 342 -262 438 -228
+<< metal1 >>
+rect 294 720 806 754
+rect 14 650 94 686
+rect 14 74 22 650
+rect 84 74 94 650
+rect 294 610 328 720
+rect 532 650 612 688
+rect 718 686 806 720
+rect 14 56 94 74
+rect 294 -4 328 84
+rect 532 74 540 650
+rect 600 74 612 650
+rect 710 660 812 686
+rect 710 540 736 660
+rect 788 540 812 660
+rect 710 516 812 540
+rect 532 58 612 74
+rect 545 -4 611 -3
+rect 40 -8 156 -4
+rect 40 -60 46 -8
+rect 98 -60 156 -8
+rect 40 -64 156 -60
+rect 210 -64 412 -4
+rect 466 -64 611 -4
+rect 545 -118 611 -64
+rect 164 -134 611 -118
+rect 164 -168 180 -134
+rect 274 -168 611 -134
+rect 164 -184 611 -168
+rect 328 -218 454 -212
+rect 328 -274 342 -218
+rect 438 -274 454 -218
+rect 328 -278 454 -274
+<< via1 >>
+rect 22 74 84 650
+rect 540 74 600 650
+rect 46 -60 98 -8
+rect 342 -228 438 -218
+rect 342 -262 438 -228
+rect 342 -274 438 -262
+<< metal2 >>
+rect 14 650 94 686
+rect 14 74 22 650
+rect 84 74 94 650
+rect 14 56 94 74
+rect 532 650 612 688
+rect 532 74 540 650
+rect 600 74 612 650
+rect 532 58 612 74
+rect 39 -8 105 -5
+rect 39 -60 46 -8
+rect 98 -60 105 -8
+rect 39 -212 105 -60
+rect 39 -218 454 -212
+rect 39 -274 342 -218
+rect 438 -274 454 -218
+rect 39 -278 454 -274
+<< via2 >>
+rect 22 74 84 650
+rect 540 74 600 650
+<< metal3 >>
+rect 14 650 94 686
+rect 14 74 22 650
+rect 84 74 94 650
+rect 14 56 94 74
+rect 532 650 612 688
+rect 532 74 540 650
+rect 600 74 612 650
+rect 532 58 612 74
+use sky130_fd_pr__pfet_01v8_9AYYDL  sky130_fd_pr__pfet_01v8_9AYYDL_0
+timestamp 1699103691
+transform 1 0 182 0 1 362
+box -194 -362 194 362
+use sky130_fd_pr__pfet_01v8_9AYYDL  sky130_fd_pr__pfet_01v8_9AYYDL_1
+timestamp 1699103691
+transform 1 0 440 0 1 362
+box -194 -362 194 362
+use sky130_fd_pr__pfet_01v8_E9H44Q  sky130_fd_pr__pfet_01v8_E9H44Q_0
+timestamp 1699103691
+transform 1 0 183 0 1 -34
+box -109 -104 109 104
+use sky130_fd_pr__pfet_01v8_E9H44Q  sky130_fd_pr__pfet_01v8_E9H44Q_1
+timestamp 1699103691
+transform 1 0 439 0 1 -34
+box -109 -104 109 104
+<< end >>
