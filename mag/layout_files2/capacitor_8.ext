@@ -11,37 +11,37 @@ node "w_7118_n356#" 5000 1206.59 7118 -356 nw 0 0 0 0 234544 2620 0 0 12100 440 
 node "w_1380_n364#" 8279 1602.14 1380 -364 nw 0 0 0 0 493920 4596 0 0 11236 424 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11236 424 11236 424 0 0 0 0 0 0 0 0 0 0
 node "w_228_1012#" 6124 1175.75 228 1012 nw 0 0 0 0 391916 3672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_738_1478#" "m1_742_528#" 5.20816
-cap "w_228_1012#" "m1_742_528#" 1.1775
-cap "w_228_1012#" "m1_738_1478#" 1.5414
-cap "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" "capacitor_7_0/buffer_and_gate_0/clk" 0.206637
-cap "capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n1233_n42#" "capacitor_7_0/buffer_digital_0/VDD" 0.000886214
+cap "m1_742_528#" "w_228_1012#" 1.1775
+cap "m1_738_1478#" "w_228_1012#" 1.5414
+cap "m1_742_528#" "m1_738_1478#" 5.20816
 cap "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" "capacitor_7_0/buffer_digital_0/GND" 0.186907
-cap "capacitor_7_0/buffer_and_gate_0/clk" "capacitor_7_0/buffer_digital_0/VDD" 0.170807
-cap "capacitor_7_0/buffer_digital_0/in" "capacitor_7_0/buffer_digital_0/VDD" -2.22045e-16
-cap "capacitor_7_0/buffer_digital_0/VDD" "capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" -1.11022e-16
-cap "capacitor_7_0/buffer_digital_0/VDD" "capacitor_7_0/buffer_digital_0/GND" -3.65342
+cap "capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "capacitor_7_0/buffer_digital_0/VDD" -1.11022e-16
+cap "capacitor_7_0/buffer_digital_0/GND" "capacitor_7_0/buffer_digital_0/VDD" -3.65342
 cap "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/a_n989_n42#" 1.82864
+cap "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" "capacitor_7_0/buffer_and_gate_0/clk" 0.206637
+cap "capacitor_7_0/buffer_digital_0/in" "capacitor_7_0/buffer_digital_0/VDD" -2.22045e-16
+cap "capacitor_7_0/buffer_and_gate_0/clk" "capacitor_7_0/buffer_digital_0/VDD" 0.170807
+cap "capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__nfet_01v8_NJGLN5_1/a_n1233_n42#" "capacitor_7_0/buffer_digital_0/VDD" 0.000886214
 cap "capacitor_7_0/buffer_digital_0/GND" "capacitor_7_0/m1_602_n334#" 160.107
 cap "capacitor_7_0/buffer_and_gate_0/clk" "capacitor_7_0/m1_602_n334#" 0.39778
 cap "capacitor_7_0/m1_602_n334#" "capacitor_7_0/buffer_and_gate_0/gnd" 92.5461
-cap "capacitor_7_0/m1_602_n334#" "capacitor_7_0/a_2858_n174#" 24.4819
+cap "capacitor_7_0/a_2858_n174#" "capacitor_7_0/m1_602_n334#" 24.4819
 cap "capacitor_7_0/a_2858_n174#" "capacitor_7_0/sky130_fd_pr__pfet_01v8_4ZKXAA_0/w_n545_n142#" 0.000668058
 cap "capacitor_7_0/a_5270_n124#" "capacitor_7_0/m1_6370_n278#" -1.16573e-15
-cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" 0.0669017
-cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/buffer_and_gate_0/out" 1.91773
-cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/m2_n739_1036#" 0.0075123
+cap "capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_n64#" "capacitor_7_0/m1_6370_n278#" 0.0669017
 cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/buffer_and_gate_0/buffer_0/a_1596_1398#" 0.270463
-cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/sky130_fd_pr__nfet_01v8_9LGCGE_0/a_927_n42#" 140.06
-cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396#" -4.44089e-16
-cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/a_5270_n124#" 38.914
-cap "capacitor_7_0/buffer_digital_0/i" "capacitor_7_0/buffer_digital_0/VDD" 5.08153
-cap "capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__pfet_01v8_VR4B8J_1/a_n1233_n126#" "capacitor_7_0/buffer_digital_0/VDD" 0.0529049
-cap "capacitor_7_0/buffer_digital_0/GND" "capacitor_7_0/buffer_digital_0/VDD" -2.60408
-cap "capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" "capacitor_7_0/buffer_digital_0/VDD" 8.37206
-cap "capacitor_7_0/buffer_and_gate_0/clk" "capacitor_7_0/buffer_digital_0/VDD" 3.7236
-cap "capacitor_7_0/buffer_digital_0/in" "capacitor_7_0/buffer_digital_0/VDD" 1.66545
-cap "capacitor_7_0/m2_n739_1036#" "capacitor_7_0/m1_6370_n278#" 0.167167
+cap "capacitor_7_0/m2_n739_1036#" "capacitor_7_0/m1_6370_n278#" 0.0075123
+cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/buffer_and_gate_0/and_gate_0/a_n78_396#" -3.88578e-16
+cap "capacitor_7_0/sky130_fd_pr__nfet_01v8_9LGCGE_0/a_927_n42#" "capacitor_7_0/m1_6370_n278#" 140.06
+cap "capacitor_7_0/a_5270_n124#" "capacitor_7_0/m1_6370_n278#" 38.914
+cap "capacitor_7_0/buffer_and_gate_0/out" "capacitor_7_0/m1_6370_n278#" 1.91773
+cap "capacitor_7_0/buffer_digital_0/VDD" "capacitor_7_0/buffer_digital_0/i" 5.08153
+cap "capacitor_7_0/buffer_digital_0/VDD" "capacitor_7_0/buffer_digital_0/sky130_fd_pr__nfet_01v8_DQBD8A_0/a_15_n42#" 8.37206
+cap "capacitor_7_0/buffer_digital_0/VDD" "capacitor_7_0/buffer_and_gate_0/clk" 3.7236
+cap "capacitor_7_0/buffer_digital_0/VDD" "capacitor_7_0/buffer_digital_0/in" 1.66545
+cap "capacitor_7_0/buffer_digital_0/VDD" "capacitor_7_0/buffer_and_gate_0/buffer_0/sky130_fd_pr__pfet_01v8_VR4B8J_1/a_n1233_n126#" 0.0529049
+cap "capacitor_7_0/buffer_digital_0/VDD" "capacitor_7_0/buffer_digital_0/GND" -2.60408
+cap "capacitor_7_0/m1_6370_n278#" "capacitor_7_0/m2_n739_1036#" 0.167167
 merge "capacitor_7_0/VSUBS" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "capacitor_7_0/m1_602_n334#" "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" -904.979 0 0 0 0 -176752 -4276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9858 -398 0 0 0 0 0 0 0 0 0 0
 merge "capacitor_7_0/sky130_fd_pr__pfet_01v8_49FP49_0/w_n1025_n142#" "w_1380_n364#"

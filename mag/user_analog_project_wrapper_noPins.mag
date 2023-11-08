@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699275537
+use toplevel  toplevel_0 ~/CLIP-SAFE/mag/layout_files2
+timestamp 1699272401
+transform 1 0 42077 0 1 116323
+box -42087 -116321 166580 108254
+<< end >>

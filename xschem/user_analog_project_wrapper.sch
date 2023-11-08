@@ -150,3 +150,12 @@ C {devices/lab_pin.sym} 4130 940 0 0 {name=l32 sig_type=std_logic lab=vssd1}
 C {charge_pumps2/toplevel_schematic.sym} 3810 -180 0 0 {name=x1}
 C {devices/ipin.sym} 3660 -330 0 0 {name=p33 lab=wb_clk_i}
 C {devices/ipin.sym} 3660 -270 0 0 {name=p35 lab=wb_rst_i}
+C {devices/code.sym} 3400 -170 0 0 {name=TT_MODELS1
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"
+spice_ignore=false}

@@ -12,12 +12,12 @@ node "gnd" 115 2642.76 470 -1100 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "w_n32_n858#" 3096 2015.07 -32 -858 nw 0 0 0 0 552872 3464 0 0 8448 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8448 368 70572 2632 0 0 0 0 0 0 0 0 0 0
 node "Vdd" 3101 3178.64 544 612 m4 0 0 0 0 477124 3148 0 0 8448 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73796 2600 152244 3624 128148 2408 80970 2310 132716 2420 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "Vdd" "gnd" 348.332
-cap "w_n32_n858#" "gnd" 618.401
 cap "Vdd" "w_n32_n858#" 232.213
+cap "gnd" "Vdd" 348.332
+cap "gnd" "w_n32_n858#" 618.401
 cap "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_n400_n162#" "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_1/a_n458_n136#" 266.256
-cap "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_1/a_n458_n136#" "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_400_n136#" -91.9952
 cap "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_n400_n162#" "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_400_n136#" 17.0195
+cap "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_1/a_n458_n136#" "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_400_n136#" -91.9952
 cap "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_1/a_n458_n136#" "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_400_n136#" 33.526
 cap "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_n400_n162#" "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_400_n136#" 333.424
 merge "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_n400_n162#" "sky130_fd_pr__pfet_01v8_lvt_Y7VTPE_0/a_n458_n136#" -1659.3 0 0 0 0 -305608 -2944 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13852 -1096 0 0 0 0 0 0 0 0 0 0

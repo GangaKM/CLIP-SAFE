@@ -1,0 +1,131 @@
+timestamp 1699275537
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use toplevel toplevel_0 1 0 42077 0 1 116323
+node "w_141063_27724#" 5822 0 141063 27724 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_164453_28524#" 6219 0 164453 28524 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_94117_27758#" 5822 0 94117 27758 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_117485_28548#" 6219 0 117485 28548 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_70463_28574#" 6219 0 70463 28574 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_164479_46294#" 5822 0 164479 46294 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_141037_45460#" 6219 0 141037 45460 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_117511_46318#" 5822 0 117511 46318 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_94091_45494#" 6219 0 94091 45494 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_70489_46344#" 5822 0 70489 46344 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_139579_61580#" 5822 0 139579 61580 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_92633_61546#" 5822 0 92633 61546 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_69133_62354#" 6219 0 69133 62354 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_116101_62378#" 6219 0 116101 62378 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_163123_62404#" 6219 0 163123 62404 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_163207_80166#" 5822 0 163207 80166 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_139495_79318#" 6219 0 139495 79318 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_116185_80140#" 5822 0 116185 80140 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_92549_79284#" 6219 0 92549 79284 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_69217_80116#" 5822 0 69217 80116 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_148148_94001#" 5822 0 148148 94001 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_96614_94029#" 5822 0 96614 94029 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_174068_112879#" 5822 0 174068 112879 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_122124_112873#" 5822 0 122124 112873 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_70300_112877#" 5822 0 70300 112877 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_174390_118237#" 5822 0 174390 118237 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_122446_118243#" 5822 0 122446 118243 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_70622_118239#" 5822 0 70622 118239 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_148470_137115#" 5822 0 148470 137115 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_96936_137087#" 5822 0 96936 137087 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_163529_150950#" 5822 0 163529 150950 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_116507_150976#" 5822 0 116507 150976 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_139817_151774#" 6219 0 139817 151774 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_69539_151000#" 5822 0 69539 151000 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_92871_151808#" 6219 0 92871 151808 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_163445_168688#" 6219 0 163445 168688 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_139901_169536#" 5822 0 139901 169536 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_116423_168714#" 6219 0 116423 168714 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_92955_169570#" 5822 0 92955 169570 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_69455_168738#" 6219 0 69455 168738 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_164801_184822#" 5822 0 164801 184822 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_117833_184798#" 5822 0 117833 184798 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_70811_184772#" 5822 0 70811 184772 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_94413_185588#" 6219 0 94413 185588 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_141359_185622#" 6219 0 141359 185622 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_164775_202558#" 6219 0 164775 202558 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_141385_203392#" 5822 0 141385 203392 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_117807_202534#" 6219 0 117807 202534 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_94439_203358#" 5822 0 94439 203358 pw 1095640 4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_70785_202508#" 6219 0 70785 202508 pw 1237244 4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_50472_n37039#" "w_92549_79284#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer2_1/charge_pump_reverse_0/nmos_dnw3_0/vs" "w_141385_203392#" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/digital_gnd" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_27056_n53969#" "w_69133_62354#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_0/charge_pump1_0/vin" "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_0/charge_pump1_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_0/charge_pump1_0/nmos_dnw3_0/vs" "w_70622_118239#"
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer2_1/charge_pump_reverse_0/nmos_dnw3_0/vs" "w_141063_27724#" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_122376_n87799#" "w_164453_28524#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer2_1/charge_pump_reverse_0/nmos_dnw3_0/vs" "w_92955_169570#" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_122698_86235#" "w_164775_202558#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_reverse_0/charge_pump1_reverse_0/nmos_dnw3_0/vin" "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_reverse_0/charge_pump1_reverse_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_reverse_0/charge_pump1_reverse_0/nmos_dnw3_0/vs" "w_96936_137087#"
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/vs" "w_94439_203358#" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/vs" "w_94117_27758#" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_0/charge_pump1_0/nmos_dnw3_0/vs" "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_0/charge_pump1_0/vin" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_0/charge_pump1_0/vin" "w_70300_112877#"
+merge "toplevel_0/w_50794_35485#" "w_92871_151808#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_99282_69299#" "w_141359_185622#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer2_1/charge_pump_reverse_0/nmos_dnw3_0/vs" "w_92633_61546#" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_reverse_1/charge_pump1_reverse_0/nmos_dnw3_0/vin" "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_reverse_1/charge_pump1_reverse_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_reverse_1/charge_pump1_reverse_0/nmos_dnw3_0/vs" "w_148470_137115#"
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/vs" "w_139579_61580#" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_reverse_0/charge_pump1_reverse_0/nmos_dnw3_0/vin" "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_reverse_0/charge_pump1_reverse_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_reverse_0/charge_pump1_reverse_0/nmos_dnw3_0/vs" "w_96614_94029#"
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_1/charge_pump1_0/vin" "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_1/charge_pump1_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_1/charge_pump1_0/nmos_dnw3_0/vs" "w_122124_112873#"
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer2_0/charge_pump_reverse_0/nmos_dnw3_0/vs" "w_139901_169536#" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_75408_n87775#" "w_117485_28548#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_reverse_1/charge_pump1_reverse_0/nmos_dnw3_0/vin" "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_reverse_1/charge_pump1_reverse_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_reverse_1/charge_pump1_reverse_0/nmos_dnw3_0/vs" "w_148148_94001#"
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_1/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_1/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_1/charge_pump_0/nmos_dnw3_0/vs" "w_116185_80140#"
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_2/charge_pump1_0/vin" "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_2/charge_pump1_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_2/charge_pump1_0/nmos_dnw3_0/vs" "w_174390_118237#"
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_0/charge_pump_0/nmos_dnw3_0/vs" "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_0/charge_pump_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_0/charge_pump_0/vs" "w_163207_80166#"
+merge "toplevel_0/w_28708_86185#" "w_70785_202508#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_0/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_0/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_0/charge_pump_0/nmos_dnw3_0/vs" "w_163529_150950#"
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_2/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_2/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_2/charge_pump_0/nmos_dnw3_0/vs" "w_164801_184822#"
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_1/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_1/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_1/charge_pump_0/nmos_dnw3_0/vs" "w_117511_46318#"
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_1/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_1/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_1/charge_pump_0/nmos_dnw3_0/vs" "w_116507_150976#"
+merge "toplevel_0/w_98960_n70863#" "w_141037_45460#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_0/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_0/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_0/charge_pump_0/nmos_dnw3_0/vs" "w_70811_184772#"
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_0/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_0/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_0/charge_pump_0/nmos_dnw3_0/vs" "w_70489_46344#"
+merge "toplevel_0/w_52014_n70829#" "w_94091_45494#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_1/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_1/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_1/cp2_buffer1_1/charge_pump_0/nmos_dnw3_0/vs" "w_117833_184798#"
+merge "toplevel_0/w_97418_n37005#" "w_139495_79318#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_121046_n53919#" "w_163123_62404#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_121368_52365#" "w_163445_168688#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_2/charge_pump1_0/vin" "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_2/charge_pump1_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp1_buffer_5stage_0/cp1_buffer1_2/charge_pump1_0/nmos_dnw3_0/vs" "w_174068_112879#"
+merge "toplevel_0/w_75730_86211#" "w_117807_202534#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_74346_52391#" "w_116423_168714#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_28386_n87749#" "w_70463_28574#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/w_52336_69265#" "w_94413_185588#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_2/charge_pump_0/nmos_dnw3_0/vs" "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_2/charge_pump_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_0/cp2_buffer1_2/charge_pump_0/vs" "w_69217_80116#"
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_2/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_2/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp2_buffer_5stage_0/cp2_buffer1_2/charge_pump_0/nmos_dnw3_0/vs" "w_69539_151000#"
+merge "toplevel_0/w_27378_52415#" "w_69455_168738#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_2/charge_pump_0/vs" "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_2/charge_pump_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_1/cp2_buffer_5stage_1/cp2_buffer1_2/charge_pump_0/nmos_dnw3_0/vs" "w_164479_46294#"
+merge "toplevel_0/w_97740_35451#" "w_139817_151774#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_1/charge_pump1_0/vin" "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_1/charge_pump1_0/nmos_dnw3_0/vs" 0 -1095640 -4228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "toplevel_0/reconfigurable_CP_0/cp1_buffer_5stage_0/cp1_buffer1_1/charge_pump1_0/nmos_dnw3_0/vs" "w_122446_118243#"
+merge "toplevel_0/w_74024_n53945#" "w_116101_62378#" 0 -1237244 -4516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

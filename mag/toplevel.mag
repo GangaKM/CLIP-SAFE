@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699272401
+timestamp 1699423590
 << nwell >>
 rect -15174 104225 -12341 104240
 rect -15174 101448 161454 104225
@@ -1374,7 +1374,7 @@ timestamp 1699272401
 transform 1 0 148450 0 1 -716
 box -158 762 4965 2374
 use comparator_final_compact  comparator_final_compact_0 ~/layout_files/differential_amplifier
-timestamp 1699258842
+timestamp 1699409311
 transform -1 0 8641 0 1 -7048
 box -2532 -2214 8653 1614
 use full_stage_compact  full_stage_compact_0 ~/layout_files/differential_amplifier
